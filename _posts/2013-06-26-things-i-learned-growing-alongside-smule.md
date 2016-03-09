@@ -1,0 +1,36 @@
+---
+layout: post
+title: "Things I Learned Growing Alongside Smule"
+description: ""
+category: 
+tags: [smule]
+---
+{% include JB/setup %}
+
+Boy, does time fly... My three year anniversary at Smule is quickly approaching! I started at Smule right after college, and both Smule and I have grown a lot since then. From 3 years ago to today; 18 team members grew to 60+; we now develop for iOS and Android; switched from SVN to git; from waterfall to Scrum; from Lighthouse to Pivotal to JIRA; grew from a team relying on scant documentation to one utilizing a comprehensive wiki. Overall, Smule and I have become better and a tad bit smarter at what we do. I feel like I've learned a lot, and even picked up a controversial opinion or two! Here is a selection of observations, thoughts, and opinions I picked up growing alongside Smule.
+
+<!--break-->
+
+* **Avoid writing sloppy code - a.k.a. hacking or "getting it done" - because you actually think stuff will get done faster.** Yes, you can copy-and-paste that chunk of code that does what you want from one class to another. But extracting that functionality into a superclass or creating a helper class might be better, and it won't take a significant amount of time, especially if you use a decent IDE. When this code is revisited, the time you invested doing things in a better way will pay dividends. This isn't school anymore as you're never really "done" with any piece of code. I'm definitely not advocating over-engineering: just responsible coding and kindness to your fellow developers.
+
+* **You need some release engineering -- the more, the better.** We used to compile our app store builds on our product lead's laptop. We used to have QA compile code on their machines. So much pain (iOS provisioning madness) can be avoided as soon as you set up a machine that can create the builds you need, and notify developers ASAP when they push code that breaks the build. Yes, you could spend that time "getting it done," but remember that release engineering is the gift that keeps on giving! 
+
+* **Document stuff!** Yes, the code you just designed, wrote, and debugged makes complete and total sense to you. But writing a comment here and there doesn't take that much time, and will help anyone who may come in to understand your code. 
+
+* **Avoid overreacting, especially if you're flying blind.** After releases, we used to monitor app store reviews for any negative feedback. We still do, but we no longer go to DEFCON 2 (e.g. a Cuban Missile Crisis) when a review complains about an issue. We've integrated frameworks (in our case, Crittercism) that lets us monitor issues affecting our customers. We then use this data to plan fixes for future releases. Our products have gotten more stable -- you can see the crash rate fall from release to release -- and we can make much smarter decisions on whether an issue deserves a hot-fix or can be deferred to the next scheduled release.
+
+* **Back up!** This is advice for anyone who uses a computer. It's a matter of time before some tragedy renders your computer unusable. Even if code is hosted on a remote repository or all your important files are in the cloud, setting up a new machine to your liking still takes time. On Macs, it's incredibly easy to back up (and recover) with Time Machine. Everyone at Smule is regularly reminded to stay backed up. 
+
+* **Everyone is responsible for product quality -- so if you see something, say something!** QA is primarily responsible for ensuring our products meet a standard of quality. That said, we have encouraged the entire team to speak up if they see anything odd. It's not the Smule engineering team putting out our apps: it's the entire Smule team. We all want to deliver the best experience to our customers, so we're all doing our best to strive for that goal.
+
+* **Develop, test, and play with a proxy.** If you're not using Charles or some other proxy while working with an app: get it, learn it, and use it. Sometimes issues that involve a client-server interaction become a finger-pointing contest between the two teams. With a proxy, you know exactly what the client is requesting and what the server is sending you, which helps debugging issues immensely. Power users can use Charles to throttle their connections to slow speeds, intermittently drop packets, and even overwrite data being sent back from the server. 
+
+* **Stay out of your comfort zone. Don't stop learning.** Around my two year anniversary at Smule, I needed some change. I had been doing iOS for two years, most of it on Magic Piano, and felt like I wasn't really growing and learning as much as I'd like to. Different people prefer different things; some people don't mind more of the same, but I become frustrated when I felt like I was stagnating. Instead of sulking, I asked if there was any room to shuffle me around. My reinvigorating shift to the Android team gave me an entirely new mobile platform to learn and explore. Instead of siding with iOS in the iOS vs. Android battle, I can now comfortably tell you what I like and dislike about both platforms! I'm now hoping we have our Windows Mobile team set up by summer 2014 so I can make another switch! Then, followed by a Blackberry team. ;)
+
+* **Be kind.** At my baccalaureate service, Jeff Bezos, founder of Amazon, said something very poignant: "One day you'll understand that it's harder to be kind than clever. Cleverness is a gift; kindness is a choice. Gifts are easy -- they're given after all. Choices can be hard." I have the occasional bad day, and I sometimes hear and see things I completely disagree with. During those moments, Bezos' words ring absolutely true: it is harder to be kind, but it's certainly the right thing to do. 
+
+* **A happy team is a productive team.** Like most startups, Smule has pretty awesome perks -- including tons of food, awesome workshops, StarCraft 2 Day, and great work hours including work-from-home days. While we've grown a lot and added some common-sense planning and release processes to eliminate some of that startup chaos, the perks and flexibility have not changed. If you have to pick up your furry friends from the vet, drive your brother for the third time to the DMV because he can't pass his road test, or you pulled your back doing deadlifts (all real examples), no one is going to be hunting you down. Flexibility has kept our team happy and productive, and we're all getting awesome things done in and out of the office.
+
+Smule and I have come a long way together: we're full steam ahead on our mission to bring the world together with the power of music, and I'm excited to see where our wild journey goes. If I said something that stirred emotions within you, please feel free to [send feedback in 140 characters](https://twitter.com/markmcerqueira)! 
+
+Check out Smule on [Twitter](https://twitter.com/smule) and [Facebook](https://www.facebook.com/Smule) for more awesomeness. Smule was recently listed as a [top 10 publisher on iOS](http://blog.appannie.com/app-annie-index-apps-may-2013/) (excluding games), in the company of big names like Google, Apple, and Facebook!

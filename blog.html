@@ -1,0 +1,12 @@
+---
+layout: page
+title: blog 
+header: blog
+group: navigation
+---
+{% include JB/setup %}
+
+<link rel="stylesheet" href="/assets/css/pygments.css">
+ 
+{% assign posts_collate = site.posts %}
+{% include JB/posts_collate %}
