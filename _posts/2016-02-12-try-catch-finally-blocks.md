@@ -41,4 +41,4 @@ public static void crashProneMethod() throws Exception {
 
 This is a decently cool trick, but like [variable shadowing in Java][1], it's probably better to explicitly catch the exception and throw it because it makes your code more readable. But if you're into exercising a language to make your code more difficult to read, try-finally away!
 
-[1]: http://mark.gg/2015/04/26/thats-allowed-in-java/
+[1]: /2015/04/26/thats-allowed-in-java/
