@@ -9,10 +9,10 @@ tags: [technical, java]
 
 Technical interviews are a pain. But here’s a 2-step plan to ace them:
 
-1. **Pick Java as your programming language de jour.**
+1. **Pick Java as your programming language du jour.**
 2. **Use [LinkedHashMaps][1].**
 
-The HashMap is great and usually the go-to data structure during an interview. But an interviewer who’s a jerk will always try to unnecessarily put the HashMap. Here’s how that conversation might go:
+The HashMap is great and usually the go-to data structure during an interview. But an interviewer who’s a jerk will always try to unnecessarily put down the HashMap. Here’s how that conversation might go:
 
 **Interviewer:** HashMap, eh? But what if you want to keep the map to a certain size by removing the oldest entry when you hit the size limit?
 
