@@ -2,7 +2,12 @@
 This repository is automatically transformed by [Jekyll][1] into a static site whenever I push to GitHub.
 
 ## Set-Up
-* See this helpful [GitHub page on setting up Jekyll][11] - specifically the Installing Jekyll section
+* See this helpful [GitHub page on setting up Jekyll][11] - specifically the Installing Jekyll section.
+
+## Common Tasks and Commands
+* bundle exec jekyll serve --watch to run the blog locally
+* bundle exec rake post title="New Post" to create a new blog post
+* bundle exec rake publish to publish the blog
 
 ## Credits
 * Using modified version of [the-program Jekyll theme][2]
