@@ -15,8 +15,10 @@ Today, I'm putting a stop to this madness and using the [Ruby bundler][1] for it
 # Lock Jekyll to version 2.4.0 in the Gemfile
 echo "" >> Gemfile && echo "gem 'jekyll', '2.4.0'" >> Gemfile
 
+# Back up Gemfile.lock. You can delete this if everything succeeds after.
+mv Gemfile.lock Gemfile.lock.backup
+
 # Reset all Gems
-rm Gemfile.lock
 bundle clean --force
 bundle install
 

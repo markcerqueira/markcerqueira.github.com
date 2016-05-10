@@ -22,4 +22,8 @@ Co-op mode was one of those unexpected surprises that we ended up really enjoyin
 * **Add more missions.** Even better (and ultimately easier for you), allow people to create their own co-op missions like you can create maps and custom games. Let people play these custom missions and vote on them. The top missions can get promoted to "official" co-op missions featured more prominently.
 * **Add "over-the-top" bonus objectives.** Give players incentives to take risks to make the mid to late game more exciting. Even on brutal difficulty, once you make it to the mid-game the challenge drops off considerably. Encourage spreading armies, going deep into enemy territory, or building strange unit compositions to up the ante.
 
+**Update:** One day later and Blizzard announced they're releasing [some updates to co-op mode in the upcoming 3.3 patch][3]. There will be weekly "mutators" that enhance difficulty for specific missions, and mastery levels (all the way to 90!) which are similar to Diablo 3's paragon level. It also looks like Abathur might be joining the ranks of heroes! Also, check out the accompanying [update video][2]. I'll take it! GG, Blizzard!
+
 [1]: http://wiki.teamliquid.net/starcraft2/Campaign/In_Utter_Darkness
+[2]: https://www.youtube.com/watch?v=tF85EY0SY7s
+[3]: http://us.battle.net/sc2/en/blog/20112699
