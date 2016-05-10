@@ -19,14 +19,16 @@ echo "" >> Gemfile && echo "gem 'jekyll', '2.4.0'" >> Gemfile
 mv Gemfile.lock Gemfile.lock.backup
 
 # Reset all Gems
-bundle clean --force
+sudo bundle clean --force
 bundle install
 
 # Run Jekyll, but use bundle exec to run the specific version
 bundle exec jekyll serve --watch
 {% endhighlight %}
 
-Note that commands now need to be run with through **bundle exec**. If you just run jekyll like before, it'll run the most up-to-date one that is installed to your default path. Doing this lets me take control of when I'll have to suffer through a Jekyll upgrade.
+Note that commands like jekyll and rake now need to be run with through **bundle exec**. If you just run jekyll directly, it'll run the most up-to-date one that is installed to your default path. 
+
+This setup now lets me take control of when I'll have to suffer through a Jekyll upgrade.
 
 **P.S. I still <3 you Jekyll!**
 
