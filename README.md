@@ -3,11 +3,12 @@ This repository is automatically transformed by [Jekyll][1] into a static site w
 
 ## Set-Up
 * See this helpful [GitHub page on setting up Jekyll][11] - specifically the Installing Jekyll section.
+* To reset your RubyGem state: `mv Gemfile.lock Gemfile.lock.backup && sudo bundle clean --force && bundle install`
 
 ## Common Tasks and Commands
-* bundle exec jekyll serve --watch to run the blog locally
-* bundle exec rake post title="New Post" to create a new blog post
-* bundle exec rake publish to publish the blog
+* `bundle exec jekyll serve --watch` to run the blog locally
+* `bundle exec rake post title="New Post"` to create a new blog post
+* `bundle exec rake publish` pushes changes to the source branch and publishes blog to the master branch
 
 ## Credits
 * Using modified version of [the-program Jekyll theme][2]
@@ -19,6 +20,7 @@ This repository is automatically transformed by [Jekyll][1] into a static site w
 * [RSS xml feed template][8] from George Mandis
 * Local rendering done easily with [these instructions][9] by ixti
 * Related Posts generated using Liquid code from [here][10] by Wenli Zhang
+* Powered up Rakefile with git awareness from [git-rake][12] by flavorjones
 
 ## License
 The following files/directories and their contents are Copyright Mark Cerqueira. You may not reuse anything therein without my permission:
@@ -43,3 +45,4 @@ All other directories and files are [MIT](http://opensource.org/licenses/MIT) li
 [9]: http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html
 [10]: http://zhangwenli.com/blog/2014/07/15/jekyll-related-posts-without-plugin/
 [11]: https://help.github.com/articles/using-jekyll-with-pages/
+[12]: https://github.com/flavorjones/git-rake/blob/master/git.rake
