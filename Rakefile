@@ -318,10 +318,34 @@ task :generate do
   })).process
 end
 
+#  Source: https://github.com/flavorjones/git-rake/blob/master/git.rake
+#  based on 'git status' output, does this repo contain changes that need to be committed?
+#  optional second argument is a specific file (or directory) in the repo.
+def needs_commit?(dir = Dir.pwd, file = nil)
+  rval = false
+  Dir.chdir(dir) do
+    status = %x{git status}
+    if file.nil?
+      rval = true unless status =~ /nothing to commit \(working directory clean\)|nothing added to commit but untracked files present/
+      if status =~ /nothing added to commit but untracked files present/
+        puts "WARNING: untracked files present in #{dir}"
+        show_changed_files(status)
+      end
+    else
+      rval = true if status =~ /^#\t.*modified:   #{file}/
+    end
+  end
+  rval
+end
+
 desc "Generate and publish blog to gh-pages"
 task :publish => [:generate] do
-  system "git commit -am \"Update\""
-  system "git push origin source"
+  if needs_commit?
+    system "git add ."
+    message = "Auto commit for source branch at #{Time.now.utc}"
+    system "git commit -m #{message.shellescape}"
+    system "git push origin source"
+  end
   
   Dir.mktmpdir do |tmp|
     cp_r "_site/.", tmp
