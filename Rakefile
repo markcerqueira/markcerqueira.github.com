@@ -340,12 +340,12 @@ end
 
 desc "Generate and publish blog to gh-pages"
 task :publish => [:generate] do
-  if needs_commit?
-    system "git add ."
-    message = "Auto commit for source branch at #{Time.now.utc}"
-    system "git commit -m #{message.shellescape}"
-    system "git push origin source"
-  end
+  # if needs_commit?
+  #  system "git add ."
+  #  message = "Auto commit for source branch at #{Time.now.utc}"
+  #  system "git commit -m #{message.shellescape}"
+  #  system "git push origin source"
+  # end
   
   Dir.mktmpdir do |tmp|
     cp_r "_site/.", tmp
