@@ -1,16 +1,19 @@
-## Introduction
-This repository is automatically transformed by [Jekyll][1] into a static site. The source for this branch exists on the source branch and any pushes to the source branch trigger Jekyll to run on [Travis CI][15]; this generates and pushes the static site to the master branch.
+### [mark.gg][16] - a blog by Mark Cerqueira
+[![Build Status](https://travis-ci.org/markcerqueira/markcerqueira.github.com.svg?branch=source)](https://travis-ci.org/markcerqueira/markcerqueira.github.com)
 
-## Set-Up
+### Introduction
+This repository is automatically transformed by [Jekyll][1] into a static site. The source for this branch exists on the source branch and any pushes to the source branch trigger Jekyll to run on [Travis CI][15]. this generates and pushes the static site to the master branch.
+
+### Set-Up
 * See this helpful [GitHub page on setting up Jekyll][11] - specifically the Installing Jekyll section.
 * To reset your RubyGem state: `mv Gemfile.lock Gemfile.lock.backup && sudo bundle clean --force && bundle install`
 
-## Common Tasks and Commands
+### Common Tasks and Commands
 * `bundle exec jekyll serve --watch` to run the blog locally
 * `bundle exec rake post title="New Post"` to create a new blog post
 * `bundle exec rake publish` pushes changes to the source branch and publishes blog to the master branch
 
-## Credits
+### Credits
 * Using modified version of [the-program Jekyll theme][2]
 * Source Sans Pro font from [Google Fonts][3]
 * Code higlighting by [Pygments][4]
@@ -23,7 +26,7 @@ This repository is automatically transformed by [Jekyll][1] into a static site. 
 * Powered up Rakefile with git awareness from [git-rake][12] by flavorjones
 * Auto-deplying using [Travis][13] with [setup instructions by domenic][14]
 
-## License
+### License
 The following files/directories and their contents are Copyright Mark Cerqueira. You may not reuse anything therein without my permission:
 
 *   _posts/
@@ -49,4 +52,5 @@ All other directories and files are [MIT](http://opensource.org/licenses/MIT) li
 [12]: https://github.com/flavorjones/git-rake/blob/master/git.rake
 [13]: https://travis-ci.org/
 [14]: https://gist.github.com/domenic/ec8b0fc8ab45f39403dd
-[13]: https://travis-ci.org/markcerqueira/markcerqueira.github.com
+[15]: https://travis-ci.org/markcerqueira/markcerqueira.github.com
+[16]: http://www.mark.gg
