@@ -14,7 +14,6 @@ I've been a big fan of the [Alfred][1] productivity app for a while now. It's li
 	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>Say goodbye to losing the things you previously copied!</strong></p>
 </div>
 
-
 The other day I learned about [Dash][2]. It puts API documentation a simple keystroke away! If you're a developer it's nice to be able to quickly pull up documentation on a method or review all the methods a particular class has to offer. Being able to skip out on going to Google Chrome and searching for the documentation page makes this workflow much faster... And lessens the chance I'll go to YouTube to watch more cat videos. I forgot to mention it also works offline, supports personal annotations, and storing custom code snippets.
 
 <div>

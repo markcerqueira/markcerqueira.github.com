@@ -2,6 +2,7 @@
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:year/:month/:day/:title 
 
+# Include vendor to fix: https://github.com/jekyll/jekyll/issues/2938
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "vendor"]
 highlighter: pygments
 paginate: 5
