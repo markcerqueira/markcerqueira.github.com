@@ -1,0 +1,8 @@
+language: ruby # mark.gg deploys are driven by rake
+
+script: bash ./deploy.sh
+
+env:
+  global:
+  - ENCRYPTION_LABEL: "70911eb7cb63"
+  - COMMIT_AUTHOR_EMAIL: "mark.cerqueira@gmail.com"
