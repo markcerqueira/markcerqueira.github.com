@@ -1,5 +1,5 @@
 ## Introduction
-This repository is automatically transformed by [Jekyll][1] into a static site whenever I push to GitHub.
+This repository is automatically transformed by [Jekyll][1] into a static site. The source for this branch exists on the source branch and any pushes to the source branch trigger Jekyll to run on [Travis CI][15]; this generates and pushes the static site to the master branch.
 
 ## Set-Up
 * See this helpful [GitHub page on setting up Jekyll][11] - specifically the Installing Jekyll section.
@@ -49,3 +49,4 @@ All other directories and files are [MIT](http://opensource.org/licenses/MIT) li
 [12]: https://github.com/flavorjones/git-rake/blob/master/git.rake
 [13]: https://travis-ci.org/
 [14]: https://gist.github.com/domenic/ec8b0fc8ab45f39403dd
+[13]: https://travis-ci.org/markcerqueira/markcerqueira.github.com
