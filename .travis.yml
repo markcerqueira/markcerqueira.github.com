@@ -2,9 +2,6 @@ os: osx
     
 language: ruby # mark.gg deploys are driven by rake
 
-rvm:
-  - 2.0.0p481
-
 # http://stackoverflow.com/a/16638729/265791
 before_script:
   - echo -e "Host heroku.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
