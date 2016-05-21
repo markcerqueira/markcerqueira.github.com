@@ -19,6 +19,8 @@ SHA=`git rev-parse --verify HEAD`
 git config user.name "Travis CI"
 git config user.email "$COMMIT_AUTHOR_EMAIL"
 
+echo "Setting up deploy key for pushing"
+
 # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
 ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
 ENCRYPTED_IV_VAR="encrypted_${ENCRYPTION_LABEL}_iv"
@@ -29,5 +31,8 @@ chmod 600 deploy_key
 eval `ssh-agent -s`
 ssh-add deploy_key
 
-# Now that we're all set up, we can push.
-git push $SSH_REPO $TARGET_BRANCH
+echo "Finished setting up deploy key"
+
+bundle exec rake publish
+
+echo "Finished executing rake publish"
