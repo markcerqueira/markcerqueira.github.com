@@ -1,3 +1,5 @@
+os: osx
+    
 language: ruby # mark.gg deploys are driven by rake
 
 script: bash ./deploy.sh
