@@ -2,6 +2,8 @@ os: osx
     
 language: ruby # mark.gg deploys are driven by rake
 
+cache: bundler
+
 # http://stackoverflow.com/a/16638729/265791
 before_script:
   - echo -e "Host heroku.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
