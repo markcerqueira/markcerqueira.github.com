@@ -21,6 +21,7 @@ This repository is automatically transformed by [Jekyll][1] into a static site w
 * Local rendering done easily with [these instructions][9] by ixti
 * Related Posts generated using Liquid code from [here][10] by Wenli Zhang
 * Powered up Rakefile with git awareness from [git-rake][12] by flavorjones
+* Auto-deplying using [Travis][13] with [setup instructions by domenic][14]
 
 ## License
 The following files/directories and their contents are Copyright Mark Cerqueira. You may not reuse anything therein without my permission:
@@ -46,3 +47,5 @@ All other directories and files are [MIT](http://opensource.org/licenses/MIT) li
 [10]: http://zhangwenli.com/blog/2014/07/15/jekyll-related-posts-without-plugin/
 [11]: https://help.github.com/articles/using-jekyll-with-pages/
 [12]: https://github.com/flavorjones/git-rake/blob/master/git.rake
+[13]: https://travis-ci.org/
+[14]: https://gist.github.com/domenic/ec8b0fc8ab45f39403dd
