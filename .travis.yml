@@ -1,8 +1,14 @@
 os: osx
     
-language: ruby # mark.gg deploys are driven by rake
+# mark.gg deploys are driven by rake
+language: ruby
 
+# Cache the gems we pull so subsequent builds are faster
 cache: bundler
+
+# We don't ever need to go deeper when publishing
+git:
+  depth: 1
 
 # http://stackoverflow.com/a/16638729/265791
 before_script:
@@ -11,6 +17,7 @@ before_script:
     
 script: bash ./deploy.sh
 
+# This magic allows for pushing to GitHub via SSH
 env:
   global:
   - ENCRYPTION_LABEL: "70911eb7cb63"
