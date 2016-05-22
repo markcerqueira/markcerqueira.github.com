@@ -9,7 +9,7 @@ tags: [meta, technical, automation, ci]
 
 A long time ago I started **generating my site locally and pushing it up to Github manually** because Github Pages does not allow you to run custom plugins. This isn't as painful as it sounds. A friendly internet hero -- ixti -- crafted a nice Rakefile that [automated publishing][1].
 
-**But doing the publishing myself led to some workflow issues.** Allowing GitHub Pages to do the work for you is nice because you only have to deal with one branch. Make changes to that branch, push to GitHub, and GitHub Pages would generate the site and deploy it. Everything is always in sync. The new workflow had me writing and crafting content on the source branch and then using the publishing command to generate my site locally and then it would push it to the master branch: the "deploy." **Separating the crafting and deploying steps meant I sometimes published content without pushing it into the source branch** of my repo or I'd push content and not deploy it.
+**But doing the publishing myself led to some workflow issues.** Allowing GitHub Pages to do the work for you is nice because you only have to deal with one branch. Make changes to that branch, push to GitHub, and GitHub Pages would generate the site and deploy it. Everything is always in sync. The new workflow had me writing and crafting content on the source branch and then using the publishing command to generate my site locally and then it would push it to the master branch: the "deploy." **Separating the crafting and deploying steps meant I sometimes published content without pushing it into the source branch or I'd push content and not deploy it.**
 
 <div>
 	<img class="rounded-corners" style="max-width: 800px; border: 1px solid #cdcdcd;" src="/assets/images/posts/2016-05-20/travis.png"/>
@@ -26,7 +26,14 @@ To git@github.com:markcerqueira/markcerqueira.github.com.git
  + f2e99be...3aea10b master -> master (forced update)
 {% endhighlight %}
 
-And there are a few more benefits including **email notifications if something goes wrong** during the publishing flow and **no need to wait on a 70+ MB push** when publishing, which is great when I'm tethered or in a rush. 
+And there are a few more benefits including **email notifications if something goes wrong** during the publishing flow and **no need to wait on a 70+ MB push** when publishing, which is great when I'm tethered or in a rush.
+
+This minor improvement isn't mind-blowing, but it does make my interaction with blogging more streamlined and simple. That's what my automating 2016 resolution is all about. Onwards!
+
+{% highlight bash %}
+git push origin source
+# We're done. Walk away. Go outside. Eat a banana.
+{% endhighlight %}
 
 [1]: http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html
 [2]: /2016/01/01/automating-2016/
