@@ -3,7 +3,7 @@ layout: post
 title: "Running in Japan"
 description: ""
 category: 
-tags: [japan, travel, fitness]
+tags: [japan, travel, fitness, running]
 ---
 {% include JB/setup %}
 

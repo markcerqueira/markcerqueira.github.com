@@ -3,7 +3,7 @@ layout: post
 title: "Start Today"
 description: ""
 category: 
-tags: [fitness]
+tags: [fitness, running]
 ---
 {% include JB/setup %}
 
