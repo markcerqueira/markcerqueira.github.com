@@ -40,19 +40,14 @@ For the laughs (and sadness), here was my initial (and ghetto) implementation of
 # Ghetto but I wasn't able to find a better way to do this!
 def to_json_list(models)
   i = 1
-  length = models.length
-
   result = '['
-
   models.each do |model|
     result += to_json(model)
-    if (i += 1) <= length
+    if (i += 1) <= models.length
       result += ','
     end
   end
-
-  result += ']'
-  return result
+  return (result += ']')
 end
 {% endhighlight %}
 
