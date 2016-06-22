@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
 gem 'jekyll', '2.4.0'
-gem 'rake'
-gem 'nokogiri', '1.5.9'
-gem 'github-pages'
-gem 'rdiscount'
+gem 'rake', '11.2.2'
+gem 'rdiscount', '2.1.8'
