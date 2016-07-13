@@ -37,6 +37,8 @@ class ApplicationController < Sinatra::Base
 end
 {% endhighlight %}
 
+Hit and the endpoint and you're done! Or are you? To the Gmail inbox!
+
 <div>
 	<img class="rounded-corners" style="max-width: 800px; border: 0px;" src="/assets/images/posts/2016-07-10/spammer.png"/>
 	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>Gmail has some doubts!</strong></p>
@@ -44,7 +46,7 @@ end
 
 All looks good except Gmail ominously warns us: **"Gmail couldn't verify that chuckpad.io actually sent this message."** This means "Gmail doesn't know if the message is coming from the person who appears to be sending it," which makes our messages excellent candidates to get caught by Gmail's spam filters! Read more about authenticated messages [here][3].
 
-After some digging around, I learned about **Sender Policy Framework (SPF) records**. Basically, a DNS record can have some metadata which identifies which servers are permitted to send email on behalf of the domain. And for some strange reason, DreamHost's default ["SPF information does not include all of DreamHost's mail servers"][4]. Fortunately, this can be easily remedied by [adding the SPF record][5] **v=spf1 include:netblocks.dreamhost.com** to our domain's DNS record.
+After some digging around, I learned about **Sender Policy Framework (SPF) records**. Basically, a DNS record can have some metadata which identifies which servers are permitted to send email on behalf of the domain. DreamHost's default ["SPF information doesn't include DreamHost's mail servers"][4] because you can always opt to host your domain's mail servers elsewhere. Fortunately, this can be easily remedied by [adding the SPF record][5] **v=spf1 include:netblocks.dreamhost.com** to our domain's DNS record.
 
 <div>
 	<img class="rounded-corners" style="max-width: 800px; border: 0px;" src="/assets/images/posts/2016-07-10/spf.png"/>
