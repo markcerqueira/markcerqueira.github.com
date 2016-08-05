@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games]
 ---
-{% include JB/setup %}
 
 <div class="float-image-right">	
   	<img class="rounded-corners" src="/assets/images/posts/2014-11-16/tohr.jpg" alt="Tales of Hearts R"/> 

@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [evernote, android]
 ---
-{% include JB/setup %}
 
 It's been a little over a month since I joined Team Android at Evernote. I'm happy to announce that I've been busy along with the rest of the team bringing you an update to our Android app. Among many other things, **Evernote for Android now supports Context!**
 

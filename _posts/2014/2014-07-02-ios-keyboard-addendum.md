@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [rant, ios]
 ---
-{% include JB/setup %}
 
 A few weeks ago, I wrote a [post](2014/06/10/ios-keyboard-woes/) pointing out (i.e. complaining about) how iOS 7 broke the keyboard's shift key. A coworker pointed out that the shift key really didn't break in iOS 7 (released September 2013), but rather in iOS 7.1 (released March 2014). Android aside, I think iOS 6 still has the best shift key, but iOS 7.0's shift key at least makes some sense. Here is a more complete picture depicting the shift key's deterioration.
 

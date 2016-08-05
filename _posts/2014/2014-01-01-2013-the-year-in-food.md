@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [food]
 ---
-{% include JB/setup %}
 
 <style media="screen" type="text/css">
 

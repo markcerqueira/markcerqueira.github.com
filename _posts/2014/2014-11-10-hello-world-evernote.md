@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [evernote]
 ---
-{% include JB/setup %}
 
 I'm very excited to announce that after four fun years at Smule, I'm joining the Evernote Team! Here's a picture of (dapper) me on my first day.
 

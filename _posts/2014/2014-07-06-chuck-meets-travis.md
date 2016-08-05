@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [ci, chuck]
 ---
-{% include JB/setup %}
 
 Ge, Spencer, and I sometimes talk about our dreams when we're playing StarCraft. During the small windows of time when we're not playing StarCraft, we're all making some sort of headway towards our dreams. Today, one of those dreams has come to pass. <strong>ChucK is now set up for continuous integration on Travis.</strong> Every commit to ChucK triggers Travis to check that ChucK compiles and passes a suite of unit tests.
 

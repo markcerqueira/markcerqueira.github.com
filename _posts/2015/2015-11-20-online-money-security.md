@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [technical, security]
 ---
-{% include JB/setup %}
 
 My parents aren't super comfortable with technology. They didn't grow up with computers and they still don't use them that much. My mom only recently got a smartphone and -- besides typical phone stuff -- only uses Facebook. It still blows their minds how much we can do online. From the comfort of home we can see pictures from around the world, deposit checks, check the detailed history of a bank account, check their retirement plans and Social Security benefits, send other people money, and see lots of pictures of cats.
 

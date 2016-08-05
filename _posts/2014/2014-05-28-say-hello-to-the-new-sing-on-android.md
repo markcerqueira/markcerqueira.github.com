@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [smule, android]
 ---
-{% include JB/setup %}
 
 Greetings *Sing! Karaoke* Android people! This is Mark, Engineer-Progenitor of Smule’s *Sing!* Android app. Since we first released our debut version of Sing! Android in December 2012, over 4 million of you have played with our app. Today, we’re proud to announce that we haven’t, in fact, been sitting on our thumbs for the past few months. The entire team here at Smule HQ has been hard at work making *Sing!* for Android even better. To find out how we’ve improved *Sing!*, read on.
 

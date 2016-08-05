@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [rant]
 ---
-{% include JB/setup %}
 
 
 <div class="float-image-right">	

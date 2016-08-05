@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games, music review]
 ---
-{% include JB/setup %}
 
 Blake Robinson is *THE* hero video game nerds dream about. This man is literally a one-man army with a virtual orchestra at his fingertips, and he's put that power to great use. Chrono Trigger is on many people's list of all-time favorite video games, and the memorable soundtrack (composed by Yasunori Mitsuda) is a pillar of the game's greatness. Even today, the MIDI-based soundtrack inspires nostalgia and brings even the most powerful nerds to tears. But Blake Robinson would not let Mitsuda's work be shackled by the 16 channels of MIDI, so he took the original soundtrack, scored it for an orchestra, and let his virtual orchestra play it. Yesterday, he released the third (and final) part of The Chrono Trigger Symphony. Hit the play button below to listen to Yearnings of the Wind and keep reading.
 

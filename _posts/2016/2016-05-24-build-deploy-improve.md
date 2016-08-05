@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [technical]
 ---
-{% include JB/setup %}
 
 When building something it's easy to get hung up on how incomplete something is or how far off it is from the awesome (and complicated) idea in your head. But that shouldn't stop you from building things and putting those things out there.
 

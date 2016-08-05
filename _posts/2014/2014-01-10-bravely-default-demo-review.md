@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [jrpg, final fantasy]
 ---
-{% include JB/setup %}
 
 <div class="float-image-right">	
   	<img class="rounded-corners" src="/assets/images/posts/2014-01-10/cover.jpg" alt="Bravely Default Flying Fairy"/> 

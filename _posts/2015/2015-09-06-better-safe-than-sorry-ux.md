@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [user experience, rant, instagram]
 ---
-{% include JB/setup %}
 
 I previously wrote about the [Instagram "report user" user experience][1], which I felt left users hanging at the end. I noticed the problematic part of the flow has recently been changed! But I'm unsure how I feel about the changes. Here's the new "report user" flow:
 

@@ -2,9 +2,7 @@
 layout: page
 title: about 
 header: about
-group: navigation
 ---
-{% include JB/setup %}
 
 I am an Android developer at [Evernote][6] -- making a product used and loved by millions even better on the Android platform. Besides writing code, I run with The Herd, Evernote's running club. I'm also an up-and-coming superstar barista: making and serving coffee from Evernote's espresso bar.
 

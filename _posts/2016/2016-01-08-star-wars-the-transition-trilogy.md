@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [random]
 ---
-{% include JB/setup %}
 
 **SPOILER ALERT:** Skip this post if you haven't watched Star Wars: The Force Awakens. 
 

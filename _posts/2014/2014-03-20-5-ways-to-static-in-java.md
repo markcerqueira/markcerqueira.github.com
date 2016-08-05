@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [java, android]
 ---
-{% include JB/setup %}
 
 Someone asked me the other day if I knew about all the usages of static in Java. Turns out, I didn't know them all! Let's review them.
 

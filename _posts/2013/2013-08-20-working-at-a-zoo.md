@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [random]
 ---
-{% include JB/setup %}
 
 In high school, I was fortunate to be part of the Science Explorers Program at the Newark Museum. Founded in 1995, this program was part of the YouthAlive! national initiative, which aimed to "provide positive work and learning opportunities for young people." During my three years in the program I got to participate in cool science workshops, field trips to national parks, a sightseeing tour of Washington DC, an annual fundraising gala, and even had my portrait painted by an artist. But most importantly, I got to spend three years working in a zoo! **Warning**: Pictures of me in high school, incoming!
 

@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [music review]
 ---
-{% include JB/setup %}
 
 During my visit to NJ, I convinced my former thesis advisor, Dan Trueman, that it'd be a good idea to hang out with me. He fell for it! A few days later, I sat in his office and we had a pleasant talk about all sorts of things. But at some point my eyes wandered to a beautiful folded piece of paper held together by two equally beautiful, yellow rubber bands. **What is this wonderful machination?** I reached out for it. I was touching **pure beauty**...
 

@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [smule]
 ---
-{% include JB/setup %}
 
 Today wrapped up Smule's first Smackathon (a Smulean hackathon) of 2014. Armed with clairvoyant vision and a burning desire to be amazing, The Backstreet Trolls (me and Josh Wu) set out to port the popular Magic Piano to the PlayStation Vita. 
 

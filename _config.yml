@@ -1,24 +1,18 @@
-# This is the default format. 
-# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink: /:categories/:year/:month/:day/:title 
+permalink: pretty
 
-# Include vendor to fix: https://github.com/jekyll/jekyll/issues/2938
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "vendor"]
-highlighter: pygments
+gems: [jekyll-paginate]
+
 paginate: 5
-future: false
-safe: true
 
-markdown: rdiscount
-rdiscount:
-  extensions: ['smart']
-
-# Themes are encouraged to use these universal variables 
-# so be sure to set them if your theme uses them.
+markdown: kramdown
+kramdown:  
+  parse_block_html: true
+  input: GFM
+  
 title : mark cerqueira
-description: mark cerqueira
-tagline: mark cerqueira
-url: www.mark.gg
+tagline: well-rounded nerd
+baseurl: ''
+
 author :
   name : Mark Cerqueira
   email : mark.cerqueira@gmail.com
@@ -27,17 +21,6 @@ author :
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 JB :
-  # These paths are to the main pages Jekyll-Bootstrap ships with.
-  # Some JB helpers refer to these paths; change them here if needed.
-  archive_path: /archive.html
-  categories_path : /categories.html
-  tags_path : /archive.html
-  atom_path : /atom.xml
-  rss_path : /rss.xml
-
-  # Settings for analytics helper
-  # Set 'provider' to the analytics provider you want to use.
-  # Set 'provider' to false to turn analytics off globally.
   analytics :
     provider : google
     google : 

@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [rant]
 ---
-{% include JB/setup %}
 
 I always tell people who warn me that they're about to ask a stupid question, that there's no such thing as a stupid question. But when a computer asks me a stupid question, I show no mercy. One of the many chat clients installed on my iPhone -- WeChat -- recently asked me a supremely stupid question.
 

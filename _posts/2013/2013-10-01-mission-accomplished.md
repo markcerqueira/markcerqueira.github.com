@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [fitness]
 ---
-{% include JB/setup %}
 
 I did some running leading up to the Spartan Beast in early August, and while I'm no junky for runner's high, I ended up really enjoying that portion of my training. Following the Spartan, I kept running, and as August came to a close, I decided to give myself a challenge: **run 100 miles in September**. Previously, my longest distance covered in a month was about 70 miles, so the goal here was to increase distance. Armed with a playlist of Final Fantasy battle music, I can trick myself into doing anything. Well, October's here already, so this is how it went.
 

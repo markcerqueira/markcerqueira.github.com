@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [android, final fantasy, technical]
 ---
-{% include JB/setup %}
 
 I've got a project in the works that requires running an Android app -- Final Fantasy Record Keeper (FFRK) -- on my computer. BlueStacks lets you install apps from the Play Store easily but BlueStacks also kind of sucks -- especially the Mac (beta) version.
 

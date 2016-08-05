@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [anime]
 ---
-{% include JB/setup %}
 
 Sometimes I start watching an anime series and it’s so good, I power through it in a few days. [Overlord][1] is the most recent anime to hook me so thoroughly I blasted through all 13 episodes in a weekend. While I could sing praises for Overlord, the very clear trend I only recently became aware of is the studio behind Overlord: **Madhouse**.
 

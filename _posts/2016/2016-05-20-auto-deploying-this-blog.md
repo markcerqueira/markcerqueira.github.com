@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [meta, technical, automation, ci]
 ---
-{% include JB/setup %}
 
 A long time ago I started **generating my site locally and pushing it up to Github manually** because Github Pages does not allow you to run custom plugins. This isn't as painful as it sounds. A friendly internet hero -- ixti -- crafted a nice Rakefile that [automated publishing][1].
 

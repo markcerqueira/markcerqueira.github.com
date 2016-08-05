@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games]
 ---
-{% include JB/setup %}
 
 Namco's Tales series has been one of the most consistent JRPG franchises. My first taste was in 2004 with Tales of Symphonia, and that was a wonderful experience. I haven't played every game in the series (there are a few duds it seems), but since Symphonia, I've thoroughly enjoyed Abyss, Vesperia, Graces, and most recently, Xillia. In a month, Tales of Xillia 2 will be released. I found Xillia to be a solid entry and the sequel is very, very well-regarded. RPG Fan has a [great preview][1] on the game; here are my main (and somewhat irreverent) takeaways. 
 

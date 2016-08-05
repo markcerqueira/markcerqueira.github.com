@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [random]
 ---
-{% include JB/setup %}
 
 Do seemingly random things ever hit unexpected places in unexpected ways?
 

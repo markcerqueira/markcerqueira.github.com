@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [android, java]
 ---
-{% include JB/setup %}
 
 Want to push and pull some **Base64** from **SharedPreferences**? You'll need to do some String to byte[] conversion to get it done. First, I (foolishly) tried using toString() on a byte[] but that won't work! The String constructor saves the day!
 

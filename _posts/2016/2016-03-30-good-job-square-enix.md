@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games, jrpg, final fantasy]
 ---
-{% include JB/setup %}
 
 Say what you will about Square Enix, but lately I think they're dishing outs lots of love.
 

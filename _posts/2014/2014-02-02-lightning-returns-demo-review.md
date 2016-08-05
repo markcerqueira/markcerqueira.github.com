@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [final fantasy, video games]
 ---
-{% include JB/setup %}
 
 I'll come right out and say it -- I'm **not** one of those people who looked at Final Fantasy XIII and saw the series coming to a cataclysmic end. Yes, the linearity of the game sucked. Yes, the story was all over the place -- to say the least. But the paradigm shift battle system was awesome and very progressive step forward for JRPG battling. And Final Fantasy XIII-2 was actually pretty good -- addressing a lot of the issues of its troubled predecessor. The story, featuring everyone's favorite plot device -- time travel -- was decent, yet suffered from that JRPG trope of being "complicated to be complicated." The ending of XIII-2 was an extremely bold one where the villain, Caius, succeeds and the protagonist, Serah, dies. Square Enix wouldn't just let the bad guy win, hence the sequel to the sequel -- **Final Fantasy XIII: Lightning Returns**.
 

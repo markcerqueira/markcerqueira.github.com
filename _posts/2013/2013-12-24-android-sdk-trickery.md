@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [android, rant]
 ---
-{% include JB/setup %}
 
 Sometimes you need to write cringe-inducing code. The other day, I was trying to figure out when the Android keyboard was present and not present. Unlike iOS, Android doesn't provide convenient ways to detect when the keyboard appears and disappears. I found a "solution" that keeps track of the size of the root view of the activity; if its display frame is smaller than the actual height of the view, a keyboard is likely present. To detect this I added a global layout listener to my root view's view tree. When I went to remove it, I ended up having to write this:
 

@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games, jrpg]
 ---
-{% include JB/setup %}
 
 <div class="float-image-right">	
   	<img class="rounded-corners" style="border: 0px;" src="/assets/images/posts/2014-02-04/ys-cover.jpg" alt="Ys: Memories of Celceta"/> 

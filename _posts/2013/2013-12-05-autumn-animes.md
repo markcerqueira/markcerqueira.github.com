@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [anime]
 ---
-{% include JB/setup %}
 
 Anime is a little known nerd interest of mine. However, I don't have time to indulge in it as much as I'd like to. Fortunately, these things can be fixed! Over the past few months, I picked out 7 films/shows and took care of some much-needed business. Here are some quick reviews with **watch** or **pass** recommendations.
 

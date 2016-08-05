@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games, jrpg, xenoblade]
 ---
-{% include JB/setup %}
 
 The first time I sat down with Xenoblade Chronicles X, I felt -- in the best way possible -- totally overwhelmed. Having spent plenty of time with the game now, I've learned a lot along the way. The game doesn't hold your hand very much so as I convince friends to take the dive into Mira, I decided to prepare a spoiler-free list of quick-start tips to help them get started.  
 

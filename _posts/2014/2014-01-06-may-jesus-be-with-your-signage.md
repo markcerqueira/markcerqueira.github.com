@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [rant]
 ---
-{% include JB/setup %}
 
 Over the holidays I dropped by the Portuguese Consulate in Newark, NJ to take care of some top secret diplomatic business. An engineer by trade, I secretly harbor an anal-retentive designer in the depths of my heart. While waiting to take care of some important business, I peered over at the welcome signage and cried out in pain.
 

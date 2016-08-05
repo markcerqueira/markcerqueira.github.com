@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [technical]
 ---
-{% include JB/setup %}
 
 <div class="float-image-right">	
   	<img style="border: 0px;" src="/assets/images/posts/2014-04-22/heartbleed.png"/> 

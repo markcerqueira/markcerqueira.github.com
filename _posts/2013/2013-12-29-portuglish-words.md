@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [portuguese]
 ---
-{% include JB/setup %}
 
 Visiting home, where Portuguese is the dominant language, I am constantly reminded of my deteriorating command of my native tongue. Yet today, I realized that there are words my Portuguese-American family uses that would probably leave my relatives living in Portugal pretty perplexed. These are bastard words: born out of an unholy union between English and Portuguese. I bet most Luso-Americans will know what these words mean, but most Portuguese people will just give you strange looks if you drop one of these gems around them. Here is a small (and very casual) ethnographic look at some uniquely Portuglish words. 
 

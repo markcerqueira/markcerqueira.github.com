@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [tabletop]
 ---
-{% include JB/setup %}
 
 I've recently begun exploring **tabletop gaming** and I'm happy to report my journey so far has been thoroughly enjoyable! Here are two games (one board and one card) that I'm currently hooked on.
 

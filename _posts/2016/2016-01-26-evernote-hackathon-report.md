@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [evernote, technical, food]
 ---
-{% include JB/setup %}
 
 **Evernote's first hackathon is complete!** Evernoters took the week to work on some really awesome projects. My project was pretty simple, but satisfied a critical need: building a system for people to quickly give feedback on their meal. Evernote has catering bring in delicious food for us to enjoy five days a week. When the facilities team tries out new caterers, they want to know what Evernoters think about the meals. This project allowed feedback to easily be given, collected, and reviewed.
 

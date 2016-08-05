@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [tabletop, technical]
 ---
-{% include JB/setup %}
 
 **Codenames** is an incredibly fun, deep, and addicting tabletop game. The game revolves around a 5 x 5 grid of words. Two teams race to pick out the eight (or nine if you go first) words that belong to your team. Two spymasters give their teams one-word clues that will hopefully guide their teammates to their respective words on a 5 x 5 board. Clues that let teams pick more words correctly are better. The first team to get all their words win!
 

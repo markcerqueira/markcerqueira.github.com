@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [java, android]
 ---
-{% include JB/setup %}
 
 Sometimes you think you know a programming language really well. When I first looked at the Java code below, I thought there was **NO WAY** this code could compile.
 

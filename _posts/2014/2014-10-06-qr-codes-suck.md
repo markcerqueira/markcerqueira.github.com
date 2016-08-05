@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [user experience, rant]
 ---
-{% include JB/setup %}
 
 It could always get better, but as things stand right now, QR codes suck. Here's my most recent **GOD-AWFUL experience with QR codes**. I was at my favorite bubble tea place in the world: ShareTea in San Mateo. While waiting for my drink to be brought down from heaven by angels, I saw a sign posted on the wall.
 

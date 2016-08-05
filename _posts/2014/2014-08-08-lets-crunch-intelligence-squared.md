@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [random]
 ---
-{% include JB/setup %}
 
 **Intelligence Squared US** is a cool debate series I listen to on NPR every so often. Debate topics include "Death Is Not Final" and "Russia Is A Marginal Power." Debates feature two sides: one for the motion and one against the motion.
 

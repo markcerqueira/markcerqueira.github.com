@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [starcraft, video games]
 ---
-{% include JB/setup %}
 
 Spencer and I celebrate an important achievement today: we **maxed out all the heroes in Starcraft's cooperative mode**. 
 

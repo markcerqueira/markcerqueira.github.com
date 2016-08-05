@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [rant, technical]
 ---
-{% include JB/setup %}
 
 It all started with a **clearly unassuming** instant message.
 

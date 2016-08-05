@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [kickstarter]
 ---
-{% include JB/setup %}
 
 Earlier this month, I did an audit of all the Kickstarter projects I backed. I found four projects to be extremely behind schedule with posting updates. 
 

@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games, final fantasy, technical]
 ---
-{% include JB/setup %}
 
 **Final Fantasy Type-0** was originally released in Japan for the PSP in 2011. Four years later, an enhanced HD port made its way to the rest of the world. I've played through the game. Aside from the vestiges of the PSP that could not be fixed (bad camera, small areas, low-quality NPC sprites) the game is great. The battle system is fun, fast, and action-packed. The music -- by Takeharu Ishimoto -- is AWESOME! And if you exclude the conclusion, the story is pretty coherent for a Final Fantasy game. 
 

@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [technical]
 ---
-{% include JB/setup %}
 
 
 <p style="margin-bottom: 8px;">We're drowning in email. Good people look like terrible people when they can't keep afloat when hit by wave after relentless wave of email. Everyone has a strategy for dealing with email. Some people just don't care, and getting a timely reply (or a reply at all) from them is a matter of luck. Some people, like robots, manage email with a furious efficiency. I like to believe I've come up with a halfway decent strategy to managing email. Generally, my strategy has two goals:</p>

@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [user experience, food]
 ---
-{% include JB/setup %}
 
 This past August, Verizon reworked their wireless data plan offerings. Here's how they sold them. 
 

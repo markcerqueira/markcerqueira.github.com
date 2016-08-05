@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [japan, travel, fitness, running]
 ---
-{% include JB/setup %}
 
 I'm heading home today. I did and saw a lot in Japan. One thing I'm really happy I did in Japan was **run**.
 

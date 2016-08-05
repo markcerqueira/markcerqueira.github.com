@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [android]
 ---
-{% include JB/setup %}
 
 <style media="screen" type="text/css">
 

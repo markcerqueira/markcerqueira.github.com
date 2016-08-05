@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [fitness, running]
 ---
-{% include JB/setup %}
 
 Today is [Global Running Day][1]. I'm a huge fan of running. My four mile runs every weekday wake me up physically (and mentally) and are the cornerstone to a great day.
 

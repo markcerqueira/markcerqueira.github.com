@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [fitness]
 ---
-{% include JB/setup %}
 
 Rewind to roughly a year ago. It's May 2014. Everything was going well with marathon training for the 2014 San Francisco Marathon I was planning to run in July. I was increasing my mileage into the 18 mile range and feeling good. **But then I got runner's knee.** And I ended up not running the marathon. I stopped running both to recover and because when I did attempt to run, something felt off in my knee. My monthly running competitions with friends (highlighted on my [Fitness][1] page) also came to and end. It sucked.
 

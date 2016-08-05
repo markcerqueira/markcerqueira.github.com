@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [rant]
 ---
-{% include JB/setup %}
 
 When I first discovered Android's "Don't keep activities" developer option, I jumped for nerd joy. You're telling me I can force the Android operating system to be aggressive and destroy my activities every time I leave them? YES PLEASE. The end result is defensive code that will work better in low-memory situations. Getting all your activities destroyed as soon you leave them likely won't happen under normal circumstances (more likely to happen on cheaper, low memory devices). But it's always better to be safe than sorry, especially when you want to keep your customers happy and engaged with your product.
 

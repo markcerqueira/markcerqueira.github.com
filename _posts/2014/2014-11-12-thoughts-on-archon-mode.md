@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games, starcraft]
 ---
-{% include JB/setup %}
 
 This past weekend, Blizzard unveiled the final chapter in the StarCraft 2 trilogy: Legacy of the Void. Naturally, a lot of attention has been paid to the slew of additions and changes to the multiplayer compositions for each race, but one of the cooler announcements was the unveiling of **Archon Mode**. Like two High Templars joining to form a single formidable Archon, in Archon Mode, two players control a single base/army and battle a single foe. 
 

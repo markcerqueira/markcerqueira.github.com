@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games, music review, final fantasy]
 ---
-{% include JB/setup %}
 
 <div class="float-image-right">	
   	<img class="rounded-corners" src="/assets/images/posts/2013-07-28/logo.jpg" alt="Video Games Live"/> 

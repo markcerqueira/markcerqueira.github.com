@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games, jrpg, xenoblade]
 ---
-{% include JB/setup %}
 
 Today marks the beginning of a difficult and trying time in my life.
 

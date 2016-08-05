@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [ci, android]
 ---
-{% include JB/setup %}
 
 At Smule, we use a single node to run Jenkins for our Android projects. When building our projects that rely on both the SDK and NDK tools, we defined SDK_DIR and NDK_DIR as global environmental variables. But what happens when the tools are updated? In 2012, Google released [5 major updates](http://developer.android.com/tools/sdk/tools-notes.html) to its Android SDK tools and [6 revisions](http://developer.android.com/tools/sdk/ndk/index.html#Revisions) to its NDK toolset. Synchronizing a single team to upgrade is relatively straightforward. But when coordinating different teams that may be in different phases of a release cycle, a smooth transition is oftentimes difficult to achieve. Furthermore, if we upgrade the tools and later need to build an older tag, we are not recreating the build as it truly was, since the tools are now upgraded.
 

@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [technical]
 ---
-{% include JB/setup %}
 
 In our rapidly technologizing world, staying secure means adapting to novel threats. Staying safe isn't difficult. A little effort here and there will keep you out of a lot of trouble. Here are some basic computer security tips.
 

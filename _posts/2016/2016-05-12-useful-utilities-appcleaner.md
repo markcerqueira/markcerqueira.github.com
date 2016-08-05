@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [technical, mac]
 ---
-{% include JB/setup %}
 
 Deleting Mac apps is pretty simple: drag the application into the Trash. But most apps leave behind some (or a lot) of preference files, caches, and launch daemon configurations. These leftovers don't harm your system or impact system performance, but you don't really need them either. There are a ton of uninstall utilities, but my favorite is **AppCleaner** because it's **free** and **powerful**.
 

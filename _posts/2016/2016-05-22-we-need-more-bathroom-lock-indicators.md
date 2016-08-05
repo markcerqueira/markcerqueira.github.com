@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [user experience, random]
 ---
-{% include JB/setup %}
 
 When I was a child the future had flying cars. But as I exit my extended stay in childhood, all I want from the future is the **proliferation of bathroom indicator locks**. Approaching a bathroom unsure if someone is using it is very awkward. Give the knob a firm turn and you're horrified to find it locked! The person inside the bathroom is equally uncomfortable. You didn't mean to invade their space, but you did. Why!? There wasn't an indicator to let you know if the door was locked or unlocked. It's a terrible experience for everyone involved. 
 

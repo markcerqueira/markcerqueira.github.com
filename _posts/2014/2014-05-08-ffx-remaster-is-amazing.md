@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [final fantasy, video games]
 ---
-{% include JB/setup %}
 
 <div class="float-image-right">	
   	<img style="border: 0px;" src="/assets/images/posts/2014-05-08/ffx-hd.jpg"/> 

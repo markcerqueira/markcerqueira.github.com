@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [evernote, java]
 ---
-{% include JB/setup %}
 
 Evernote was recently featured on a Glassdoor blog post titled [Top 20 Employee Benefits & Perks][1]. Evernote got on this list because of **Evernote Academy**: a range of courses offered to employees with some taught by employees themselves. Here's an insider perspective on both leading and taking an Evernote Academy course. 
 

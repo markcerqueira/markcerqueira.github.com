@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [java, technical]
 ---
-{% include JB/setup %}
 
 The other day I was digging through some email and found an email thread with fabulous AP Computer Science teacher, Mr. Gironda. The attachments? My very first submitted programming assignment in Java. Fun fact: we called these assignments programming projects or **PPs**.
 

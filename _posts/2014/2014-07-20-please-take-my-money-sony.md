@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [rant]
 ---
-{% include JB/setup %}
 
 Man, I can't believe I'm saying this but **SONY, PLEASE TAKE MY MONEY**. I was just trying to buy some video games in the PlayStation Store. When I was adding funds to my account, I kept getting an error when inputting my credit card details: "please enter a valid credit card number." Double-checked the number, the expiration date, the security code, and name on the credit card and tried again. **ERROR**. Double-checked my billing address. **ERROR**. What's going on, Sony!?
 

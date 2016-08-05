@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [linkedin, user experience]
 ---
-{% include JB/setup %}
 
 I was browsing LinkedIn the other day on my iPhone. I opened up the navigation menu and I clicked on **Try Premium for free** because for some weird reason I was drawn to it. Totally **unrelated** observation: it's the only menu item with a colored icon. In we go!
 

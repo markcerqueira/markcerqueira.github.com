@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [android, java]
 ---
-{% include JB/setup %}
 
 It's always pleasant to learn something new about a language you've been using for a while. Turns out when you declare a try block, **you don't need a catch block**. You ALWAYS need a catch OR a finally block, but the catch block is not required if you have a finally block. This is valid Java:
 

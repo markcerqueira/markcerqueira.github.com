@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games, music review, final fantasy]
 ---
-{% include JB/setup %}
 
 It's quite a sight to behold seeing Davies Symphony Hall packed (2,743 seats!) for a music concert centered around video game music. But when you are talking about one of the most iconic game series -- Final Fantasy -- with some of the most beloved soundtracks, it all kind of makes sense. Attending **Final Symphony: Music from Final Fantasy VI, VII, and X**, I expected to hear a beautiful homage to some of the most popular games in the series. While the San Francisco Symphony put on an absolutely spectacular show, I left the concert feeling very **underwhelmed**. 
 

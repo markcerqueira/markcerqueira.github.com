@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games, final fantasy, technical]
 ---
-{% include JB/setup %}
 
 <div class="float-image-right">	
   	<img style="border: 0px;" src="/assets/images/posts/2015-04-18/ffrk.png" alt="Final Fantasy Record Keeper"/> 

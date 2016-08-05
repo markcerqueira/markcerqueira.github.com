@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [food, portuguese, travel]
 ---
-{% include JB/setup %}
 
 It's been five years since I was last in Portugal. One thing I was excited about (besides seeing family) was eating a **francesinha**: the ultimate sandwich. This is a francesinha.
 

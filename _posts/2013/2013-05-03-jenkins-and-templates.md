@@ -5,26 +5,6 @@ description: ""
 category: 
 tags: [ci]
 ---
-{% include JB/setup %}
-
-<style media="screen" type="text/css">
-
-img.rounded-corners {
-	margin-bottom: 2px;
-	border: 6px solid #666666;
-	-moz-border-radius: 7px;
-	-webkit-border-radius: 7px;
-	border-radius: 7px;
-	max-width: 800px
-}
-
-p.caption-text {
-	text-align: center;
-	font-weight: 400;
-	font-size: 0.8em;
-}
-
-</style>
 
 At Smule, we use Jenkins build servers for our iOS and Android projects. Along the way, we have learned a lot and continue to learn and improve our build system.Changing anything in Jenkins could be viewed as a double-edged sword. Awesome changes make things better, but when you have (in our case) tens or more jobs per project for different combinations of branches/environments/configurations, applying these changes involves a lot of copy-and-paste. The standard Jenkins installation does not provide any serious power in helping to abstract out shared logic into reusable chunks that have fewer points of maintenance. 
 

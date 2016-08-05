@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games, final fantasy]
 ---
-{% include JB/setup %}
 
 <div class="float-image-right">	
   	<img class="rounded-corners" src="/assets/images/posts/2013-09-04/arr-logo.jpg" alt="A Realm Reborn"/> 

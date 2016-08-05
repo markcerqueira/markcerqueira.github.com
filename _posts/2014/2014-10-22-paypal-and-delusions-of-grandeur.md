@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [paypal, rant]
 ---
-{% include JB/setup %}
 
 **tl;dr - PayPal thinks they're awesome, but I still think they suck.**
 

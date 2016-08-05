@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [technical, ios, rant]
 ---
-{% include JB/setup %}
 
 I'm sad to say my wildest WWDC fantasy did not come true last week. After Tim Cook and team unveiled a slew of new APIs, a new programming language, OS X Yosemite, and iOS 8, which includes [a new, cooler keyboard][1], I was hoping the time of reckoning was upon us. Alas, I was wrong. **iOS 8 does not fix the keyboard's shift key.**
 

@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [user experience]
 ---
-{% include JB/setup %}
 
 Indiegogo recently updated the design of their webpage. As with any change, people have opinions and I've got some myself.
 

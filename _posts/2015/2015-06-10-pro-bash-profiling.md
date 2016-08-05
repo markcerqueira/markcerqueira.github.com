@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [technical]
 ---
-{% include JB/setup %}
 
 My Bash profile is critical to keeping me **elite** on the command-line. Keeping myself elite across multiple computers is also very easy with Dropbox (or your file syncing service du jour). Then I create a very, very simple .bash_profile that looks like this:
 

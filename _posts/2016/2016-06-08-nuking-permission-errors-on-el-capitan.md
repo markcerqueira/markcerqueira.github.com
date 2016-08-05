@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [mac]
 ---
-{% include JB/setup %}
 
 I have a home server running El Capitan (10.11.5). The other day when a cron job failed to send out some emails, I took a look and was **horrified** to find my Desktop folder (yes, I have my source code folder on the Desktop) had its **permissions totally borked**.
 

@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [japan, travel]
 ---
-{% include JB/setup %}
 
 こんにちは (Konnichiwa, Hello)! It's been nearly a week since I arrived in Japan and it's been a blast so far. I'm spending this week and next working (and eating) at the Evernote office in Minato-ku, Tokyo. The following two weeks I will be taking some time off to explore Japan and watch the 16th World Kendo Championships!
 

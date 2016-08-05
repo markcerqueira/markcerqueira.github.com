@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [cooking, sous vide, food, bread, automation]
 ---
-{% include JB/setup %}
 
 Today, [2016's automation resolution][1] takes a step forward... in the kitchen! My friend Spencer was visiting from LA and I wanted to flex my cooking muscle. Turns out, I didn't have to do much work myself because the **meal was prepared mostly automatically** with the rather impressive collection of kitchen appliances!
 

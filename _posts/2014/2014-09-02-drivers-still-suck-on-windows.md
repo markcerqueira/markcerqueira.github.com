@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [rant, technical]
 ---
-{% include JB/setup %}
 
 It's been a while since I used a Windows machine. While I do virtualize sometimes to run Windows-only software, I haven't considered myself a Windows user since the summer of 2006 when I switched to a Mac. It's been a while since I had to work with a Windows machine, but some things never change: **driver installation is still a harrowing experience on Windows**.
 

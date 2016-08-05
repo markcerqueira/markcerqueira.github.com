@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [technical, java, euler]
 ---
-{% include JB/setup %}
 
 Last Thursday I was browsing a coworker's repositories on GitHub and noticed one inconspicuously called **euler**. And that's how I discovered [Project Euler][1]! The website describes the project as "a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve."
 

@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [food, portuguese]
 ---
-{% include JB/setup %}
 
 Your grandma is usually the best cook you know. My grandma, at least, is definitely the best cook I know. Funnily enough, if we're friends, my grandma is also likely to be *your* favorite cook. This past holiday season, I shadowed my grandma while she prepared a traditional Portuguese holiday dessert: rabanadas. I always tell my non-Portuguese friends that it's similar to French Toast.
 

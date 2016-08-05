@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [android]
 ---
-{% include JB/setup %}
 
 In March 2012, the first major update to the JSON processing library, Jackson, was released. Smule's Android team uses Jackson for manipulating JSON, but until recently, we were using version 1.9. While version 1.9 worked perfectly fine, I took some time to get us on the latest and greatest Jackson has to offer. The upgrade to 2.0 is not as trivial as swapping JAR files, so here are some tips for a successful upgrade.
 

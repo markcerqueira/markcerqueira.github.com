@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [technical]
 ---
-{% include JB/setup %}
 
 The new Facebook Slingshot app is like SnapChat with a twist: you can only see a photo or video someone has sent if you if send them something back first. It's pretty cool. I'm not here to wax poetic about the potential merits of the "send me content back or you can't see what I sent you" mechanic, but I do get slightly irked when I take all of **5 seconds** to craft a crappy SnapChat only to NEVER hear back from the poor sap who wasted 10 seconds looking at it. 
 

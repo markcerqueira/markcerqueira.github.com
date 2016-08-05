@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games, jrpg, xenoblade]
 ---
-{% include JB/setup %}
 
 It's finally here! After waiting for what's seemed like an eternity -- from the [reveal trailer][1] in early 2013 -- **Xenoblade Chronicles X** for the Wii U has finally landed on North American shores.
 

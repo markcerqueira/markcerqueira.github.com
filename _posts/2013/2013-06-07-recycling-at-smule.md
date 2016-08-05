@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [smule]
 ---
-{% include JB/setup %}
 
 At Smule, we organize a brown bag lunch/seminar every month to enrich and enhance our collective awesomeness. Sometimes we have team members share their unique talents and other times we have guests visit. Since October 2012 we have had a tea ceremony, a photoshop tutorial, a seminar on all things bicycles, a ukulele workshop (turns out I'm a terrible ukulele player), a juggling workshop, a professional cycling workshop led by Matt Johnson (President of the pro cycling team Garmin/Sharp) and an epic keyboard workshop with Jordan Rudess of the progressive metal band Dream Theater. This past Friday, we had an Earth Conscious Workshop led by Heidi from [Recology](http://www.recology.com/) who led an awesome presentation about the importance of recycling.
 	

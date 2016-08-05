@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games, jrpg]
 ---
-{% include JB/setup %}
 
 <div class="float-image-right">	
   	<img src="/assets/images/posts/2013-07-23/smt_4.jpg" alt="Shin Megami Tensei IV Box Art"/> 

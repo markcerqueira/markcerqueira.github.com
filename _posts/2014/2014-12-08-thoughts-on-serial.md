@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [random]
 ---
-{% include JB/setup %}
 
 <div class="float-image-right">	
   	<img style="border: 0px;" src="/assets/images/posts/2014-12-08/serial-logo.png" alt="Serial"/> 

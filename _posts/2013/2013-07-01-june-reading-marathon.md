@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [books]
 ---
-{% include JB/setup %}
 
 While in college, the time I spent reading for pleasure tapered off. Unfortunately, it never really picked back up. This made me sad given there are such great books, both old and new, out there. I reddit a little (a lot) and the redditors over at [r/books](http://www.reddit.com/r/books) and [r/scifi](http://www.reddit.com/r/scifi) are always recommending great books. So in June I made a concerted effort to spend more time reading. While the previous books I've read over the past year were all science fiction, I tried to vary up the genres of books this time. Now that June has flown by, here are the books I read and my thoughts on them.
 

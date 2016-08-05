@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [technical]
 ---
-{% include JB/setup %}
 
 **tl;dr** - If you keep your iTunes library in Dropbox, it's all sunshine and rainbows until you realize Dropbox is syncing iTunes Library.itl and iTunes Library.xml after EVERY song play or skip. 
 

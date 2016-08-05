@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games]
 ---
-{% include JB/setup %}
 
 My friends and I played a lot (understatement) of Mario Kart: Double Dash!! for the GameCube in college. My dashers-in-crime, RW (ringleader of the big band [Urban Renewal Productions][1]) and Theo (prisoner of war at UChicago's PhD program) took this game **seriously**. We got into fights over blue shells and talked a lot about what we wanted for the future of the series. DLC was one thing we all thought would be great for the series. Sixteen stages was nice and satisfied the "we only release complete games and that's why we don't do DLC" mantra that Nintendo lives by, but honestly none of us took issue with the idea of forking over money to download more stages to play.
 

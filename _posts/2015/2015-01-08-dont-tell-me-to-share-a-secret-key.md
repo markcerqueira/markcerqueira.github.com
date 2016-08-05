@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [rant, technical]
 ---
-{% include JB/setup %}
 
 My friend Spencer asked me if I could beta test Mini Audicle for iOS. I agreed and asked him if he had any performance monitoring tools set up. Long story short, I ended up integrating **Crittercism** (my favorite crash monitoring tool) into Mini Audicle iOS so he could collect crash data from every user. 
 

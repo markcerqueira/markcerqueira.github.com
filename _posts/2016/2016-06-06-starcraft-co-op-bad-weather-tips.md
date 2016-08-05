@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [starcraft, video games]
 ---
-{% include JB/setup %}
 
 In a recent update to the cooperative (co-op) game mode in StarCraft 2, Blizzard introduced **mutation challenges**. Mutations change every week and take an existing mission and add mutations to it. Mutations are essentially handicaps like reduced vision for your units, enemy speed increased, and other things that generally make the mission more difficult. 
 

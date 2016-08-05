@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [japan, food]
 ---
-{% include JB/setup %}
 
 During my visit to South Korea in 2013, I discovered the Korean bakery Tous les Jours and their wonderfully amazing THE+ Milk Bread. But I think I found a new pastry to claim the title of **Mark's Favorite Baked Thing**! How did this fortuitous discovery happen?
 

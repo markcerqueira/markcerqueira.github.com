@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games]
 ---
-{% include JB/setup %}
 
 <div class="float-image-right">	
   	<img class="rounded-corners" src="/assets/images/posts/2014-06-08/heroes_logo.jpg"/> 

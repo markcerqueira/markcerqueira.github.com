@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [starcraft]
 ---
-{% include JB/setup %}
 
 <p style="margin-bottom: 8px;">GOM eXP -- the company that hosts Korea's StarCraft World Championship Series -- challenged fans to <b>guess which players Artosis and Tasteless predicted to win the tournament</b>. Here's what they told us:</p>
 

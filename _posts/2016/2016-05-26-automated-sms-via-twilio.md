@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [technical, java, automation]
 ---
-{% include JB/setup %}
 
 A couple of weeks ago I wrote a simple email reminder program that pulled events from Google Calendar and then notified people about it with an email sent via the Gmail API. You can read more about the why and how in [that post][1].
 

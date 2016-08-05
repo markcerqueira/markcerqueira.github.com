@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [fitness]
 ---
-{% include JB/setup %}
 
 I **used** to be really fat. At my worst, I weighed 255 pounds and my doctor was telling me I should do something about my high cholesterol and high blood pressure -- an indirect way of telling me I'm a fat ass. And then I did something about it. Today, I've lost a third of my former self, have the blood pressure of an athlete, and my doctor can finally stop looking for medical euphemisms for "fat ass."
 

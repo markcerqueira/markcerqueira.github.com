@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [rant]
 ---
-{% include JB/setup %}
 
 Today, Apple unveiled new iPads. This included an update to the iPad Mini: the iPad Mini 3. The older iPad Mini 2 got a $100 price cut too. Now, let's play a game. One year after the iPad Mini 2 was released, what's new in the iPad Mini 3? Here is a picture compiled from the comparison chart Apple provides on its site.
 

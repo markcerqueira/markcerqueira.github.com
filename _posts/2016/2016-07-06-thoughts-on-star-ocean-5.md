@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games, jrpg]
 ---
-{% include JB/setup %}
 
 A week after its release, I beat **Star Ocean Integrity and Faithlessness** a.k.a. Star Ocean 5. Here are some of my thoughts on the game.
 

@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [random]
 ---
-{% include JB/setup %}
 
 It's been a three-month journey, but today, I (slowly) said goodbye to a dear friend. 
 

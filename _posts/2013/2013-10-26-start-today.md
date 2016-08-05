@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [fitness, running]
 ---
-{% include JB/setup %}
 
 <div>
 	<img class="rounded-corners" style="max-width: 480px; border: 0px; margin-bottom: 10px;" src="/assets/images/posts/2013-10-26/marathon.png"/>

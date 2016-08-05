@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [android]
 ---
-{% include JB/setup %}
 
 The recommended way of building a Settings screen in Android is to define preferences in an XML file and then load that file in a PreferenceActivity or PreferenceFragment. But that only works if you know all your preferences at compile-time. And sometimes we don't know them. Sometimes, we want to be a little more flexible with preference loading. 
 

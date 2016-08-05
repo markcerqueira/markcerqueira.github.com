@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [paypal, rant]
 ---
-{% include JB/setup %}
 
 It's about DAMN time! PayPal has FINALLY added support for two-factor authentication in their iOS app.
 

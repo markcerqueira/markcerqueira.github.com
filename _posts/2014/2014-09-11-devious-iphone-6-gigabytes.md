@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [ios]
 ---
-{% include JB/setup %}
 
 Storage capacities. That's the deviously smart thing about the new iPhone 6 and larger-than-life iPhone 6 Plus.
 

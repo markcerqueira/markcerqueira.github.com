@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [cooking, sous vide, food]
 ---
-{% include JB/setup %}
 
 Sous vide is the ~~hot~~ ~~cool~~ warm new way to cook things. French for "under vacuum," sous vide takes the guesswork out of cooking: simply grab the meat, vacuum seal it, throw it in a water bath, and wait. Give it some time and boom! Your meat is perfectly cooked!
 

@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [technical, mac, android]
 ---
-{% include JB/setup %}
 
 I've been a big fan of the [Alfred][1] productivity app for a while now. It's like Mac's built-in Spotlight but more feature-rich and more extendable. I'm a big fan of the clipboard history feature: it preserves all the text you copy and lets you paste from a list of **all** the text you previously copied. The tyranny of losing what you copied after hitting cmd+c is over! Alfred is highly customizable and I'll readily admit I don't take advantage of all it has to offer. 
 

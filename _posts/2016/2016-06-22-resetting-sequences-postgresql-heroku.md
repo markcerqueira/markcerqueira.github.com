@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [technical]
 ---
-{% include JB/setup %}
 
 Today [Glatering][1] -- a world-class Rails app with a Postgres database I'm running on Heroku -- kicked the bucket! Time to debug... To the Heroku logs!
 

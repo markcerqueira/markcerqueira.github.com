@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [bbq pork buns, food]
 ---
-{% include JB/setup %}
 
 In July of 2013, some friends and I went on a [BBQ Pork Bun crawl in SF][1]. It was great because I was able to indulge my addiction to pork buns while at the same time offering reviews of several pork bun establishments -- for the public good, of course. Very recently, I have discovered the frozen foods section at a local Chinese grocery store, which stocks a ton of frozen pork buns. I grabbed every package of bun, took them home, and stuffed them in my freezer. Instead of crawling the foggy city, I crawled my freezer in search of the best pork buns in the bunch. Off we go!
 
@@ -16,7 +15,7 @@ In July of 2013, some friends and I went on a [BBQ Pork Bun crawl in SF][1]. It 
 
 <!--break-->
 
-Eight different types (7 steamed, 1 baked) of pork buns were purchased from Marina Foods in San Mateo. Between all the buns, two companies were represented: Myriad Foods (2 buns) and Prime Foods (6 buns). Each bun was judged on a scale of 1 (bad) to 3 (great) in two different categories: taste of the meat, and taste of the bread. Note that personal preference plays a large role when it comes to judging a pork bun because there is no single ideal way to make a pork bun. For example, some people (me) prefer their meat sweeter, while others (Alyce) enjoy their buns more savory. We both tasted each of the eight buns and talked through our feelings, arriving at the following results:
+Eight different types (7 steamed, 1 baked) of pork buns were purchased from Marina Foods in San Mateo. Between all the buns, two companies were represented: Myriad Foods (2 buns) and Prime Foods (6 buns). Each bun was judged on a scale of 1 (bad) to 3 (great) in two different categories: taste of the meat, and taste of the bread. Note that personal preference plays a large role when it comes to judging a pork bun because there is no single ideal way to make a pork bun. For example, some people prefer their meat sweeter, while others enjoy their buns more savory. We both tasted each of the eight buns and talked through our feelings, arriving at the following results:
 
 <div style="margin-left: 40px;">
 <table style="margin-bottom: 1em; min-width: 700px;">

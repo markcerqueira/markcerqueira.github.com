@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [android]
 ---
-{% include JB/setup %}
 
 At Smule, we use the [Jackson library](http://wiki.fasterxml.com/JacksonHome) for our JSON parsing. Marshaling JSON into corresponding model objects is elegant and easy with Jackson and makes code much more readable. Here are some tips for those considering using Jackson for their marshaling.
 

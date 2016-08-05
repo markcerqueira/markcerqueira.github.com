@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [android]
 ---
-{% include JB/setup %}
 
 We recently added [Android Annotations](http://androidannotations.org/) to the Sing Karaoke Android project. Using the annotations has been awesome so far, but it did present an interesting issue when it came to compiling and bundling the proper library in our Ant build script.
 

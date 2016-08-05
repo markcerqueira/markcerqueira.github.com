@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [meta, technical]
 ---
-{% include JB/setup %}
 
 I build my blog with [Jekyll][2] and I love it. But **I dread any time I accidentally update the Jekyll gem**. Everything breaks and it takes a lot of trial-and-error to get things working again. It doesn't help that I'm a noob at Ruby, RubyGems, and the internal workings of Jekyll. 
 

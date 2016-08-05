@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games, final fantasy]
 ---
-{% include JB/setup %}
 
 The editors at Game Informer recently did a feature series on games they'd spent a huge amount of time playing: **time sinks**. The games ranged from new games like Minecraft to classics like Pokémon Red and The Legend of Zelda: Ocarina of Time. I'll unabashedly admit that I have spent an obscene amount of time playing video games. This shouldn't come as a surprise considering my favorite genre is Japanese RPGs (JRPGs), which usually take at least 20 hours to get through the main storyline. I put 122 hours into Xenoblade Chronicles (Wii) and 60+ hours into Dragon Quest IX (DS) and Valkyrie Profile(PSX). But there is one JRPG on the Playstation 2 that I played for a staggering **227 hours**!
 

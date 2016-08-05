@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [ruby, technical]
 ---
-{% include JB/setup %}
 
 Work on the Ruby and Sinatra project continues and this weekend I worked on creating a helper method for sending emails so I can have users confirm the emails they used to register. I wanted to send emails from a mailbox I set up on a custom domain I'm hosting with DreamHost. I created a mailbox on DreamHost's admin panel and with the [mail][1] Ruby gem it was pretty straightforward to get emails sent.
 

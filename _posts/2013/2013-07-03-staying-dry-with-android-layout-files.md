@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [android]
 ---
-{% include JB/setup %}
 
 There are countless Android device types out there. The Android OS can load resources based on a device's screen size and pixel density. This is useful when you want different user experiences for larger tablets versus a smaller handset. The system works as intended, but what if you want the exact same layout with a few minor tweaks? Maybe you want a list item to be 40% taller on tablets, or maybe you want less padding around an image on smaller devices. Google provides thorough documentation on [supporting multiple screen sizes][1], but does not offer an elegant solution for tweaking layouts across device sizes. You could support multiple layout files for different classes of devices, but that's a pain to maintain given the minor differences across layout files. Fortunately, there is a way to stay DRY (don't repeat yourself) with your layout files!
 

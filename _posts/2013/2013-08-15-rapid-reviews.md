@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games]
 ---
-{% include JB/setup %}
 
 It's been a busy month filled with work, kendo, eating, exercising, a Spartan race, and of course plenty of video gaming. The past month has been extremely generous with releases on both console and especially handheld platforms. So far, there has been a mix of hits and duds. Here are some rapid reviews of the games I have checked out over the past few weeks. 
 

@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games, xenoblade, jrpg]
 ---
-{% include JB/setup %}
 
 A recent slew of announcements by Nintendo are tugging me in all sorts of directions.
 

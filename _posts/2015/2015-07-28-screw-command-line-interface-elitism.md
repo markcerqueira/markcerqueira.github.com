@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [technical, rant]
 ---
-{% include JB/setup %}
 
 <style media="screen" type="text/css">
 

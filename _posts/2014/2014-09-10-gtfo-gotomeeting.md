@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [rant, technical]
 ---
-{% include JB/setup %}
 
 A few days ago, I dragged three different versions of GoToMeeting from my Applications folder to the trash. A few days later, I found myself deleting the same three copies of GoToMeeting  **again**. How did GoToMeeting reinstall itself? A few tweets to the helpful person behind @GoToMeeting confirmed my worst fears...
 

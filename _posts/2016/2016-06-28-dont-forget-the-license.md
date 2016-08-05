@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [technical]
 ---
-{% include JB/setup %}
 
 If you write some code and want to share it with the world, **don't forget to add a license**! Posting code on a public repository on GitHub and allowing people to incorporate that code into their own products are not one and the same. So add a license please!
 

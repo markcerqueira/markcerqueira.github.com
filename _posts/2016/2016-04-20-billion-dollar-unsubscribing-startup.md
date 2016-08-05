@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [rant]
 ---
-{% include JB/setup %}
 
 Need a billion dollar idea for your startup? Solve this problem.
 

@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [paypal, technical, rant]
 ---
-{% include JB/setup %}
 
 This week, Apple announced that Touch ID APIs would be available for use by third party developers. These new APIs allow developers to use the fingerprint identity sensor to authenticate users. Curiously enough, Paypal has come forward to inform us that their developers attended a session on integrating Touch ID into their app. A source at Paypal is quoted saying, "It seems to be a fairly easy API to use, but we're still kicking the tires" in a Business Insider article.<sup>1</sup>
 

@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games]
 ---
-{% include JB/setup %}
 
 Whether you consider video games a means of entertainment or a work of art, video games are consumable goods. Normally, we think of consumers as active gamers. However, since the advent of video gaming, there has been another way to consume video games: **passively**.
 

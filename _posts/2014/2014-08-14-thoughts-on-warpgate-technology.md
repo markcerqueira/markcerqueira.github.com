@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [starcraft]
 ---
-{% include JB/setup %}
 
 Warp Gate Technology is the biggest must-have upgrade in all of StarCraft. For 50 minerals and 50 gas, you can convert your Gateways into Warpgates. This allows you to rapidly (in 5 seconds) warp in units ANYWHERE you have pylon coverage. It also reduces the overall time it takes to build units; Zealots can be warped in every 28 seconds, whereas Warpgates take 38 seconds to build one. Unless you're Zealot-rushing or going mass Air Toss, there really is no good reason to avoid researching Warp Gate Technology. Warpgates are simply better in every single way compared to Gateways.
 

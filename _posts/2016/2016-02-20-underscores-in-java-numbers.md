@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [android, java]
 ---
-{% include JB/setup %}
 
 Following [variable shadowing][1] and [catch-less try blocks][2], today we explore another cool little Java thing I learned about the other day: underscores in Java numeric literals.
 

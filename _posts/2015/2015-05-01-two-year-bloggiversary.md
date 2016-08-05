@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [meta]
 ---
-{% include JB/setup %}
 
 One year ago I celebrated [my first bloggiversary][1]. And now -- one year later -- here we are at the two year bloggiversary! It was a busy year for the blog with **58 posts written** and over **13 thousand pageviews**!
 

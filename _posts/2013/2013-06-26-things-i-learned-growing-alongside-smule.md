@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [smule]
 ---
-{% include JB/setup %}
 
 Boy, does time fly... My three year anniversary at Smule is quickly approaching! I started at Smule right after college, and both Smule and I have grown a lot since then. From 3 years ago to today; 18 team members grew to 60+; we now develop for iOS and Android; switched from SVN to git; from waterfall to Scrum; from Lighthouse to Pivotal to JIRA; grew from a team relying on scant documentation to one utilizing a comprehensive wiki. Overall, Smule and I have become better and a tad bit smarter at what we do. I feel like I've learned a lot, and even picked up a controversial opinion or two! Here is a selection of observations, thoughts, and opinions I picked up growing alongside Smule.
 

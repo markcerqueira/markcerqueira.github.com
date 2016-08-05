@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [food, bay area, bbq pork buns]
 ---
-{% include JB/setup %}
 
 On July 4th, I celebrated my homeland's birthday by embarking on a search with friends for the very best pork bun... Welcome to the BBQ Pork Bun Crawl - San Francisco Edition! BBQ pork buns (叉烧包, char siu bao) are Cantonese-style buns filled with barbecue pork -- They are also absolutely delicious! Yelp reviews and Google searches were inconclusive when it came to determining where to find the best pork buns, so we took to the streets of San Francisco to find out for ourselves.
 

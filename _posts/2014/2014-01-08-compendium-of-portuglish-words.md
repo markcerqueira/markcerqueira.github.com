@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [portuguese]
 ---
-{% include JB/setup %}
 
 Earlier this week, I wrote about [bastard words created by mixing English and Portuguese][1]. I only thought of a few, but after putting my shortlist out there, a ton of people came out of the woodwork with tons of good ones that I missed. Thanks, friends! For your enjoyment, here is the **Compendium of Portuglish Words**.
 

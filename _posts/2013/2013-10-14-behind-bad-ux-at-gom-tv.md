@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [user experience, starcraft]
 ---
-{% include JB/setup %}
 
 <div class="float-image-right">	
   	<img class="rounded-corners" style="border: 0px;" src="/assets/images/posts/2013-10-14/gom.png" alt="GOM TV"/> 

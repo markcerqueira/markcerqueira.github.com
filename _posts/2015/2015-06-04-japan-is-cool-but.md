@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [japan]
 ---
-{% include JB/setup %}
 
 My month-long excursion to Japan is winding down. It's been a blast! Japan is a great country filled with wonderfully awesome people, wonderfully clean toilets, and wonderfully delicious food.
 

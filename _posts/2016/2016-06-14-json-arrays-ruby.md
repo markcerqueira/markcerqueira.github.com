@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [ruby, technical]
 ---
-{% include JB/setup %}
 
 I've been working on a project and building the backend with Ruby and Sinatra. So far so good, until I wanted to take a list of objects I fetched from ActiveRecord and produce a JSON array. I had a function set up to JSONify a single object:
 

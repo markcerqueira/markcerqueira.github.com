@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [technical]
 ---
-{% include JB/setup %}
 
 <p style="margin-bottom: 8px;">Instead of assuming you do and spending a ton of money, <strong>ask yourself these three questions first</strong>:</p>
 

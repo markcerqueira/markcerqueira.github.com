@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [technical, java]
 ---
-{% include JB/setup %}
 
 Technical interviews are a pain. But here’s a 2-step plan to ace them:
 

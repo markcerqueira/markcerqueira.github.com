@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [user experience, rant, instagram]
 ---
-{% include JB/setup %}
 
 The other day I got a follower on Instagram. Yay! But, I think this follower was a scammer. Any time someone on the internet invites you to visit a website to get to know them better, it's usually a scam. Especially when their name is MissDiamond. Bummer!
 

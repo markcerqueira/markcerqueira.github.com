@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [technical, mac]
 ---
-{% include JB/setup %}
 
 Sometimes you just want to paste. And **sometimes you can't paste**. Right-clicks are ignored. Command/Control + V is also ignored. Sadness ensues.
 

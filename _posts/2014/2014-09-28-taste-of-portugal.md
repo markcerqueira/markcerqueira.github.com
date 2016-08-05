@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [portuguese, food]
 ---
-{% include JB/setup %}
 
 A lot of people always ask me, "What do Portuguese people eat?" I usually just say, "We eat A LOT!" But for those unsatisfied with that answer, here are some of the things I ate during a recent visit to my Portuguese family in New Jersey.
 
@@ -61,7 +60,7 @@ A lot of people always ask me, "What do Portuguese people eat?" I usually just s
 	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 15px;"><strong></strong></p>
 </div>
 
-**Bacalhau à Brás** - This is Alyce's favorite Portuguese dish. It's made with shredded pieces of codfish (bacalhau), onions, scrambled eggs, and french fries. I'm not usually a huge fan of codfish, but when this dish comes out, I am suddenly a huge fan. 
+**Bacalhau à Brás** - It's made with shredded pieces of codfish (bacalhau), onions, scrambled eggs, and french fries. I'm not usually a huge fan of codfish, but when this dish comes out, I am suddenly a huge fan. 
 
 <br>
 

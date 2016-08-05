@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [food]
 ---
-{% include JB/setup %}
 
 My quest to sample the entire frozen foods section of the Chinese super market continues. I picked up two bags of Shanghai Soup Dumplings (xiaolongbao) the other day. On the left is Mini Soupy Buns by Prime Food, and on the right is Pork Mini Buns (Crab Meat Added) by Wei-Chuan. What happens next NEEDS to be shared.
 

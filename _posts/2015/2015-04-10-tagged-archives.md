@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [meta]
 ---
-{% include JB/setup %}
 
 The army-of-one mark.gg team is proud to announce that the [Archive][1] page is now massively improved! Posts were previously sorted chronologically, but now they're sorted by subject matter. Now, you can quickly reach the 8 posts I've written on [Final Fantasy][2], 13 posts on all things [Android][3], and -- something I'm **very proud** of -- 22 [rant][4] posts!
 

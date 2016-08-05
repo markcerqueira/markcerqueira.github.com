@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [kickstarter]
 ---
-{% include JB/setup %}
 
 <div class="float-image-right">	
   	<img class="rounded-corners" style="border: 0px;" src="/assets/images/posts/2013-10-05/ks_logo.png" alt="Kickstarter Logo"/> 

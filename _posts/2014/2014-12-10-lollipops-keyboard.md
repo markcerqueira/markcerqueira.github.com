@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [rant, android]
 ---
-{% include JB/setup %}
 
 Dearest Lollipop Keyboard,
 

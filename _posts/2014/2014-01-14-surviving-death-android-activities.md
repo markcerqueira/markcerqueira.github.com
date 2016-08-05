@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [android]
 ---
-{% include JB/setup %}
 
 It's a fact of life: your Android activities aren't always going to be the center of attention. They can be backgrounded either because your entire app is backgrounded or because another activity of your app is pushed onto the activity stack. Even sadder, while backgrounded, your activity (and its state) can be entirely destroyed. If you don't handle this case, the eventual return of your activity will be less-than-ideal. Fortunately, it's not that hard to handle this problem.
 

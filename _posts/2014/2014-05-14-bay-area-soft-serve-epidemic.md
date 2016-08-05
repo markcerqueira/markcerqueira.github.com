@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [food, bay area]
 ---
-{% include JB/setup %}
 
 Bay Area, we have a problem. You have all types of amazing food. Everything seems to be covered. But when I want amazing **soft-serve ice cream**, you know where I go? **McDonald's**. Yes - you heard right! There are plenty of froyo places, and plenty of hard-serve ice cream places, but there are not enough places to **SATISFY MY ADDICTION TO SOFT-SERVE**. 
 

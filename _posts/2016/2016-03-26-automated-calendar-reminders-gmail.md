@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [automation, technical, java]
 ---
-{% include JB/setup %}
 
 I do instructor scheduling for the [San Francisco Kendo Dojo][2]. Google Calendar and creating events that repeat monthly solves most of the scheduling puzzle. But I was sometimes getting questions about who was teaching and when. I decided weekly reminders directly to instructors' email inboxes with the week's schedule was the way to keep everyone up-to-date. In keeping with **[2016's automation goal][4]**, I decided to **automate these weekly reminders**. 
 

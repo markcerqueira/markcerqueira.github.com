@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [user experience]
 ---
-{% include JB/setup %}
 
 I like to personalize my compliments on Yelp, but I don't overdo it. I'll take some base like "Have a great week" and just add the person's name to it. I think referring to someone by their name is an easy way to add a little personal touch. 
 

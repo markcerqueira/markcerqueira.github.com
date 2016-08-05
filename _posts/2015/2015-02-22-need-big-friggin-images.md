@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [technical]
 ---
-{% include JB/setup %}
 
 I found myself in need of some **big friggin' images** the other day. After scouring the web for a while and coming up with paltry-sized images (ONLY hundreds of megabytes), I decided to just create some myself. I whipped up a quick Python script -- [**imggen.py**][1] -- that uses the [Pillow image library][2] to generate square images where each pixel is a random color. It's certainly no remarkable coding achievement, but the output is pretty pretty. 
 

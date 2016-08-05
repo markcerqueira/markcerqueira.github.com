@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [rant]
 ---
-{% include JB/setup %}
 
 Yelp, we've got a problem. A serious problem. I really like what you're doing, but you should know that **commas cannot join two sentences**. Yet every time someone sends a friend request, the placeholder sentence is a classic example of a comma splice. 
 

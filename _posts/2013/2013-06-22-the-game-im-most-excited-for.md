@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [video games, jrpg, xenoblade]
 ---
-{% include JB/setup %}
 
 Earlier this week, I [posted](/2013/06/16/video-games-after-e3/) about my excitement for upcoming 3DS games, but I'm also excited about games coming to all consoles. The *Last of Us* is in my PS3 and I'm eager to start playing it. This game has received immensely positive reviews and supposedly grossed more than The Man of Steel during its opening weekend! The new open world, photorealistic graphics, and new Jack Bauer voice acting for Snake make me giddy to embark on Hideo Kojima's newest chapter in the *Metal Gear* series. *Final Fantasy* Versus XIII has transformed itself from vaporware into the fifteenth entry in the series. Few details, trailers, and gameplay videos have been revealed, but I'm hoping Square Enix doesn't screw up the first entry of their flagship series on the next generation of consoles. *Pikmin 3* and *The Wonderful 101* give the Wii U a much-needed boost to its somewhat lackluster library. These are a few of the games I am looking forward to, but the one game I absolutely cannot wait to get my hands on is a gem that will be coming exclusively to Nintendo's Wii U.
 

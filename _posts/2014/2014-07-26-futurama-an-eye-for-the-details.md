@@ -5,7 +5,6 @@ description: ""
 category: 
 tags: [random]
 ---
-{% include JB/setup %}
 
 I appreciate an eye for the details, even when they may appear to be so minor or inconsequential. I recently revisited the pilot episode of Futurama where Fry -- on December 31, 1999 -- is transported 1000 years into the future. Later on in the episode, his newfound robot friend Bender says they can hide in a museum because "it's free on Tuesdays."
 
