@@ -6,7 +6,6 @@ paginate: 5
 
 markdown: kramdown
 kramdown:  
-  parse_block_html: true
   input: GFM
   
 title : mark cerqueira
