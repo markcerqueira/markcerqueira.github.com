@@ -4,7 +4,7 @@ os: osx
 language: ruby
 
 # Cache the gems we pull so subsequent builds are faster
-cache: bundler
+# cache: bundler
 
 # We don't ever need to go deeper when publishing
 git:
