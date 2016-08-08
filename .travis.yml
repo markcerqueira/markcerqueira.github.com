@@ -3,6 +3,9 @@ os: osx
 # mark.gg deploys are driven by rake
 language: ruby
 
+rvm:
+  - 2.2.5
+
 # Cache the gems we pull so subsequent builds are faster
 # cache: bundler
 
