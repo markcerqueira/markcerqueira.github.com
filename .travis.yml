@@ -1,13 +1,14 @@
 os: osx
     
-# mark.gg deploys are driven by rake
 language: ruby
 
 rvm:
   - 2.2.5
 
 # Cache the gems we pull so subsequent builds are faster
-# cache: bundler
+cache: bundler
+
+sudo: false
 
 # We don't ever need to go deeper when publishing
 git:
