@@ -16,8 +16,8 @@ SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
 
 # Configure commiter name and email
-git --global config user.name "Travis CI"
-git --global config user.email "$COMMIT_AUTHOR_EMAIL"
+git config user.name "Travis CI"
+git config user.email "$COMMIT_AUTHOR_EMAIL"
 
 echo "Setting up deploy key for pushing"
 
