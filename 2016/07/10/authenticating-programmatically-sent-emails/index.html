@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Authenticating Programmatically Sent Emails &middot; mark cerqueira
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/tags.css">
+  <link rel="stylesheet" href="/public/css/v1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">home</a>
+    <a class="sidebar-nav-item" href="/about/">about</a>     
+    <a class="sidebar-nav-item" href="/archive/">archive</a>
+    <a class="sidebar-nav-item" href="/fitness/">fitness</a>
+    <a class="sidebar-nav-item" href="/projects/">projects</a>
+  </nav>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">mark cerqueira</a>
+            <small>well-rounded nerd</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Authenticating Programmatically Sent Emails</h1>
+  <span class="post-date">10 Jul 2016</span>
+  <p>Work on the Ruby and Sinatra project continues and this weekend I worked on creating a helper method for sending emails so I can have users confirm the emails they used to register. I wanted to send emails from a mailbox I set up on a custom domain I’m hosting with DreamHost. I created a mailbox on DreamHost’s admin panel and with the <a href="https://github.com/mikel/mail">mail</a> Ruby gem it was pretty straightforward to get emails sent.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"> 
+<span class="k">class</span> <span class="nc">ApplicationController</span> <span class="o">&lt;</span> <span class="no">Sinatra</span><span class="o">::</span><span class="no">Base</span>
+
+  <span class="c1"># Configure mail gem</span>
+  <span class="c1"># You can use the config_env gem to save sensitive information (https://github.com/SergXIIIth/config_env)</span>
+  <span class="n">options</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">:address</span>              <span class="o">=&gt;</span> <span class="s1">'www.yourdomain.com'</span><span class="p">,</span>
+              <span class="ss">:port</span>                 <span class="o">=&gt;</span> <span class="mi">587</span><span class="p">,</span>
+              <span class="ss">:user_name</span>            <span class="o">=&gt;</span> <span class="s1">'welcome@yourdomain.com'</span><span class="p">,</span>
+              <span class="ss">:password</span>             <span class="o">=&gt;</span> <span class="s1">'yourpassword'</span><span class="p">,</span>
+              <span class="ss">:authentication</span>       <span class="o">=&gt;</span> <span class="s1">'plain'</span><span class="p">,</span>
+              <span class="ss">:enable_starttls_auto</span> <span class="o">=&gt;</span> <span class="kp">true</span><span class="p">,</span>
+              <span class="ss">:openssl_verify_mode</span>  <span class="o">=&gt;</span> <span class="no">OpenSSL</span><span class="o">::</span><span class="no">SSL</span><span class="o">::</span><span class="no">VERIFY_NONE</span> <span class="p">}</span>
+  
+  <span class="no">Mail</span><span class="p">.</span><span class="nf">defaults</span> <span class="k">do</span>
+    <span class="n">delivery_method</span> <span class="ss">:smtp</span><span class="p">,</span> <span class="n">options</span>
+  <span class="k">end</span>
+	
+  <span class="n">get</span> <span class="s1">'/mailtest/?'</span> <span class="k">do</span>
+    <span class="no">Mail</span><span class="p">.</span><span class="nf">deliver</span> <span class="k">do</span>
+      <span class="n">to</span> <span class="n">user</span><span class="vi">@yourdomain</span><span class="p">.</span><span class="nf">com</span>
+      <span class="n">from</span> <span class="s1">'Welcome &lt;welcome@yourdomain.com'</span>
+      <span class="n">subject</span> <span class="s1">'Test Subject'</span>
+      <span class="n">body</span> <span class="s1">'Test Body'</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></figure>
+
+<p>Hit and the endpoint and you’re done! Or are you? To the Gmail inbox!</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 800px; border: 0px;" src="/assets/images/posts/2016-07-10/spammer.png" />
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>Gmail has some doubts!</strong></p>
+</div>
+
+<p>All looks good except Gmail ominously warns us: <strong>“Gmail couldn’t verify that chuckpad.io actually sent this message.”</strong> This means “Gmail doesn’t know if the message is coming from the person who appears to be sending it,” which makes our messages excellent candidates to get caught by Gmail’s spam filters! Read more about authenticated messages <a href="https://support.google.com/mail/answer/180707?hl=en">here</a>.</p>
+
+<p>After some digging around, I learned about <strong>Sender Policy Framework (SPF) records</strong>. Basically, a DNS record can have some metadata which identifies which servers are permitted to send email on behalf of the domain. DreamHost’s default <a href="https://help.dreamhost.com/hc/en-us/articles/220854287-What-SPF-records-do-I-use-">“SPF information doesn’t include DreamHost’s mail servers”</a> because you can always opt to host your domain’s mail servers elsewhere. Fortunately, this can be easily remedied by <a href="https://help.dreamhost.com/hc/en-us/articles/216106197-How-do-I-add-an-SPF-record-">adding the SPF record</a> <strong>v=spf1 include:netblocks.dreamhost.com</strong> to our domain’s DNS record.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 800px; border: 0px;" src="/assets/images/posts/2016-07-10/spf.png" />
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>Gmail's doubts are gone!</strong></p>
+</div>
+
+<p>Give the DNS caches of the world a few hours to refresh, try again, and boom! <strong>Success! Programmatic and authenticated!</strong></p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2016/08/04/changing-progress-bar-color/">
+            Changing Progress Bar Spinner Color
+            <small>04 Aug 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/30/ruby-datetime-nsdate/">
+            Ruby DateTime to Objective-C NSDate
+            <small>30 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/28/concert-review-final-symphony/">
+            Concert Review: Final Symphony, San Francisco, 7/28/16
+            <small>28 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

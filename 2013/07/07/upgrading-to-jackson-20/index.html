@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Upgrading to Jackson 2.0 &middot; mark cerqueira
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/tags.css">
+  <link rel="stylesheet" href="/public/css/v1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">home</a>
+    <a class="sidebar-nav-item" href="/about/">about</a>     
+    <a class="sidebar-nav-item" href="/archive/">archive</a>
+    <a class="sidebar-nav-item" href="/fitness/">fitness</a>
+    <a class="sidebar-nav-item" href="/projects/">projects</a>
+  </nav>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">mark cerqueira</a>
+            <small>well-rounded nerd</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Upgrading to Jackson 2.0</h1>
+  <span class="post-date">07 Jul 2013</span>
+  <p>In March 2012, the first major update to the JSON processing library, Jackson, was released. Smule’s Android team uses Jackson for manipulating JSON, but until recently, we were using version 1.9. While version 1.9 worked perfectly fine, I took some time to get us on the latest and greatest Jackson has to offer. The upgrade to 2.0 is not as trivial as swapping JAR files, so here are some tips for a successful upgrade.</p>
+
+<!--break-->
+
+<p><strong>Note:</strong> This post is a supplement to my <a href="/2013/05/26/tips-for-android-json-parsing-using-jackson/">earlier post</a> about using Jackson that applied to version 1.9.</p>
+
+<p class="header">1. Updating JAR Files</p>
+<p>We were previously using 2 JAR files: <strong>jackson-core-asl-1.9.4.jar</strong> and <strong>jackson-mapper-asl-1.9.4.jar</strong>. The 2.0 update reorganized how Jackson is packaged so you’ll want to now use these 3 JAR files: <strong>jackson-annotations.jar</strong>, <strong>jackson-core.jar</strong>, and <strong>jackson-databind.jar</strong>. Remember to update your IDE project settings and any build scripts to use these new JAR files.</p>
+
+<p class="header">2. Fixing Imports</p>
+<p>Aside from things getting shuffled from 2 to 3 JAR files, the Java package names have also been updated for from <strong>org.codehaus.jackson</strong> to <strong>com.fasterxml.jackson</strong>, so you’ll need to update import statements. My favorite Android IDE, IntelliJ IDEA, makes this easy. Don’t touch anything after updating the JAR files, try to compile, remove all the missing import errors, and let IntelliJ’s auto-import feature handle all the grunt work for you.</p>
+
+<p class="header">3. Get the "get" out!</p>
+<p>After fixing all the import statements, don’t be alarmed by the number of errors you may still be seeing. You likely just need to remove the word <strong>get</strong> from a bunch of places. For example, JsonNode methods in 1.9 like getBooleanValue(), getFields(), getElements(), getIntValue() have dropped the get in 2.0 to become booleanValue(), fields(), elements(), and intValue().</p>
+
+<p class="header">4. Parsing JSON Arrays</p>
+<p>You will still have lingering compiler errors if you were parsing JSON arrays. In Jackson 1.9, you could parse an array of objects like this:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Subject</span><span class="o">&gt;</span> <span class="n">subjects</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setSubjects</span><span class="o">(</span><span class="n">JsonNode</span> <span class="n">jsonArrayNode</span><span class="o">)</span> <span class="o">{</span>
+   <span class="n">subjects</span> <span class="o">=</span> <span class="n">mObjectMapper</span><span class="o">.</span><span class="na">readValue</span><span class="o">(</span><span class="n">jsonArrayNode</span><span class="o">,</span> <span class="k">new</span> <span class="n">TypeReference</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;</span><span class="n">Subject</span><span class="o">&gt;&gt;()</span> <span class="o">{});</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>In Jackson 2.0, the <strong>readValue</strong> method now takes as its first parameter a <strong>JsonParser</strong> instead of a <strong>JsonNode</strong>. Going down my hierarchy of compiler-error-problem-solving, I first looked through header files and futzed around a bit to no avail. I turned to Google and Stack Overflow, but couldn’t find any solutions. So I posted a question on Stack Overflow and implemented this temporary solution, which manually iterates over the JsonNode containing our array of objects and parses each object in it.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Subject</span><span class="o">&gt;</span> <span class="n">subjects</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Subject</span><span class="o">&gt;();</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setSubjects</span><span class="o">(</span><span class="n">JsonNode</span> <span class="n">jsonArrayNode</span><span class="o">)</span> <span class="o">{</span>
+   <span class="k">for</span><span class="o">(</span><span class="n">JsonNode</span> <span class="n">jsonNode</span> <span class="o">:</span> <span class="n">jsonArrayNode</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">subjects</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">objectMapper</span><span class="o">.</span><span class="na">treeToValue</span><span class="o">(</span><span class="n">jsonNode</span><span class="o">,</span> <span class="n">Subject</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
+   <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>Within the hour, an answer was posted. Turns out, the trick is to simply call <strong>traverse()</strong> on your JSON ArrayNode before passing it to <strong>readValue</strong>. The <strong>readValue</strong> method throws exceptions, so I created a new helper method in my JsonUtils class.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// helper method to make JSON array parsing a one-liner</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="nf">parseJsonList</span><span class="o">(</span><span class="n">JsonNode</span> <span class="n">node</span><span class="o">,</span> <span class="n">TypeReference</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;</span> <span class="n">typeReference</span><span class="o">)</span> <span class="o">{</span>
+   <span class="k">try</span> <span class="o">{</span>
+      <span class="k">return</span> <span class="n">JsonUtils</span><span class="o">.</span><span class="na">defaultMapper</span><span class="o">().</span><span class="na">readValue</span><span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">traverse</span><span class="o">(),</span> <span class="n">typeReference</span><span class="o">);</span>
+   <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="n">TAG</span><span class="o">,</span> <span class="s">"Failed to parse JSON list "</span> <span class="o">+</span> <span class="n">typeReference</span><span class="o">.</span><span class="na">getType</span><span class="o">(),</span> <span class="n">e</span><span class="o">);</span>
+      <span class="k">throw</span> <span class="k">new</span> <span class="nf">RuntimeException</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
+   <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>With this new method, we can now easily parse our JSON containing an array of objects.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Subject</span><span class="o">&gt;</span> <span class="n">subjects</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setSubjects</span><span class="o">(</span><span class="n">JsonNode</span> <span class="n">jsonArrayNode</span><span class="o">)</span> <span class="o">{</span>
+   <span class="n">subjects</span> <span class="o">=</span> <span class="n">JsonUtils</span><span class="o">.</span><span class="na">parseJsonList</span><span class="o">(</span><span class="n">jsonArrayNode</span><span class="o">,</span> <span class="k">new</span> <span class="n">TypeReference</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;</span><span class="n">Subject</span><span class="o">&gt;&gt;()</span> <span class="o">{});</span>
+<span class="o">}</span></code></pre></figure>
+
+<hr class="separator" />
+
+<p>Jackson 2.0 adds some cool <a href="https://github.com/FasterXML/jackson-docs/wiki/Presentation-Jackson-2.0">new features</a> that we’re not planning to use yet. But now, we’re in a good place to use them when the time comes. If you’re upgrading Jackson and running into any problems not covered here, please feel free to <a href="https://twitter.com/markmcerqueira">send me a tweet</a>; I’ll try to help and update this post.</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2016/08/04/changing-progress-bar-color/">
+            Changing Progress Bar Spinner Color
+            <small>04 Aug 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/30/ruby-datetime-nsdate/">
+            Ruby DateTime to Objective-C NSDate
+            <small>30 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/28/concert-review-final-symphony/">
+            Concert Review: Final Symphony, San Francisco, 7/28/16
+            <small>28 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

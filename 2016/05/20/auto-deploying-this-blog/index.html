@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Auto-Deploying This Blog &middot; mark cerqueira
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/tags.css">
+  <link rel="stylesheet" href="/public/css/v1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">home</a>
+    <a class="sidebar-nav-item" href="/about/">about</a>     
+    <a class="sidebar-nav-item" href="/archive/">archive</a>
+    <a class="sidebar-nav-item" href="/fitness/">fitness</a>
+    <a class="sidebar-nav-item" href="/projects/">projects</a>
+  </nav>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">mark cerqueira</a>
+            <small>well-rounded nerd</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Auto-Deploying This Blog</h1>
+  <span class="post-date">20 May 2016</span>
+  <p>A long time ago I started <strong>generating my site locally and pushing it up to Github manually</strong> because Github Pages does not allow you to run custom plugins. This isn’t as painful as it sounds. A friendly internet hero – ixti – crafted a nice Rakefile that <a href="http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html">automated publishing</a>.</p>
+
+<p><strong>But doing the publishing myself led to some workflow issues.</strong> Allowing GitHub Pages to do the work for you is nice because you only have to deal with one branch. Make changes to that branch, push to GitHub, and GitHub Pages would generate the site and deploy it. Everything is always in sync. The new workflow had me writing and crafting content on the source branch and then using the publishing command to generate my site locally and then it would push it to the master branch: the “deploy.” <strong>Separating the crafting and deploying steps meant I sometimes published content without pushing it into the source branch or I’d push content and not deploy it.</strong></p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 800px; border: 1px solid #cdcdcd;" src="/assets/images/posts/2016-05-20/travis.png" />
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>Continuous deployment via Travis</strong></p>
+</div>
+
+<p>In keeping with <a href="http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html">2016’s automation resolution</a>, I set up my blog to auto-deploy itself. Using and adapting Domenic Denicola’s <a href="https://gist.github.com/domenic/ec8b0fc8ab45f39403dd">clear and helpful instructions</a>, the new set-up has <a href="https://travis-ci.org/markcerqueira/markcerqueira.github.com">Travis</a> run the automated publishing flow when any changes are pushed to the source branch. Turns out Travis is not only a great continuous integration tool, but can be adapted to be continuously deploying as well! No more pushing content to the source branch and running the publishing command locally; <strong>I’m back to just needing to push once</strong>.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># The blog's gotten big so rake publish pushes 75.05 MiB!</span>
+Writing objects: 100% <span class="o">(</span>1052/1052<span class="o">)</span>, 75.05 MiB | 1.46 MiB/s, <span class="k">done</span>.
+Total 1052 <span class="o">(</span>delta 166<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+To git@github.com:markcerqueira/markcerqueira.github.com.git
+ + f2e99be...3aea10b master -&gt; master <span class="o">(</span>forced update<span class="o">)</span></code></pre></figure>
+
+<p>And there are a few more benefits including <strong>email notifications if something goes wrong</strong> during the publishing flow and <strong>no need to wait on a 70+ MB push</strong> when publishing, which is great when I’m tethered or in a rush.</p>
+
+<p>This minor improvement isn’t mind-blowing, but it does make my interaction with blogging more streamlined and simple. That’s what my automating 2016 resolution is all about. Onwards!</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git push origin <span class="nb">source</span>
+<span class="c"># We're done. Walk away. Go outside. Eat a banana.</span></code></pre></figure>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2016/08/04/changing-progress-bar-color/">
+            Changing Progress Bar Spinner Color
+            <small>04 Aug 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/30/ruby-datetime-nsdate/">
+            Ruby DateTime to Objective-C NSDate
+            <small>30 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/28/concert-review-final-symphony/">
+            Concert Review: Final Symphony, San Francisco, 7/28/16
+            <small>28 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

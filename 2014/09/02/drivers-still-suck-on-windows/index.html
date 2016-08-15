@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Drivers Still Suck on Windows &middot; mark cerqueira
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/tags.css">
+  <link rel="stylesheet" href="/public/css/v1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">home</a>
+    <a class="sidebar-nav-item" href="/about/">about</a>     
+    <a class="sidebar-nav-item" href="/archive/">archive</a>
+    <a class="sidebar-nav-item" href="/fitness/">fitness</a>
+    <a class="sidebar-nav-item" href="/projects/">projects</a>
+  </nav>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">mark cerqueira</a>
+            <small>well-rounded nerd</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Drivers Still Suck on Windows</h1>
+  <span class="post-date">02 Sep 2014</span>
+  <p>It’s been a while since I used a Windows machine. While I do virtualize sometimes to run Windows-only software, I haven’t considered myself a Windows user since the summer of 2006 when I switched to a Mac. It’s been a while since I had to work with a Windows machine, but some things never change: <strong>driver installation is still a harrowing experience on Windows</strong>.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 600px; border: 0px;" src="/assets/images/posts/2014-09-02/guess.png" />
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 30px;"><strong>Milk makes your bones stronger. Drivers make your Windows PC usable.</strong></p>
+</div>
+
+<p>A friend recently bought a Windows laptop (a Toshiba Satellite L55-A5284) and wanted me to help him set it up. Setting it up involved not paying Toshiba their exorbitant cost for an SSD and installing one ourselves, upgrading the RAM, and downgrading (i.e. upgrading) from Windows 8 to Windows 7. It was somewhat of a struggle but we were able to eventually take the machine apart, upgrade to an SSD, upgrade the RAM, “acceptably” put the machine back together, and install Windows 7. Yet, the real struggle hadn’t even begun…</p>
+
+<!--break-->
+
+<p>A driver-less Windows machine is a pathetic thing. The display resolution is terrible, the trackpad is wonky, and connecting to a network with either Ethernet or Wi-Fi is impossible. Fortunately, laptop manufacturers have webpages for you to download drivers. Unfortunately, that’s where most of the good ends.</p>
+
+<p>For example, downloading the driver for the Wi-Fi card presents me with the following options:</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 600px;" src="/assets/images/posts/2014-09-02/list.png" />
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 30px;"><strong>How lucky are you feeling?</strong></p>
+</div>
+
+<p>Welp, this is hard. Not only are there four <strong>different drivers for the same functional piece of hardware</strong> (i.e. Wi-Fi card), there are also <strong>multiple versions of some drivers</strong>. I’m not quite sure why Toshiba doesn’t hide the older versions. Newer should always be better right? As luck would have it, my friend’s laptop had the Realtek driver which I downloaded last because it was at the end of the list.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 600px; border: 0px;" src="/assets/images/posts/2014-09-02/mulan.png" />
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 30px;"><strong>Whooooooo makes that Wi-Fi card I cannot see?</strong></p>
+</div>
+
+<p>With Internet connectivity, Windows Update helped me out and installed a bunch of the drivers, but there were a few stragglers left. So, back I went to Toshiba’s website for <strong>a game of cat-and-mouse trying to find the missing drivers</strong>. An hour or so later, I was down to a single device – USB2.0-CRW – missing its driver. Some Google-fu revealed this was the multi-card reader, but <strong>nothing on Toshiba’s website seemed to work</strong>.</p>
+
+<p>Then I discovered driver-installing-helping-software like Driver Easy and Driver Max that scan your computer for hardware and find the drivers for you. Huzzah! Sounds wonderful. I wish I had found it earlier! Driver Easy was easily (pun intended) able to find the USB2.0-CRW driver and install it for me.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 600px; border: 0px;" src="/assets/images/posts/2014-09-02/drivermax.png" />
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 30px;"><strong>Only $19.90 a month to unlock the MAX!</strong></p>
+</div>
+
+<p>Sadly – and very maddening – Driver Easy also reported that most of the drivers I installed from Toshiba’s website were outdated. Cool! Let’s just update them all. What!? I need to buy a pro version of this software to get that awesome update all functionality? If you don’t pony up the cash not only do you not get that feature, <strong>Driver Max makes you wait 5+ minutes for each download</strong> and <strong>Driver Easy limits your download speed to 30 KB/s.</strong> Both applications also block you from downloading multiple drivers at once, so grab a drink or a few drinks.</p>
+
+<p>Sigh…</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2016/08/04/changing-progress-bar-color/">
+            Changing Progress Bar Spinner Color
+            <small>04 Aug 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/30/ruby-datetime-nsdate/">
+            Ruby DateTime to Objective-C NSDate
+            <small>30 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/28/concert-review-final-symphony/">
+            Concert Review: Final Symphony, San Francisco, 7/28/16
+            <small>28 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      5 Ways to Static in Java &middot; mark cerqueira
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/tags.css">
+  <link rel="stylesheet" href="/public/css/v1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">home</a>
+    <a class="sidebar-nav-item" href="/about/">about</a>     
+    <a class="sidebar-nav-item" href="/archive/">archive</a>
+    <a class="sidebar-nav-item" href="/fitness/">fitness</a>
+    <a class="sidebar-nav-item" href="/projects/">projects</a>
+  </nav>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">mark cerqueira</a>
+            <small>well-rounded nerd</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">5 Ways to Static in Java</h1>
+  <span class="post-date">20 Mar 2014</span>
+  <p>Someone asked me the other day if I knew about all the usages of static in Java. Turns out, I didn’t know them all! Let’s review them.</p>
+
+<p>1. <strong>Static methods</strong> - Methods of class can be static or non-static. Non-static methods are called instance methods because they can only be invoked on an instance of the particular class they belong to. Static methods can be called without any instance.</p>
+
+<!--break-->
+
+<p>2. <strong>Static variables</strong> - Like static methods, static variables do not belong to instances of a class. If you have a static variable, its value is global and shared. Instance variables require an instance of the class; static variables do not.</p>
+
+<p>3. <strong>Nested static classes</strong> - Sometimes you have a class that is only useful to one class so you nest it in another class. This nested class can be static or non-static. If the nested class is static, it cannot directly access instance variables of the outer class that contains it. If the nested class is non-static it is called an inner class. Instances of inner classes can only exist within instances of the outer class that contains them.</p>
+
+<p>4. <strong>Static initializers</strong> - Static initializers are blocks of code that are executed (top-down) when the class is loaded. As the name implies, they can be used to initialize things in a static context. For example, if you have a JSON mapper class (as seen below) with a static ObjectMapper, you can configure it when the class is invoked, rather than having to call an initialization method.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">JsonUtils</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="n">ObjectMapper</span> <span class="n">sObjectMapper</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ObjectMapper</span><span class="o">();</span>
+    <span class="kd">static</span> <span class="o">{</span>
+        <span class="n">sObjectMapper</span><span class="o">.</span><span class="na">configure</span><span class="o">(</span><span class="n">JsonParser</span><span class="o">.</span><span class="na">Feature</span><span class="o">.</span><span class="na">ALLOW_SINGLE_QUOTES</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>5. <strong>Static imports</strong> - A static import allows you to refer to fields and members of a class without actually specifying the class. For example, if you wanted to access the value of Pi in the Math class, you would normally do this:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">import</span> <span class="nn">java.lang.Math</span><span class="o">;</span>
+
+<span class="kt">double</span> <span class="n">pi</span> <span class="o">=</span> <span class="n">Math</span><span class="o">.</span><span class="na">PI</span><span class="o">;</span></code></pre></figure>
+
+<p>But if you don’t want to specify that PI is in the Math class you can do a static import:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">import</span> <span class="nn">static</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">Math</span><span class="o">.</span><span class="na">PI</span>
+
+<span class="kt">double</span> <span class="n">pi</span> <span class="o">=</span> <span class="n">PI</span><span class="o">;</span></code></pre></figure>
+
+<p>This is useful in certain cases, but if abused, can make code harder to read since magical constants of mysterious origin may be referenced without too much context.</p>
+
+<p><strong>How did I do?</strong> I knew the first three, and was prodded into the fourth one since I had used it a few times previously. I had absolutely no idea about static imports. Then again, my amazing development tool of choice, IntelliJ, handles importing any and every file I need.</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2016/08/04/changing-progress-bar-color/">
+            Changing Progress Bar Spinner Color
+            <small>04 Aug 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/30/ruby-datetime-nsdate/">
+            Ruby DateTime to Objective-C NSDate
+            <small>30 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/28/concert-review-final-symphony/">
+            Concert Review: Final Symphony, San Francisco, 7/28/16
+            <small>28 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

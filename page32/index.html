@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      mark cerqueira &middot; well-rounded nerd
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/tags.css">
+  <link rel="stylesheet" href="/public/css/v1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">home</a>
+    <a class="sidebar-nav-item" href="/about/">about</a>     
+    <a class="sidebar-nav-item" href="/archive/">archive</a>
+    <a class="sidebar-nav-item" href="/fitness/">fitness</a>
+    <a class="sidebar-nav-item" href="/projects/">projects</a>
+  </nav>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">mark cerqueira</a>
+            <small>well-rounded nerd</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2013/07/09/what-android-support-library-am-i-on/">
+        What Android Library Am I On?
+      </a>
+    </h1>
+
+    <span class="post-date">09 Jul 2013</span>
+
+    <style type="text/css">
+	table, td, th {
+		border: 2px solid gray;
+		margin: 0 auto;
+		padding: 6px 12px 6px 12px;
+	}
+	th {
+		font-size: 0.75em;
+		text-align: center;
+		background-color: #333333;
+		color: white;
+	}
+	td {
+		text-align: center;
+		font-size: 0.66em;
+	}
+</style>
+
+<p>Google maintains some handy support packages that allow older versions of Android to use otherwise unavailable APIs. It’s a win-win for most - developers can support older devices more easily, Google looks great because they are making developers’ lives easier, and Android users aren’t forced to upgrade their phones to have access to a large selection of apps. There are losers, and one of them is me: the developer who looks at the <a href="https://developer.android.com/tools/extras/support-library.html">revision history</a> for the support library and realizes there may be relevant fixes in newer revisions. I need to figure out which revision I’m on now, so I look in the <strong>libs</strong> folder, see the support library <strong>android-support-v4.jar</strong> and ask myself, “What is the version of this support library?”</p>
+
+<!--break-->
+
+<p>The filename of the JAR itself yields nothing; v4 simply refers to the minimum API level supported by that particular library. The manifest file of the JAR disappointingly does not have any information. Fine; let’s grab the MD5 checksum. But what to do with this checksum? Google’s Android documentation does not provide checksums for the different revisions of the library. Launching the Android SDK Manager, I find revision 13 installed in my Android SDK bundle, but the checksum of that revision does not match the checksum of the mysterious library currently sitting in my project.</p>
+
+<p>Okay, let’s go through all the previous versions and get checksums for them. But wait… I can’t downgrade my support library via the Android SDK Manager! The revision history page also doesn’t have any download links for older revisions. Although Google has done a poor job of putting download links in a visible place, it has fortunately done a good job of maintaining their revisions in an orderly manner. Visit <a href="https://dl-ssl.google.com/android/repository/support_rXX.zip">this URL</a>, replacing the rXX with the version of the support package you want (e.g. r04 through r13 as of July 2013). After grabbing all available revisions, I created a table filled with the support libraries’ MD5 checksums:</p>
+
+<div>
+<table style="margin-bottom: 1em;">
+<tr><th>&nbsp;Revision&nbsp;</th><th>v4 library MD5</th><th>v7 library MD5</th><th>v13 library MD5</th></tr>
+<tr><td>4</td><td>86dfb3c6ac2db479ff396906fe4ee1be</td><td>-</td><td>7aa30cf7bb854e98670e3b5ad9b15f87</td></tr>
+<tr><td>5</td><td>6ed7cfa457967cb8d5924c93b96847e7</td><td>-</td><td>4e4868c990252855cc14b8ac83656172</td></tr>
+<tr><td>6</td><td>bcf017dfe2243c8d72b4b2aa40101040</td><td>-</td><td>43715e49c8c89f1c844cbb3cc1a4638d</td></tr>
+<tr><td>7</td><td>c6c2148762c614d3bad120ca01491e34</td><td>0a796c18e64c30b0cb64b1802dcb022b</td><td>abdf04d97d538c7425e0314b21767e87</td></tr>
+<tr><td>8</td><td>776555f10c632cd4f2790b6bbd2465bf</td><td>c278ba81b8a7ca1a56901411959eee1a</td><td>522c1d3d8fbe42d0ea7872b619961492</td></tr>
+<tr><td>9</td><td>d0107ad5a43839ecdc08fbcf783bdb4f</td><td>56d2becf9ba0ce495d3dddc6e38e1232</td><td>1c68c31497a77af15797882f2daac9cf</td></tr>
+<tr><td>10</td><td>7c357558b1ef5cd16f1d312fe87c38a0</td><td>102ca4ff9de8c0294a42987dbee92e58</td><td>4adc2acf706396225495c43bb60cbb78</td></tr>
+<tr><td>11</td><td>7b5efe58fd28cbc7fa8f9e88ab9c7d65</td><td>64a88c9b9cd7d755498984c5034a81c9</td><td>2a7dd0b32bef6da952f9adea5dbab998</td></tr>
+<tr><td>12</td><td>9974894df6e8ba95bb27f5e85e2cdfb5</td><td>a94112d8249a193143ec19d35f11552a</td><td>98b359e98f5c7407432877c88d1cd2f3</td></tr>
+<tr><td>13</td><td>5dce8843261486180715e459d953885d</td><td>63dcac01d302b2a2b6479dfb4496b070</td><td>2aceba35370fa10721e8af40decb1955</td></tr>
+</table>
+</div>
+
+<p>Turns out, we were using revision 6 of the v4 support library. Between this and the latest version, new functionality was added and “many [Fragment] bugs” were fixed. We use Fragments in a few places, so we’re pushing ahead with the upgrade. Figuring out what version you are using shouldn’t be this difficult. Some might argue that developers should do book-keeping on the libraries they are using. But if you’re dedicating resources to putting out and iterating on packages used by many, you could at least invest some time to attach relevant metadata to those packages. In this particular case, involving a JAR file, setting up a manifest file with a bundle version is both easy for those creating the packages and helpful for those using the packages. In the meantime, the JAR file has been renamed to <strong>android-support-v4-rev13.jar</strong>.</p>
+
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2013/07/07/upgrading-to-jackson-20/">
+        Upgrading to Jackson 2.0
+      </a>
+    </h1>
+
+    <span class="post-date">07 Jul 2013</span>
+
+    <p>In March 2012, the first major update to the JSON processing library, Jackson, was released. Smule’s Android team uses Jackson for manipulating JSON, but until recently, we were using version 1.9. While version 1.9 worked perfectly fine, I took some time to get us on the latest and greatest Jackson has to offer. The upgrade to 2.0 is not as trivial as swapping JAR files, so here are some tips for a successful upgrade.</p>
+
+<!--break-->
+
+<p><strong>Note:</strong> This post is a supplement to my <a href="/2013/05/26/tips-for-android-json-parsing-using-jackson/">earlier post</a> about using Jackson that applied to version 1.9.</p>
+
+<p class="header">1. Updating JAR Files</p>
+<p>We were previously using 2 JAR files: <strong>jackson-core-asl-1.9.4.jar</strong> and <strong>jackson-mapper-asl-1.9.4.jar</strong>. The 2.0 update reorganized how Jackson is packaged so you’ll want to now use these 3 JAR files: <strong>jackson-annotations.jar</strong>, <strong>jackson-core.jar</strong>, and <strong>jackson-databind.jar</strong>. Remember to update your IDE project settings and any build scripts to use these new JAR files.</p>
+
+<p class="header">2. Fixing Imports</p>
+<p>Aside from things getting shuffled from 2 to 3 JAR files, the Java package names have also been updated for from <strong>org.codehaus.jackson</strong> to <strong>com.fasterxml.jackson</strong>, so you’ll need to update import statements. My favorite Android IDE, IntelliJ IDEA, makes this easy. Don’t touch anything after updating the JAR files, try to compile, remove all the missing import errors, and let IntelliJ’s auto-import feature handle all the grunt work for you.</p>
+
+<p class="header">3. Get the "get" out!</p>
+<p>After fixing all the import statements, don’t be alarmed by the number of errors you may still be seeing. You likely just need to remove the word <strong>get</strong> from a bunch of places. For example, JsonNode methods in 1.9 like getBooleanValue(), getFields(), getElements(), getIntValue() have dropped the get in 2.0 to become booleanValue(), fields(), elements(), and intValue().</p>
+
+<p class="header">4. Parsing JSON Arrays</p>
+<p>You will still have lingering compiler errors if you were parsing JSON arrays. In Jackson 1.9, you could parse an array of objects like this:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Subject</span><span class="o">&gt;</span> <span class="n">subjects</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setSubjects</span><span class="o">(</span><span class="n">JsonNode</span> <span class="n">jsonArrayNode</span><span class="o">)</span> <span class="o">{</span>
+   <span class="n">subjects</span> <span class="o">=</span> <span class="n">mObjectMapper</span><span class="o">.</span><span class="na">readValue</span><span class="o">(</span><span class="n">jsonArrayNode</span><span class="o">,</span> <span class="k">new</span> <span class="n">TypeReference</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;</span><span class="n">Subject</span><span class="o">&gt;&gt;()</span> <span class="o">{});</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>In Jackson 2.0, the <strong>readValue</strong> method now takes as its first parameter a <strong>JsonParser</strong> instead of a <strong>JsonNode</strong>. Going down my hierarchy of compiler-error-problem-solving, I first looked through header files and futzed around a bit to no avail. I turned to Google and Stack Overflow, but couldn’t find any solutions. So I posted a question on Stack Overflow and implemented this temporary solution, which manually iterates over the JsonNode containing our array of objects and parses each object in it.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Subject</span><span class="o">&gt;</span> <span class="n">subjects</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Subject</span><span class="o">&gt;();</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setSubjects</span><span class="o">(</span><span class="n">JsonNode</span> <span class="n">jsonArrayNode</span><span class="o">)</span> <span class="o">{</span>
+   <span class="k">for</span><span class="o">(</span><span class="n">JsonNode</span> <span class="n">jsonNode</span> <span class="o">:</span> <span class="n">jsonArrayNode</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">subjects</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">objectMapper</span><span class="o">.</span><span class="na">treeToValue</span><span class="o">(</span><span class="n">jsonNode</span><span class="o">,</span> <span class="n">Subject</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
+   <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>Within the hour, an answer was posted. Turns out, the trick is to simply call <strong>traverse()</strong> on your JSON ArrayNode before passing it to <strong>readValue</strong>. The <strong>readValue</strong> method throws exceptions, so I created a new helper method in my JsonUtils class.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// helper method to make JSON array parsing a one-liner</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="nf">parseJsonList</span><span class="o">(</span><span class="n">JsonNode</span> <span class="n">node</span><span class="o">,</span> <span class="n">TypeReference</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;</span> <span class="n">typeReference</span><span class="o">)</span> <span class="o">{</span>
+   <span class="k">try</span> <span class="o">{</span>
+      <span class="k">return</span> <span class="n">JsonUtils</span><span class="o">.</span><span class="na">defaultMapper</span><span class="o">().</span><span class="na">readValue</span><span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">traverse</span><span class="o">(),</span> <span class="n">typeReference</span><span class="o">);</span>
+   <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="n">TAG</span><span class="o">,</span> <span class="s">"Failed to parse JSON list "</span> <span class="o">+</span> <span class="n">typeReference</span><span class="o">.</span><span class="na">getType</span><span class="o">(),</span> <span class="n">e</span><span class="o">);</span>
+      <span class="k">throw</span> <span class="k">new</span> <span class="nf">RuntimeException</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
+   <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>With this new method, we can now easily parse our JSON containing an array of objects.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Subject</span><span class="o">&gt;</span> <span class="n">subjects</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setSubjects</span><span class="o">(</span><span class="n">JsonNode</span> <span class="n">jsonArrayNode</span><span class="o">)</span> <span class="o">{</span>
+   <span class="n">subjects</span> <span class="o">=</span> <span class="n">JsonUtils</span><span class="o">.</span><span class="na">parseJsonList</span><span class="o">(</span><span class="n">jsonArrayNode</span><span class="o">,</span> <span class="k">new</span> <span class="n">TypeReference</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;</span><span class="n">Subject</span><span class="o">&gt;&gt;()</span> <span class="o">{});</span>
+<span class="o">}</span></code></pre></figure>
+
+<hr class="separator" />
+
+<p>Jackson 2.0 adds some cool <a href="https://github.com/FasterXML/jackson-docs/wiki/Presentation-Jackson-2.0">new features</a> that we’re not planning to use yet. But now, we’re in a good place to use them when the time comes. If you’re upgrading Jackson and running into any problems not covered here, please feel free to <a href="https://twitter.com/markmcerqueira">send me a tweet</a>; I’ll try to help and update this post.</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2013/07/04/bbq-pork-bun-crawl-san-francisco/">
+        BBQ Pork Bun Crawl - SF Edition
+      </a>
+    </h1>
+
+    <span class="post-date">04 Jul 2013</span>
+
+    <p>On July 4th, I celebrated my homeland’s birthday by embarking on a search with friends for the very best pork bun… Welcome to the BBQ Pork Bun Crawl - San Francisco Edition! BBQ pork buns (叉烧包, char siu bao) are Cantonese-style buns filled with barbecue pork – They are also absolutely delicious! Yelp reviews and Google searches were inconclusive when it came to determining where to find the best pork buns, so we took to the streets of San Francisco to find out for ourselves.</p>
+
+<!--break-->
+
+<div>
+	<img class="rounded-corners" style="max-width: 600px;" src="/assets/images/posts/2013-07-04/pork_bun_collage.jpg" />
+	<p class="caption-text" style="margin-top: 10px; line-height: 1.5em;"><b>Bakeries from left to right. Top: Wing Lee, Red House, Garden, Lung Fung.<br />Bottom: Good Mong Kok (steamed), Good Mong Kok (baked), Golden Gate, Victor's.</b></p>
+</div>
+
+<p style="margin-bottom: 8px;">We visited eight bakeries across several San Francisco neighborhoods. You can check out my individual <a href="http://www.yelp.com/list/bbq-pork-bun-crawl-sf-san-francisco">reviews on Yelp</a>, but here is the quick lowdown:</p>
+<ul>
+  <li><strong>Great:</strong> Good Mong Kok (Chinatown), Lung Fung Bakery (Richmond), Victor’s Bakery (Sunset)</li>
+  <li><strong>Good:</strong> Garden Bakery (Chinatown), Red House Bakery (Excelsior), Wing Lee Bakery (Richmond)</li>
+  <li><strong>Meh:</strong> Golden Gate Bakery (Chinatown)</li>
+  <li><strong>WTF?!:</strong> Mee Heong Bakery (Chinatown)</li>
+</ul>
+
+<p>One of the first bakeries we went to was Golden Gate Bakery in Chinatown. They’re known for their fresh Chinese Egg Tarts. In my eyes, they’ll also be known for their terrible pork buns, as they were easily the worst pork buns we sampled. The bread was dry and crusty, the meat was hard, and the sauce was uninspiring. Buns came with barely any meat, and what little there was was often tucked away to one side. Golden Gate Bakery should stick to what it’s great at (Chinese Egg Tarts) and consider taking this sad excuse for a pork bun off the menu.</p>
+
+<p>It seemed like we were off to a poor start, but the Chinatown bakeries soon redeemed themselves through the memorable <strong>Good Mong Kok</strong>. First, a note that BBQ pork buns come in two varieties: steamed (蒸, zheng) and baked (烤, kao). Steamed buns are usually only found at dim sum restaurants, but Good Mong Kok offered both! The fact that they also served fantastic pork and vegetable buns made this our favorite bakery for the first half of our journey. If you’re looking for a good variety of pork buns, this is the place to go!</p>
+
+<p>The last stop of our Chinatown excursion was particularly memorable. <strong>Mee Heong Bakery</strong> was out of pork buns when we walked in. I’d normally make a note to come back later, but as I peered into the dimly lit bakery, I noticed a pair of pigeons strolling around inside. Just chilling, and no store owner in sight. Congrats, Mee Heong Bakery – you earned yourself a big <strong>WTF?!</strong></p>
+
+<p>Next stop on our list was the Richmond District. We had the luck of tasting some great pork buns here as well. My <a href="http://www.yelp.com/list/bbq-pork-bun-crawl-sf-san-francisco">Yelp reviews</a> cover these in more detail. After Richmond, stomachs achingly full, we journeyed to the Sunset District where we found… the best of them all…</p>
+
+<p>There can only be one, and <strong>Victor’s Bakery</strong> in the Sunset is the bakery to rule them all! Their pork buns had the perfect amount of fluffy bread – just enough to give you that softness you love, yet with enough room for a generous serving of delicious, chunky meat. Surprisingly enough, Victor’s was the last bakery we visited; I expected the bakeries at the end of our itinerary to suffer from our absolute lack of appetite. But Victor’s prevailed over that!</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 600px;" src="/assets/images/posts/2013-07-04/pork_bun_winner.jpg" />
+	<p class="caption-text"><b>Group photo with the <i>BBQ Pork Bun Crawl</i> winner: Victor's Bakery in the Sunset!</b></p>
+</div>
+
+<p>An adventure wouldn’t be a great one without a little variety! On our way from Richmond to the Sunset, we made a pit stop at <strong>Tea Way</strong> for some refreshing bubble tea. We also enjoyed some perfectly seasoned, melt-in-your-mouth popcorn chicken at <strong>Let’s Roll</strong> next door. After we chose our pork bun champion, we took a walk down Taraval Street and ate some refreshing gelato from <strong>Marco Polo’s</strong>. After that point, all our hungers had been satiated and it was time to go home. As I began to drive back, one of my friends caught a glimpse of the <strong>Chairman Bao</strong> food truck from <strong>Off The Grid</strong>. I almost ran the car off the road in excitement. Literally: everyone in the car gave a little scream as the car swerved back and forth. With a little patience, we found the food truck and sampled some of their amazing Taiwanese-style bun sandwiches.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 600px;" src="/assets/images/posts/2013-07-04/side_quest.jpg" />
+	<p class="caption-text"><b>We ate other delicious things along the way!</b></p>
+</div>
+
+<p>The BBQ Pork Bun Crawl was an excellent way to spend a day off – Good friends and good food always make for a great time. While the six of us agreed on the ratings I’ve included on <a href="http://www.yelp.com/list/bbq-pork-bun-crawl-sf-san-francisco">Yelp</a>, that’s only our opinion. If we should give a place a second shot or we completely missed an amazing place, please feel free to <a href="https://twitter.com/markmcerqueira">send me a tweet</a>! This crawl may be over, but we’re already looking forward to the next time we scour the city for amazing food.</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2013/07/03/staying-dry-with-android-layout-files/">
+        Staying Dry with Android Layout Files
+      </a>
+    </h1>
+
+    <span class="post-date">03 Jul 2013</span>
+
+    <p>There are countless Android device types out there. The Android OS can load resources based on a device’s screen size and pixel density. This is useful when you want different user experiences for larger tablets versus a smaller handset. The system works as intended, but what if you want the exact same layout with a few minor tweaks? Maybe you want a list item to be 40% taller on tablets, or maybe you want less padding around an image on smaller devices. Google provides thorough documentation on <a href="https://developer.android.com/guide/practices/screens_support.html">supporting multiple screen sizes</a>, but does not offer an elegant solution for tweaking layouts across device sizes. You could support multiple layout files for different classes of devices, but that’s a pain to maintain given the minor differences across layout files. Fortunately, there is a way to stay DRY (don’t repeat yourself) with your layout files!</p>
+
+<!--break-->
+
+<p>In this example, we have a basic list item that shows information for a song. It has an ImageView to show the album art and a TextView to display the song’s title. Our layout file in the <strong>res/layout</strong> folder looks like this:</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;com.company.ListItem</span>
+  <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+  <span class="na">android:layout_height=</span><span class="s">"50dp"</span>
+  <span class="na">android:background=</span><span class="s">"@color/list_item_background"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;ImageView</span>
+    <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_gravity=</span><span class="s">"center_vertical"</span>
+    <span class="na">android:src=</span><span class="s">"@drawable/album_blank"</span><span class="nt">/&gt;</span>
+
+  <span class="nt">&lt;TextView</span>
+    <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_gravity=</span><span class="s">"center_vertical"</span>
+    <span class="na">android:layout_marginLeft=</span><span class="s">"4dp"</span>
+    <span class="na">android:textColor=</span><span class="s">"@color/song_title_text_color"</span>
+    <span class="na">android:textSize=</span><span class="s">"14sp"</span>
+    <span class="na">android:text=</span><span class="s">"@string/default_song_title"</span><span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/com.company.ListItem&gt;</span></code></pre></figure>
+
+<hr class="separator" />
+
+<p style="margin-bottom: 8px;">Our trusty designer reviews the implementation on various devices and comes back with these requests:</p>
+<ul>
+  <li>Make the entire list item 20% taller on tablet devices.</li>
+  <li>Add a larger margin to the left of the song title.</li>
+  <li>Make the text size of the song title larger on tablets.</li>
+</ul>
+
+<p>You could make a copy of the layout file and put it in the <strong>res/layout-large/</strong> folder, tweaking the values as requested. You may even need to do this for <strong>res/layout-xlarge/</strong> and <strong>res/layout-small</strong>. Copying, pasting, and tweaking are all easy, but any subsequent updates to the layout requires changing multiple layout files. If we added a TextView to our list item to show the name of the artist, we’d be copying and pasting that TextView into each instance of our list item layout file. In the end, repetition becomes frustrating, and maintenance becomes time-consuming.</p>
+
+<p>You’re already familiar with the key to avoiding this copy-and-paste madness: the <strong>values</strong> folder. You likely already use it if you define string and color constants. In the example above, we used the following values:</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;resources&gt;</span>
+  <span class="c">&lt;!-- color values --&gt;</span>
+  <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"list_item_background"</span><span class="nt">&gt;</span>#ecebea<span class="nt">&lt;/color&gt;</span>
+  <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"song_title_text_color"</span><span class="nt">&gt;</span>#222222<span class="nt">&lt;/color&gt;</span>
+
+  <span class="c">&lt;!-- string values --&gt;</span>
+  <span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">"default_song_title"</span><span class="nt">&gt;</span>Song Title<span class="nt">&lt;/string&gt;</span>
+<span class="nt">&lt;/resources&gt;</span></code></pre></figure>
+
+<p>It turns out, the configuration qualifiers you can append to <strong>res/layout</strong> and <strong>res/drawable</strong> to support multiple devices also works for the <strong>values</strong> folder! You can define <strong>dimen</strong> resource values that can store values with units like dp and sp. For example, in the layout file above, we could change the height of our list item from 50dp to <strong>@dimen/list_item_height</strong> and then we could define this <strong>dimen</strong> in the <strong>values</strong> and <strong>values-large</strong> folders. We repeat this for each of the requests made by our designer, and end up with two files (in <strong>res/values</strong> and <strong>res/values-large</strong>) that look like this:</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- res/values/list_item_values.xml --&gt;</span>
+<span class="nt">&lt;dimen</span> <span class="na">name=</span><span class="s">"list_item_height"</span><span class="nt">&gt;</span>50dp<span class="nt">&lt;/dimen&gt;</span>
+<span class="nt">&lt;dimen</span> <span class="na">name=</span><span class="s">"list_item_song_title_left_margin"</span><span class="nt">&gt;</span>4dp<span class="nt">&lt;/dimen&gt;</span>
+<span class="nt">&lt;dimen</span> <span class="na">name=</span><span class="s">"list_item_song_title_text_size"</span><span class="nt">&gt;</span>14sp<span class="nt">&lt;/dimen&gt;</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- res/values-large/list_item_values.xml --&gt;</span>
+<span class="nt">&lt;dimen</span> <span class="na">name=</span><span class="s">"list_item_height"</span><span class="nt">&gt;</span>60dp<span class="nt">&lt;/dimen&gt;</span>
+<span class="nt">&lt;dimen</span> <span class="na">name=</span><span class="s">"list_item_song_title_left_margin"</span><span class="nt">&gt;</span>8dp<span class="nt">&lt;/dimen&gt;</span>
+<span class="nt">&lt;dimen</span> <span class="na">name=</span><span class="s">"list_item_song_title_text_size"</span><span class="nt">&gt;</span>20sp<span class="nt">&lt;/dimen&gt;</span></code></pre></figure>
+
+<p>Now, we can have a single layout file. Android can load different layout files for different devices, and the values loaded also follow the same set of rules. You can even define a <strong>string</strong> to have different values, which may be useful for displaying longer strings on tablets. All those copies of your layout file can now be discarded and replaced with this single file:</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;com.company.ListItem</span>
+  <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+  <span class="na">android:layout_height=</span><span class="s">"@dimen/list_item_height"</span>
+  <span class="na">android:background=</span><span class="s">"@color/list_item_background"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;ImageView</span>
+    <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_gravity=</span><span class="s">"center_vertical"</span>
+    <span class="na">android:src=</span><span class="s">"@drawable/album_blank"</span><span class="nt">/&gt;</span>
+
+  <span class="nt">&lt;TextView</span>
+    <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_gravity=</span><span class="s">"center_vertical"</span>
+    <span class="na">android:layout_marginLeft=</span><span class="s">"@dimen/list_item_song_title_left_margin"</span>
+    <span class="na">android:textColor=</span><span class="s">"@color/song_title_text_color"</span>
+    <span class="na">android:textSize=</span><span class="s">"@dimen/list_item_song_title_text_size"</span>
+    <span class="na">android:text=</span><span class="s">"@string/default_song_title"</span><span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/com.company.ListItem&gt;</span></code></pre></figure>
+
+<hr class="separator" />
+
+<p style="margin-bottom: 8px;">So now you can avoid repeating yourself, but you are adding a level of indirection. At Smule, we've avoided any indirection-induced pain by following these book-keeping practices:</p>
+<ul>
+  <li>Prefix the name of the value with the name of the layout file that’s using it (e.g. song_list_item_, song_list_activity_).</li>
+  <li>If you’re sharing values across multiple layout files (e.g. the height of a navigation bar shown everywhere in the app), use some special prefix for those shared values (e.g. shared_).</li>
+  <li>Keep device-dependent values in a separate XML file as opposed to just having a single file in the values folder. Things like strings and colors will unlikely vary across different devices, so keep those in a separate file.</li>
+</ul>
+
+<p>I hope this helps anyone who’s looking to maintain their Android layout files more easily. Huge kudos to Stack Overflow user, kennethc, who discovered this functionality and <a href="http://stackoverflow.com/questions/12616321/android-how-do-you-manage-multiple-layout-files-in-line-with-dry-principle">posted about it</a>. If there is any additional magic to managing multiple layout files, please feel free to <a href="https://twitter.com/markmcerqueira">send me a tweet</a> and I’ll update this post!</p>
+
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2013/07/01/june-reading-marathon/">
+        June Reading Marathon!
+      </a>
+    </h1>
+
+    <span class="post-date">01 Jul 2013</span>
+
+    <p>While in college, the time I spent reading for pleasure tapered off. Unfortunately, it never really picked back up. This made me sad given there are such great books, both old and new, out there. I reddit a little (a lot) and the redditors over at <a href="http://www.reddit.com/r/books">r/books</a> and <a href="http://www.reddit.com/r/scifi">r/scifi</a> are always recommending great books. So in June I made a concerted effort to spend more time reading. While the previous books I’ve read over the past year were all science fiction, I tried to vary up the genres of books this time. Now that June has flown by, here are the books I read and my thoughts on them.</p>
+
+<!--break-->
+
+<ol>
+  <li>
+    <p><em>The Forever War</em> (1974) by Joe Haldeman - This novel starts off as your typical science fiction describing an interstellar war between humanity and an alien species. But rather than get bogged down in the technology and battles between the two sides, this novel dives into the lives of soldiers after their fighting is done. The futuristic setting allows a broadening of this exploration via time dilation, which greatly lengthens the time soldiers spend in combat relative to those who do not fight in the war. This is due to the soldiers often traveling near the speed of light, which “slows down their time.” Our story follows a soldier who spends two years fighting, but returns to an Earth where decades have passed. The novel originally served as a metaphor for the Vietnam War, but seems very relevant to the issues facing all of our veterans.</p>
+  </li>
+  <li>
+    <p><em>Do Androids Dream of Electric Sheep?</em> (1968) by Phillip K. Dick - A seminal science fiction novel that explores a world in the near future where the line between man and machine has become extremely blurred. The concepts and themes explored extend beyond man vs. machine in such a well-woven manner that it doesn’t feel like the author is trying to force some higher message down your throat. The plot is relatively straightforward, and given the brevity of the work (~200 pages), the author does not attempt to fit a grandiose plot into too short a text – which is refreshing.</p>
+  </li>
+  <li>
+    <p><em>The Curious Incident of the Dog in the Night-Time</em> (2003) by Mark Haddon - It’s been so long since I’ve read such a great, light-hearted book! Haddon’s mystery novel centers around Christopher, a young boy who describes himself as having some “behavioral difficulties,” and his journey to solve the murder of his neighbor’s dog. Although many people liken Christopher’s behavior to Asperger’s or autism, Haddon claims the book is “about seeing the world in a surprising and revealing way.” Haddon described Christopher’s point of view so well that as I read the novel, I found myself frustrated with how he was responding to situations. Those moments of frustration became important moments of reflection on how we should respect the fact that everyone does not think and act like we do.</p>
+  </li>
+  <li>
+    <p><em>Heart of Darkness</em> (1899) by Joseph Conrad - The list of classic movies I haven’t seen is as shameful as the list of classic books I haven’t read. Reading this short novel got one book off that list, but I honestly did not enjoy it much. Conrad’s tale explores themes of corruption, colonialism, and racism in the larger context of imperialism. It felt like something your high school English teacher would assign to you because its many themes are very relevant to world history, and while I’ve really enjoyed plenty of assigned reading, the themes here are so blatant that the plot seems to take a backseat to it all.</p>
+  </li>
+  <li>
+    <p><em>Foucault’s Pendulum</em> (1988) by Umberto Eco - Someone on the <a href="http://www.reddit.com/r/books">r/books</a> subreddit described this book as “a thinking man’s Dan Brown. [A] group of guys make up a conspiracy on a whim, then can’t convince the conspiracy theorists it’s not real.” This book describes what Dan Brown must feel like as he strings together some harebrained conspiracy, loosely grounded in some historical texts, for his latest best-selling novel. Don’t get me wrong – I’m a sucker for the occasional conspiracy theory book, but Eco’s work shows how dangerous it can be to breathe life into a lie, which Brown’s novels invariably do for some people! This was the longest read in June and took a while to get through, but I still recommend it.</p>
+  </li>
+</ol>
+
+<p>July is upon us and I already have a list of books I want to read next. As a Computer Science major and now Software Engineer, I can get by without 100% proper grammar and syntax. But I’ve started actively <a href="http://www.yelp.com/user_details?userid=V4unpKMFq8kSHDMw2UW9rQ">Yelping</a> (and blogging here), and want my writing to be totally legit and proper. So I’m going to read <em>The Elements of Style</em> and <em>Eats, Shoots &amp; Leaves: The Zero Tolerance Approach to Punctuation</em>.</p>
+
+<p>After that I want to revisit two of my favorite books from my childhood: <em>The Wind in the Willows</em> by Kenneth Grahame and <em>A Wrinkle in Time</em> by Madeleine L’Engle. Next on the list is a bit of professional development with <em>Design for Hackers: Reverse Engineering Beauty</em>, which I hope will give me some insight into how the great designers I work with at Smule think! Last is a book written in Portuguese; I’m leaning towards Jose Saramago’s <em>Ensaio Sobre a Cegueira</em> (Essay on Blindness) –  a novel on the social effects of an epidemic that turns everyone in a city blind.</p>
+
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page33">Older</a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page31">Newer</a>
+    
+  
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

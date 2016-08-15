@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      mark cerqueira &middot; well-rounded nerd
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/tags.css">
+  <link rel="stylesheet" href="/public/css/v1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">home</a>
+    <a class="sidebar-nav-item" href="/about/">about</a>     
+    <a class="sidebar-nav-item" href="/archive/">archive</a>
+    <a class="sidebar-nav-item" href="/fitness/">fitness</a>
+    <a class="sidebar-nav-item" href="/projects/">projects</a>
+  </nav>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">mark cerqueira</a>
+            <small>well-rounded nerd</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/04/26/thats-allowed-in-java/">
+        That's Allowed in Java!?
+      </a>
+    </h1>
+
+    <span class="post-date">26 Apr 2015</span>
+
+    <p>Sometimes you think you know a programming language really well. When I first looked at the Java code below, I thought there was <strong>NO WAY</strong> this code could compile.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">WTFBBQSauce</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="n">myString</span> <span class="o">=</span> <span class="s">"ClassLevel"</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">doWork</span><span class="o">()</span> <span class="o">{</span>
+		 <span class="c1">// myString above (class-level) is shadowed by this method-level declaration</span>
+         <span class="n">String</span> <span class="n">myString</span> <span class="o">=</span> <span class="s">"MethodLevel"</span><span class="o">;</span>
+
+         <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">myString</span><span class="o">);</span> <span class="c1">// this will print "MethodLevel"</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>I thought the declaration of myString in doWork would complain about a variable with the same name already being accessible. <strong>But I was wrong</strong>. It compiles and runs.</p>
+
+<p>How? Why? This works because of <a href="http://www.xyzws.com/javafaq/what-is-variable-hiding-and-shadowing/15"><strong>variable shadowing</strong></a>. You have probably already seen variable shadowing in action in constructors and probably didn’t bat an eyelid.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">WTFBBQSauce</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="n">sauceSize</span><span class="o">;</span> <span class="c1">// size of WTFBBQSauce in ounces</span>
+
+    <span class="kd">public</span> <span class="nf">WTFBBQSauce</span><span class="o">(</span><span class="kt">int</span> <span class="n">sauceSize</span><span class="o">)</span>
+		<span class="c1">// we explicitly use this.sauceSize to refer to the instance variable sauceSize</span>
+		<span class="c1">// above; if we just say sauceSize we are referring to the parameter passed in</span>
+		<span class="k">this</span><span class="o">.</span><span class="na">sauceSize</span> <span class="o">=</span> <span class="n">sauceSize</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>That said, I’m not going to run out and use this newfound knowledge. <strong>Variable shadowing makes code confusing.</strong> My inner compiler (the thing that told me this would never compile) will help me steer clear of using this language feature. But given how programmers sometimes like to <del>show off</del> discuss the finer points of languages, this knowledge isn’t totally useless.</p>
+
+<p>Kudos to <a href="http://stackoverflow.com/a/29887707/265791">Abubakkar Rangara</a> for helping me get to the bottom of my Java knowledge gap!</p>
+
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/04/24/nintendo-gets-with-the-dlc-program/">
+        Nintendo Gets with the DLC Program
+      </a>
+    </h1>
+
+    <span class="post-date">24 Apr 2015</span>
+
+    <p>My friends and I played a lot (understatement) of Mario Kart: Double Dash!! for the GameCube in college. My dashers-in-crime, RW (ringleader of the big band <a href="http://www.urpmusic.com/productions/about.php#about">Urban Renewal Productions</a>) and Theo (prisoner of war at UChicago’s PhD program) took this game <strong>seriously</strong>. We got into fights over blue shells and talked a lot about what we wanted for the future of the series. DLC was one thing we all thought would be great for the series. Sixteen stages was nice and satisfied the “we only release complete games and that’s why we don’t do DLC” mantra that Nintendo lives by, but honestly none of us took issue with the idea of forking over money to download more stages to play.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 700px; margin-top: 10px; border: 0px;" src="/assets/images/posts/2015-04-24/bundle.png" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong>Behold and rejoice!</strong></p>
+</div>
+
+<p>Finally! Eight years later, it finally happened. <strong>Nintendo got with the program and released DLC for the Mario Kart series.</strong> Hallelujah! Mario Kart 8 (MK8) for the Wii U,  released in May of 2014, came with 32 tracks: 16 newly designed tracks and 16 retro tracks (tracks from old games given an HD spruce up). On release, it garnered positive reviews and was <strong>a complete Mario Kart experience</strong>. But then something magical happened. Nintendo released two DLC packs that together added <strong>6 new characters, 8 new vehicles, and 16 new tracks to the game</strong>! All for the relatively low cost of <strong>$11.99</strong>.</p>
+
+<p>I definitely appreciate Nintendo’s attitude that released games should be complete experiences (looking at you EA), but new content on top of an already-complete game is always welcome. <strong>Everyone is a winner.</strong> Players get more content. Nintendo gets gamers “reactivated,” back into a game, and spending money. Good press for the DLC may also draw console sales, which the Wii U needs, and game sales. And by theming the DLC packs (the two released packs center around The Legend of Zelda and Animal Crossing), other franchises get some exposure as well.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 700px; margin-top: 10px; border: 0px;" src="/assets/images/posts/2015-04-24/title.png" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong>Is Nintendo REALLY getting it!?</strong></p>
+</div>
+
+<p>The final exhibit of how good Nintendo might be getting the DLC thing: the newly updated title screen to MK8. It was updated from Mario drifting on a kart to <del>Zelda</del> Link riding on the Master Cycle with Hyrule Castle in the background. All three aforementioned things are ONLY available via DLC. They’re <strong>subtlety advertising DLC on the title screen</strong>! Very clever and sneaky…</p>
+
+<p>If you’re reading this Nintendo, <strong>don’t stop</strong>! Keep it coming! Like Reggie, <a href="http://knowyourmeme.com/memes/my-body-is-ready">my body is ready</a>.</p>
+
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/04/22/google-play-and-genymotion/">
+        Getting Google Play on Genymotion
+      </a>
+    </h1>
+
+    <span class="post-date">22 Apr 2015</span>
+
+    <p>I’ve got a project in the works that requires running an Android app – Final Fantasy Record Keeper (FFRK) – on my computer. BlueStacks lets you install apps from the Play Store easily but BlueStacks also kind of sucks – especially the Mac (beta) version.</p>
+
+<p><a href="https://www.genymotion.com/#!/"><strong>Genymotion</strong></a> has been a reliable and flexible Android emulator, but unfortunately it does not come with Google Play services out of the box, so installing applications from the Play Store is not possible. But with a little bit of work, you can power up your Genymotion emulator! These steps are largely adapted from <a href="http://forum.xda-developers.com/showthread.php?t=2528952">these instructions posted on the XDA-Developers</a>, and feature some additional information regarding steps that tripped me up.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 400px; margin-top: 10px; border: 0px;" src="/assets/images/posts/2015-04-22/ffrk-title.png" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong></strong></p>
+</div>
+
+<ol>
+  <li>
+    <p>Set up the <strong>Android Debug Bridge</strong> (adb). It comes bundled with the Android SDK. Google it if you don’t have it set up yet.</p>
+  </li>
+  <li>
+    <p>Download and install <a href="https://www.genymotion.com/#!/download"><strong>Genymotion</strong></a> and <a href="https://www.virtualbox.org/wiki/Downloads"><strong>VirtualBox</strong></a>. Genymotion requires VirtualBox to work.</p>
+  </li>
+  <li>
+    <p>Open Genymotion and add a new Android emulator. Originally I went with the Google Nexus 7 - 4.4.4, but that ended up causing FFRK to crash immediately on launch. The <strong>Google Nexus 7 2013 - 4.3</strong> worked for me so use that one.</p>
+  </li>
+  <li>
+    <p>Download the <strong>ARM Translation Installer</strong> (9.4 MB) and <strong>Google Apps for Android 4.3</strong> (91.7 MB). Both can be downloaded from this <a href="http://forum.xda-developers.com/showthread.php?t=2528952">helpful XDA-Developer post</a>. It is very important that you <strong>do NOT unzip the ARM Translation zip file</strong>. If you do, it’ll overwrite itself and make itself unusable in the next step. If your browser is set to automatically launch files, disable that behavior.</p>
+  </li>
+  <li>
+    <p>Launch the Genymotion virtual machine (VM) and <strong>drag the ARM Translation Zip file onto the VM</strong>. The file will transfer and then you will be asked if you want to flash the VM. Agree, wait a bit, and then reboot the VM using <em>adb reboot</em>. The adb command can take a little while to run so give it some time. If you don’t get asked to flash the VM, you probably unzipped the ARM Translation zip file. Go back to step 4.</p>
+  </li>
+</ol>
+
+<!--break-->
+
+<p>Now there are two ways to install FFRK. You can download the APK from an external source and install it via adb (less steps, faster) OR you can install Google Play services on your VM and then install FFRK via the Play Store (more steps, but useful if you’re using a Google account to transfer game data from another device).</p>
+
+<hr class="separator" />
+
+<p><strong>Direct Installation</strong></p>
+
+<ol>
+  <li>
+    <p>Download the FFRK APK from a site like <a href="https://twitter.com/markmcerqueira">APK Downloader</a>. The package name for FFRK is com.dena.west.FFRK.</p>
+  </li>
+  <li>
+    <p>Install the APK via adb: <em>adb install com.dena.west.FFRK.apk</em>. Note that if you had done this before flashing your VM with the ARM Translator, you’d get the INSTALL_FAILED_CPU_ABI_INCOMPATIBLE error. This, time it should install just fine.</p>
+  </li>
+</ol>
+
+<div>
+	<img class="rounded-corners" style="max-width: 500px; margin-top: 10px; border: 0px;" src="/assets/images/posts/2015-04-22/direct.png" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong></strong></p>
+</div>
+
+<hr class="separator" />
+
+<p><strong>Install via Google Play Store</strong></p>
+
+<ol>
+  <li>
+    <p><strong>Drag the Google Apps file onto the VM</strong>. The file transfers, and then you agree to the disclaimer, wait, and reboot via adb.</p>
+  </li>
+  <li>
+    <p>Once rebooted, you’ll likely see Google Play Services crashing repeatedly. Don’t worry. Just <strong>make your way to the Play Store and log into a Google account</strong>. Theoretically, you would then see a list of apps and services that could be updated, but I saw nothing so I just waited a bit (assuming things were upgrading in the background without my knowledge) and then rebooted the VM. After a few reboots, the Play Store updated and the Play Services crashes went away.</p>
+  </li>
+  <li>
+    <p>Search for Final Fantasy Record Keeper and hit the <strong>INSTALL</strong> button.</p>
+  </li>
+</ol>
+
+<div>
+	<img class="rounded-corners" style="max-width: 400px; margin-top: 10px; border: 0px;" src="/assets/images/posts/2015-04-22/ffrk-playstore.png" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong></strong></p>
+</div>
+
+<hr class="separator" />
+
+<p><strong>Post-Installation Optimization</strong></p>
+
+<ol>
+  <li>
+    <p>FFRK should now launch and run, but it might be a bit laggy. To try to help reduce this, I quit the VM and reduced the resolution of the machine from 1200 x 1920 (320 DPI) to 600 x 960 (160 DPI).</p>
+  </li>
+  <li>
+    <p>The redditor lilmacaco (little monkey in Portuguese!) found that <a href="https://www.reddit.com/r/FFRecordKeeper/comments/31yetr/pc_players_which_emulator_do_you_use/cq6v94n">turning down animation scales</a> improved performance as well. Follow the aforementioned link for instructions on turning on Developer Options and then turning down animation scales. He recommends turning them down to .5, but I just turned mine off completely.</p>
+  </li>
+</ol>
+
+<div>
+	<img class="rounded-corners" style="max-width: 400px; margin-top: 10px; border: 0px;" src="/assets/images/posts/2015-04-22/ffrk-animations.png" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong></strong></p>
+</div>
+
+<hr class="separator" />
+
+<p>Please let me know via <a href="https://twitter.com/markmcerqueira">Twitter</a> or <a href="https://reddit.com/u/marktronic">reddit</a> if you have any more optimizations or find steps that could use more clarification. Happy FFRKing on Genymotion!</p>
+
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/04/20/good-to-be-back/">
+        It's Good to be Back
+      </a>
+    </h1>
+
+    <span class="post-date">20 Apr 2015</span>
+
+    <p>Rewind to roughly a year ago. It’s May 2014. Everything was going well with marathon training for the 2014 San Francisco Marathon I was planning to run in July. I was increasing my mileage into the 18 mile range and feeling good. <strong>But then I got runner’s knee.</strong> And I ended up not running the marathon. I stopped running both to recover and because when I did attempt to run, something felt off in my knee. My monthly running competitions with friends (highlighted on my <a href="http://www.mark.gg/fitness.html">Fitness</a> page) also came to and end. It sucked.</p>
+
+<p>Turns out, <strong>running has become a great way to ground myself</strong>. Besides keeping me in decent shape, morning runs became a great time for me to collect thoughts from the previous days and prepare for the coming day. Losing that was tough both physically and mentally.</p>
+
+<p><strong>But, I’m back now!</strong></p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 700px; margin-top: 10px; border: 0px;" src="/assets/images/posts/2015-04-20/2015-Woodside.jpg" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong>Feels good!</strong></p>
+</div>
+
+<p>The other day I ran the Woodside Crossover 10K. I ran the trail race in 2014 and while running 4 miles up a hill (followed by 2 breezy miles downhill) sounds painful, it was the funnest race of 2014. The 2015 trail was in the same park, but took a slightly different trail; the uphill climb was spread more evenly throughout the 6 miles. Last year, I placed 4th in my age group. <strong>This year, I placed 2nd in my age group!</strong> Progress!</p>
+
+<p>I’m looking forward to running more frequently. I’ve already signed up for the San Francisco Half Marathon and am training with fellow Evernote coworkers who will also be running in the event. I’d like to take a stab at a marathon one day, but for now, I’ll take things nice and slow. I’m hungry for “marathon glory,” but I’d rather run shorter distances than risk getting injured again.</p>
+
+<p>Onwards! :)</p>
+
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/04/18/peeking-into-final-fantasy-record-keeper/">
+        Peeking Into Final Fantasy Record Keeper
+      </a>
+    </h1>
+
+    <span class="post-date">18 Apr 2015</span>
+
+    <div class="float-image-right">	
+  	<img style="border: 0px;" src="/assets/images/posts/2015-04-18/ffrk.png" alt="Final Fantasy Record Keeper" /> 
+  	<p>I've been playing a lot of <strong><a href="http://www.finalfantasyrecordkeeper.com/">Final Fantasy Record Keeper</a> (FFRK)</strong>. It's a free-to-play game available on iOS and Android. It's pretty fun! You get characters from different entries in the series, battle in different settings, get equipment, craft abilities, get experience points, get annoyed by a Moogle, get to listen to awesome music, unleash powerful limit breaks, and the rest of the whole JRPG shebang. In short, I'm hooked.</p>
+</div>
+
+<p>Today, I <strong>hooked up FFRK to <a href="http://www.charlesproxy.com">Charles Proxy</a></strong>. Charles is a nifty tool that can show you network traffic (via API calls) leaving and coming back to your phone. Let’s take a look at one API call: <em>get_battle_init_data</em>. This API is called at the beginning of a battle. A battle in FFRK consists of multiple rounds of enemies that you must fight in succession. This one API provides data for all rounds of a single battle.</p>
+
+<p>In the JSON response to this API, there is an array “rounds” that has metadata for each of the rounds of enemies you’ll face off against. Inside that array, is “drop_item_list” which describes an item that will be dropped when you complete the round. Also, you’ll find an array keyed by “enemy” which has metadata for each enemy. Nested a bit inside each enemy object, you’ll find a “drop_item_list” for that enemy which describes what item the enemy drops.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 600px; margin-top: 10px; border: 0px;" src="/assets/images/posts/2015-04-18/items.png" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong>Item dropped after a round ends (red) and item dropped when an enemy is destroyed (green).<br />The items, respectively, are a Blue Potion and a Minor Fire Orb.</strong></p>
+</div>
+
+<p>What’s the difference between drop_item_list nested under “round” and drop_item_list under “enemy?” Turns out some items are dropped after completing a round and not by a particular enemy. For example, potions (nested under “round”) were only dropped after all enemies were destroyed. You’ve probably noticed you never get a potion halfway through a round and this is why.</p>
+
+<p>I ran the Ship Graveyard (FFV) a few times because <strong>figuring out how to get the Black Cowl reliably</strong> is a great proof of concept.</p>
+
+<!--break-->
+
+<div>
+	<img class="rounded-corners" style="max-width: 340px; margin-top: 10px; border: 0px;" src="/assets/images/posts/2015-04-18/siren.png" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong>I can has Black Cowl?</strong></p>
+</div>
+
+<p>During my first pass, I just looked at the response data and drop_item_list and mapped what I was seeing returned in the API to what I was getting in the game. Each drop_item_list has an integer keyed by “type” and after some data collection, the mappings so far look like: gold (11), potion (21), ability potion (31), weapon/armor (41), orb (51). I also mapped a few items specifically:</p>
+
+<div style="width: 50%; margin: 0 auto;">
+<table style="margin-bottom: 1em;">
+	<tr><th>item_id</th><th>type</th><th>rarity</th><th>Item Name</th></tr>
+	<tr><td>40000007</td><td>51</td><td>1</td><td>Lesser White Orb</td></tr>
+	<tr><td>21009001</td><td>41</td><td>1</td><td>Cherry Staff (XII)</td></tr>
+	<tr><td>21010002</td><td>41</td><td>1</td><td>Shortbow (XII)</td></tr>
+	<tr><td>40000031</td><td>51</td><td>1</td><td>Minor Fire Orb</td></tr>
+	<tr><td>22053001</td><td>41</td><td>1</td><td>Copper Cuirass (V)</td></tr>
+	<tr><td>22054002</td><td>41</td><td>1</td><td>Leather Armor (III)</td></tr>
+</table>
+</div>
+
+<p>So, if we had a more complete mapping of item_ids <strong>we could know as soon as a battle starts exactly what items will be dropped</strong>! Turns out, it isn’t very difficult to map items to item_ids. Just hop over to the Party tab and you’ll get item_ids and you’ll see a request made to party/list which returns – among many other things – arrays for “materials” and “equipments” that you possess. item_id in the get_battle_init_data matches to equipment_id in the party/list API. I verified this by checking that the Cherry Staff (XII) equipment_id matched what I found while manually collecting item_ids. By the way, <strong>the Black Cowl item id is 22051015</strong>!</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 600px; margin-top: 10px; border: 0px;" src="/assets/images/posts/2015-04-18/cherrystaff.png" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong>item_id = equipment_id</strong></p>
+</div>
+
+<p><strong>Can we exploit this?</strong> Let’s see! If you start a battle, pause immediately, look at the items that will drop, and then force restart the app, you’ll make another request to <em>get_battle_init_data</em>, but the drops do not change.</p>
+
+<p>But there are ways to re-roll drops as highlighted <a href="http://www.justpushstart.com/2015/04/final-fantasy-record-keeper-how-to-reroll-drops/">here</a>. The general gist of the strategy is to force quit the app if you don’t get the drop you want and when you restart the app you decline to restart the battle. This throws you completely out of the battle flow. When you reenter you make a fresh call to <em>get_battle_init_data</em> that will get you new drops. This costs stamina – an energy unit required for battling that slowly restores over time – so <strong>re-rolling drops has a cost</strong>. What does this look like at the API level?</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 700px; margin-top: 10px; border: 0px;" src="/assets/images/posts/2015-04-18/reset.png" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong>Drops don't change unless you cross a red arrow!</strong></p>
+</div>
+
+<p>When you start a battle, a series of API calls are made. <em>begin_session</em> and <em>begin_battle</em> return a session key and then <em>get_battle_init_data</em> is called. If you do the re-roll trick mentioned above, a call is made to <em>quit</em>. The middle block (green) of API calls that features two calls to <em>get_battle_init_data</em> is me starting the battle and force quitting it. Note that in this scenario, drops DO NOT change. To get drops to change, <em>quit</em> (highlighted by the red arrows) must be called, or <em>win</em> which is called when you complete a battle. Then <em>begin_session</em> and <em>begin_battle</em> (which consumes stamina) are called again and this re-rolls drops. In short, if you don’t call <em>quit</em> (or <em>win</em> by completing the battle), drops won’t change.</p>
+
+<p>Can we re-roll our drop list without costing us any stamina? Unlikely given the API design. Charles allows you to set <a href="http://www.charlesproxy.com/documentation/proxying/breakpoints/">breakpoints</a> on API calls. If we breakpoint on the <em>get_battle_init_data</em> response, we can check it for the item_ids we want. If they are present, we can allow the response through and everything proceeds as normal. If the item_ids don’t have what we care about, we abort the request. I did this six times (hit the breakpoint, copied the response, aborted the request) and then compared the all responses to <em>get_battle_init_data</em>. They were all exactly the same.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">~/md5 r<span class="k">*</span>.txt
+MD5 <span class="o">(</span>r1.txt<span class="o">)</span> <span class="o">=</span> 3467b0c7a40ebc3f72fa7b9165dc8220
+MD5 <span class="o">(</span>r2.txt<span class="o">)</span> <span class="o">=</span> 3467b0c7a40ebc3f72fa7b9165dc8220
+MD5 <span class="o">(</span>r3.txt<span class="o">)</span> <span class="o">=</span> 3467b0c7a40ebc3f72fa7b9165dc8220
+MD5 <span class="o">(</span>r4.txt<span class="o">)</span> <span class="o">=</span> 3467b0c7a40ebc3f72fa7b9165dc8220
+MD5 <span class="o">(</span>r5.txt<span class="o">)</span> <span class="o">=</span> 3467b0c7a40ebc3f72fa7b9165dc8220
+MD5 <span class="o">(</span>r6.txt<span class="o">)</span> <span class="o">=</span> 3467b0c7a40ebc3f72fa7b9165dc8220</code></pre></figure>
+
+<p>If I had to guess <em>begin_battle</em> creates a battle session on the FFRK servers. Until <em>quit</em> or <em>win</em> is called, repeated calls to <em>get_battle_init_data</em> will return the same response. When you force quit the app and return and the app asks if you’d like to resume your interrupted battle, it’s likely noticing that you have an open battle session on the servers (opened by <em>begin_battle</em>) that is not closed yet (by <em>win</em> or <em>quit</em>).</p>
+
+<p>So is this all for naught? Not necessarily. Unfortunately, we can’t re-roll drops for free, but we can save ourselves some time and take some of the guesswork out of farming for a particular drop. For example, to farm the Black Cowl using this system:</p>
+
+<ul>
+  <li>Hook up your device to Charles Proxy.</li>
+  <li>Start the battle and pause as soon as the battle starts.</li>
+  <li>Look the response to <em>get_battle_init_data.</em> Look at the drop_item_list for the enemy in the 4th round (index 3). That enemy is Siren – the boss.</li>
+  <li>If the item_id is 22051015, congrats! You’re going to get a Black Cowl when you beat the boss.</li>
+  <li>If the item_id is not 22051015, flee the battle; this calls the <em>flee</em> API which is similar in functionality to the <em>quit</em> API. Start the battle again and repeat the steps above until you get the Black Cowl item id in the API response.</li>
+</ul>
+
+<p>This new method is more time-efficient and takes the guesswork out of farming drops, but it won’t prevent stamina drain. Oh wells!</p>
+
+<p>Source code and sample JSON data available at <a href="https://github.com/markcerqueira/ff-record-keeper">ff-record-keeper on GitHub</a>!</p>
+
+
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page14">Older</a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page12">Newer</a>
+    
+  
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

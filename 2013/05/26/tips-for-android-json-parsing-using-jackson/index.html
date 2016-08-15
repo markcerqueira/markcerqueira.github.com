@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Tips for Android JSON Parsing Using Jackson &middot; mark cerqueira
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/tags.css">
+  <link rel="stylesheet" href="/public/css/v1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">home</a>
+    <a class="sidebar-nav-item" href="/about/">about</a>     
+    <a class="sidebar-nav-item" href="/archive/">archive</a>
+    <a class="sidebar-nav-item" href="/fitness/">fitness</a>
+    <a class="sidebar-nav-item" href="/projects/">projects</a>
+  </nav>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">mark cerqueira</a>
+            <small>well-rounded nerd</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Tips for Android JSON Parsing Using Jackson</h1>
+  <span class="post-date">26 May 2013</span>
+  <p>At Smule, we use the <a href="http://wiki.fasterxml.com/JacksonHome">Jackson library</a> for our JSON parsing. Marshaling JSON into corresponding model objects is elegant and easy with Jackson and makes code much more readable. Here are some tips for those considering using Jackson for their marshaling.</p>
+
+<!--break-->
+
+<p><strong>Update:</strong> This post applies to Jackson 1.9. If you’re using Jackson 2.0, please see <a href="/2013/07/07/upgrading-to-jackson-20/">my post on upgrading from Jackson 1.9 to 2.0</a>.</p>
+
+<p>To parse JSON, you can <strong>use Jackson’s treeToValue method</strong>. This method throws some exceptions so it’s <strong>recommended you create a helper method that catches these exceptions instead of having try-catches everywhere</strong> you are parsing (our JSON helpers are in a class called JsonUtils). <a href="http://wiki.fasterxml.com/JacksonBestPracticesPerformance">Jackson best practices</a> recommends one <strong>re-use object mappers since creation of the mapper is an expensive operation</strong> - so our JSON helper class has a defaultMapper() method.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// newsFeedItemJsonNode is a JsonNode containing the JSON to be parsed</span>
+<span class="c1">// the second parameter specifies the class of the object you want back</span>
+<span class="n">JsonUtils</span><span class="o">.</span><span class="na">parseJson</span><span class="o">(</span><span class="n">newsFeedItemJsonNode</span><span class="o">,</span> <span class="n">NewsFeedItem</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+
+<span class="c1">// this helper method can be used to make JSON parsing a one-line operation</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">T</span> <span class="nf">parseJson</span><span class="o">(</span><span class="n">JsonNode</span> <span class="n">node</span><span class="o">,</span> <span class="n">Class</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="kd">class</span><span class="err">)</span> <span class="err">{</span>
+    <span class="nc">try</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">JsonUtils</span><span class="o">.</span><span class="na">defaultMapper</span><span class="o">().</span><span class="na">treeToValue</span><span class="o">(</span><span class="n">node</span><span class="o">,</span> <span class="kd">class</span><span class="err">);</span>
+    <span class="err">}</span> <span class="nc">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="n">TAG</span><span class="o">,</span> <span class="s">"Failed to parse JSON entity "</span> <span class="o">+</span> <span class="kd">class</span><span class="err">.</span><span class="nc">getSimpleName</span><span class="o">(),</span> <span class="n">e</span><span class="o">);</span>
+        <span class="k">throw</span> <span class="k">new</span> <span class="nf">RuntimeException</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="c1">// re-use a single ObjectMapper so we're not creating multiple object mappers</span>
+<span class="kd">private</span> <span class="kd">static</span> <span class="n">ObjectMapper</span> <span class="n">sObjectMapper</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ObjectMapper</span><span class="o">();</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="n">ObjectMapper</span> <span class="nf">defaultMapper</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">sObjectMapper</span><span class="o">;</span>
+<span class="o">}</span></code></pre></figure>
+
+<hr class="separator" />
+
+<p>Model classes should usually <strong>ignore unknown JSON properties</strong>. If a server API later adds new fields or we just don’t care about some fields, the parser won’t throw exceptions if they are ignored. Jackson also <strong>requires a defined default constructor</strong>, otherwise an exception will be thrown on parsing.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// if ignoreUnknown is false, Jackson would throw an exception if we don't parse all fields</span>
+<span class="nd">@JsonIgnoreProperties</span><span class="o">(</span><span class="n">ignoreUnknown</span> <span class="o">=</span> <span class="kc">true</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">NewsFeedItem</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="nf">NewsFeedItem</span><span class="o">()</span> <span class="o">{</span>
+		<span class="c1">// Jackson requires a default constructor</span>
+	<span class="o">}</span> 
+<span class="o">}</span></code></pre></figure>
+
+<hr class="separator" />
+
+<p>Model classes can <strong>annotate variables to automatically parse JSON fields</strong>. This works automatically for primitive types and Strings, but it <strong>can even parse other classes</strong> if those classes are set up for Jackson parsing.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">NewsFeedItem</span> <span class="o">{</span>
+	<span class="c1">// will parse "type" out of our JSON and store it in the type variable</span>
+	 <span class="nd">@JsonProperty</span><span class="o">(</span><span class="s">"type"</span><span class="o">)</span> <span class="kd">public</span> <span class="n">String</span> <span class="n">type</span><span class="o">;</span>
+	
+	 <span class="c1">// FeedIcon is one of our classes set up to parse JSON</span>
+	 <span class="c1">// here we parse a list of FeedIcon objects that are referenced by "feedIcons"</span>
+	 <span class="nd">@JsonProperty</span><span class="o">(</span><span class="s">"feedIcons"</span><span class="o">)</span> <span class="kd">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">FeedIcon</span><span class="o">&gt;</span> <span class="n">feedIcons</span><span class="o">;</span>
+<span class="o">}</span></code></pre></figure>
+
+<hr class="separator" />
+
+<p>If you have data nested in an array or hash and want to get at the data in it, you have to <strong>override the setter Jackson creates and get the data yourself</strong>. Consider this JSON that has some data we’d like to store as two integers instead of a hash in our mode class:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"social"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"numFollowers"</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"numFollowees"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w"> </span></code></pre></figure>
+
+<p>To extract the two integers out of “social” and store them as integers in our class, we override how Jackson parses the “social” JSON element:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// nested JSON - "social" contains two properties we'd like to store as integers</span>
+<span class="c1">// override how Jackson parses "social"</span>
+<span class="nd">@JsonProperty</span><span class="o">(</span><span class="s">"social"</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kt">int</span> <span class="n">numFollowers</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kt">int</span> <span class="n">numFollowees</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setSocial</span><span class="o">(</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">socialJsonMap</span><span class="o">){</span>
+	<span class="n">numFollowers</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">socialJsonMap</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">"numFollowers"</span><span class="o">).</span><span class="na">toString</span><span class="o">());</span>
+	<span class="n">numFollowees</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">socialJsonMap</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">"numFollowees"</span><span class="o">).</span><span class="na">toString</span><span class="o">());</span>
+<span class="o">}</span></code></pre></figure>
+
+<hr class="separator" />
+
+<p>Overriding the setter is also useful if you have <strong>data you want to change at the time of parsing</strong> because sometimes an API doesn’t give it to you like you want it.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// override how we parse/set "time" so we can get the value in the desired format</span>
+<span class="nd">@JsonProperty</span><span class="o">(</span><span class="s">"time"</span><span class="o">)</span> <span class="kd">public</span> <span class="n">Date</span> <span class="n">time</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setTime</span><span class="o">(</span><span class="n">String</span> <span class="n">timeValue</span><span class="o">)</span> <span class="o">{</span>
+  <span class="n">time</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Date</span><span class="o">(</span><span class="n">Long</span><span class="o">.</span><span class="na">valueOf</span><span class="o">(</span><span class="n">timeValue</span><span class="o">).</span><span class="na">longValue</span><span class="o">()</span> <span class="o">*</span> <span class="mi">1000</span><span class="o">);</span>
+<span class="o">}</span></code></pre></figure>
+
+<hr class="separator" />
+
+<p><strong>Overriding setters requires you to properly identify the JSON structure referenced by the key</strong>. For example, when we overrode how “time” was parsed above, our setTime method took a String because in our JSON, the “time” key contained a string. Up higher, when parsing “social” our setSocial method took a map because “social” contained a map. Things can get even fancier:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// "performances" is used to determine the number of performances a user has in each Smule app</span>
+<span class="nd">@JsonProperty</span><span class="o">(</span><span class="s">"performances"</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setPerformances</span><span class="o">(</span><span class="n">List</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;&gt;</span> <span class="n">numPerformancesByAppList</span><span class="o">)</span> <span class="o">{</span>      
+	<span class="k">for</span><span class="o">(</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;</span> <span class="n">appPerformanceCountMap</span> <span class="o">:</span> <span class="n">numPerformancesByAppList</span><span class="o">)</span> <span class="o">{</span>
+		<span class="c1">// do stuff!</span>
+	<span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>In this example, “performances” in the JSON is an array of hashes. Note that the parameter you specify for the argument to your overriden set method must be relevant - if “performances” actually contained a hash of hashes, this method would not be called! <strong>If you specify the type of the argument as JsonNode, you will always get called</strong>. In the above snippet if we specified the argument as type JsonNode, you would get called with an ArrayNode containing ObjectNodes that contain HashMaps. If you’re not sure what you are going to get back, start with JsonNode and work from there!</p>
+
+<hr class="separator" />
+
+<p>Here is an example of <strong>overriding a setter to parse an array of a custom model object that is nested within our JSON</strong>. Here is some sample JSON containing some user information:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"subjects"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"accountIcons"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="mi">123456</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"handle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SmuleUser"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="mi">654321</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"handle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SmuleSinger"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<p>If we want to parse the “accountIcons” array, we override how “subjects” is set and parse out the AccountIcons:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// we want to grab "accountIcons" in "subjects" so override how we process subjects</span>
+<span class="c1">// "accountIcons" contains  AccountIcon objects so Jackson will automatically parse those</span>
+<span class="nd">@JsonProperty</span><span class="o">(</span><span class="s">"subjects"</span><span class="o">)</span> <span class="kd">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">AccountIcon</span><span class="o">&gt;</span> <span class="n">subjects</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setSubjects</span><span class="o">(</span><span class="n">JsonNode</span> <span class="n">subjectsJsonNode</span><span class="o">)</span> <span class="o">{</span>
+	<span class="n">JsonNode</span> <span class="n">accountIconsNode</span> <span class="o">=</span> <span class="n">subjectsJsonNode</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">"accountIcons"</span><span class="o">);</span>
+	<span class="n">subjects</span> <span class="o">=</span> <span class="n">JsonUtils</span><span class="o">.</span><span class="na">defaultMapper</span><span class="o">().</span><span class="na">readValue</span><span class="o">(</span><span class="n">accountIconsNode</span><span class="o">,</span> <span class="k">new</span> <span class="n">TypeReference</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;</span><span class="n">AccountIcon</span><span class="o">&gt;&gt;()</span> <span class="o">{});</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>Note that for the setSubjects method we specify the argument as a JsonNode since the readValue() method requires a JsonNode. If we wanted to manually parse the data, we could change the type of subjectsJsonNode to be a Map&lt;String, Object&gt;. We could grab the Object with key “accountIcons,” cast it to a List&lt;Map&lt;String, String&gt;&gt;, and then iterate over and parse the items as desired.</p>
+
+<hr class="separator" />
+
+<p>I hope this helps anyone considering considering or having problems using Jackson for their JSON parsing. If there is something totally awesome I missed about Jackson or did something not quite right here, please feel free to <a href="https://twitter.com/markmcerqueira">send me a tweet</a> and I’ll update this post!</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2016/08/04/changing-progress-bar-color/">
+            Changing Progress Bar Spinner Color
+            <small>04 Aug 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/30/ruby-datetime-nsdate/">
+            Ruby DateTime to Objective-C NSDate
+            <small>30 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/28/concert-review-final-symphony/">
+            Concert Review: Final Symphony, San Francisco, 7/28/16
+            <small>28 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

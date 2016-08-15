@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Staying Dry with Android Layout Files &middot; mark cerqueira
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/tags.css">
+  <link rel="stylesheet" href="/public/css/v1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">home</a>
+    <a class="sidebar-nav-item" href="/about/">about</a>     
+    <a class="sidebar-nav-item" href="/archive/">archive</a>
+    <a class="sidebar-nav-item" href="/fitness/">fitness</a>
+    <a class="sidebar-nav-item" href="/projects/">projects</a>
+  </nav>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">mark cerqueira</a>
+            <small>well-rounded nerd</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Staying Dry with Android Layout Files</h1>
+  <span class="post-date">03 Jul 2013</span>
+  <p>There are countless Android device types out there. The Android OS can load resources based on a device’s screen size and pixel density. This is useful when you want different user experiences for larger tablets versus a smaller handset. The system works as intended, but what if you want the exact same layout with a few minor tweaks? Maybe you want a list item to be 40% taller on tablets, or maybe you want less padding around an image on smaller devices. Google provides thorough documentation on <a href="https://developer.android.com/guide/practices/screens_support.html">supporting multiple screen sizes</a>, but does not offer an elegant solution for tweaking layouts across device sizes. You could support multiple layout files for different classes of devices, but that’s a pain to maintain given the minor differences across layout files. Fortunately, there is a way to stay DRY (don’t repeat yourself) with your layout files!</p>
+
+<!--break-->
+
+<p>In this example, we have a basic list item that shows information for a song. It has an ImageView to show the album art and a TextView to display the song’s title. Our layout file in the <strong>res/layout</strong> folder looks like this:</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;com.company.ListItem</span>
+  <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+  <span class="na">android:layout_height=</span><span class="s">"50dp"</span>
+  <span class="na">android:background=</span><span class="s">"@color/list_item_background"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;ImageView</span>
+    <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_gravity=</span><span class="s">"center_vertical"</span>
+    <span class="na">android:src=</span><span class="s">"@drawable/album_blank"</span><span class="nt">/&gt;</span>
+
+  <span class="nt">&lt;TextView</span>
+    <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_gravity=</span><span class="s">"center_vertical"</span>
+    <span class="na">android:layout_marginLeft=</span><span class="s">"4dp"</span>
+    <span class="na">android:textColor=</span><span class="s">"@color/song_title_text_color"</span>
+    <span class="na">android:textSize=</span><span class="s">"14sp"</span>
+    <span class="na">android:text=</span><span class="s">"@string/default_song_title"</span><span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/com.company.ListItem&gt;</span></code></pre></figure>
+
+<hr class="separator" />
+
+<p style="margin-bottom: 8px;">Our trusty designer reviews the implementation on various devices and comes back with these requests:</p>
+<ul>
+  <li>Make the entire list item 20% taller on tablet devices.</li>
+  <li>Add a larger margin to the left of the song title.</li>
+  <li>Make the text size of the song title larger on tablets.</li>
+</ul>
+
+<p>You could make a copy of the layout file and put it in the <strong>res/layout-large/</strong> folder, tweaking the values as requested. You may even need to do this for <strong>res/layout-xlarge/</strong> and <strong>res/layout-small</strong>. Copying, pasting, and tweaking are all easy, but any subsequent updates to the layout requires changing multiple layout files. If we added a TextView to our list item to show the name of the artist, we’d be copying and pasting that TextView into each instance of our list item layout file. In the end, repetition becomes frustrating, and maintenance becomes time-consuming.</p>
+
+<p>You’re already familiar with the key to avoiding this copy-and-paste madness: the <strong>values</strong> folder. You likely already use it if you define string and color constants. In the example above, we used the following values:</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;resources&gt;</span>
+  <span class="c">&lt;!-- color values --&gt;</span>
+  <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"list_item_background"</span><span class="nt">&gt;</span>#ecebea<span class="nt">&lt;/color&gt;</span>
+  <span class="nt">&lt;color</span> <span class="na">name=</span><span class="s">"song_title_text_color"</span><span class="nt">&gt;</span>#222222<span class="nt">&lt;/color&gt;</span>
+
+  <span class="c">&lt;!-- string values --&gt;</span>
+  <span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">"default_song_title"</span><span class="nt">&gt;</span>Song Title<span class="nt">&lt;/string&gt;</span>
+<span class="nt">&lt;/resources&gt;</span></code></pre></figure>
+
+<p>It turns out, the configuration qualifiers you can append to <strong>res/layout</strong> and <strong>res/drawable</strong> to support multiple devices also works for the <strong>values</strong> folder! You can define <strong>dimen</strong> resource values that can store values with units like dp and sp. For example, in the layout file above, we could change the height of our list item from 50dp to <strong>@dimen/list_item_height</strong> and then we could define this <strong>dimen</strong> in the <strong>values</strong> and <strong>values-large</strong> folders. We repeat this for each of the requests made by our designer, and end up with two files (in <strong>res/values</strong> and <strong>res/values-large</strong>) that look like this:</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- res/values/list_item_values.xml --&gt;</span>
+<span class="nt">&lt;dimen</span> <span class="na">name=</span><span class="s">"list_item_height"</span><span class="nt">&gt;</span>50dp<span class="nt">&lt;/dimen&gt;</span>
+<span class="nt">&lt;dimen</span> <span class="na">name=</span><span class="s">"list_item_song_title_left_margin"</span><span class="nt">&gt;</span>4dp<span class="nt">&lt;/dimen&gt;</span>
+<span class="nt">&lt;dimen</span> <span class="na">name=</span><span class="s">"list_item_song_title_text_size"</span><span class="nt">&gt;</span>14sp<span class="nt">&lt;/dimen&gt;</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- res/values-large/list_item_values.xml --&gt;</span>
+<span class="nt">&lt;dimen</span> <span class="na">name=</span><span class="s">"list_item_height"</span><span class="nt">&gt;</span>60dp<span class="nt">&lt;/dimen&gt;</span>
+<span class="nt">&lt;dimen</span> <span class="na">name=</span><span class="s">"list_item_song_title_left_margin"</span><span class="nt">&gt;</span>8dp<span class="nt">&lt;/dimen&gt;</span>
+<span class="nt">&lt;dimen</span> <span class="na">name=</span><span class="s">"list_item_song_title_text_size"</span><span class="nt">&gt;</span>20sp<span class="nt">&lt;/dimen&gt;</span></code></pre></figure>
+
+<p>Now, we can have a single layout file. Android can load different layout files for different devices, and the values loaded also follow the same set of rules. You can even define a <strong>string</strong> to have different values, which may be useful for displaying longer strings on tablets. All those copies of your layout file can now be discarded and replaced with this single file:</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;com.company.ListItem</span>
+  <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+  <span class="na">android:layout_height=</span><span class="s">"@dimen/list_item_height"</span>
+  <span class="na">android:background=</span><span class="s">"@color/list_item_background"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;ImageView</span>
+    <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_gravity=</span><span class="s">"center_vertical"</span>
+    <span class="na">android:src=</span><span class="s">"@drawable/album_blank"</span><span class="nt">/&gt;</span>
+
+  <span class="nt">&lt;TextView</span>
+    <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_gravity=</span><span class="s">"center_vertical"</span>
+    <span class="na">android:layout_marginLeft=</span><span class="s">"@dimen/list_item_song_title_left_margin"</span>
+    <span class="na">android:textColor=</span><span class="s">"@color/song_title_text_color"</span>
+    <span class="na">android:textSize=</span><span class="s">"@dimen/list_item_song_title_text_size"</span>
+    <span class="na">android:text=</span><span class="s">"@string/default_song_title"</span><span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/com.company.ListItem&gt;</span></code></pre></figure>
+
+<hr class="separator" />
+
+<p style="margin-bottom: 8px;">So now you can avoid repeating yourself, but you are adding a level of indirection. At Smule, we've avoided any indirection-induced pain by following these book-keeping practices:</p>
+<ul>
+  <li>Prefix the name of the value with the name of the layout file that’s using it (e.g. song_list_item_, song_list_activity_).</li>
+  <li>If you’re sharing values across multiple layout files (e.g. the height of a navigation bar shown everywhere in the app), use some special prefix for those shared values (e.g. shared_).</li>
+  <li>Keep device-dependent values in a separate XML file as opposed to just having a single file in the values folder. Things like strings and colors will unlikely vary across different devices, so keep those in a separate file.</li>
+</ul>
+
+<p>I hope this helps anyone who’s looking to maintain their Android layout files more easily. Huge kudos to Stack Overflow user, kennethc, who discovered this functionality and <a href="http://stackoverflow.com/questions/12616321/android-how-do-you-manage-multiple-layout-files-in-line-with-dry-principle">posted about it</a>. If there is any additional magic to managing multiple layout files, please feel free to <a href="https://twitter.com/markmcerqueira">send me a tweet</a> and I’ll update this post!</p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2016/08/04/changing-progress-bar-color/">
+            Changing Progress Bar Spinner Color
+            <small>04 Aug 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/30/ruby-datetime-nsdate/">
+            Ruby DateTime to Objective-C NSDate
+            <small>30 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/28/concert-review-final-symphony/">
+            Concert Review: Final Symphony, San Francisco, 7/28/16
+            <small>28 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

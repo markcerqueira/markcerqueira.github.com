@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Dropbox and iTunes &middot; mark cerqueira
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/tags.css">
+  <link rel="stylesheet" href="/public/css/v1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">home</a>
+    <a class="sidebar-nav-item" href="/about/">about</a>     
+    <a class="sidebar-nav-item" href="/archive/">archive</a>
+    <a class="sidebar-nav-item" href="/fitness/">fitness</a>
+    <a class="sidebar-nav-item" href="/projects/">projects</a>
+  </nav>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">mark cerqueira</a>
+            <small>well-rounded nerd</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Dropbox and iTunes</h1>
+  <span class="post-date">22 Dec 2014</span>
+  <p><strong>tl;dr</strong> - If you keep your iTunes library in Dropbox, it’s all sunshine and rainbows until you realize Dropbox is syncing iTunes Library.itl and iTunes Library.xml after EVERY song play or skip.</p>
+
+<p>Putting your iTunes library in Dropbox sounds like a great idea. And for the most part it is. You get your iTunes library on every computer you sync with Dropbox. You add music on one computer, and you get it on the others. Generally, it’s convenient and easy.</p>
+
+<p>The trouble starts when we look at the files that manage our library: <strong>iTunes Library.itl</strong> and <strong>iTunes Library.xml</strong>. Every time a song is touched (played or even skipped), these two files are updated. Every time the files are updated, they are synced to Dropbox.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 700px; border: 1px solid #000000;" src="/assets/images/posts/2014-12-22/db_sync.png" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong></strong></p>
+</div>
+
+<p>My iTunes Library (~18,000 songs) itl and xml files are <strong>5.1 MB</strong> and <strong>28.3 MB</strong> respectively. Let’s say the average song is 4 minutes long. If you are listening to my iTunes library for an hour (15 songs), that’s <strong>500 MB worth of file changes that are synced to Dropbox in one hour</strong>! We’re easily talking <strong>gigabytes of bandwidth consumed daily</strong> if you listen for more than a couple of hours. It’s pretty ridiculous.</p>
+
+<p>It’s not a huge deal yet. But still, with bandwidth caps looming in the future, it’s something worth thinking about. So, can we make iTunes in Dropbox less bandwidth hungry?</p>
+
+<!--break-->
+
+<ul>
+  <li>
+    <p>I could clean up my library and make it smaller. My library is huge and I’m usually only listening to a very small subset of it. That said, it’s nice to have access to my entire library at all times. Especially when I get a hankering for some old jams I haven’t listened to in a while. However, this solution is too easy and we’d learn little if we stopped here, so let’s ignore it.</p>
+  </li>
+  <li>
+    <p>GTFO XML! iTunes only uses the iTunes Library.itl file to organize your entire library. As Apple documents in <a href="http://support.apple.com/en-us/HT201610">this support article</a>, the iTunes Library.xml file makes “your music and playlists available to other applications on your computer” like iPhoto and iMovie. That’s stuff I don’t need. I deleted my iTunes Library.xml file hoping iTunes would happily chug along without it. iTunes loaded fine as expected, but it then quickly recreated the XML file in all it’s 28.3 MB glory.</p>
+  </li>
+  <li>
+    <p>If I can’t make iTunes Library.xml go away, I should be able to tell Dropbox to ignore that file and not sync it right? Wrong! Dropbox’s Selective Sync settings only allow you to ignore folders; there is currently no support for ignoring files. The first link that comes up when I Google “Dropbox ignore file” looks like a feature request posted on Dropbox’s forums that unfortunately 404s. So I made a <a href="https://www.dropboxforum.com/hc/communities/public/questions/201339089-Selective-sync-should-allow-us-to-ignore-specific-files-within-a-folder">new post requesting the feature</a>. For now, you can “hack” file ignore with the steps from this <a href="http://superuser.com/a/757498">Super User answer</a>.</p>
+  </li>
+</ul>
+
+<div>
+	<img class="rounded-corners" style="max-width: 700px; border: 1px solid #000000;" src="/assets/images/posts/2014-12-22/improvement.png" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong>Getting better...</strong></p>
+</div>
+
+<p><strong>Now that the XML file is no longer synced, syncs are 85% leaner!</strong> But we could do better… if we worked at Apple and could make important engineering decisions. We know a few things:</p>
+
+<ul>
+  <li>The itl file that manages our library’s metadata seems to be purposefully obfuscated.</li>
+  <li>The new iTunes 12 icon is absolutely hideous.</li>
+  <li>The itl file (5.1 MB) has enough information in it to re-generate the XML file (28.3 MB).</li>
+  <li>XML is too too verbose. The itl file likely contains some other information given my XML file can be compressed from 28.3 MB to 1.7 MB using the built-in archiver in OS X. That leaves 3.4 MB (5.1 MB - 1.7 MB) of mystery in that file!</li>
+</ul>
+
+<p>So let’s use an entry in our iTunes Library.xml file to get an idea of what an entry in the itl file would look like. Here’s a song entry:</p>
+
+<figure class="highlight"><pre><code class="language-xml-cheetah" data-lang="xml+cheetah">&lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;21743&lt;/integer&gt;
+&lt;key&gt;Name&lt;/key&gt;&lt;string&gt;Dead Sea (Tower of Geddon)&lt;/string&gt;
+&lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Chrono Cross&lt;/string&gt;
+&lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Yasunori Mitsuda&lt;/string&gt;
+&lt;key&gt;Composer&lt;/key&gt;&lt;string&gt;Yasunori Mitsuda&lt;/string&gt;
+&lt;key&gt;Album&lt;/key&gt;&lt;string&gt;Chrono Cross OST&lt;/string&gt;
+&lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Game&lt;/string&gt;
+&lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+&lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;7803584&lt;/integer&gt;
+&lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;190406&lt;/integer&gt;
+&lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;2&lt;/integer&gt;
+&lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;3&lt;/integer&gt;
+&lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;15&lt;/integer&gt;
+&lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;26&lt;/integer&gt;
+&lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1999&lt;/integer&gt;
+&lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2011-02-09T04:15:40Z&lt;/date&gt;
+&lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2011-02-09T04:12:57Z&lt;/date&gt;
+&lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;320&lt;/integer&gt;
+&lt;key&gt;Sample Rate&lt;/key&gt;&lt;integer&gt;44100&lt;/integer&gt;
+&lt;key&gt;Play Count&lt;/key&gt;&lt;integer&gt;83&lt;/integer&gt;
+&lt;key&gt;Play Date&lt;/key&gt;&lt;integer&gt;3502032647&lt;/integer&gt;
+&lt;key&gt;Play Date UTC&lt;/key&gt;&lt;date&gt;2014-12-21T23:50:47Z&lt;/date&gt;
+&lt;key&gt;Skip Count&lt;/key&gt;&lt;integer&gt;9&lt;/integer&gt;
+&lt;key&gt;Skip Date&lt;/key&gt;&lt;date&gt;2013-11-14T02:08:13Z&lt;/date&gt;
+&lt;key&gt;Rating&lt;/key&gt;&lt;integer&gt;100&lt;/integer&gt;
+&lt;key&gt;Album Rating&lt;/key&gt;&lt;integer&gt;100&lt;/integer&gt;
+&lt;key&gt;Album Rating Computed&lt;/key&gt;&lt;true/&gt;
+&lt;key&gt;Artwork Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+&lt;key&gt;Persistent ID&lt;/key&gt;&lt;string&gt;8633DA1C1A82A603&lt;/string&gt;
+&lt;key&gt;Track Type&lt;/key&gt;&lt;string&gt;File&lt;/string&gt;
+&lt;key&gt;Location&lt;/key&gt;&lt;string&gt;&lt;!----&gt;.mp3&lt;/string&gt;
+&lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;5&lt;/integer&gt;
+&lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;</code></pre></figure>
+
+<p>Most of this data doesn’t need to be updated frequently. In fact, only 5 of the 31 values above (Play Count, Play Date, Play Date UTC, Skip Count, Skip Date) would trigger the file changes after playing or skipping a song.</p>
+
+<p>iTunes could break these “volatile” fields into a separate file and use the track ID if it ever needed to match data between the two files. This iTunes Volatile Library.itl file would sync at the current frequency during playback (but it would be smaller in size), while the file containing the other metadata would change and sync less frequently. If keeping this data 100% accurate across your computers isn’t very important, you could even ignore this file using the Dropbox ignore-file-hack.</p>
+
+<div>
+	<img style="max-width: 400px; border: 0px solid #000000;" src="/assets/images/posts/2014-12-22/db_fresh.png" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong>Dr. Dre - can you makes iTunes the leanest and illest it can be?</strong></p>
+</div>
+
+<p>There are other solutions like storing volatile data in iCloud and tying that to your Apple account. Also, if the XML file was still used to manage your library (instead of the obfuscated binary itl file format), you could even store your iTunes Library in git and push and pull changes to the XML file across different computers. How wonderful it would be to resolve a merge conflict in iTunes Library.xml? Dear God – did I play that song 4 times or 6 times!?</p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2016/08/04/changing-progress-bar-color/">
+            Changing Progress Bar Spinner Color
+            <small>04 Aug 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/30/ruby-datetime-nsdate/">
+            Ruby DateTime to Objective-C NSDate
+            <small>30 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/28/concert-review-final-symphony/">
+            Concert Review: Final Symphony, San Francisco, 7/28/16
+            <small>28 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

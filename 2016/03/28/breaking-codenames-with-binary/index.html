@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Breaking Codenames with Binary &middot; mark cerqueira
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/tags.css">
+  <link rel="stylesheet" href="/public/css/v1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">home</a>
+    <a class="sidebar-nav-item" href="/about/">about</a>     
+    <a class="sidebar-nav-item" href="/archive/">archive</a>
+    <a class="sidebar-nav-item" href="/fitness/">fitness</a>
+    <a class="sidebar-nav-item" href="/projects/">projects</a>
+  </nav>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">mark cerqueira</a>
+            <small>well-rounded nerd</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Breaking Codenames with Binary</h1>
+  <span class="post-date">28 Mar 2016</span>
+  <p><strong>Codenames</strong> is an incredibly fun, deep, and addicting tabletop game. The game revolves around a 5 x 5 grid of words. Two teams race to pick out the eight (or nine if you go first) words that belong to your team. Two spymasters give their teams one-word clues that will hopefully guide their teammates to their respective words on a 5 x 5 board. Clues that let teams pick more words correctly are better. The first team to get all their words win!</p>
+
+<p>It’s fun. It’s funny. It’s hard. But we can make this game easy, not fun, and more like a math exercise. How? <strong>With binary!</strong> We can do this because:</p>
+
+<ul>
+  <li>While a particular word can be blue (one team), red (the other team), black (instant loss if selected), or beige (turn ends immediately) <strong>we only care about whether it’s a word belonging to our team or not</strong>. Ours or not ours. Binary.</li>
+  <li>The numbers from <strong>zero to a hundred can be expressed as SINGLE words</strong>. Yes, the numbers <a href="http://www.grammarly.com/handbook/punctuation/hyphen/11/hyphen-in-compound-numbers/">21 through 99 are hyphenated</a>! This grammar technicality is powerful!</li>
+  <li>Given we’re restricted to one word clues that will be numbers ranging from 0 to 100, we can <strong>usually express 6 bits of information</strong> and sometimes 7. For reference, 111111 (6 bits) = 63, 1111111 (7 bits) = 127, 1000000 (7 bits) = 64. In some cases were we have a lot of 0s at the end, we will express less than 6 bits of information (e.g. 01 is equivalent to 000000001).</li>
+</ul>
+
+<p>What does this all mean? With 5 x 5 grid of words the spymaster has <strong>25 bits of information</strong> they need to get across to their team. Using only one word you can transmit about 6 bits of information. So you’ll about need 5 turns to share 25 bits because 6 + 6 + 6 + 6 + 6 &gt; 25. But depending on how the words you need to pick are placed (i.e. the last few spaces on the board do not belong to your team so you’ll win before you need to share this information), and if you can squeeze in a 7-bit number, you’ll <strong>on average only need 4 turns to win</strong>!</p>
+
+<p>Here’s an example of what this would look like for a particular configuration. In this example, we’ll play the role of the red team. The red team goes first so we’ll need to pick out 9 words.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 700px; border: 0px;" src="/assets/images/posts/2016-03-28/codenames.png" />
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>Victory in 4 turns!</strong></p>
+</div>
+
+<ul>
+  <li>1st turn say “<strong>70</strong>” - 1000110, 7 bits, yellow text</li>
+  <li>2nd turn say “<strong>20</strong>” - 10100, 5 bits, green text</li>
+  <li>3rd turn say “<strong>64</strong>” - 1000000, 7 bits, pink text</li>
+  <li>4th turn say “<strong>44</strong>” - 101100, 6 bits,  white text</li>
+</ul>
+
+<p>Note that the green text number (i.e. 10100) highlights the case mentioned above about expressing a lower than average amount of bits when we have a lot of 0s.</p>
+
+<p>My friends and I have played a lot but we have not gotten to the point where we can win in 4 turns. That said, are we going to use this system? <strong>Probably not…</strong> since it ruins in the fun and, more importantly, breaks the rule that the clue must be <a href="http://czechgames.com/files/rules/codenames-rules-en.pdf">“about the meaning of the word.”</a> That said, it was a fun thought exercise.</p>
+
+<p>If you want to learn more about Codenames, GeekDad wrote a <a href="http://geekdad.com/2015/08/codenames/">great overview and review</a> or if you want to buy a copy hop on over to <a href="http://www.amazon.com/Czech-Games-00031CGE-Codenames/dp/B014Q1XX9S/">Amazon</a>.</p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2016/08/04/changing-progress-bar-color/">
+            Changing Progress Bar Spinner Color
+            <small>04 Aug 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/30/ruby-datetime-nsdate/">
+            Ruby DateTime to Objective-C NSDate
+            <small>30 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/28/concert-review-final-symphony/">
+            Concert Review: Final Symphony, San Francisco, 7/28/16
+            <small>28 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

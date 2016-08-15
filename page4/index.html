@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      mark cerqueira &middot; well-rounded nerd
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/tags.css">
+  <link rel="stylesheet" href="/public/css/v1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">home</a>
+    <a class="sidebar-nav-item" href="/about/">about</a>     
+    <a class="sidebar-nav-item" href="/archive/">archive</a>
+    <a class="sidebar-nav-item" href="/fitness/">fitness</a>
+    <a class="sidebar-nav-item" href="/projects/">projects</a>
+  </nav>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">mark cerqueira</a>
+            <small>well-rounded nerd</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/05/22/we-need-more-bathroom-lock-indicators/">
+        We Need More Bathroom Lock Indicators
+      </a>
+    </h1>
+
+    <span class="post-date">22 May 2016</span>
+
+    <p>When I was a child the future had flying cars. But as I exit my extended stay in childhood, all I want from the future is the <strong>proliferation of bathroom indicator locks</strong>. Approaching a bathroom unsure if someone is using it is very awkward. Give the knob a firm turn and you’re horrified to find it locked! The person inside the bathroom is equally uncomfortable. You didn’t mean to invade their space, but you did. Why!? There wasn’t an indicator to let you know if the door was locked or unlocked. It’s a terrible experience for everyone involved.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 700px; border: 1px solid #cdcdcd;" src="/assets/images/posts/2016-05-22/indicator_lock.jpg" />
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>Photo courtesy of Indicator Locks</strong></p>
+</div>
+
+<p>Fortunately, we already have the technology to solve this problem. You’ve definitely seen it in action on an airplane. And if you’re lucky, you may have seen this magical device on terra firma. <strong>Let’s make our bathrooms better. Let’s give them all indicator locks!</strong></p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/05/20/auto-deploying-this-blog/">
+        Auto-Deploying This Blog
+      </a>
+    </h1>
+
+    <span class="post-date">20 May 2016</span>
+
+    <p>A long time ago I started <strong>generating my site locally and pushing it up to Github manually</strong> because Github Pages does not allow you to run custom plugins. This isn’t as painful as it sounds. A friendly internet hero – ixti – crafted a nice Rakefile that <a href="http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html">automated publishing</a>.</p>
+
+<p><strong>But doing the publishing myself led to some workflow issues.</strong> Allowing GitHub Pages to do the work for you is nice because you only have to deal with one branch. Make changes to that branch, push to GitHub, and GitHub Pages would generate the site and deploy it. Everything is always in sync. The new workflow had me writing and crafting content on the source branch and then using the publishing command to generate my site locally and then it would push it to the master branch: the “deploy.” <strong>Separating the crafting and deploying steps meant I sometimes published content without pushing it into the source branch or I’d push content and not deploy it.</strong></p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 800px; border: 1px solid #cdcdcd;" src="/assets/images/posts/2016-05-20/travis.png" />
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>Continuous deployment via Travis</strong></p>
+</div>
+
+<p>In keeping with <a href="http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html">2016’s automation resolution</a>, I set up my blog to auto-deploy itself. Using and adapting Domenic Denicola’s <a href="https://gist.github.com/domenic/ec8b0fc8ab45f39403dd">clear and helpful instructions</a>, the new set-up has <a href="https://travis-ci.org/markcerqueira/markcerqueira.github.com">Travis</a> run the automated publishing flow when any changes are pushed to the source branch. Turns out Travis is not only a great continuous integration tool, but can be adapted to be continuously deploying as well! No more pushing content to the source branch and running the publishing command locally; <strong>I’m back to just needing to push once</strong>.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># The blog's gotten big so rake publish pushes 75.05 MiB!</span>
+Writing objects: 100% <span class="o">(</span>1052/1052<span class="o">)</span>, 75.05 MiB | 1.46 MiB/s, <span class="k">done</span>.
+Total 1052 <span class="o">(</span>delta 166<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+To git@github.com:markcerqueira/markcerqueira.github.com.git
+ + f2e99be...3aea10b master -&gt; master <span class="o">(</span>forced update<span class="o">)</span></code></pre></figure>
+
+<p>And there are a few more benefits including <strong>email notifications if something goes wrong</strong> during the publishing flow and <strong>no need to wait on a 70+ MB push</strong> when publishing, which is great when I’m tethered or in a rush.</p>
+
+<p>This minor improvement isn’t mind-blowing, but it does make my interaction with blogging more streamlined and simple. That’s what my automating 2016 resolution is all about. Onwards!</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git push origin <span class="nb">source</span>
+<span class="c"># We're done. Walk away. Go outside. Eat a banana.</span></code></pre></figure>
+
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/05/16/useful-utilities-alfred-dash/">
+        Useful Utilities   Alfred + Dash
+      </a>
+    </h1>
+
+    <span class="post-date">16 May 2016</span>
+
+    <p>I’ve been a big fan of the <a href="https://www.alfredapp.com/">Alfred</a> productivity app for a while now. It’s like Mac’s built-in Spotlight but more feature-rich and more extendable. I’m a big fan of the clipboard history feature: it preserves all the text you copy and lets you paste from a list of <strong>all</strong> the text you previously copied. The tyranny of losing what you copied after hitting cmd+c is over! Alfred is highly customizable and I’ll readily admit I don’t take advantage of all it has to offer.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 500px; border: 1px solid #cdcdcd;" src="/assets/images/posts/2016-05-16/alfred_clipboard_history.png" />
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>Say goodbye to losing the things you previously copied!</strong></p>
+</div>
+
+<p>The other day I learned about <a href="https://kapeli.com/dash">Dash</a>. It puts API documentation a simple keystroke away! If you’re a developer it’s nice to be able to quickly pull up documentation on a method or review all the methods a particular class has to offer. Being able to skip out on going to Google Chrome and searching for the documentation page makes this workflow much faster… And lessens the chance I’ll go to YouTube to watch more cat videos. I forgot to mention it also works offline, supports personal annotations, and storing custom code snippets.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 600px; border: 1px solid #cdcdcd;" src="/assets/images/posts/2016-05-16/dash_api.png" />
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>Nothing really simple about SimpleDateFormatter!</strong></p>
+</div>
+
+<p>It’s great to have amazing tools at one’s disposal. But it’s truly breathtaking when those tools work well together. Alfred and Dash have an <a href="https://www.alfredapp.com/blog/productivity/dash-quicker-api-documentation-search/">awesome integration</a> that brings Dash’s API searching capabilities to Alfred. Now I can get the API of my favorite data structure – LinkedHashMap – even faster!</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 500px; border: 1px solid #cdcdcd;" src="/assets/images/posts/2016-05-16/alfred_dash.png" />
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>LinkedHashMaps are awesome!</strong></p>
+</div>
+
+<p>Both tools have free versions, but getting a license to fully unlock them won’t break the bank: for $50, you’ll get full access to both tools. Take my word for it; you’ll definitely find that to be a steal if you leverage a fraction of these tools’ feature sets.</p>
+
+<p>I’m a bit late to the party (given the integration announcement is from August 2015), but if I can pass along this information to at least one person who didn’t know about either of these awesome productivity tools, it’ll be worth it!</p>
+
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/05/12/useful-utilities-appcleaner/">
+        Useful Utilities - AppCleaner
+      </a>
+    </h1>
+
+    <span class="post-date">12 May 2016</span>
+
+    <p>Deleting Mac apps is pretty simple: drag the application into the Trash. But most apps leave behind some (or a lot) of preference files, caches, and launch daemon configurations. These leftovers don’t harm your system or impact system performance, but you don’t really need them either. There are a ton of uninstall utilities, but my favorite is <strong>AppCleaner</strong> because it’s <strong>free</strong> and <strong>powerful</strong>.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 400px; border: 1px solid #cdcdcd;" src="/assets/images/posts/2016-05-12/app_clean_source_tree.png" />
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>Sorry SourceTree... I like Tower a lot more!</strong></p>
+</div>
+
+<p>One of the nicest things about AppCleaner is you can turn on <strong>SmartDelete</strong> from its Preference pane. SmartDelete detects when apps are deleted and automatically finds and offers to delete associated files. This is nice because you don’t have to remember to launch AppCleaner; it’ll automatically wake up when it realizes it’s needed.</p>
+
+<p>If Spring cleaning for your Applications folder is around the corner, be sure to grab <a href="https://freemacsoft.net/appcleaner/">AppCleaner</a>!</p>
+
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/05/08/starcraft-co-op/">
+        Improving Starcraft's Co-op
+      </a>
+    </h1>
+
+    <span class="post-date">08 May 2016</span>
+
+    <p>Spencer and I celebrate an important achievement today: we <strong>maxed out all the heroes in Starcraft’s cooperative mode</strong>.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 700px; border: 0px;" src="/assets/images/posts/2016-05-08/starcraft.jpg" />
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong></strong></p>
+</div>
+
+<p>Co-op mode was one of those unexpected surprises that we ended up really enjoying and spending a lot of time playing. Spending a lot of time with anything, you invariably come up with a bunch of wants and asks. <strong>If you’re reading this, Blizzard, take heed!</strong></p>
+
+<ul>
+  <li><strong>Add a survival mission</strong> like In Utter Darkness from the Wings of Liberty campaign. This would be like the current Temple of the Past co-op mission but instead of only needing to survive for 25 minutes you would fight until you are completely overwhelmed. You can even add a leaderboard to encourage people to survive as long as possible. People love leaderboards!</li>
+  <li><strong>Add more heroes.</strong> Given the time it takes to max out a hero, this is the easiest way to increase play-time (besides increasing the level cap).</li>
+  <li><strong>Allow resource sharing</strong>. Yes, this could devolve into one person feeding another but who cares? Make it like multiplayer where you cannot share until after a certain point in the game or add a penalty (e.g. 10% tax on resources shared) to discourage it.</li>
+  <li><strong>Add more missions.</strong> Even better (and ultimately easier for you), allow people to create their own co-op missions like you can create maps and custom games. Let people play these custom missions and vote on them. The top missions can get promoted to “official” co-op missions featured more prominently.</li>
+  <li><strong>Add “over-the-top” bonus objectives.</strong> Give players incentives to take risks to make the mid to late game more exciting. Even on brutal difficulty, once you make it to the mid-game the challenge drops off considerably. Encourage spreading armies, going deep into enemy territory, or building strange unit compositions to up the ante.</li>
+</ul>
+
+<p>It’d be nice to see some of these and other improvements to co-op mode. But realistically, given the pace at which Blizzard has been updating co-op mode, we likely won’t see much in the near future. I’d love to be proven wrong here though!</p>
+
+<p><strong>Update:</strong> One day later and Blizzard announced they’re releasing <a href="http://us.battle.net/sc2/en/blog/20112699">some updates to co-op mode in the upcoming 3.3 patch</a>. There will be weekly “mutators” that enhance difficulty for specific missions, and mastery levels (all the way to 90!) which are similar to Diablo 3’s paragon level. It also looks like Abathur might be joining the ranks of heroes! Also, check out the accompanying <a href="https://www.youtube.com/watch?v=tF85EY0SY7s">update video</a>. I’ll take it! GG, Blizzard!</p>
+
+
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page5">Older</a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page3">Newer</a>
+    
+  
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

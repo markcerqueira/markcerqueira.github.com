@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      mark cerqueira &middot; well-rounded nerd
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/tags.css">
+  <link rel="stylesheet" href="/public/css/v1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">home</a>
+    <a class="sidebar-nav-item" href="/about/">about</a>     
+    <a class="sidebar-nav-item" href="/archive/">archive</a>
+    <a class="sidebar-nav-item" href="/fitness/">fitness</a>
+    <a class="sidebar-nav-item" href="/projects/">projects</a>
+  </nav>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">mark cerqueira</a>
+            <small>well-rounded nerd</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/04/10/tagged-archives/">
+        Tagged Archive
+      </a>
+    </h1>
+
+    <span class="post-date">10 Apr 2015</span>
+
+    <p>The army-of-one mark.gg team is proud to announce that the <a href="http://www.mark.gg/archive.html">Archive</a> page is now massively improved! Posts were previously sorted chronologically, but now they’re sorted by subject matter. Now, you can quickly reach the 8 posts I’ve written on <a href="http://www.mark.gg/archive.html#final+fantasy">Final Fantasy</a>, 13 posts on all things <a href="http://www.mark.gg/archive.html#android">Android</a>, and – something I’m <strong>very proud</strong> of – 22 <a href="http://www.mark.gg/archive.html#rants">rant</a> posts!</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 600px; margin-top: 10px; border: 0px;" src="/assets/images/posts/2015-04-10/archives-tagged.png" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong>So many tags!!</strong></p>
+</div>
+
+<p>Huge kudos to <a href="https://twitter.com/lanyonm">Michael Lanyon</a> who crafted a great and easy-to-follow <a href="http://blog.lanyonm.org/articles/2013/11/21/alphabetize-jekyll-page-tags-pure-liquid.html">write-up</a> on adding tags to your Jekyll-powered blog. Thanks, dude!</p>
+
+<p>Do visit the new and improved <a href="http://www.mark.gg/archive.html">Archive</a> page and bask in the randomness of topics I write about!</p>
+
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/04/02/auto-grinding-in-final-fantasy-type-0/">
+        Auto-Grinding in Final Fantasy Type 0
+      </a>
+    </h1>
+
+    <span class="post-date">02 Apr 2015</span>
+
+    <p><strong>Final Fantasy Type-0</strong> was originally released in Japan for the PSP in 2011. Four years later, an enhanced HD port made its way to the rest of the world. I’ve played through the game. Aside from the vestiges of the PSP that could not be fixed (bad camera, small areas, low-quality NPC sprites) the game is great. The battle system is fun, fast, and action-packed. The music – by Takeharu Ishimoto – is AWESOME! And if you exclude the conclusion, the story is pretty coherent for a Final Fantasy game.</p>
+
+<p>The interesting thing about this game is there really is no single main character, or even a small, manageable cast of main characters. You command a group of <strong>fourteen</strong> powerful cadets at a military academy of a nation at war. When you deploy on a mission, you pick <strong>three</strong> cadets for your main party. If a cadet in the main party falls, you can’t use that cadet for the remainder of the mission. But you can replace that cadet with one from your reserves. There is no experience share so cadets only gain experience if they are actively fighting. Unless you want to bank your success on no cadets dying, <strong>it’s in your best interest to level up more than three cadets.</strong></p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 600px; margin-top: 10px;" src="/assets/images/posts/2015-04-02/fftype0.png" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong>So many characters to level up!</strong></p>
+</div>
+
+<p>In my younger days, I’d relish the opportunity to spend hours upon hours grinding all fourteen characters. But the me of today <del>can’t</del> shouldn’t do that. Enter <a href="https://github.com/markcerqueira/auto-agito">Auto Agito</a> - a little workflow I conjured up to automatically level up your cadets. This takes advantage of a feature of the game: <strong>Secret Training</strong>. You can send a cadet to Secret Training, take a break from playing the game (like go to sleep or work), and then return later and reap free experience. By moving the PS4’s system clock forward you can simulate going to work or sleep! Auto Agito automates and repeats this entire flow: starting Secret Training, advancing time, and then returning to reap the experience. Here’s a video showing one iteration of the entire process.</p>
+
+<div style="text-align: center; margin-bottom: 20px;">
+<iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/HDU4rSxBPw8?rel=0" frameborder="0"></iframe>
+</div>
+
+<p>Check out the <a href="https://github.com/markcerqueira/auto-agito/blob/master/README.md">README</a> for specifics on equipment needed and steps involved. Yes, grinding is a quintessential part of the JRPG experience. But when I see room for automation, I can’t help but see how far I can take things. Happy (automatic) leveling!</p>
+
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/03/28/paypal-steps-backward/">
+        PayPal - One Step Forward, One Step Backward
+      </a>
+    </h1>
+
+    <span class="post-date">28 Mar 2015</span>
+
+    <p>It’s about DAMN time! PayPal has FINALLY added support for two-factor authentication in their iOS app.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 300px;" src="/assets/images/posts/2015-03-28/pp-2factor.png" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong>FINALLY!</strong></p>
+</div>
+
+<p>But, it wouldn’t be PayPal if they didn’t do something stupid to balance out this step forward. Turns out, logging into PayPal on your computer is more annoying if you use 2-factor authentication. How so?</p>
+
+<p>Go to paypal.com and enter your login credentials (i.e. email and password) and press enter. You’ll be taken to another screen where you’re asked to <strong>enter your login credentials again.</strong> Why? The page says, “We’re sorry. We need you to login again to verify additional security information.” You enter your credentials again and after that you are finally prompted for your security code. PayPal just reinvented two-factor login as a 3-step process with 2 of the steps sharing the same form of authentication!</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 800px;" src="/assets/images/posts/2015-03-28/pp-stupid.png" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong></strong></p>
+</div>
+
+<p>During the first query, if I have two factor authentication turned on, just route the request to the proper endpoint. Don’t redirect me to another webpage where I have to enter my login details again. I’m the customer. I’m the one who gets to be lazy. Not you, PayPal! ME! ME ME ME!!!</p>
+
+<p>The one thing PayPal does get right is apologizing upfront: “We’re sorry.” You should be sorry; because this is mind-bogglingly stupid.</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/03/20/linkedin-premium/">
+        The Many Faces of LinkedIn Premium
+      </a>
+    </h1>
+
+    <span class="post-date">20 Mar 2015</span>
+
+    <p>I was browsing LinkedIn the other day on my iPhone. I opened up the navigation menu and I clicked on <strong>Try Premium for free</strong> because for some weird reason I was drawn to it. Totally <strong>unrelated</strong> observation: it’s the only menu item with a colored icon. In we go!</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 400px;" src="/assets/images/posts/2015-03-20/linkedin-gopremium.png" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong>Something drew me in...</strong></p>
+</div>
+
+<p>And this is what we find. There are three different pages to look at. Here is a GIF animating through them. <strong>Take a look!</strong></p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 400px;" src="/assets/images/posts/2015-03-20/linkedin-premium.gif" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong></strong></p>
+</div>
+
+<ul>
+  <li>
+    <p>There are three tiers: <strong>Business</strong> at $29.99 per month, <strong>Business Plus</strong> at $59.99 per month, and <strong>Executive</strong> at $99.99 per month.</p>
+  </li>
+  <li>
+    <p>There isn’t much difference between the three different tiers. Price (obviously) and tier name (seemingly meaningless because I don’t see this used anywhere else on the site) aside, the only difference is the amount of InMails you are allotted. When first swiping through these pages, I thought something was wrong because the feature lists are nearly identical.</p>
+  </li>
+</ul>
+
+<!--break-->
+
+<ul>
+  <li>
+    <p>The icon for the messaging through Open Profile feature looks like a loading spinner that is stuck. Ugh!</p>
+  </li>
+  <li>
+    <p>While we’re nitpicking, for features that have text spanning two lines, the icon and text do not line up nicely. Double ugh!</p>
+  </li>
+  <li>
+    <p>Wow – InMails cost a lot of money. Are you telling me these unsolicited messages on LinkedIn cost people (Hey – recruiters are people too!) between $3.33 (Executive tier) and $6 (Business tier) per message!? Wild!</p>
+  </li>
+  <li>
+    <p>Clicking on the features doesn’t give me any more information about that feature. You’re trying to sell me something here! If I want to know what “Expanded profiles” means, you should let me know.</p>
+  </li>
+  <li>
+    <p>For some reason, I’m drawn to the “Start your free trial” button, which on a totally <strong>unrelated</strong> note, is the nastiest shade of orange I’ve ever seen.</p>
+  </li>
+</ul>
+
+<p><strong>Do other platforms sell Premium better?</strong></p>
+
+<p>I checked the Premium purchase options on the web version. It seems the right hand and left hand don’t appear to be on the same page at LinkedIn. The pitch and approach here is COMPLETELY different.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 700px;" src="/assets/images/posts/2015-03-20/linkedin-web800.gif" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong></strong></p>
+</div>
+
+<ul>
+  <li>
+    <p>There are four tiers: <strong>Job Seeker</strong> at $29.99 per month, <strong>Business Plus</strong> at $59.99 a month, <strong>Sales Navigator Professional</strong> at $79.99 per month, and <strong>Recruiter Life</strong> (which I think should be renamed to #RecruiterLife) at $119.95 per month.</p>
+  </li>
+  <li>
+    <p>Everything flows nicely here. The call-to-action at the top of the page “What do you want to achieve with your free trial of Premium?” compliments the display of the four different tiers below, of which each has a short answer to the aforementioned question (e.g. “Unlock sales opportunities”).</p>
+  </li>
+  <li>
+    <p>But the names for tiers don’t mesh well together. I can be a Job Seeker or a Sales Navigator Professional, but I can’t be a Business Plus or a Recruiter Life.</p>
+  </li>
+  <li>
+    <p>Also, WTF is a Sales Navigator Professional? A modern-day pirate navigating the treacherous seas of the business world?</p>
+  </li>
+  <li>
+    <p>Fortunately, the difference between tiers here is a little better. As you pay more, you get more features. Job Seeker and Business Plus highlight 4 features, Sales Navigator Professional highlights 6, and Recruiter Life highlights 8. It makes higher tiers look more appealing deal because you’re getting more than “more InMail.”</p>
+  </li>
+  <li>
+    <p>The orange for the Recruiter Life tier (#e68523) is also much better compared to the disgusting orange on the iOS version (#edb220).</p>
+  </li>
+  <li>
+    <p>Every tier except the lowly Job Seeker tier has an option to go annually. Not only do you save 20% by committing to an annual basis, but another benefit is that it’s “Easier to expense with a single receipt.” LinkedIn knows the struggles of the modern-day worker and is addressing those issues head-on!</p>
+  </li>
+</ul>
+
+<div>
+	<img class="rounded-corners" style="max-width: 700px;" src="/assets/images/posts/2015-03-20/li-relief.png" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong>What a relief!</strong></p>
+</div>
+
+<p>For completeness’ sake, here is what the Android version looks like.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 500px;" src="/assets/images/posts/2015-03-20/linkedin-android.gif" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong></strong></p>
+</div>
+
+<p>It looks very similar to the iOS version, except it’s uglier and Android users get monthly and yearly sign-up options. Surprisingly, there is no option for a free trial. Has LinkedIn managed to successfully monetize Android users with terrible design or have they simply given up all hope for ever making money on the Android platform?</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/02/22/need-big-friggin-images/">
+        Need Big Friggin' Images?
+      </a>
+    </h1>
+
+    <span class="post-date">22 Feb 2015</span>
+
+    <p>I found myself in need of some <strong>big friggin’ images</strong> the other day. After scouring the web for a while and coming up with paltry-sized images (ONLY hundreds of megabytes), I decided to just create some myself. I whipped up a quick Python script – <a href="https://gist.github.com/markcerqueira/459fa0a3aae001d3471f"><strong>imggen.py</strong></a> – that uses the <a href="https://pillow.readthedocs.org/">Pillow image library</a> to generate square images where each pixel is a random color. It’s certainly no remarkable coding achievement, but the output is pretty pretty.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 800px; margin-top: 10px; border: 0px;" src="/assets/images/posts/2015-02-22/RGBA_400_regular.PNG" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong>160k Pixels!</strong></p>
+</div>
+
+<p><strong>The images also got really big and took a long time to generate as the size increased.</strong> Running the script with size 2000 pixels generated a 13.9 MB image in 23 seconds; 16000 pixels, 22 minutes, 875 MB; 34000 pixels, 107 minutes, 3.95 GB! Yes, I know plenty about time and space complexity for algorithms; just let me enjoy this moment as my computer struggles to generate these images!</p>
+
+<p>I toyed around the script to generate images in <strong>different styles.</strong> Below is a composition of four variations of imggen.py. Clockwise from top left: the <strong>original</strong> script that generates a random color for every pixel, a <strong>rows</strong> version that picks a random color and uses that for the entire row, a <strong>grayscale</strong> version that generates a random grayscale color for every pixel, and a <strong>columns</strong> version that is similar to the rows version, but for columns instead.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 800px; margin-top: 10px; border: 0px;" src="/assets/images/posts/2015-02-22/RGBA_400_collection.PNG" />
+	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong>640k Pixels in 4 Servings</strong></p>
+</div>
+
+<p>Wow! Such beauty! Much pixels! Check out <a href="https://gist.github.com/markcerqueira/459fa0a3aae001d3471f"><strong>imggen.py</strong></a> and you can be a (computer) artist too!</p>
+
+
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page15">Older</a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page13">Newer</a>
+    
+  
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      mark cerqueira &middot; well-rounded nerd
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/tags.css">
+  <link rel="stylesheet" href="/public/css/v1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">home</a>
+    <a class="sidebar-nav-item" href="/about/">about</a>     
+    <a class="sidebar-nav-item" href="/archive/">archive</a>
+    <a class="sidebar-nav-item" href="/fitness/">fitness</a>
+    <a class="sidebar-nav-item" href="/projects/">projects</a>
+  </nav>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">mark cerqueira</a>
+            <small>well-rounded nerd</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2013/06/26/things-i-learned-growing-alongside-smule/">
+        Things I Learned Growing Alongside Smule
+      </a>
+    </h1>
+
+    <span class="post-date">26 Jun 2013</span>
+
+    <p>Boy, does time fly… My three year anniversary at Smule is quickly approaching! I started at Smule right after college, and both Smule and I have grown a lot since then. From 3 years ago to today; 18 team members grew to 60+; we now develop for iOS and Android; switched from SVN to git; from waterfall to Scrum; from Lighthouse to Pivotal to JIRA; grew from a team relying on scant documentation to one utilizing a comprehensive wiki. Overall, Smule and I have become better and a tad bit smarter at what we do. I feel like I’ve learned a lot, and even picked up a controversial opinion or two! Here is a selection of observations, thoughts, and opinions I picked up growing alongside Smule.</p>
+
+<!--break-->
+
+<ul>
+  <li>
+    <p><strong>Avoid writing sloppy code - a.k.a. hacking or “getting it done” - because you actually think stuff will get done faster.</strong> Yes, you can copy-and-paste that chunk of code that does what you want from one class to another. But extracting that functionality into a superclass or creating a helper class might be better, and it won’t take a significant amount of time, especially if you use a decent IDE. When this code is revisited, the time you invested doing things in a better way will pay dividends. This isn’t school anymore as you’re never really “done” with any piece of code. I’m definitely not advocating over-engineering: just responsible coding and kindness to your fellow developers.</p>
+  </li>
+  <li>
+    <p><strong>You need some release engineering – the more, the better.</strong> We used to compile our app store builds on our product lead’s laptop. We used to have QA compile code on their machines. So much pain (iOS provisioning madness) can be avoided as soon as you set up a machine that can create the builds you need, and notify developers ASAP when they push code that breaks the build. Yes, you could spend that time “getting it done,” but remember that release engineering is the gift that keeps on giving!</p>
+  </li>
+  <li>
+    <p><strong>Document stuff!</strong> Yes, the code you just designed, wrote, and debugged makes complete and total sense to you. But writing a comment here and there doesn’t take that much time, and will help anyone who may come in to understand your code.</p>
+  </li>
+  <li>
+    <p><strong>Avoid overreacting, especially if you’re flying blind.</strong> After releases, we used to monitor app store reviews for any negative feedback. We still do, but we no longer go to DEFCON 2 (e.g. a Cuban Missile Crisis) when a review complains about an issue. We’ve integrated frameworks (in our case, Crittercism) that lets us monitor issues affecting our customers. We then use this data to plan fixes for future releases. Our products have gotten more stable – you can see the crash rate fall from release to release – and we can make much smarter decisions on whether an issue deserves a hot-fix or can be deferred to the next scheduled release.</p>
+  </li>
+  <li>
+    <p><strong>Back up!</strong> This is advice for anyone who uses a computer. It’s a matter of time before some tragedy renders your computer unusable. Even if code is hosted on a remote repository or all your important files are in the cloud, setting up a new machine to your liking still takes time. On Macs, it’s incredibly easy to back up (and recover) with Time Machine. Everyone at Smule is regularly reminded to stay backed up.</p>
+  </li>
+  <li>
+    <p><strong>Everyone is responsible for product quality – so if you see something, say something!</strong> QA is primarily responsible for ensuring our products meet a standard of quality. That said, we have encouraged the entire team to speak up if they see anything odd. It’s not the Smule engineering team putting out our apps: it’s the entire Smule team. We all want to deliver the best experience to our customers, so we’re all doing our best to strive for that goal.</p>
+  </li>
+  <li>
+    <p><strong>Develop, test, and play with a proxy.</strong> If you’re not using Charles or some other proxy while working with an app: get it, learn it, and use it. Sometimes issues that involve a client-server interaction become a finger-pointing contest between the two teams. With a proxy, you know exactly what the client is requesting and what the server is sending you, which helps debugging issues immensely. Power users can use Charles to throttle their connections to slow speeds, intermittently drop packets, and even overwrite data being sent back from the server.</p>
+  </li>
+  <li>
+    <p><strong>Stay out of your comfort zone. Don’t stop learning.</strong> Around my two year anniversary at Smule, I needed some change. I had been doing iOS for two years, most of it on Magic Piano, and felt like I wasn’t really growing and learning as much as I’d like to. Different people prefer different things; some people don’t mind more of the same, but I become frustrated when I felt like I was stagnating. Instead of sulking, I asked if there was any room to shuffle me around. My reinvigorating shift to the Android team gave me an entirely new mobile platform to learn and explore. Instead of siding with iOS in the iOS vs. Android battle, I can now comfortably tell you what I like and dislike about both platforms! I’m now hoping we have our Windows Mobile team set up by summer 2014 so I can make another switch! Then, followed by a Blackberry team. ;)</p>
+  </li>
+  <li>
+    <p><strong>Be kind.</strong> At my baccalaureate service, Jeff Bezos, founder of Amazon, said something very poignant: “One day you’ll understand that it’s harder to be kind than clever. Cleverness is a gift; kindness is a choice. Gifts are easy – they’re given after all. Choices can be hard.” I have the occasional bad day, and I sometimes hear and see things I completely disagree with. During those moments, Bezos’ words ring absolutely true: it is harder to be kind, but it’s certainly the right thing to do.</p>
+  </li>
+  <li>
+    <p><strong>A happy team is a productive team.</strong> Like most startups, Smule has pretty awesome perks – including tons of food, awesome workshops, StarCraft 2 Day, and great work hours including work-from-home days. While we’ve grown a lot and added some common-sense planning and release processes to eliminate some of that startup chaos, the perks and flexibility have not changed. If you have to pick up your furry friends from the vet, drive your brother for the third time to the DMV because he can’t pass his road test, or you pulled your back doing deadlifts (all real examples), no one is going to be hunting you down. Flexibility has kept our team happy and productive, and we’re all getting awesome things done in and out of the office.</p>
+  </li>
+</ul>
+
+<p>Smule and I have come a long way together: we’re full steam ahead on our mission to bring the world together with the power of music, and I’m excited to see where our wild journey goes. If I said something that stirred emotions within you, please feel free to <a href="https://twitter.com/markmcerqueira">send feedback in 140 characters</a>!</p>
+
+<p>Check out Smule on <a href="https://twitter.com/smule">Twitter</a> and <a href="https://www.facebook.com/Smule">Facebook</a> for more awesomeness. Smule was recently listed as a <a href="http://blog.appannie.com/app-annie-index-apps-may-2013/">top 10 publisher on iOS</a> (excluding games), in the company of big names like Google, Apple, and Facebook!</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2013/06/22/the-game-im-most-excited-for/">
+        The Game I'm Most Excited For
+      </a>
+    </h1>
+
+    <span class="post-date">22 Jun 2013</span>
+
+    <p>Earlier this week, I <a href="/2013/06/16/video-games-after-e3/">posted</a> about my excitement for upcoming 3DS games, but I’m also excited about games coming to all consoles. The <em>Last of Us</em> is in my PS3 and I’m eager to start playing it. This game has received immensely positive reviews and supposedly grossed more than The Man of Steel during its opening weekend! The new open world, photorealistic graphics, and new Jack Bauer voice acting for Snake make me giddy to embark on Hideo Kojima’s newest chapter in the <em>Metal Gear</em> series. <em>Final Fantasy</em> Versus XIII has transformed itself from vaporware into the fifteenth entry in the series. Few details, trailers, and gameplay videos have been revealed, but I’m hoping Square Enix doesn’t screw up the first entry of their flagship series on the next generation of consoles. <em>Pikmin 3</em> and <em>The Wonderful 101</em> give the Wii U a much-needed boost to its somewhat lackluster library. These are a few of the games I am looking forward to, but the one game I absolutely cannot wait to get my hands on is a gem that will be coming exclusively to Nintendo’s Wii U.</p>
+
+<!--break-->
+
+<div style="text-align: center">
+<iframe width="640" height="480" src="//www.youtube-nocookie.com/embed/6GxUMMGyZcM?rel=0" frameborder="0"></iframe>
+</div>
+
+<p>Monolith Soft’s <em>X</em> was not revealed at E3 but instead during a Nintendo Direct broadcast for the Wii U in January. Details on X are sparse but it appears to be a sequel (if not story-wise, at least spiritually) to the Wii game <em>Xenoblade Chronicles</em>. Xenoblade is one of my all-time favorite games that revived my faith in JRPGs. I put a good 120+ hours into the game and definitely went through a bit of separation anxiety when I realized I had played the game to its end. Two of my coworkers picked up Xenoblade after I kept raving about it. Midway through gaming, John said it was interfering with his ability to get anything done, so he brought the game disc to work and read a plot summary on Wikipedia to avoid getting sucked in again. Josh did things properly (he completed the game), and agrees that Xenoblade is astounding.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 600px;" src="/assets/images/posts/2013-06-22/xenoblade-areas.jpg" />
+	<p class="caption-text"><b>Some of the different areas you explore in Xenoblade Chronicles.</b></p>
+</div>
+
+<p>When I saw this trailer, all of the amazing memories and feelings I got playing Xenoblade came flooding back - I might’ve shed a few tears of joy. The trailer shows off beautiful and vast open world environments. Even on the Wii, Xenoblade had environments that were an absolute pleasure to explore. I remember the first time I arrived in Xenoblade’s first large free-roaming area: the huge grassy Gaur Plains. I ignored all the story objectives and just ran around to every nook and cranny of the map, dying a few times because some of the enemies were very strong. It was just fun to run around and explore – something I find missing in a lot of games. Traveling from area to area revealed new and varied landscapes to explore like the swampy Satorl Marsh, snowy Valak Mountains, and dense vegetation of the Makna Forest.</p>
+
+<div style="text-align: center">
+<iframe width="640" height="480" src="//www.youtube-nocookie.com/embed/APWTJMyM4qg?rel=0" frameborder="0"></iframe>
+</div>
+
+<p>During another Nintendo Direct that coincided with E3, a new trailer revealed more interesting environments and gameplay footage. This trailer heavily featured mechs, both for exploring and doing battle against very large dinosaur-like enemies. While the mechs in Xenoblade were never able to be piloted, it appears X inherited from its older predecessor, <em>Xenogears</em> the mechanic to allow players to pilot and fight in mechs. The addition of flying mechs, as well as beautiful and potentially larger open-world environments, has me brimming with glee!</p>
+
+<p>The music in Xenoblade was top notch. The composing trio ACE+ did a great job composing pieces day/night pieces for each of the areas (check out the Guar Plains <a href="https://www.youtube.com/watch?v=xweRl4LZlmo">day music</a> and <a href="https://www.youtube.com/watch?v=ftmSuJqbdx0">night music</a>), awesome battle music (check out the guitar-laden <a href="https://www.youtube.com/watch?v=nCclUgQk1Lk">Mechanical Rhythm</a>), and very moving pieces that complemented the progression of the story (like <a href="https://www.youtube.com/watch?v=B0DE5zyRI6U">Unfinished Battle</a>). The first trailer for X reveals that the music will be composed by Hiroyuki Sawano whose discography features plenty of work on movies, anime, and TV shows. X will be Sawano’s first video game, but if the music to the two trailers released is any indicator, I am eagerly anticipating checking out X’s soundtrack!</p>
+
+<p>I believe that Monolith Soft can deliver an experience that will top Xenoblade! The wait may be long as no release date has been announced, but I’ve got some awesome games to tide me over in the meanwhile. <em>The Last of Us</em> is fired up and the always reliable Tales series brings <em>Tales of Xillia</em> to the US in early August. It might also be a good time to revisit the <em>Xenosaga</em> trilogy that I put down somewhere in the second chapter.</p>
+
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2013/06/16/video-games-after-e3/">
+        The Game Console I'm Most Excited About Post-E3
+      </a>
+    </h1>
+
+    <span class="post-date">16 Jun 2013</span>
+
+    <p>One of the most exciting annual events in the video game world, the Electronics Entertainment Expo (E3) was held last week. A lot of the focus this year was on the two new console juggernauts - the PS4 and Xbox One - but there were plenty of exciting game announcements for current and next generation systems as companies vied for gamers’ attention (and money). Established series revealed information on new entries including giants like Metal Gear Solid, Mario Kart, Final Fantasy, Halo, Super Smash Brothers, Call of Duty, Kingdom Hearts, and Battlefield. It’s certainly a good time to be a gamer! After a week filled with exciting news, I thought about the console I am most excited to game on in the coming months.</p>
+
+<!--break-->
+
+<p style="margin-bottom: 30px;">Both going into and coming out of E3, I am most excited for Nintendo's handheld 3DS. My 3DS is already hogging up most of the time I spend gaming! Having spent a ton of time playing <em>Fire Emblem: Awakening</em> and <em>New Super Mario Bros. 2</em>, I am currently playing through <em>Donkey Kong Returns 3D</em> and <em>Animal Crossing: New Leaf</em>. Not only is the current 3DS game library awesome, the games in the release pipeline are looking to secure the 3DS as my go-to gaming system. Here are the ones I'm most excited for.</p>
+
+<div class="alternating-image" id="ProjectXZone">	
+  	<img src="/assets/images/posts/2013-06-16/ProjectXZone.jpg" alt="Project X-Zone boxart" /> 
+  	<h4>Project X-Zone (06/25/2013)</h4>
+  	<p>Pronounced Project Cross Zone, this tactical RPG features a diverse set of characters from Namco Bandai, Capcom, and Sega franchises. Here are a few from series I have played in the past: KOS-MOS and T-elos (Xenosaga); Megaman and Zero (Mega Man X); Dante (Devil May Cry); Yuri, Flynn and Estelle (Tales of Vesperia); Kite and BlackRose (.hack); Chris and Jill (Resident Evil); Ryu, Ken, and Chun-Li (Street Fighter); and Selvaria Bles (Valkyria Chronicles). I checked out the demo for this quirky RPG and had a great time playing through it. I'm looking forward to diving into this game next week!</p>
+</div>
+
+<div class="alternating-image" id="pokemonX">	
+  	<img src="/assets/images/posts/2013-06-16/PokemonXBoxart.jpg" alt="Pokemon X boxart" /> 
+  	<h4>Pokémon X / Pokémon Y (10/12/2013)</h4>
+  	<p>It's been far too long, old friend! The first and last Pokémon game I played was the original Pokémon Red. The series has evolved a lot since the late 90s when Professor Oak gave me a choice between a Bulbasaur, Charmander, or Squirtle (I chose Bulbasaur!), and then sent me off to catch the 151 Pokémon known to exist. While there have been many new regions, new Pokemon (Pokémon #649 is Genesect), and new gameplay elements, for the first time in the series, the entire game is going to be presented in fully polygonal 3D graphics. I plan to at least finish the story, while resisting the urge to try to catch em' all so I can play other games.</p>
+</div>
+
+<div class="alternating-image" id="zelda">	
+  	<img src="/assets/images/posts/2013-06-16/Zelda_KNT2_logo.png" alt="A Link Between Worlds" /> 
+  	<h4>Legend of Zelda: A Link Between Worlds (November 2013)</h4>
+  	<p>Taking place in the same world, but still not a remake or sequel to my all-time favorite Zelda game, A Link to the Past, this new entry in the Zelda series looks very promising. There aren't any specifics, but the spirit of the predecessor is clearly here - a Zelda game played in an overhead perspective with two linked worlds. I normally turn off the 3DS' stereoscopic 3D functionality, but the new vertical dungeon designs that will be enhanced by 3D might actually tempt me to turn it on. A new game mechanic/ability allowing Link to turn into a 2D drawing on walls will also add some Paper Mario-esque goodness to puzzles. This game will have everything going for it to satiate my long-held desire for a classic Zelda in the style of A Link to the Past!</p>
+</div>
+
+<div class="alternating-image" id="bravely">	
+  	<img src="/assets/images/posts/2013-06-16/BDFF_Logo.jpg" alt="Bravely Default: Flying Fairy boxart" /> 
+  	<h4>Bravely Default: Flying Fairy (~2014)</h4>
+  	<p>My heart cries when amazing games are released only in Japan, and it looked like Square Enix's Bravely Default was going to go this route. An awesome JRPG featuring turn-based battles and a job system akin to Final Fantasy V's, Bravely Default sold very well in Japan and received a 38/40 from legendary Japanese video game magazine Famitsu. Calls and petition to localize the game eventually got through and the game is now slated for release in 2013 in Europe and 2014 in North America! It seems like the Final Fantasy series is not returning to the classic, old-school goodness of games like FFVI and FFIX, but Bravely Default looks like it might be able to fulfill those nostalgic desires.</p>
+</div>
+
+<div class="alternating-image" style="margin-bottom: 30px;" id="yoshi">	
+  	<img style="border: 0px" src="/assets/images/posts/2013-06-16/yoshi_new_island.png" alt="Yoshi's New Island" /> 
+  	<h4>Yoshi's New Island (~2014)</h4>
+  	<p>I clearly remember my first day of Sunday school, because my mom picked me up along with a Super Nintendo and Super Mario World. I also remember the day my cousin Brian and I demolished Super Mario World 2: Yoshi's Island in a single evening during a sleepover. After my college roommate Theo Beers got a Wii, it took me a weekend to play through Super Mario Galaxy. When I thought I had my fill of Mario platformers, New Super Mario Bros. 2 on the 3DS got me hooked again with its excellent level design and compelling goal of collecting one million coins. I expect and hope Yoshi's New Island continues to channel the light-hearted fun and addictive gameplay that have become hallmarks of Mario platformers.</p>
+</div>
+
+<p>While the 3DS has awesome games coming soon that I am eagerly awaiting, the one game I am most excited for is not on the 3DS. Check back later this week to read about the game I crave more than all others!</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2013/06/10/gg-korea/">
+        GG Korea!
+      </a>
+    </h1>
+
+    <span class="post-date">10 Jun 2013</span>
+
+    <p>Anyong-haseyo! The Vorgom Trinity has returned from its ten day excursion to Korea! Ge, Spencer, and I had a great time in Korea and we really enjoyed the New Interfaces for Musical Expression Conference (NIME) that was hosted by members of the Korea Advanced Institute of Science and Technology (KAIST) in Daejeon. Our poster presentation for SoundCraft went smoothly (we didn’t lose our poster during the 5,600+ mile journey) and our performance of GG Music was well-received. Aside from the conference, we got to do some sight-seeing, watch some professional StarCraft, play plenty of StarCraft, and of course eat tons of amazing food. Here are some highlights with photos!</p>
+
+<!--break-->
+
+<div>
+	<img style="width: 100%; margin-bottom: 6px;" src="/assets/images/posts/2013-06-10/korea-gstl.JPG" />
+</div>
+
+<p><em>GSTL Match</em> - We arrived in time to catch a StarCraft 2 GSTL (Global StarCraft Team League) match between two professional eSports teams - MVP and NSHoSeo. The GSTL is a league in Korea composed of eight professional StarCraft 2 teams, professionally produced by GOM TV. There are even Korean and English commentators to provide in-depth analysis of matches! Teams send out players who play 1-versus-1 matches in a best of 7 format. Players who win get to keep playing and players who lose must be replaced by another team member. The losing team also picks the map for the next set so there is some strategy involved in who gets sent out against who. That said, the match between MVP and NSHoSeo was a quick one as Keen, from team MVP, all-killed NSHoSeo by taking out four players without dropping a single set! Spencer and I actually made a few appearances on the show holding up some cheerfuls (handwritten signs)! After the match was over, we even got to meet the MVP team, and the English casters - Khaldor and Wolf!</p>
+
+<div>
+	<img style="width: 100%; margin-bottom: 6px;" src="/assets/images/posts/2013-06-10/korea-keynote.JPG" />
+</div>
+
+<p><em>Train to Daejeon and NIME Keynotes</em> - The first segment of the NIME conference was hosted at KAIST in Daejeon which is about 90 miles (~144 kilometers) south of Seoul. On the Korea Train Express (KTX) high-speed train, which has a max speed of 190 mph (305 km/h), we got to Daejeon in no time. NIME featured two keynote speakers - the first by Bill Verplank, a human-computer interaction designer based out of Stanford University. During his keynote, titled Motors and Music, Dr. Verplank discussed the difference between handles and buttons which invited an interesting observation from an audience member about the difference between toilet handles/buttons around the world. Dr. Verplank took the seemingly odd observation in stride and went over how people interact with toilets, providing plenty of laughs for the audience. The second keynote featured Ajay Kapur, a Princeton alumnus, who currently teaches at the California Institute of the Arts and the New Zealand School of Music. Ajay’s talk focused on gharanas - a system in Hindustani music that links musicians by lineage or apprenticeship. Ajay, a sitar player himself, showed us how he fits into one of India’s sitar gharanas, and then took that traditionally Hindu system and applied it to the world of computer music. Ajay explored all the people that mentored, collaborated with, and influenced his work in robotic music, along with the graduate students he now mentors. From that network, he began building his own personal computer music gharana. Both keynotes were superb!</p>
+
+<div>
+	<img style="width: 100%; margin-bottom: 6px;" src="/assets/images/posts/2013-06-10/korea-poster.JPG" />
+</div>
+
+<p><em>Poster Session and Korea Bakeries</em> - We presented our poster on SoundCraft during the <a href="http://nime2013.kaist.ac.kr/program/posters_demos/index.html#posters_02">Tuesday afternoon session</a>. The session went well - there was a good turnout, plenty of awesome posters and demos in the hall, and quite a few people came over to hear about our work sonifying StarCraft 2. I even got interviewed by a Korean news crew that was at the conference! More importantly, Tuesday was also the day I discovered how wonderful Korean bakeries are. KAIST has a Tous Les Jours (a Korean bakery franchise) on campus and I ate some of the most amazing baked goods ever! My favorite item was a soft, milk bread bun with cream filling in it! While there are a few Tous Les Jours in the USA, there are none in the Bay Area. Fortunately for us, however, there are Paris Baguettes (another Korean bakery franchise) in the South Bay. There are also likely plenty of amazing non-franchise bakeries in the Bay Area. If you know of any awesome places please <a href="https://twitter.com/markmcerqueira">tweet me</a>!</p>
+
+<div>
+	<img style="width: 100%; margin-bottom: 6px;" src="/assets/images/posts/2013-06-10/korea-bbq.JPG" />
+</div>
+
+<p><em>Concert and Korea BBQ</em> - On Wednesday we performed GG Music during the <a href="http://nime2013.kaist.ac.kr/program/concerts/index.html#evening_concert_03">evening concert</a>. While GG Music had already been performed at Stanford CCRMA’s Music and Games concert, Spencer and Ge did some more powering up of the GG in GG Music. The finished product sounded great in the concert hall over eight channels - CCRMA’s penchant for multi-channel audio (shared by the Princeton Laptop Orchestra and its original multi-channel hemispherical speaker) made the piece even better as much of the feedback mentioned how great the spatialization of sound was. After the concert we celebrated by going to eat at a Korean BBQ restaurant. While finding English-speakers in Seoul was not a frequent occurrence, most restaurants had English translations or at least photos of the items, but most places in Daejeon did not! But we managed just fine. I had Jieun, one of Ge’s graduate students who is Korean, translate a few fundamental words/phrases (e.g. beef, pork, rice, bring more food) in my notebook. Armed with these handy phrases, a rediscovering of the game charades, and a dash of optimism with lots of head nodding, we filled our stomachs with amazing Korean BBQ!</p>
+
+<div>
+	<img style="width: 100%; margin-bottom: 6px;" src="/assets/images/posts/2013-06-10/korea-running.JPG" />
+</div>
+
+<p><em>Running About in Daejeon</em> - While in Daejeon, jet-lag had me up very early in the morning. Curiosity to explore the town mixed with a tinge of guilt from the gluttonous meals we were consuming had me running around town. Like Seoul is divided by the Han River (with 27 bridges to cross it!), Daejeon is divided by the Gap River. The cab ride from our hotel to KAIST crossed the Gap River and I saw there were a few walking paths along the river, so I figured that would be a good place to go to. The walking paths along the river proved to be quite scenic. To add to that, across from the bridge we normally crossed to get to KAIST, there was an awesome pedestrian bridge.</p>
+
+<div>
+	<img style="width: 100%; margin-bottom: 6px;" src="/assets/images/posts/2013-06-10/korea-pcbang.JPG" />
+</div>
+
+<p><em>Last Day of NIME in Seoul and PC Bang</em> - The last day of NIME took place in Seoul at the Lock Museum. The evening concert was particularly incredible featuring a piece, Bodhisatva - a Korean/Indian digital mashup, with Ajay on his electronic sitar and Eun-il Kang on an electronic Haegeum - a traditional Korean string instrument, resembling a fiddle. To round out the show was an amazing performance by Ensemble Sinawi - taking their name from the traditional form of Korean music, sinawi. Here is there <a href="https://www.facebook.com/pages/%EC%95%99%EC%83%81%EB%B8%94-%EC%8B%9C%EB%82%98%EC%9C%84-Ensemble-Sinawi/140213766095783">Facebook band page</a> and a <a href="https://www.youtube.com/watch?v=fl-zGmtaohw">song performed by the group</a>. The concert closed out a successful NIME 2013. Afterwards we headed to our hotel in Seoul and started exploring the area. We quickly found and settled in at Wiz PC, a PC bang. It’s an Internet café mixed with a gaming center mixed with instant ramen and energy drinks. Quite simply - a nerd lair! While League of Legends is the dominant game played at PC bangs, we played the one true game - StarCraft 2. Interestingly enough, there was a brave soul a few seats down from us playing Brood War, the expansion to the original StarCraft!</p>
+
+<div>
+	<img style="width: 100%; margin-bottom: 6px;" src="/assets/images/posts/2013-06-10/korea-finals.JPG" />
+</div>
+
+<p><em>GSL Finals</em> - On Saturday, I was able to fulfill a dream of mine and attended a GSL (Global StarCraft League) final. The GSL is the world’s most competitive StarCraft tournament and this final featured two strong players - a Terran, STX SouL’s Innovation and a Zerg, Woongjin Stars’ Soulkey. Innovation was heavily favored to win the best-of-7 finals and at the end of the third game with Innovation up 3-0, it looked like our trip to the finals was going to be a short one. Disappointment quickly transformed into excitement as Soulkey fought his way back to tie the series at 3-3, and then it all came down to the final set. Soulkey went on to win the set and the match 4-3, pulling off the greatest comeback in StarCraft 2 history! To top off the amazing day, after the finals were over, I got to meet the preeminent StarCraft casters and heroes of mine, Tasteless and Artosis. They were both extremely friendly and were also in awe of Soulkey’s comeback. After the finals, we headed back to the hotel and quickly made our way over to the Wiz PC. Inspired by watching amazing StarCraft, we had to go play tons of StarCraft ourselves to top off our wonderful trip before our departure back home the following day!</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2013/06/07/recycling-at-smule/">
+        Earth Conscious Workshop at Smule
+      </a>
+    </h1>
+
+    <span class="post-date">07 Jun 2013</span>
+
+    <p>At Smule, we organize a brown bag lunch/seminar every month to enrich and enhance our collective awesomeness. Sometimes we have team members share their unique talents and other times we have guests visit. Since October 2012 we have had a tea ceremony, a photoshop tutorial, a seminar on all things bicycles, a ukulele workshop (turns out I’m a terrible ukulele player), a juggling workshop, a professional cycling workshop led by Matt Johnson (President of the pro cycling team Garmin/Sharp) and an epic keyboard workshop with Jordan Rudess of the progressive metal band Dream Theater. This past Friday, we had an Earth Conscious Workshop led by Heidi from <a href="http://www.recology.com/">Recology</a> who led an awesome presentation about the importance of recycling.</p>
+
+<!--break-->
+
+<p style="margin-bottom: 8px;">Heidi gave us the low-down on everything recycling/composting/landfills and held a Q&amp;A after her presentation. The amount of interesting information shared during her visit was mind-blowing. Here are some highlights I took away from the workshop:</p>
+<ul>
+  <li>
+    <p>Diversion rate is a measure of how much material is diverted from landfill disposal to recycling/composting, expressed as a percentage of the material diverted from the landfill. It wasn’t surprising that <em>San Francisco boasts the highest diversion rate of major US cities - diverting roughly 80% of its waste</em>, and on track to become a zero-waste city (i.e. 100% diversion rate) by 2020! Compared to NYC, another big city with a ridiculous real estate market, <a href="http://www.nyc.gov/html/nycwasteless/downloads/pdf/DSNY-reports/Monthly_by_Boro_District_2012-10.pdf">this PDF</a> shows the diversion rate in October 2012 was a meager 12.1%! By 2020, when San Francisco hopes to be a zero-waste city, <a href="http://www.nyc.gov/html/nycwasteless/html/resources/reports_rate_definitions.shtml#ll40-goals">NYC hopes to hit a 25% diversion rate</a>.</p>
+  </li>
+  <li>
+    <p>Unfortunately, there are no recycling standards so the exact specifics vary among cities, but the <em>general rule for recycling vs composting vs landfill</em>: plastics, glass, metals (includes aluminum-based stuff like cans/foil) and paper go to recycling; food and anything formerly living go to composting; and the rest goes to the landfill. If you have something that is a mixture of different materials, like a can of Pringles (paper on the outside, metal lining on the inside) or a packaging envelope from Amazon (paper on the outside, plastic bubble wrap on the inside), these need to be thrown in the waste bin because separating out the components is too difficult.</p>
+  </li>
+  <li>
+    <p>Although items made of multiple materials are not recyclable, what about something like paper lined with plastic wax that you normally get at a deli? The general rule of thumb for recycling paper is the <em>rip test - if you can rip a paper item easily and no plastic film is visible along the tear, it can be composted!</em>!</p>
+  </li>
+  <li>
+    <p>At Smule, we have disposable utensils that are made from plants and biodegradable. One would think that this means it should go in the compost bin since it was made from formerly living things - plants. Unfortunately, made from plants and biodegradable can mean only a percentage of the utensil is actually made from plants/biodegradable, which means that these utensils can actually not be composted. Even worse, since they may be a combination of living material and plastic, recycling them is also not recommended (mixture of different materials) so these <em>seemingly environmentally-friendly biodegradable utensils need to go in the landfill bin</em>! Only utensils marked as compostable are actually compostable!</p>
+  </li>
+  <li>
+    <p>The “formerly living” description for items that should be composted invited questions about dead pets…and dead bodies. During the compost process, compostable material is heated to temperatures high enough to destroy any pathogens, but Heidi recommended you just <em>throw dead pets in the waste bin</em> with no comment on dead bodies, so we assume that means they are compostable! ;)</p>
+  </li>
+  <li>
+    <p>When recycling plastics, most people look for the triangular chasing arrow symbol. This triangle contains a number in the center that ranges from 1 to 7, but in San Francisco, you can ignore the number and just <em>recycle all rigid plastics</em>. Rigid plastics are plastic items that can maintain their form. For example, a container with your takeout food might be a bit flimsy but it will hopefully not break its form when you press on it, whereas a non-rigid plastic bag or saran wrap changes its form easily under pressure. Non-rigid plastics that are mistakenly recycled can actually cause issues at recycling plants! <em>Non-rigid plastics cause jams in the machinery sorting recycled materials</em> causing the entire processing line to be shut down, requiring manually removing the offending items! For items like plastic bags, you should reuse them locally instead of just throwing them into the landfill bin. Try reusing them when going grocery shopping or use them to collect pet waste. Some grocery stores also collect plastic bags and bundle them up for separate recycling.</p>
+  </li>
+  <li>
+    <p>Paper and plastic items are recycled in the same containers in San Francisco (single-stream recycling). <em>Plastic containers that are dirty should be recycled, but items should as clean as possible</em> because if organic matter gets on paper, mold can form and that <em>mold breaks down the fibers in paper reducing the quality of the paper being recycled</em>! There is a little paper recycling tip that does help here - <em>paper items that are not very thick like napkins and paper plates don’t need to be recycled</em> because the fibers in these items are already so thin. Given paper comes from a living thing and what is on your plate or napkin is also compostable, you can conveniently just put these items in a compost bin!</p>
+  </li>
+  <li>
+    <p>If dirty plastic containers can ruin recycled paper, <em>why doesn’t San Francisco ditch single-stream recycling</em> - where all recyclable items are put in one container by residents and sorted at recycling facilities - and just go for multi-stream recycling where items are sorted by residents? Recology tried this, but found that <em>less people were recycling because of the increased effort required for multi-stream recycling</em>.</p>
+  </li>
+</ul>
+
+<p>Everyone really enjoyed Heidi’s presentation and the impact of her visit was seen immediately. As we packed up for the weekend, marketing extraordinaire Turner Kirk snapped this photo and noted our recycling bin was overflowing, the compost bin was nearly full, and there was very little in the landfill bin.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 600px;" src="/assets/images/posts/2013-06-07/smule-recycling.jpg" />
+	<p class="caption-text"><b>An empty landfill bin is a happy landfill bin!</b></p>
+</div>
+
+<p>Up next in our workshop series is a beer-tasting workshop led by our very own beer connoisseurs Ryan and Nick! Check out Smule on <a href="https://twitter.com/smule">Twitter</a> and <a href="https://www.facebook.com/Smule">Facebook</a> for more awesomeness. If you have any questions about Smule, our workshop series, or my newfound appreciation for recycling feel free to <a href="https://twitter.com/markmcerqueira">send me a tweet</a>!</p>
+
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page34">Older</a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page32">Newer</a>
+    
+  
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

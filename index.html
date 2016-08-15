@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      mark cerqueira &middot; well-rounded nerd
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/tags.css">
+  <link rel="stylesheet" href="/public/css/v1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">home</a>
+    <a class="sidebar-nav-item" href="/about/">about</a>     
+    <a class="sidebar-nav-item" href="/archive/">archive</a>
+    <a class="sidebar-nav-item" href="/fitness/">fitness</a>
+    <a class="sidebar-nav-item" href="/projects/">projects</a>
+  </nav>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">mark cerqueira</a>
+            <small>well-rounded nerd</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/08/04/changing-progress-bar-color/">
+        Changing Progress Bar Spinner Color
+      </a>
+    </h1>
+
+    <span class="post-date">04 Aug 2016</span>
+
+    <p>Situation: you’ve got a little progress spinner in your Android app.</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ProgressBar</span>
+    <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+    <span class="na">android:indeterminateOnly=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+</code></pre>
+</div>
+
+<p>But it’s grey. You want it to be a different color. Something more exciting. To the Googles!</p>
+
+<p>Like many Android things, there are multiple Stack Overflow posts with all sorts of answers and comments on each one saying “Thanks” and “That doesn’t work for me.” I cut through all that and here is how you do it programmatically and it works across all API levels:</p>
+
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="c1">// Source: http://stackoverflow.com/a/36828947</span>
+<span class="k">try</span> <span class="o">{</span>
+  <span class="kt">int</span> <span class="n">color</span> <span class="o">=</span> <span class="n">ContextCompat</span><span class="o">.</span><span class="na">getColor</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="n">R</span><span class="o">.</span><span class="na">color</span><span class="o">.</span><span class="na">favorite_color</span><span class="o">);</span>
+  <span class="n">myProgressBar</span><span class="o">.</span><span class="na">getIndeterminateDrawable</span><span class="o">().</span><span class="na">setColorFilter</span><span class="o">(</span><span class="n">color</span><span class="o">,</span> <span class="n">PorterDuff</span><span class="o">.</span><span class="na">Mode</span><span class="o">.</span><span class="na">SRC_IN</span><span class="o">);</span>
+<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+  <span class="c1">// Why try-catch? Because some Xiaomi device out there will probably choke...</span>
+<span class="o">}</span>
+</code></pre>
+</div>
+
+<p>Now your <code class="highlighter-rouge">ProgressBar</code> – that’s actually a spinner and not a bar – be colored!</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/07/30/ruby-datetime-nsdate/">
+        Ruby DateTime to Objective-C NSDate
+      </a>
+    </h1>
+
+    <span class="post-date">30 Jul 2016</span>
+
+    <p>Converting a Ruby DateTime to an Objective-C NSDate will lead you on a wonderful journey where you realize the DateTime outputs itself is incompatible with any potential NSDateFormatter you try to use to parse it. The crux of this is because <a href="http://stackoverflow.com/a/7115343/265791">DateTime includes a colon in its timezone offset</a> which you cannot express in a NSDateFormatter.</p>
+
+<p>So what is one to do? One option is to skip the default formatter of DateTime and roll your own:</p>
+
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="c1"># See http://stackoverflow.com/a/9132422/265791</span>
+<span class="n">my_datetime</span><span class="p">.</span><span class="nf">strftime</span><span class="p">(</span><span class="s1">'%Y-%m-%d %H:%M:%S'</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>Then build the corresponding formatter in Objective-C:</p>
+
+<pre><code class="language-objective-c">[dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+</code></pre>
+
+<p>With this, you too can avoid the fruitless journey of trying to get NSDateFormatter to comprehend DateTime’s default format. Happy interoperating with languages!</p>
+
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/07/28/concert-review-final-symphony/">
+        Concert Review: Final Symphony, San Francisco, 7/28/16
+      </a>
+    </h1>
+
+    <span class="post-date">28 Jul 2016</span>
+
+    <p>It’s quite a sight to behold seeing Davies Symphony Hall packed (2,743 seats!) for a music concert centered around video game music. But when you are talking about one of the most iconic game series – Final Fantasy – with some of the most beloved soundtracks, it all kind of makes sense. Attending <strong>Final Symphony: Music from Final Fantasy VI, VII, and X</strong>, I expected to hear a beautiful homage to some of the most popular games in the series. While the San Francisco Symphony put on an absolutely spectacular show, I left the concert feeling very <strong>underwhelmed</strong>.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 700px; border: 0px;" src="/assets/images/posts/2016-07-28/fs.jpg" />
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>"Music from" should be taken very loosely.</strong></p>
+</div>
+
+<p>My main problem with Final Symphony is <strong>all the pieces were over-composed</strong> to the point that they lost their identity as being a part of Final Fantasy. The concert was described as having “Music from Final Fantasy” but a more accurate description would be “Symphonies with riffs from Final Fantasy here and there.”</p>
+
+<p>I went in expecting something like Distant Worlds (i.e. Final Fantasy pieces adapted for orchestra) with a pizzazz to turn them into symphonies. But what I got was fragments of soundtracks, build-ups to “the really good part of a song” that would abandon ship right before climaxing, and dissonance used far too liberally. Ultimately, it just didn’t feel like Final Fantasy to me. It didn’t remind me of all the wonderful memories I had playing and falling in love with the games.</p>
+
+<p>I expected and wanted the composers to open up the original MIDI files, spruce them up a bit for live performance, hit Print, and put that in front of a world-class orchestra. What I got was something that felt really “try hard” and ended up really cheapening the experience for me. Expectations… They can really backfire sometimes!</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/07/18/hello-euler/">
+        Hello, Euler!
+      </a>
+    </h1>
+
+    <span class="post-date">18 Jul 2016</span>
+
+    <p>Last Thursday I was browsing a coworker’s repositories on GitHub and noticed one inconspicuously called <strong>euler</strong>. And that’s how I discovered <a href="https://projecteuler.net/">Project Euler</a>! The website describes the project as “a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve.”</p>
+
+<p>I wouldn’t describe myself as a math aficionado, but have had a blast working my way through the problems. So far, I have already picked up a lot about prime numbers and touched the ceilings of number-based data structures many times! With over 500 problems (and a new one every week), I’ll be able to keep myself occupied for a while.</p>
+
+<p>Like my coworker I now too have an <a href="https://github.com/markcerqueira/euler">euler repository</a> that you can browse.</p>
+
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/07/12/pokemon-go/">
+        Pokémon Go
+      </a>
+    </h1>
+
+    <span class="post-date">12 Jul 2016</span>
+
+    <p>Last week, the world was forever changed with the release of <strong>Pokémon Go</strong> a.k.a. Nintendo letting Niantic reskin Ingress with Pokémon to make tons of money. I’ve been playing the game for a few days and it’s fun. Walking around outside and seeing tons of people playing this game was truly unexpected; I never imagined “Pokémon on mobile” was going to be delivered like this. It’s refreshing – both to be outdoors and to see gamers who are traditionally recluse out and mingling.</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 700px; border: 0px;" src="/assets/images/posts/2016-07-12/pokemon.png" />
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>So many people outside!</strong></p>
+</div>
+
+<p>But the game has its fair share of issues:</p>
+
+<ul>
+  <li>The game is very <strong>buggy</strong>. I’ve had it crash and completely lock up at least twice each day since installing it. I’m sure stability will increase with coming patches.</li>
+  <li><strong>Servers</strong> are having trouble keeping up with the huge spike in popularity. This isn’t too shocking. It reminds me of how terrible the servers were for the rebooted Final Fantasy XIV back in 2013.</li>
+  <li>There’s also been some <strong>privacy</strong> complaints about the iOS version having full access to your Google account. Given how buggy the app is, I was not shocked when they said it was a configuration mistake.</li>
+  <li>This game destroys my <strong>battery</strong>. Got 80% battery left? You mean 80 minutes left of Pokémon Go playing time! I can now empathize with Android users who live under the tyranny of terrible battery life.</li>
+</ul>
+
+<p>Drawing people in with the Pokémon IP and getting them into the Ingress geo-caching game model has been successful so far, but Pokémon Go is just scratching the surface today. I’m really hoping Niantic is cranking on social features. I’d love to have a friends list, trade Pokémon, get bonuses for hanging out with other trainers, make clans, gift Pokémon to friends, and see friends on the map.</p>
+
+
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page2">Older</a>
+  
+  
+    <span class="pagination-item newer">Newer</span>
+  
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

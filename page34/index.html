@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      mark cerqueira &middot; well-rounded nerd
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/tags.css">
+  <link rel="stylesheet" href="/public/css/v1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">home</a>
+    <a class="sidebar-nav-item" href="/about/">about</a>     
+    <a class="sidebar-nav-item" href="/archive/">archive</a>
+    <a class="sidebar-nav-item" href="/fitness/">fitness</a>
+    <a class="sidebar-nav-item" href="/projects/">projects</a>
+  </nav>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">mark cerqueira</a>
+            <small>well-rounded nerd</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2013/05/26/tips-for-android-json-parsing-using-jackson/">
+        Tips for Android JSON Parsing Using Jackson
+      </a>
+    </h1>
+
+    <span class="post-date">26 May 2013</span>
+
+    <p>At Smule, we use the <a href="http://wiki.fasterxml.com/JacksonHome">Jackson library</a> for our JSON parsing. Marshaling JSON into corresponding model objects is elegant and easy with Jackson and makes code much more readable. Here are some tips for those considering using Jackson for their marshaling.</p>
+
+<!--break-->
+
+<p><strong>Update:</strong> This post applies to Jackson 1.9. If you’re using Jackson 2.0, please see <a href="/2013/07/07/upgrading-to-jackson-20/">my post on upgrading from Jackson 1.9 to 2.0</a>.</p>
+
+<p>To parse JSON, you can <strong>use Jackson’s treeToValue method</strong>. This method throws some exceptions so it’s <strong>recommended you create a helper method that catches these exceptions instead of having try-catches everywhere</strong> you are parsing (our JSON helpers are in a class called JsonUtils). <a href="http://wiki.fasterxml.com/JacksonBestPracticesPerformance">Jackson best practices</a> recommends one <strong>re-use object mappers since creation of the mapper is an expensive operation</strong> - so our JSON helper class has a defaultMapper() method.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// newsFeedItemJsonNode is a JsonNode containing the JSON to be parsed</span>
+<span class="c1">// the second parameter specifies the class of the object you want back</span>
+<span class="n">JsonUtils</span><span class="o">.</span><span class="na">parseJson</span><span class="o">(</span><span class="n">newsFeedItemJsonNode</span><span class="o">,</span> <span class="n">NewsFeedItem</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+
+<span class="c1">// this helper method can be used to make JSON parsing a one-line operation</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">T</span> <span class="nf">parseJson</span><span class="o">(</span><span class="n">JsonNode</span> <span class="n">node</span><span class="o">,</span> <span class="n">Class</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="kd">class</span><span class="err">)</span> <span class="err">{</span>
+    <span class="nc">try</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">JsonUtils</span><span class="o">.</span><span class="na">defaultMapper</span><span class="o">().</span><span class="na">treeToValue</span><span class="o">(</span><span class="n">node</span><span class="o">,</span> <span class="kd">class</span><span class="err">);</span>
+    <span class="err">}</span> <span class="nc">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="n">TAG</span><span class="o">,</span> <span class="s">"Failed to parse JSON entity "</span> <span class="o">+</span> <span class="kd">class</span><span class="err">.</span><span class="nc">getSimpleName</span><span class="o">(),</span> <span class="n">e</span><span class="o">);</span>
+        <span class="k">throw</span> <span class="k">new</span> <span class="nf">RuntimeException</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="c1">// re-use a single ObjectMapper so we're not creating multiple object mappers</span>
+<span class="kd">private</span> <span class="kd">static</span> <span class="n">ObjectMapper</span> <span class="n">sObjectMapper</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ObjectMapper</span><span class="o">();</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="n">ObjectMapper</span> <span class="nf">defaultMapper</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">sObjectMapper</span><span class="o">;</span>
+<span class="o">}</span></code></pre></figure>
+
+<hr class="separator" />
+
+<p>Model classes should usually <strong>ignore unknown JSON properties</strong>. If a server API later adds new fields or we just don’t care about some fields, the parser won’t throw exceptions if they are ignored. Jackson also <strong>requires a defined default constructor</strong>, otherwise an exception will be thrown on parsing.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// if ignoreUnknown is false, Jackson would throw an exception if we don't parse all fields</span>
+<span class="nd">@JsonIgnoreProperties</span><span class="o">(</span><span class="n">ignoreUnknown</span> <span class="o">=</span> <span class="kc">true</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">NewsFeedItem</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="nf">NewsFeedItem</span><span class="o">()</span> <span class="o">{</span>
+		<span class="c1">// Jackson requires a default constructor</span>
+	<span class="o">}</span> 
+<span class="o">}</span></code></pre></figure>
+
+<hr class="separator" />
+
+<p>Model classes can <strong>annotate variables to automatically parse JSON fields</strong>. This works automatically for primitive types and Strings, but it <strong>can even parse other classes</strong> if those classes are set up for Jackson parsing.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">NewsFeedItem</span> <span class="o">{</span>
+	<span class="c1">// will parse "type" out of our JSON and store it in the type variable</span>
+	 <span class="nd">@JsonProperty</span><span class="o">(</span><span class="s">"type"</span><span class="o">)</span> <span class="kd">public</span> <span class="n">String</span> <span class="n">type</span><span class="o">;</span>
+	
+	 <span class="c1">// FeedIcon is one of our classes set up to parse JSON</span>
+	 <span class="c1">// here we parse a list of FeedIcon objects that are referenced by "feedIcons"</span>
+	 <span class="nd">@JsonProperty</span><span class="o">(</span><span class="s">"feedIcons"</span><span class="o">)</span> <span class="kd">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">FeedIcon</span><span class="o">&gt;</span> <span class="n">feedIcons</span><span class="o">;</span>
+<span class="o">}</span></code></pre></figure>
+
+<hr class="separator" />
+
+<p>If you have data nested in an array or hash and want to get at the data in it, you have to <strong>override the setter Jackson creates and get the data yourself</strong>. Consider this JSON that has some data we’d like to store as two integers instead of a hash in our mode class:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"social"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"numFollowers"</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"numFollowees"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w"> </span></code></pre></figure>
+
+<p>To extract the two integers out of “social” and store them as integers in our class, we override how Jackson parses the “social” JSON element:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// nested JSON - "social" contains two properties we'd like to store as integers</span>
+<span class="c1">// override how Jackson parses "social"</span>
+<span class="nd">@JsonProperty</span><span class="o">(</span><span class="s">"social"</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kt">int</span> <span class="n">numFollowers</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kt">int</span> <span class="n">numFollowees</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setSocial</span><span class="o">(</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">socialJsonMap</span><span class="o">){</span>
+	<span class="n">numFollowers</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">socialJsonMap</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">"numFollowers"</span><span class="o">).</span><span class="na">toString</span><span class="o">());</span>
+	<span class="n">numFollowees</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">socialJsonMap</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">"numFollowees"</span><span class="o">).</span><span class="na">toString</span><span class="o">());</span>
+<span class="o">}</span></code></pre></figure>
+
+<hr class="separator" />
+
+<p>Overriding the setter is also useful if you have <strong>data you want to change at the time of parsing</strong> because sometimes an API doesn’t give it to you like you want it.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// override how we parse/set "time" so we can get the value in the desired format</span>
+<span class="nd">@JsonProperty</span><span class="o">(</span><span class="s">"time"</span><span class="o">)</span> <span class="kd">public</span> <span class="n">Date</span> <span class="n">time</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setTime</span><span class="o">(</span><span class="n">String</span> <span class="n">timeValue</span><span class="o">)</span> <span class="o">{</span>
+  <span class="n">time</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Date</span><span class="o">(</span><span class="n">Long</span><span class="o">.</span><span class="na">valueOf</span><span class="o">(</span><span class="n">timeValue</span><span class="o">).</span><span class="na">longValue</span><span class="o">()</span> <span class="o">*</span> <span class="mi">1000</span><span class="o">);</span>
+<span class="o">}</span></code></pre></figure>
+
+<hr class="separator" />
+
+<p><strong>Overriding setters requires you to properly identify the JSON structure referenced by the key</strong>. For example, when we overrode how “time” was parsed above, our setTime method took a String because in our JSON, the “time” key contained a string. Up higher, when parsing “social” our setSocial method took a map because “social” contained a map. Things can get even fancier:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// "performances" is used to determine the number of performances a user has in each Smule app</span>
+<span class="nd">@JsonProperty</span><span class="o">(</span><span class="s">"performances"</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setPerformances</span><span class="o">(</span><span class="n">List</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;&gt;</span> <span class="n">numPerformancesByAppList</span><span class="o">)</span> <span class="o">{</span>      
+	<span class="k">for</span><span class="o">(</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;</span> <span class="n">appPerformanceCountMap</span> <span class="o">:</span> <span class="n">numPerformancesByAppList</span><span class="o">)</span> <span class="o">{</span>
+		<span class="c1">// do stuff!</span>
+	<span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>In this example, “performances” in the JSON is an array of hashes. Note that the parameter you specify for the argument to your overriden set method must be relevant - if “performances” actually contained a hash of hashes, this method would not be called! <strong>If you specify the type of the argument as JsonNode, you will always get called</strong>. In the above snippet if we specified the argument as type JsonNode, you would get called with an ArrayNode containing ObjectNodes that contain HashMaps. If you’re not sure what you are going to get back, start with JsonNode and work from there!</p>
+
+<hr class="separator" />
+
+<p>Here is an example of <strong>overriding a setter to parse an array of a custom model object that is nested within our JSON</strong>. Here is some sample JSON containing some user information:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"subjects"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"accountIcons"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="mi">123456</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"handle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SmuleUser"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="mi">654321</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"handle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SmuleSinger"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<p>If we want to parse the “accountIcons” array, we override how “subjects” is set and parse out the AccountIcons:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// we want to grab "accountIcons" in "subjects" so override how we process subjects</span>
+<span class="c1">// "accountIcons" contains  AccountIcon objects so Jackson will automatically parse those</span>
+<span class="nd">@JsonProperty</span><span class="o">(</span><span class="s">"subjects"</span><span class="o">)</span> <span class="kd">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">AccountIcon</span><span class="o">&gt;</span> <span class="n">subjects</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setSubjects</span><span class="o">(</span><span class="n">JsonNode</span> <span class="n">subjectsJsonNode</span><span class="o">)</span> <span class="o">{</span>
+	<span class="n">JsonNode</span> <span class="n">accountIconsNode</span> <span class="o">=</span> <span class="n">subjectsJsonNode</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">"accountIcons"</span><span class="o">);</span>
+	<span class="n">subjects</span> <span class="o">=</span> <span class="n">JsonUtils</span><span class="o">.</span><span class="na">defaultMapper</span><span class="o">().</span><span class="na">readValue</span><span class="o">(</span><span class="n">accountIconsNode</span><span class="o">,</span> <span class="k">new</span> <span class="n">TypeReference</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;</span><span class="n">AccountIcon</span><span class="o">&gt;&gt;()</span> <span class="o">{});</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>Note that for the setSubjects method we specify the argument as a JsonNode since the readValue() method requires a JsonNode. If we wanted to manually parse the data, we could change the type of subjectsJsonNode to be a Map&lt;String, Object&gt;. We could grab the Object with key “accountIcons,” cast it to a List&lt;Map&lt;String, String&gt;&gt;, and then iterate over and parse the items as desired.</p>
+
+<hr class="separator" />
+
+<p>I hope this helps anyone considering considering or having problems using Jackson for their JSON parsing. If there is something totally awesome I missed about Jackson or did something not quite right here, please feel free to <a href="https://twitter.com/markmcerqueira">send me a tweet</a> and I’ll update this post!</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2013/05/12/soundcraft-operational/">
+        SoundCraft Operational!
+      </a>
+    </h1>
+
+    <span class="post-date">12 May 2013</span>
+
+    <p>I’m really excited to announce that a recent project, SoundCraft, has made its way into the New Interfaces for Musical Expression (NIME) conference! SoundCraft combines a bunch of my favorite things: hanging out with <a href="http://www.spencersalazar.com">Spencer</a> and <a href="https://ccrma.stanford.edu/~ge/">Ge</a> who are co-authors of the project, playing StarCraft 2, writing code, making music, and playing with new languages/systems. SoundCraft enables real-time data gathering from a StarCraft 2 game, allowing for a novel interpretation of the game. Or, as I’ve been telling people - we’re making music while playing StarCraft! Our paper, <em>SoundCraft: Transducing StarCraft 2</em> is going to be published in the conference proceedings and our proposal for a performance using SoundCraft, titled <em>GG Music</em>, was also accepted! In a most fitting way, the conference is being held in the Mecca of eSports, South Korea!</p>
+
+<!--break-->
+
+<div>
+	<img class="rounded-corners" style="max-width: 800px;" src="/assets/images/posts/2013-05-12/soundcraft-1.jpg" />
+	<p class="caption-text"><b>One of the reviewers stated, "both players/performers be bald for better projections."</b></p>
+</div>
+
+<p>The idea for SoundCraft originated on StarCraft 2 day at Smule in July 2012, during a chat with <a href="http://www.alltom.com">Tom Lieber</a> about potentially interesting computer music projects for NIME. After some quick research on the StarCraft custom map editor, I had a map writing out the amount of minerals and gas per second for each player to an XML file. I asked Tom how he’d parse an XML file, so it should come as no shock that the XML parser is written in Ruby. With the Nokogiri gem, parsing XML was painless and with the Open Sound Control (OSC) gem, data was ready to be received by your favorite OSC-compatible language. With a ChucK patch - featuring a saw wave and pulse oscillator with frequencies mapped to a player’s mineral and vespene amounts - a proof of concept for the system was completed.</p>
+
+<p style="margin-bottom: 4px;">Aside from the strong urge to play StarCraft while working on a StarCraft-based project, the most difficult part of the project was creating the custom map, the biggest unknown in the entire loop. The programmer in me would have loved to just get an API, and while the map-making community seems to have pieced together Blizzard's API and found a way to load code into a map, documentation was pretty sparse. Fortunately, I was able to procure a lot of help from the map-making community over at the <a href="http://www.sc2mapster.com">SC2 Mapster</a> forums, including clutch support from Ryan Schutter whose GameHeart custom maps are used by huge tournaments like the GSL Team League and DreamHack! After plenty of pain, googling, and tweaks, we had a custom map that was writing out a ridiculous amount of information including:</p>
+<ul>
+  <li>The player’s race (i.e. Terran, Protoss, or Zerg)</li>
+  <li>Composition of the standing army and units lost</li>
+  <li>Units and structures being produced and their current build progress</li>
+  <li>Various metrics about economic health (e.g. mineral and vespene gas collection rate, harvesters built/lost)</li>
+  <li>Total number of enemy units destroyed and enemy structures razed</li>
+</ul>
+
+<div>
+	<img class="rounded-corners" style="max-width: 800px;" src="/assets/images/posts/2013-05-12/soundcraft-2.jpg" />
+	<p class="caption-text"><b>Spencer working on his strong Terran macro!</b></p>
+</div>
+
+<p style="margin-bottom: 12px;">Spencer took the lead on creating <em>GG Music</em>, the first live performance piece powered by SoundCraft. The map was Bel'shir Vestige, I played Protoss, Spencer played Terran, and Ge was the observer who would direct what the audience sees while we played. The world premiere of <em>GG Music</em> was at CCRMA's <a href="https://ccrma.stanford.edu/events/music-and-games">Music and Games Concert</a> in late April. Aside from a little meta-technical difficulty with the Blizzard Updater update getting stuck, the performance went off without a hitch! Here is a video of the performance, recorded and edited by CCRMA's David Kerr:</p>
+
+<div style="text-align: center">
+<iframe width="640" height="480" src="//www.youtube-nocookie.com/embed/WisMhY5BWa4?rel=0" frameborder="0"></iframe>
+</div>
+
+<p style="margin-bottom: 4px;">The three main gameplay elements sonified here are:</p>
+<ol>
+  <li>Workers returning resources trigger pings generated via FM synthesis</li>
+  <li>Unit composition - Protoss units produce rhythmic/percussive sounds; Terran units produce uniformly rhythmic/melodic/arpeggiated sounds</li>
+  <li>Dying units create a jarring ping generated by passing an impulse through a low-pass which envelopes a harsh high-pitched sound</li>
+</ol>
+
+<p>We’re excited to head to NIME to present SoundCraft, give another performance of <em>GG Music</em>, rendezvous with our computer music friends, eat a lot of good food, go to some professional StarCraft tournaments (we are going to the GSL finals!), and of course play more StarCraft!</p>
+
+<p>Feel free to check out the <a href="https://github.com/markcerqueira/soundCraft">source code for SoundCraft and GG Music on GitHub</a>. If you’d like any more information on SoundCraft, feel free to <a href="https://twitter.com/markmcerqueira">send me a tweet</a>! GG!</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2013/05/08/managing-multiple-android-sdksndks-and-jenkins/">
+        Managing Multiple Android SDKs/NDKs in Jenkins
+      </a>
+    </h1>
+
+    <span class="post-date">08 May 2013</span>
+
+    <p>At Smule, we use a single node to run Jenkins for our Android projects. When building our projects that rely on both the SDK and NDK tools, we defined SDK_DIR and NDK_DIR as global environmental variables. But what happens when the tools are updated? In 2012, Google released <a href="http://developer.android.com/tools/sdk/tools-notes.html">5 major updates</a> to its Android SDK tools and <a href="http://developer.android.com/tools/sdk/ndk/index.html#Revisions">6 revisions</a> to its NDK toolset. Synchronizing a single team to upgrade is relatively straightforward. But when coordinating different teams that may be in different phases of a release cycle, a smooth transition is oftentimes difficult to achieve. Furthermore, if we upgrade the tools and later need to build an older tag, we are not recreating the build as it truly was, since the tools are now upgraded.</p>
+
+<!--break-->
+
+<p>To solve these problems, we moved the configuration of the SDK and NDK path from the global Jenkins configuration environment and put it somewhere where it could be project-independent and version controlled. Each project now contains a bash file that looks like this:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Available NDK Paths</span>
+<span class="nv">NDK_8B_PATH</span><span class="o">=</span><span class="s2">"/Users/Jenkins/android-ndk-r8b"</span>
+<span class="nv">NDK_8D_PATH</span><span class="o">=</span><span class="s2">"/Users/Jenkins/android-ndk-r8d"</span>
+
+<span class="c"># Available SDK Paths</span>
+<span class="nv">SDK_16_PATH</span><span class="o">=</span><span class="s2">"/Users/Jenkins/android-sdk-16-macosx/tools"</span>
+<span class="nv">SDK_21_PATH</span><span class="o">=</span><span class="s2">"/Users/Jenkins/android-sdk-21-macosx/tools"</span>
+
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$NDK_8D_PATH</span>:<span class="nv">$SDK_21_PATH</span>:<span class="nv">$SDK_21_PATH</span>/platform-tools</code></pre></figure>
+
+<p>This requires some bookkeeping to maintain various versions of the SDK and NDK toolsets on a single machine or across multiple nodes for multi-node setups. Now, a team can select the SDK and NDK they want whenever they are ready and with zero impact on any other teams while still preserving the ability to accurately create older builds.</p>
+
+<p style="margin-bottom: 4px;">The basic Jenkins workflow for our Android jobs now looks like:</p>
+<ol>
+  <li>Check out the project.</li>
+  <li>Execute the script within the project that exports our desired NDK and SDK paths. This step gives us flexibility and helps us recreate older builds/tags accurately.</li>
+  <li>Execute the script that writes out the SDK/NDK paths to required places (e.g. local.properties).</li>
+  <li>Any extra configuration you need to do before you build.</li>
+  <li>Build it!</li>
+  <li>Discard any changes made to files. If on the next pull we update the SDK/NDK paths, we will want to make sure any file changes are gone.</li>
+  <li>Post-build archiving/publishers.</li>
+</ol>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2013/05/03/jenkins-and-templates/">
+        Staving Rampant Copy-and-Paste in Jenkins with Templates
+      </a>
+    </h1>
+
+    <span class="post-date">03 May 2013</span>
+
+    <p>At Smule, we use Jenkins build servers for our iOS and Android projects. Along the way, we have learned a lot and continue to learn and improve our build system.Changing anything in Jenkins could be viewed as a double-edged sword. Awesome changes make things better, but when you have (in our case) tens or more jobs per project for different combinations of branches/environments/configurations, applying these changes involves a lot of copy-and-paste. The standard Jenkins installation does not provide any serious power in helping to abstract out shared logic into reusable chunks that have fewer points of maintenance.</p>
+
+<!--break-->
+
+<h3 id="templates-to-the-rescue">Templates to the Rescue</h3>
+<p>CloudBees has created the <a href="http://www.cloudbees.com/jenkins-enterprise-by-cloudbees-features-templates-plugin.cb">Templates Plugin</a>. But to use it, you need to pay CloudBees to access their entire suite of enterprise plugins. Others have explored and are developing an <a href="http://www.cloudbees.com/jenkins-user-conference-2012-san-francisco-abstracts.cb#MartinSchroder">inheritance-based approach</a>, but the plugin is not available yet. At Smule we use the <a href="https://wiki.jenkins-ci.org/display/JENKINS/Template+Project+Plugin">Template Project Plugin</a>. Best of all, it is free, open, actively maintained, and works! Just for our Android build system, we went from maintaining nearly one hundred jobs (by copying-and-pasting any changes we made to jobs) to maintaining only a handful — and this covers two separate projects with multiple branches and environments!</p>
+
+<h3 id="template-project-plugin-in-action">Template Project Plugin in Action</h3>
+<p>To use the template plugin, you create a job that will have modules - source code management (SCM), builders, publishers - that will be used by other projects. Here is the SCM for the template project, <em>sing-build-template</em>, for all Sing Android builds:</p>
+
+<div>
+	<img class="rounded-corners" src="/assets/images/posts/2013-05-03/SCM-build-template.png" />
+	<p class="caption-text">SCM module of the Sing Android template job.</p>
+</div>
+
+<p>Before the template plugin, we had to copy the repository URL and branch into every job. Now, jobs can use the SCM module of the <em>sing-build-template</em> job:</p>
+
+<div>
+	<img class="rounded-corners" src="/assets/images/posts/2013-05-03/SCM-using-template.png" />
+	<p class="caption-text">SCM module of a regular Sing Android job using the SCM from the template job.</p>
+</div>
+
+<p>The template plugin also allows jobs using modules from other jobs to pass configuration to the template job via environmental variables. In the above example, you can see that the branch that is being checked out is denoted by the value of the <em>BRANCH</em> environmental variable.</p>
+
+<div>
+	<img class="rounded-corners" src="/assets/images/posts/2013-05-03/SCM-defining-environmental.png" />
+	<p class="caption-text">A Sing Android job configuring which branch it would like to check out.</p>
+</div>
+
+<p>This basic example shows how easy it is to consolidate shared functionality into a single location that can be reused. If we migrated away from GitHub as our hosting service, updating all our jobs would be much easier!</p>
+
+<p>This system does not completely remove the need for copy-and-paste as modules that are being used still need to be configured for every new job. An inheritance-based system would allow children jobs to inherit all functionality from its parent and override only what’s necessary. That said, with the Template Project plugin our Jenkins servers have become much easier to maintain and improve upon!</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2013/05/01/ant-dex-and-jars-all-over/">
+        Ant, dex, and jars all over
+      </a>
+    </h1>
+
+    <span class="post-date">01 May 2013</span>
+
+    <p>We recently added <a href="http://androidannotations.org/">Android Annotations</a> to the Sing Karaoke Android project. Using the annotations has been awesome so far, but it did present an interesting issue when it came to compiling and bundling the proper library in our Ant build script.</p>
+
+<!--break-->
+
+<p>Android Annotations provides two jar files: <em>androidannotations-X.Y.jar</em> used to generate code at compile time and <em>androidannotations-X.Y-api.jar</em> which contains only the code necessary during run time. So for our builds, in addition to the standard <strong>libs</strong> folder used for compilation/runtime, we would compile with a <strong>libs-compiling</strong> folder containing <em>androidannotations-X.Y.jar</em> and then link with a <strong>libs-runtime</strong> folder containing <em>androidannotations-X.Y-api.jar</em>. I deviated a bit from the <a href="https://github.com/excilys/androidannotations/wiki/Building-Project-Ant">recommended setup</a> for where to put these libraries because I wanted the folders containing the libraries to all be treated the same during the Ant build process. The end goal here is:
+* <strong>libs</strong> - used during compile time and runtime
+* <strong>libs-compiling</strong> - used only during compile time
+* <strong>libs-runtime</strong> - used only during runtime</p>
+
+<p>During the compile step, in the javac task we can use the handy classpath attribute to add any extra libraries we need to make the compiler happy (<strong>libs</strong> and <strong>libs-compiling</strong>):</p>
+
+<figure class="highlight"><pre><code class="language-xml-cheetah" data-lang="xml+cheetah">&lt;!-- include all libraries needed for compilation --&gt;
+&lt;fileset dir="libs" includes="*.jar"/&gt;
+&lt;fileset dir="libs-compiling" includes="*.jar"/&gt;</code></pre></figure>
+
+<p>With this, compilation will succeed. But afterwards, when everything is compiled into a Dalvik Executable (.dex) and packaged into a single .apk file, only the jars in the <strong>libs</strong> folder were getting pulled. So the app would load, but would crash as soon as it tries to use any of the methods in the missing jar libraries. This did not come as much of a shock; the classpath attribute’s scope likely terminates as soon as javac is done. After beating my head against a wall trying to get dex to acknowledge my <strong>libs-runtime</strong> folder, I implemented this <em>solution</em>:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># run this command before we execute our Ant build</span>
+cp -R -v libs-compiling/ libs/</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-xml-cheetah" data-lang="xml+cheetah">&lt;!-- TODO fix dex step so we can do this properly --&gt;
+&lt;!-- include all libraries needed for compilation --&gt;
+&lt;!-- &lt;fileset dir="libs-compiling" includes="*.jar"/&gt; --&gt;
+
+&lt;fileset dir="libs" includes="*.jar"/&gt;</code></pre></figure>
+
+<p>This made me cringe a little inside, especially since we were using the bulkier compile version of Android Annotations and not the slimmer runtime version. Fortunately, I got around to taking care of this as well. At first, I searched the internet and could not find anything that would just let me specify some extra paths for dex. A few solutions had people running the dx command themselves, but after a few failed attempts at copy-and-paste-and-adapt, I started looking elsewhere. Eventually, I just started looking at the default Ant build.xml file that is distributed in the tools folder of the Android SDK. In there was this Ant macro:</p>
+
+<figure class="highlight"><pre><code class="language-xml-cheetah" data-lang="xml+cheetah">&lt;!-- Configurable macro, which allows to pass as parameters output directory,
+     output dex filename and external libraries to dex (optional) --&gt;
+&lt;macrodef name="dex-helper"&gt;</code></pre></figure>
+
+<p>The first hit when I googled “dex-helper” for some usage tips is a <a href="https://code.google.com/p/android/issues/detail?id=13091">bug report</a> which was fortunately closed in January 2011, but did include an awesome example. So at the end of this adventure, I arrived at a painless solution to the issue of dex running when there are jar files in multiple directories:</p>
+
+<figure class="highlight"><pre><code class="language-xml-cheetah" data-lang="xml+cheetah">&lt;target name="-post-compile"&gt;
+  &lt;echo message="Adding external libs to dex lib path via dex-helper"/&gt;
+
+  &lt;dex-helper&gt;
+    &lt;external-libs&gt;
+      &lt;fileset dir="libs-runtime" includes="*.jar"/&gt;
+      &lt;!-- no need to add "libs" as dex already adds it --&gt;
+    &lt;/external-libs&gt;
+  &lt;/dex-helper&gt;
+&lt;/target&gt;</code></pre></figure>
+
+<p>Now we compile with <strong>libs</strong>/<strong>libs-compiling</strong> and run with <strong>libs</strong>/<strong>libs-runtime</strong>!</p>
+
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <span class="pagination-item older">Older</span>
+  
+  
+    
+      <a class="pagination-item newer" href="/page33">Newer</a>
+    
+  
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

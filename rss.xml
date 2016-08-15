@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>mark.gg</title>
+		<description>Mark Cerqueira's Blog</description>
+		<link></link>
+		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Changing Progress Bar Spinner Color</title>
+				<description>&lt;p&gt;Situation: you’ve got a little progress spinner in your Android app.&lt;/p&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ProgressBar&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wrap_content&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wrap_content&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:indeterminateOnly=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;But it’s grey. You want it to be a different color. Something more exciting. To the Googles!&lt;/p&gt;
+
+&lt;p&gt;Like many Android things, there are multiple Stack Overflow posts with all sorts of answers and comments on each one saying “Thanks” and “That doesn’t work for me.” I cut through all that and here is how you do it programmatically and it works across all API levels:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Source: http://stackoverflow.com/a/36828947&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ContextCompat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getColor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;favorite_color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;myProgressBar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getIndeterminateDrawable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setColorFilter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PorterDuff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Mode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;SRC_IN&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Exception&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Why try-catch? Because some Xiaomi device out there will probably choke...&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now your &lt;code class=&quot;highlighter-rouge&quot;&gt;ProgressBar&lt;/code&gt; – that’s actually a spinner and not a bar – be colored!&lt;/p&gt;
+</description>
+				<pubDate>Thu, 04 Aug 2016 00:00:00 -0400</pubDate>
+				<link>/2016/08/04/changing-progress-bar-color/</link>
+				<guid isPermaLink="true">/2016/08/04/changing-progress-bar-color/</guid>
+			</item>
+		
+			<item>
+				<title>Ruby DateTime to Objective-C NSDate</title>
+				<description>&lt;p&gt;Converting a Ruby DateTime to an Objective-C NSDate will lead you on a wonderful journey where you realize the DateTime outputs itself is incompatible with any potential NSDateFormatter you try to use to parse it. The crux of this is because &lt;a href=&quot;http://stackoverflow.com/a/7115343/265791&quot;&gt;DateTime includes a colon in its timezone offset&lt;/a&gt; which you cannot express in a NSDateFormatter.&lt;/p&gt;
+
+&lt;p&gt;So what is one to do? One option is to skip the default formatter of DateTime and roll your own:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# See http://stackoverflow.com/a/9132422/265791&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_datetime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;strftime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'%Y-%m-%d %H:%M:%S'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then build the corresponding formatter in Objective-C:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-objective-c&quot;&gt;[dateFormatter setDateFormat:@&quot;yyyy-MM-dd HH:mm:ss&quot;];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;With this, you too can avoid the fruitless journey of trying to get NSDateFormatter to comprehend DateTime’s default format. Happy interoperating with languages!&lt;/p&gt;
+
+</description>
+				<pubDate>Sat, 30 Jul 2016 00:00:00 -0400</pubDate>
+				<link>/2016/07/30/ruby-datetime-nsdate/</link>
+				<guid isPermaLink="true">/2016/07/30/ruby-datetime-nsdate/</guid>
+			</item>
+		
+			<item>
+				<title>Concert Review: Final Symphony, San Francisco, 7/28/16</title>
+				<description>&lt;p&gt;It’s quite a sight to behold seeing Davies Symphony Hall packed (2,743 seats!) for a music concert centered around video game music. But when you are talking about one of the most iconic game series – Final Fantasy – with some of the most beloved soundtracks, it all kind of makes sense. Attending &lt;strong&gt;Final Symphony: Music from Final Fantasy VI, VII, and X&lt;/strong&gt;, I expected to hear a beautiful homage to some of the most popular games in the series. While the San Francisco Symphony put on an absolutely spectacular show, I left the concert feeling very &lt;strong&gt;underwhelmed&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div&gt;
+	&lt;img class=&quot;rounded-corners&quot; style=&quot;max-width: 700px; border: 0px;&quot; src=&quot;/assets/images/posts/2016-07-28/fs.jpg&quot; /&gt;
+	&lt;p class=&quot;caption-text&quot; style=&quot;line-height: 1.5em; margin-bottom: 24px;&quot;&gt;&lt;strong&gt;&quot;Music from&quot; should be taken very loosely.&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;My main problem with Final Symphony is &lt;strong&gt;all the pieces were over-composed&lt;/strong&gt; to the point that they lost their identity as being a part of Final Fantasy. The concert was described as having “Music from Final Fantasy” but a more accurate description would be “Symphonies with riffs from Final Fantasy here and there.”&lt;/p&gt;
+
+&lt;p&gt;I went in expecting something like Distant Worlds (i.e. Final Fantasy pieces adapted for orchestra) with a pizzazz to turn them into symphonies. But what I got was fragments of soundtracks, build-ups to “the really good part of a song” that would abandon ship right before climaxing, and dissonance used far too liberally. Ultimately, it just didn’t feel like Final Fantasy to me. It didn’t remind me of all the wonderful memories I had playing and falling in love with the games.&lt;/p&gt;
+
+&lt;p&gt;I expected and wanted the composers to open up the original MIDI files, spruce them up a bit for live performance, hit Print, and put that in front of a world-class orchestra. What I got was something that felt really “try hard” and ended up really cheapening the experience for me. Expectations… They can really backfire sometimes!&lt;/p&gt;
+</description>
+				<pubDate>Thu, 28 Jul 2016 00:00:00 -0400</pubDate>
+				<link>/2016/07/28/concert-review-final-symphony/</link>
+				<guid isPermaLink="true">/2016/07/28/concert-review-final-symphony/</guid>
+			</item>
+		
+			<item>
+				<title>Hello, Euler!</title>
+				<description>&lt;p&gt;Last Thursday I was browsing a coworker’s repositories on GitHub and noticed one inconspicuously called &lt;strong&gt;euler&lt;/strong&gt;. And that’s how I discovered &lt;a href=&quot;https://projecteuler.net/&quot;&gt;Project Euler&lt;/a&gt;! The website describes the project as “a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve.”&lt;/p&gt;
+
+&lt;p&gt;I wouldn’t describe myself as a math aficionado, but have had a blast working my way through the problems. So far, I have already picked up a lot about prime numbers and touched the ceilings of number-based data structures many times! With over 500 problems (and a new one every week), I’ll be able to keep myself occupied for a while.&lt;/p&gt;
+
+&lt;p&gt;Like my coworker I now too have an &lt;a href=&quot;https://github.com/markcerqueira/euler&quot;&gt;euler repository&lt;/a&gt; that you can browse.&lt;/p&gt;
+
+</description>
+				<pubDate>Mon, 18 Jul 2016 00:00:00 -0400</pubDate>
+				<link>/2016/07/18/hello-euler/</link>
+				<guid isPermaLink="true">/2016/07/18/hello-euler/</guid>
+			</item>
+		
+			<item>
+				<title>Pokémon Go</title>
+				<description>&lt;p&gt;Last week, the world was forever changed with the release of &lt;strong&gt;Pokémon Go&lt;/strong&gt; a.k.a. Nintendo letting Niantic reskin Ingress with Pokémon to make tons of money. I’ve been playing the game for a few days and it’s fun. Walking around outside and seeing tons of people playing this game was truly unexpected; I never imagined “Pokémon on mobile” was going to be delivered like this. It’s refreshing – both to be outdoors and to see gamers who are traditionally recluse out and mingling.&lt;/p&gt;
+
+&lt;div&gt;
+	&lt;img class=&quot;rounded-corners&quot; style=&quot;max-width: 700px; border: 0px;&quot; src=&quot;/assets/images/posts/2016-07-12/pokemon.png&quot; /&gt;
+	&lt;p class=&quot;caption-text&quot; style=&quot;line-height: 1.5em; margin-bottom: 24px;&quot;&gt;&lt;strong&gt;So many people outside!&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;But the game has its fair share of issues:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The game is very &lt;strong&gt;buggy&lt;/strong&gt;. I’ve had it crash and completely lock up at least twice each day since installing it. I’m sure stability will increase with coming patches.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Servers&lt;/strong&gt; are having trouble keeping up with the huge spike in popularity. This isn’t too shocking. It reminds me of how terrible the servers were for the rebooted Final Fantasy XIV back in 2013.&lt;/li&gt;
+  &lt;li&gt;There’s also been some &lt;strong&gt;privacy&lt;/strong&gt; complaints about the iOS version having full access to your Google account. Given how buggy the app is, I was not shocked when they said it was a configuration mistake.&lt;/li&gt;
+  &lt;li&gt;This game destroys my &lt;strong&gt;battery&lt;/strong&gt;. Got 80% battery left? You mean 80 minutes left of Pokémon Go playing time! I can now empathize with Android users who live under the tyranny of terrible battery life.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Drawing people in with the Pokémon IP and getting them into the Ingress geo-caching game model has been successful so far, but Pokémon Go is just scratching the surface today. I’m really hoping Niantic is cranking on social features. I’d love to have a friends list, trade Pokémon, get bonuses for hanging out with other trainers, make clans, gift Pokémon to friends, and see friends on the map.&lt;/p&gt;
+
+</description>
+				<pubDate>Tue, 12 Jul 2016 00:00:00 -0400</pubDate>
+				<link>/2016/07/12/pokemon-go/</link>
+				<guid isPermaLink="true">/2016/07/12/pokemon-go/</guid>
+			</item>
+		
+			<item>
+				<title>Authenticating Programmatically Sent Emails</title>
+				<description>&lt;p&gt;Work on the Ruby and Sinatra project continues and this weekend I worked on creating a helper method for sending emails so I can have users confirm the emails they used to register. I wanted to send emails from a mailbox I set up on a custom domain I’m hosting with DreamHost. I created a mailbox on DreamHost’s admin panel and with the &lt;a href=&quot;https://github.com/mikel/mail&quot;&gt;mail&lt;/a&gt; Ruby gem it was pretty straightforward to get emails sent.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt; 
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ApplicationController&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Sinatra&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;# Configure mail gem&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# You can use the config_env gem to save sensitive information (https://github.com/SergXIIIth/config_env)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:address&lt;/span&gt;              &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'www.yourdomain.com'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+              &lt;span class=&quot;ss&quot;&gt;:port&lt;/span&gt;                 &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;587&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+              &lt;span class=&quot;ss&quot;&gt;:user_name&lt;/span&gt;            &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'welcome@yourdomain.com'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+              &lt;span class=&quot;ss&quot;&gt;:password&lt;/span&gt;             &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'yourpassword'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+              &lt;span class=&quot;ss&quot;&gt;:authentication&lt;/span&gt;       &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'plain'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+              &lt;span class=&quot;ss&quot;&gt;:enable_starttls_auto&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+              &lt;span class=&quot;ss&quot;&gt;:openssl_verify_mode&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;OpenSSL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;SSL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;VERIFY_NONE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  
+  &lt;span class=&quot;no&quot;&gt;Mail&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;defaults&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;delivery_method&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:smtp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+	
+  &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/mailtest/?'&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;Mail&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;deliver&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@yourdomain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;com&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Welcome &amp;lt;welcome@yourdomain.com'&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;subject&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Test Subject'&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Test Body'&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Hit and the endpoint and you’re done! Or are you? To the Gmail inbox!&lt;/p&gt;
+
+&lt;div&gt;
+	&lt;img class=&quot;rounded-corners&quot; style=&quot;max-width: 800px; border: 0px;&quot; src=&quot;/assets/images/posts/2016-07-10/spammer.png&quot; /&gt;
+	&lt;p class=&quot;caption-text&quot; style=&quot;line-height: 1.5em; margin-bottom: 24px;&quot;&gt;&lt;strong&gt;Gmail has some doubts!&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;All looks good except Gmail ominously warns us: &lt;strong&gt;“Gmail couldn’t verify that chuckpad.io actually sent this message.”&lt;/strong&gt; This means “Gmail doesn’t know if the message is coming from the person who appears to be sending it,” which makes our messages excellent candidates to get caught by Gmail’s spam filters! Read more about authenticated messages &lt;a href=&quot;https://support.google.com/mail/answer/180707?hl=en&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;After some digging around, I learned about &lt;strong&gt;Sender Policy Framework (SPF) records&lt;/strong&gt;. Basically, a DNS record can have some metadata which identifies which servers are permitted to send email on behalf of the domain. DreamHost’s default &lt;a href=&quot;https://help.dreamhost.com/hc/en-us/articles/220854287-What-SPF-records-do-I-use-&quot;&gt;“SPF information doesn’t include DreamHost’s mail servers”&lt;/a&gt; because you can always opt to host your domain’s mail servers elsewhere. Fortunately, this can be easily remedied by &lt;a href=&quot;https://help.dreamhost.com/hc/en-us/articles/216106197-How-do-I-add-an-SPF-record-&quot;&gt;adding the SPF record&lt;/a&gt; &lt;strong&gt;v=spf1 include:netblocks.dreamhost.com&lt;/strong&gt; to our domain’s DNS record.&lt;/p&gt;
+
+&lt;div&gt;
+	&lt;img class=&quot;rounded-corners&quot; style=&quot;max-width: 800px; border: 0px;&quot; src=&quot;/assets/images/posts/2016-07-10/spf.png&quot; /&gt;
+	&lt;p class=&quot;caption-text&quot; style=&quot;line-height: 1.5em; margin-bottom: 24px;&quot;&gt;&lt;strong&gt;Gmail's doubts are gone!&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Give the DNS caches of the world a few hours to refresh, try again, and boom! &lt;strong&gt;Success! Programmatic and authenticated!&lt;/strong&gt;&lt;/p&gt;
+
+</description>
+				<pubDate>Sun, 10 Jul 2016 00:00:00 -0400</pubDate>
+				<link>/2016/07/10/authenticating-programmatically-sent-emails/</link>
+				<guid isPermaLink="true">/2016/07/10/authenticating-programmatically-sent-emails/</guid>
+			</item>
+		
+			<item>
+				<title>Thoughts on Star Ocean 5</title>
+				<description>&lt;p&gt;A week after its release, I beat &lt;strong&gt;Star Ocean Integrity and Faithlessness&lt;/strong&gt; a.k.a. Star Ocean 5. Here are some of my thoughts on the game.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The game is &lt;strong&gt;short&lt;/strong&gt;: I beat it in 24 hours doing about 70% of the side quests.&lt;/li&gt;
+  &lt;li&gt;The &lt;strong&gt;story&lt;/strong&gt; is pretty poor. It’s easily the weakest in the series.&lt;/li&gt;
+  &lt;li&gt;I liked the cast of &lt;strong&gt;characters&lt;/strong&gt; and the voice-acting was pretty good! Each character was unique and memorable. The story didn’t do the characters enough justice but the optional Private Actions gave some opportunities for development.&lt;/li&gt;
+  &lt;li&gt;The battle system is good, but the &lt;strong&gt;AI was terrible&lt;/strong&gt; at making all characters useful. Heal spells always seemed to be improperly timed!&lt;/li&gt;
+  &lt;li&gt;How &lt;strong&gt;cutscenes&lt;/strong&gt; were implemented was lazy and really hurt the delivery of the already-bad story. Cutscenes were rendered without any special handling and would let the player walk around and control the camera. This likely saved a lot of development time as cutscenes did not need to be “directed” but really cheapened each scene.&lt;/li&gt;
+  &lt;li&gt;The &lt;strong&gt;camera&lt;/strong&gt; was bad: too close to the character and too jarring when moving around.&lt;/li&gt;
+  &lt;li&gt;There was too much &lt;strong&gt;backtracking&lt;/strong&gt; without early fast travel options.&lt;/li&gt;
+  &lt;li&gt;The option to have orchestrated &lt;strong&gt;battle music&lt;/strong&gt; from Valkyrie Profile was great! This reminded me how much I want Valkyrie Profile 3 to happen.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div&gt;
+	&lt;img class=&quot;rounded-corners&quot; style=&quot;max-width: 800px; border: 0px;&quot; src=&quot;/assets/images/posts/2016-07-06/so5.jpg&quot; /&gt;
+	&lt;p class=&quot;caption-text&quot; style=&quot;line-height: 1.5em; margin-bottom: 24px;&quot;&gt;&lt;strong&gt;So much potential squandered!&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusion:&lt;/strong&gt; it’s the weakest entry in the series so far. Even though I just finished trashing the game pretty hard, I powered through it because it was fun to play (I’m a masochist). Along with the Tales series I always considered Star Ocean to be a reliable source for decent JRPGs. This game sadly makes me question that. &lt;strong&gt;I would not recommend buying the game at the $60 price-tag, but if you find this game in the bargain bin, I’d recommend picking it up if you’re hungry for a JRPG.&lt;/strong&gt;&lt;/p&gt;
+</description>
+				<pubDate>Wed, 06 Jul 2016 00:00:00 -0400</pubDate>
+				<link>/2016/07/06/thoughts-on-star-ocean-5/</link>
+				<guid isPermaLink="true">/2016/07/06/thoughts-on-star-ocean-5/</guid>
+			</item>
+		
+			<item>
+				<title>Don't Forget the License!</title>
+				<description>&lt;p&gt;If you write some code and want to share it with the world, &lt;strong&gt;don’t forget to add a license&lt;/strong&gt;! Posting code on a public repository on GitHub and allowing people to incorporate that code into their own products are not one and the same. So add a license please!&lt;/p&gt;
+
+&lt;p&gt;As will all things, there are tons of licenses for you to pick from. &lt;a href=&quot;http://choosealicense.com/&quot;&gt;choosealicense.com&lt;/a&gt; has a nice &lt;a href=&quot;http://choosealicense.com/licenses/&quot;&gt;guide&lt;/a&gt; on the most commonly used licenses. Basically, if you want to let people use your code without too many restrictions go with the &lt;strong&gt;MIT License&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;So go forth! Code, slap a license on it, and share it!&lt;/p&gt;
+
+</description>
+				<pubDate>Tue, 28 Jun 2016 00:00:00 -0400</pubDate>
+				<link>/2016/06/28/dont-forget-the-license/</link>
+				<guid isPermaLink="true">/2016/06/28/dont-forget-the-license/</guid>
+			</item>
+		
+			<item>
+				<title>Resetting Sequences in PostgreSQL on Heroku</title>
+				<description>&lt;p&gt;Today &lt;a href=&quot;/2016/01/26/evernote-hackathon-report&quot;&gt;Glatering&lt;/a&gt; – a world-class Rails app with a Postgres database I’m running on Heroku – kicked the bucket! Time to debug… To the Heroku logs!&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt; 
+~ heroku logs --app &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;app_name&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    ActionView::Template::Error
+    PG::UniqueViolation: ERROR: duplicate key value violates unique constraint &lt;span class=&quot;s2&quot;&gt;&quot;events_pkey&quot;&lt;/span&gt;
+    Rendered welcome/index.html.erb within layouts/application &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;324.8ms&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    Completed 500 Internal Server Error &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;413ms &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;ActiveRecord: 90.0ms&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    DETAIL: Key &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;id&lt;span class=&quot;o&quot;&gt;)=(&lt;/span&gt;47&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; already exists.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Looks like when we were creating a new event object the auto-assigned id for it (which has to be unique) already existed in the database. We were trying to use id 47 when the database had an event with that id already in it. This is weird because that id should be assigned and auto-incremented for us.&lt;/p&gt;
+
+&lt;p&gt;So what do we do? &lt;strong&gt;Get Postgres to check itself&lt;/strong&gt; a.k.a. reset the value “events_pkey” to a valid value.&lt;/p&gt;
+
+&lt;p&gt;To connect to the database, I use my favorite Postgres GUI &lt;a href=&quot;https://eggerapps.at/postico/&quot;&gt;Postico&lt;/a&gt;. All the information you need to connect to the database (e.g. user, password, host, database name) is in the Heroku DATABASE_URL environmental variable in the Settings section of the app dashboard.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt; 
+~ &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$DATABASE_URL&lt;/span&gt;
+    postgres://&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;user&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;:&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;password&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;@&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;host&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;:&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;port&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;/&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;database&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Once connected, click on SQL query, paste the query below (and replace events with the name of the table you’re having issues with), and hit Execute Statement.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt; 
+SELECT pg_catalog.setval&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;pg_get_serial_sequence&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'events'&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'id'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, MAX&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;id&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt; FROM events;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Boom! Hopefully your database is still in one piece, your Postgres sequence should be reset it, and it won’t generate duplicate ids any more!&lt;/p&gt;
+
+</description>
+				<pubDate>Wed, 22 Jun 2016 00:00:00 -0400</pubDate>
+				<link>/2016/06/22/resetting-sequences-postgresql-heroku/</link>
+				<guid isPermaLink="true">/2016/06/22/resetting-sequences-postgresql-heroku/</guid>
+			</item>
+		
+			<item>
+				<title>Producing JSON Arrays in Ruby</title>
+				<description>&lt;p&gt;I’ve been working on a project and building the backend with Ruby and Sinatra. So far so good, until I wanted to take a list of objects I fetched from ActiveRecord and produce a JSON array. I had a function set up to JSONify a single object:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# Returns passed model as a hash&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# This is separate from to_json because we'll use it later!&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;to_hash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s1&quot;&gt;'id'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s1&quot;&gt;'name'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;name&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Returns JSON for given model&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;to_json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;patch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;to_hash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_json&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Extending this to produce a JSON array for a bunch of model objects is simple for anyone who is familiar with Ruby…. Something I’m clearly not! Here’s the clean solution I eventually got:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# Returns JSON for given models&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;to_json_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each_with_object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([])&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to_hash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_json&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;For the laughs (and sadness), here was my initial (and ghetto) implementation of to_json_list:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# Ghetto but I wasn't able to find a better way to do this!&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;to_json_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'['&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to_json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;','&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;']'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Replacing the above method with the single-line version felt almost as good as removing that # Ghetto comment!&lt;/p&gt;
+</description>
+				<pubDate>Tue, 14 Jun 2016 00:00:00 -0400</pubDate>
+				<link>/2016/06/14/json-arrays-ruby/</link>
+				<guid isPermaLink="true">/2016/06/14/json-arrays-ruby/</guid>
+			</item>
+		
+	</channel>
+</rss>

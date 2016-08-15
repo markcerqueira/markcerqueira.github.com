@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Playing Naughty with Facebook's Slingshot &middot; mark cerqueira
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/tags.css">
+  <link rel="stylesheet" href="/public/css/v1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">home</a>
+    <a class="sidebar-nav-item" href="/about/">about</a>     
+    <a class="sidebar-nav-item" href="/archive/">archive</a>
+    <a class="sidebar-nav-item" href="/fitness/">fitness</a>
+    <a class="sidebar-nav-item" href="/projects/">projects</a>
+  </nav>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">mark cerqueira</a>
+            <small>well-rounded nerd</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Playing Naughty with Facebook's Slingshot</h1>
+  <span class="post-date">22 Jun 2014</span>
+  <p>The new Facebook Slingshot app is like SnapChat with a twist: you can only see a photo or video someone has sent if you if send them something back first. It’s pretty cool. I’m not here to wax poetic about the potential merits of the “send me content back or you can’t see what I sent you” mechanic, but I do get slightly irked when I take all of <strong>5 seconds</strong> to craft a crappy SnapChat only to NEVER hear back from the poor sap who wasted 10 seconds looking at it.</p>
+
+<p>My biggest question about Slingshot is: can we just bypass this whole locked content stuff?</p>
+
+<div>
+	<img class="rounded-corners" style="max-width: 400px; border: 1px solid #000000;" src="/assets/images/posts/2014-06-22/locked.png" />
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 20px;"><strong></strong></p>
+</div>
+
+<p>Turns out you can. Just configure your device to use an SSL proxy like <a href="http://www.charlesproxy.com/">Charles Proxy</a> and check out the calls made to <strong>https://api.parse.com/update</strong> and <strong>https://api.parse.com/client_function</strong>. Look in the JSON array keyed by “lockedShotUsers” and you should see something like this. Note: the JSON body was trimmed to just show the essentials.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="s">"lockedShotUsers"</span><span class="o">:</span> <span class="o">[{</span>
+    <span class="s">"name"</span><span class="o">:</span> <span class="s">"Tom"</span><span class="o">,</span>
+    <span class="s">"username"</span><span class="o">:</span> <span class="s">"alltom"</span><span class="o">,</span>
+    <span class="s">"shots"</span><span class="o">:</span> <span class="o">[</span>
+      <span class="o">{</span>
+        <span class="s">"mediaType"</span><span class="o">:</span> <span class="s">"video"</span><span class="o">,</span>
+        <span class="s">"media"</span><span class="o">:</span> <span class="o">{</span>
+            <span class="s">"__type"</span><span class="o">:</span> <span class="s">"File"</span><span class="o">,</span>
+            <span class="s">"name"</span><span class="o">:</span> <span class="s">"92aeee69-f7e9-42de-b72c-4ead1a3a9ee7-video.mp4"</span><span class="o">,</span>
+            <span class="s">"url"</span><span class="o">:</span> <span class="s">"https://s3.amazonaws.com/files.sling.me/bf152dba-764e-400e-b773-2e2a2111823f/92aeee69-f7e9-42de-b72c-4ead1a3a9ee7-video.mp4"</span>
+        <span class="o">},</span>
+        <span class="s">"mediaSize"</span><span class="o">:</span> <span class="mi">385633</span><span class="o">,</span>
+        <span class="s">"thumbnail"</span><span class="o">:</span> <span class="o">{</span>
+            <span class="s">"__type"</span><span class="o">:</span> <span class="s">"Bytes"</span><span class="o">,</span>
+            <span class="s">"base64"</span><span class="o">:</span> <span class="s">"OMITTED - base64 encoding of the blurred thumbnail"</span>
+        <span class="o">},</span>
+      <span class="o">}</span>
+    <span class="o">]</span>
+<span class="o">}]</span></code></pre></figure>
+
+<p>Yes, that is a video taken by my mentor and hero, Tom Lieber a.k.a. <a href="http://www.alltom.com">alltom.com</a>, playing Super Smash Bros. Yes, I didn’t reply to him. Yes, he called me a cheater and made me feel a little bad about this breach of Slingshot etiquette.</p>
+
+<p>Does this matter? Not really. You could make it so the content URL isn’t sent down until you send content to someone else, but you don’t get a lot by cheating here. You’ll see what your friend sent you and have a little evil laugh. The main operating principle for the system still holds – if you want more content, you’re gonna have to make and share content. But if a friend says send me a picture of your credit card and I promise to send a picture of mine to unlock yours, you may want to ignore them.</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2016/08/04/changing-progress-bar-color/">
+            Changing Progress Bar Spinner Color
+            <small>04 Aug 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/30/ruby-datetime-nsdate/">
+            Ruby DateTime to Objective-C NSDate
+            <small>30 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/28/concert-review-final-symphony/">
+            Concert Review: Final Symphony, San Francisco, 7/28/16
+            <small>28 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

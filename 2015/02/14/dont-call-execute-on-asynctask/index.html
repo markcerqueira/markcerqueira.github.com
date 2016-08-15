@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Don't Call Execute() on AsyncTasks &middot; mark cerqueira
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/tags.css">
+  <link rel="stylesheet" href="/public/css/v1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">home</a>
+    <a class="sidebar-nav-item" href="/about/">about</a>     
+    <a class="sidebar-nav-item" href="/archive/">archive</a>
+    <a class="sidebar-nav-item" href="/fitness/">fitness</a>
+    <a class="sidebar-nav-item" href="/projects/">projects</a>
+  </nav>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">mark cerqueira</a>
+            <small>well-rounded nerd</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Don't Call Execute() on AsyncTasks</h1>
+  <span class="post-date">14 Feb 2015</span>
+  <style media="screen" type="text/css">
+
+blockquote {
+  font-size: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+}
+
+</style>
+
+<p>AsyncTasks are pretty useful. But when you submit them for execution, you should know what you’re getting yourself into. Regarding the order of execution for AsyncTasks, <a href="https://developer.android.com/reference/android/os/AsyncTask.html">documentation</a> states:</p>
+
+<blockquote>
+"When first introduced, AsyncTasks were executed serially on a single background thread. Starting with DONUT, this was changed to a pool of threads allowing multiple tasks to operate in parallel. Starting with HONEYCOMB, tasks are executed on a single thread to avoid common application errors caused by parallel execution. If you truly want parallel execution, you can invoke executeOnExecutor() with THREAD_POOL_EXECUTOR."
+</blockquote>
+
+<p>Cool - seems simple enough. <strong>Calling execute() will queue your AsyncTask onto a single thread. But this can be problematic.</strong> Consider this example:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">// this might take a long time</span>
+<span class="n">AsyncTask</span> <span class="n">fileDownloadTask</span> <span class="o">=</span> <span class="n">getAsyncTaskToDownloadLargeFile</span><span class="o">();</span>
+<span class="n">fileDownloadTask</span><span class="o">.</span><span class="na">execute</span><span class="o">();</span>
+
+<span class="c1">// this should not take a long time</span>
+<span class="n">AsyncTask</span> <span class="n">databaseQueryTask</span> <span class="o">=</span> <span class="n">getAsyncTaskToMakeQuickQuery</span><span class="o">();</span>
+<span class="n">databaseQueryTask</span><span class="o">.</span><span class="na">execute</span><span class="o">();</span></code></pre></figure>
+
+<p>What’s wrong with this? Your quick database query task we will blocked by your long file download task. This is bad.</p>
+
+<p>How to remedy this? <strong>It’s easy: NEVER use execute() and ALWAYS use executeOnExecutor().</strong></p>
+
+<p>If you need things queued up serially pass SERIAL_EXECUTOR, otherwise pass THREAD_POOL_EXECUTOR. You’ll need to do a little more thinking, but the end result will be a deliberate choice that YOU make.</p>
+
+<p>Why not always just use THREAD_POOL_EXECUTOR to avoid blocking other AsyncTasks? Using the SERIAL_EXECUTOR is an easy way to get the functionality of a <a href="https://en.wikipedia.org/wiki/Barrier_%28computer_science%29">barrier</a> without actually using a barrier. If you need multiple pieces of information fetched before you can do something, you can queue them up on the SERIAL_EXECUTOR. When the last task queued is done, you know the others must have finished running too. That said, you should still call executeOnExecutor(SERIAL_EXECUTOR) instead of execute() in this case!</p>
+
+<p>Happy safe – whether serially or parallel – coding!</p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2016/08/04/changing-progress-bar-color/">
+            Changing Progress Bar Spinner Color
+            <small>04 Aug 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/30/ruby-datetime-nsdate/">
+            Ruby DateTime to Objective-C NSDate
+            <small>30 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/28/concert-review-final-symphony/">
+            Concert Review: Final Symphony, San Francisco, 7/28/16
+            <small>28 Jul 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>
