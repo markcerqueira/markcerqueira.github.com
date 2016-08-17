@@ -1,26 +1,20 @@
 ### [mark.gg][16] - a blog by Mark Cerqueira
-[![Build Status](https://travis-ci.org/markcerqueira/markcerqueira.github.com.svg?branch=source)](https://travis-ci.org/markcerqueira/markcerqueira.github.com)
 
 ### Introduction
-This repository is automatically transformed by [Jekyll][1] into a static site. The source for this branch exists on the source branch and any pushes to the source branch trigger Jekyll to run on [Travis CI][15] which produces and pushes the static site to the master branch.
+This repository is automatically transformed by [Jekyll][1] into a static site. The source for this branch exists on the master branch and GitHub Pages automatically produces the site that [mark.gg][16] points to.
 
 ### Set-Up
 * See this helpful [GitHub page on setting up Jekyll][11] - specifically the Installing Jekyll section.
 * To reset your RubyGem state: `mv Gemfile.lock Gemfile.lock.backup && sudo bundle clean --force && bundle install`
 
 ### Common Tasks and Commands
-* `bundle exec jekyll serve --watch` to run the blog locally
-* `bundle exec rake post title="New Post"` to create a new blog post
-* `bundle exec rake publish` pushes changes to the source branch and publishes blog to the master branch
+* `jekyll serve --watch` to run the blog locally
+* `rake post title="New Post"` to create a new blog post
 
 ### Credits
 * Using modified version of [lanyon theme][2]
 * Source Sans Pro font from [Google Fonts][3]
 * [Web icons][6] from Fairhead Creative's WebIcons Set
-* Local rendering done easily with [these instructions][9] by ixti
-* Related Posts generated using Liquid code from [here][10] by Wenli Zhang
-* Powered up Rakefile with git awareness from [git-rake][12] by flavorjones
-* Auto-deploying using [Travis][13] with [setup instructions by domenic][14]
 
 ### License
 The following files/directories and their contents are Copyright Mark Cerqueira. You may not reuse anything therein without my permission:
