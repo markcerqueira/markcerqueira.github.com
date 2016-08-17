@@ -6,6 +6,8 @@ category:
 tags: [meta, technical, automation, ci]
 ---
 
+**Update:** After updating to Jekyll 3, GitHub Pages can successfully build my blog without any issues so I'm not using this setup anymore. Post will stay though in case it can help anyone else.
+
 A long time ago I started **generating my site locally and pushing it up to Github manually** because Github Pages does not allow you to run custom plugins. This isn't as painful as it sounds. A friendly internet hero -- ixti -- crafted a nice Rakefile that [automated publishing][1].
 
 **But doing the publishing myself led to some workflow issues.** Allowing GitHub Pages to do the work for you is nice because you only have to deal with one branch. Make changes to that branch, push to GitHub, and GitHub Pages would generate the site and deploy it. Everything is always in sync. The new workflow had me writing and crafting content on the source branch and then using the publishing command to generate my site locally and then it would push it to the master branch: the "deploy." **Separating the crafting and deploying steps meant I sometimes published content without pushing it into the source branch or I'd push content and not deploy it.**
