@@ -1,0 +1,29 @@
+# Include vendor to fix: https://github.com/jekyll/jekyll/issues/2938
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "vendor"]
+
+permalink: pretty
+
+gems: [jekyll-paginate]
+
+paginate: 5
+
+markdown: kramdown
+kramdown:  
+  input: GFM
+  
+title : mark cerqueira
+tagline: well-rounded nerd
+baseurl: ''
+
+author :
+  name : Mark Cerqueira
+  email : mark.cerqueira@gmail.com
+  github : markcerqueira
+  twitter : markmcerqueira
+
+# All Jekyll-Bootstrap specific configurations are namespaced into this hash
+JB :
+  analytics :
+    provider : google
+    google : 
+        tracking_id : 'UA-40706724-1'
