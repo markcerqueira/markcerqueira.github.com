@@ -14,7 +14,6 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
     jekyll-watch (1.5.0)
@@ -40,8 +39,10 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-paginate
   rake
+
+RUBY VERSION
+   ruby 2.3.0p0
 
 BUNDLED WITH
    1.12.5
