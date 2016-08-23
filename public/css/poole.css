@@ -234,6 +234,12 @@ img {
   border-radius: 5px;
 }
 
+.icon {
+	width: 44px;
+	height: 48px;
+	display: inline;
+}
+
 /* Tables */
 table {
   margin-bottom: 1rem;
@@ -375,4 +381,14 @@ tbody tr:nth-child(odd) th {
 }
 .related-posts li a:hover small {
   color: inherit;
+}
+
+.index-footer {
+  overflow: hidden; /* clearfix */
+  margin-left: -1rem;
+  margin-right: -1rem;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  color: #3a3a3a;
+  text-align: center;
+  margin-bottom: 2rem;
 }

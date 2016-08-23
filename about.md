@@ -4,6 +4,15 @@ title: about
 header: about
 ---
 
+<div style="float: right; padding-left: 20px;">
+	<img src="/assets/images/mark_600x728.jpg" width="231" height="280">
+	<a href="https://twitter.com/markmcerqueira"><img class="icon" src="/assets/images/webicons/fc-webicon-twitter.png" alt="Twitter"/></a>
+	<a href="http://www.yelp.com/user_details?userid=V4unpKMFq8kSHDMw2UW9rQ"><img class="icon" src="/assets/images/webicons/fc-webicon-yelp.png" alt="Yelp"/></a>
+	<a href="https://plus.google.com/115447608718072621401"><img class="icon" src="/assets/images/webicons/fc-webicon-googleplus.png" alt="Google+"/></a>
+	<a href="https://github.com/markcerqueira"><img class="icon" src="/assets/images/webicons/fc-webicon-github.png" alt="GitHub"/></a>
+	<a href="http://www.linkedin.com/in/markcerqueira/"><img class="icon" src="/assets/images/webicons/fc-webicon-linkedin.png" alt="LinkedIn"/></a>
+</div>
+
 I am an Android developer at [Evernote][6] -- making a product used and loved by millions even better on the Android platform. Besides writing code, I run with The Herd, Evernote's running club. I'm also an up-and-coming superstar barista: making and serving coffee from Evernote's espresso bar.
 
 Before Evernote, I was a developer at [Smule][5], a mobile app startup focused on building social music experiences, from August 2010 to August 2014. I did both iOS development (Magic Piano, I Am T-Pain, Ocarina, Magic Fiddle) and Android development (Sing Karaoke, Magic Piano). I also oversaw Smule's world-class food and culture program. Under my command, program highlights included StarCraft 2 Day, an official company holiday where people come to work just to eat and play StarCraft; and Smule Thanksgiving, which featured three oversize turduckens.
