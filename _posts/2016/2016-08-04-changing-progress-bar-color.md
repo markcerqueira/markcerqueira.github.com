@@ -3,7 +3,7 @@ layout: post
 title: "Changing Progress Bar Spinner Color"
 description: ""
 category: 
-tags: [android]
+tags: [android, technical]
 ---
 
 Situation: you've got a little progress spinner in your Android app. 
