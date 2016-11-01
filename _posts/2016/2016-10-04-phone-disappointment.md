@@ -6,7 +6,7 @@ category:
 tags: [rant]
 ---
 
-It's been a busy month for mobile phones with the announcements of the iPhone 7 and Google Pixel... and exploding Samsung Note 7s! Cell carriers in the US have also become more European with how they do subsidies; the "upgrade every two years because you're always paying a subsidy price" ideology no longer applies.
+It's been a busy month for mobile phones with the announcements of the iPhone 7 and Google Pixel... and exploding Samsung Note 7s! Cell carriers in the US have also become more European with how they do subsidies; the "upgrade every two years because you're always paying a subsidy price" ideology no longer applies. If that last statement makes no sense to you, check out this [TIME article][1] on recent changes to buying a cell phone.
 
 So given all this, **do I feel like I need to upgrade from my iPhone 6?**
 
@@ -20,4 +20,6 @@ So given all this, **do I feel like I need to upgrade from my iPhone 6?**
 
 I was most excited for the Google Pixel because I am an Android developer **trapped** using an iPhone. The complete dearth of powerful Android phones running the stock version of Android is depressing. The Google Pixel is the first step to delivering this but it just doesn't seem that much better compared to my two year old iPhone. That's disappointing.
 
-For the pricetag, neither phones make me feel like my iPhone 6 isn't taking care of all I need from my phone. Guess I'll just wait for next year... **\#FirstWorldPhoneProblems**
+Ultimately I think my aversion is largely driven by the changes to how US cell carriers now handle subsidies. For the pricetag, neither phones make me feel like my iPhone 6 isn't taking care of all I need from my phone. Guess I'll just wait for next year... **\#FirstWorldPhoneProblems**
+
+[1]: http://time.com/3989731/verizon-new-plans/

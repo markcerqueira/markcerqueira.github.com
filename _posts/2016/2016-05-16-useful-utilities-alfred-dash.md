@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Useful Utilities   Alfred + Dash"
+title: "Useful Utilities - Alfred + Dash"
 description: ""
 category: 
 tags: [technical, mac, android]
