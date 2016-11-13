@@ -22,16 +22,18 @@ header: résumé
 ### Technical Projects
 
 * **SoundCraft**
-	* Developed and published a framework that enables real-time data gathering from a StarCraft 2 game, allowing for musical interpretation of the game’s internal structure and strategies in novel ways. Published in New Interfaces for Musical Expression (NIME) Conference 2013. Check out the [published paper](www.nime.org/proceedings/2013/nime2013_146.pdf) and the [source code](https://github.com/markcerqueira/soundcraft).
+	* Developed and published a framework that enables real-time data gathering from a StarCraft 2 game, allowing for musical interpretation of the game’s internal structure and strategies in novel ways. Published in New Interfaces for Musical Expression (NIME) Conference 2013. Check out the [published paper](http://www.nime.org/proceedings/2013/nime2013_146.pdf) and the [source code](https://github.com/markcerqueira/soundcraft).
 
 * **Laptop Orchestra Network Toolkit (LOrkNeT) - Senior Thesis Research at Princeton**
 	* Developed a toolkit to evaluate networking for live computer music performance. LOrkNeT was used to identify and remedy issues affecting the Princeton Laptop Orchestra. Learn more about my senior thesis at [lorknet.cs.princeton.edu](http://lorknet.cs.princeton.edu/).
+	
+* Check out more of my stuff on the [Projects](/projects) page!
 
 ### What makes me a unique snowflake
 
 * Kendo practitioner (1-kyu) with the San Francisco Kendo Dojo and Stanford Kendo Club
 * Active blogger about video games, food, and technology on [mark.gg][1]
-* Active Yelper: [355 reviews](https://www.yelp.com/user_details?userid=V4unpKMFq8kSHDMw2UW9rQ), 1745 photos, and counting
+* Active Yelper: [364 reviews](https://www.yelp.com/user_details?userid=V4unpKMFq8kSHDMw2UW9rQ), 1759 photos, and counting
 * Bronze league Protoss hero in StarCraft 2
 * Fluent in English and Portuguese, conversational in Spanish, scrappy Mandarin
 
