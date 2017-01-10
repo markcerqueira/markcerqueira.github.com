@@ -23,4 +23,10 @@ The first open-world Final Fantasy game also has far too many frustrating **invi
 
 By the end of the game, I was super invested in the four main characters, but the game does a poor job of fleshing out the **secondary characters** and making the player care about them. There are way too many characters that just don't get enough screen time. Obviously fixing the rushed latter half of the game could address this. And perhaps incorporating these characters or their stories into sidequests would also address how unimportant sidequests felt. I really feel like the universe in this game has a lot of interesting characters; it'd be great to see them developed some more. 
 
-That said Final Fantasy XV is a great entry in the series and I think it's exactly what the breath of life the series - that many say has been languishing - needed. Developers have already said they are tweaking the latter chapters in the game and have lots of downloadable content planned. I hope the Final Fantasy team can take the learnings from this entry and improve on it in a shorter amount of time in the future!
+<div>
+	<img class="rounded-corners" style="max-width: 800px; border: 1px;" src="/assets/images/posts/2016-12-14/completion.jpg"/>
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>A very quaint certificate of completion!</strong></p>
+</div>
+
+
+That said **Final Fantasy XV is a great entry in the series** and I think it's exactly what the breath of life the series - that many say has been languishing - needed. Developers have already said they are tweaking the latter chapters in the game and have lots of downloadable content planned. I hope the Final Fantasy team can take the learnings from this entry and improve on it in a shorter amount of time in the future!
