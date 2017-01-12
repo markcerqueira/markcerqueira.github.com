@@ -3,7 +3,7 @@ layout: post
 title: "Testing Sinatra... With iOS Unit Tests"
 description: ""
 category: 
-tags: [ios, objective-c, ruby, automation]
+tags: [ios, objective-c, ruby, sinatra, automation]
 ---
 
 I spent last week on vacation... hacking with Spencer on integrating [ChuckPad Social][1] into [MiniAudicle][2] for iPad. The week's work involved building out the iOS library to interact with the Sinatra-based backend. While building that, I realized I was doing a lot of repetitive tasks (e.g. creating a user, uploading patches, updating patches) which could be automated with some testing.
