@@ -17,6 +17,6 @@ It has its [flaws][1], but **FFXV is a game that rejuvenated my faith in the Fin
 
 **Xenoblade Chronicles** (XC) for the Wii still stands as my favorite modern JRPG and is my go-to game when people complain that the golden era of JRPGs has come and gone; it’s my gold standard for JRPGs. **Xenoblade Chronicles X** (XCX) for the Wii U expanded on the open-world amazingness of XC but unfortunately had a story that felt very unfinished. FFXV sits right there alongside XCX: the open world was good (not as open and big as XCX) and a decent story (not as complete as XC) that could have benefited from more fleshing out. 
 
-There is a bunch of DLC planned for FFXV and I’m excited to dive into it, especially if it fills in some of the holes in the story. But even more so, I am pumped for the FFXV development team to have a product post-mortem, take the best of what they did, and improve on the mistakes to ultimately deliver an amazing next entry in the series… **Hopefully before 2026!**
+There is a bunch of DLC planned for FFXV and I’m excited to dive into it, especially if it fills in some of the holes in the story. But even more so, I am pumped for the FFXV development team to have a productive post-mortem, take the best of what they did, and improve on the mistakes to ultimately deliver an amazing next entry in the series… **Hopefully before 2026!**
 
 [1]: /2016/12/14/finally-final-fantasy-xv/
