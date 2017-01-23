@@ -3,7 +3,8 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "
 
 gems:
   - jekyll-gist
-
+  - jekyll-sitemap
+  
 permalink: pretty
 
 markdown: kramdown

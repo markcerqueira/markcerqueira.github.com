@@ -3,7 +3,7 @@ layout: post
 title: "Producing JSON Arrays in Ruby"
 description: ""
 category: 
-tags: [ruby, technical]
+tags: [ruby, sinatra, technical]
 ---
 
 I've been working on a project and building the backend with Ruby and Sinatra. So far so good, until I wanted to take a list of objects I fetched from ActiveRecord and produce a JSON array. I had a function set up to JSONify a single object:
