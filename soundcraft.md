@@ -4,7 +4,7 @@ title: soundcraft
 header: souncraft
 ---
 
-<img src="{{ site.baseurl }}/assets/soundcraft/soundcraft.png"/> 
+<img src="{{ site.baseurl }}/assets/soundcraft/soundcraft.jpg"/> 
 
 **SoundCraft** is a framework that enables real-time data gathering from a StarCraft 2 game to external software applications, allowing for musical interpretation of the game’s internal structure and strategies in novel ways. SoundCraft was created with the StarCraft 2 Map Editor, Ruby, and the ChucK audio programming language. The paper detailing the technical and aesthetic development of SoundCraft was published in the Proceedings of the [New Interfaces for Musical Expression (NIME) Conference 2013][1].
 
