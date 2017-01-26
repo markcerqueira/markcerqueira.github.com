@@ -10,7 +10,7 @@ I’ve never seen my grandma use a recipe. I’ve never seen her use a timer. I�
 
 <div>
 	<img class="rounded-corners" style="max-width: 700px; border: 1px;" src="/assets/images/posts/2017-01-06/grandma.jpg"/>
-	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>Cooking some rebanadas!</strong></p>
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>Cooking some rabanadas!</strong></p>
 </div>
 
 But we all can’t be my grandma. Whereas my grandma makes cooking look like an art, conjuring divine inspiration and direction from thin air, I take a more scientific approach to cooking. Things are measured carefully and precisely, timers are used all the time, and recipes are annotated to remove any and all ambiguity.
