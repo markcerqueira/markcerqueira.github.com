@@ -17,7 +17,7 @@ You can check out a demo of what ChuckPad is capable of at [www.chuckpad.io][1].
 ChuckPad has a bunch of components. The main [backend service][2] is a Sinatra server written in Ruby and hosted on Heroku. It was designed as a REST-based service with basic user (registration, login) and patch (creation, edit, delete) API endpoints. An [iOS client library][3] for the service was created and Spencer did the integration work for [MiniAudicle][4] (the ChucK IDE) and his dissertation project: [Auraglyph][5]. A Docker image running a [ChucK rendering service][6] with a Sinatra server exposing a simple API was also developed and deployed onto DigitalOcean. And the thing I'm most proud of as a quality-first engineer: [iOS unit tests][7] that exercises the iOS client library and -- wait for it -- [the Sinatra server][8]!
 
 <div>
-	<img class="rounded-corners" style="max-width: 800px; border: 1px;" src="/assets/images/posts/2017-01-22/chuckpad-diagram.png"/>
+	<img class="rounded-corners" style="max-width: 800px; border: 1px;" src="{{ site.images2017 }}/01-22/chuckpad-diagram.png"/>
 	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>ChuckPad!</strong></p>
 </div>
 

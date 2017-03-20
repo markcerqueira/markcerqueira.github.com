@@ -13,7 +13,7 @@ Machine learning has sparked lots of interesting discussions on things like mach
 Take Google Photo's stylized photo capabilities. How does Google tell you the stylized photos it automatically creates from your photos? Fortunately for this exercise, the copy differs across different platforms!
 
 <div>
-	<img class="rounded-corners" style="max-width: 900px; border: 1px;" src="/assets/images/posts/2017-02-04/automatic.jpg"/>
+	<img class="rounded-corners" style="max-width: 900px; border: 1px;" src="{{ site.images2017 }}/02-04/automatic.jpg"/>
 	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong></strong></p>
 </div>
 

@@ -32,7 +32,7 @@ makeNetworkCall(true /* allowCacheResponse */, false /* allowRetries */,
 This works but it's a tad annoying and requires buy-in from everyone on a project. We can cry about how Java does not have named arguments for methods and ride the high-horse of our favorite programming language that does... **Or we can rely on the ecosystem around a language to help us work around defencencies.** This is what IntelliJ IDEA added in a recent update:
 
 <div>
-	<img class="rounded-corners" style="max-width: 900px; border: 1px;" src="/assets/images/posts/2017-03-10/makeNetworkCall.png"/>
+	<img class="rounded-corners" style="max-width: 900px; border: 1px;" src="{{ site.images2017 }}/03-10/makeNetworkCall.png"/>
 	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong></strong></p>
 </div>
 

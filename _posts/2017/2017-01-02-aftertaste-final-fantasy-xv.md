@@ -9,7 +9,7 @@ tags: [final fantasy, jrpgs, video games]
 It’s been a few weeks since I completed Final Fantasy XV; I’ve had some time to digest the experience, get all the trophies, and read plenty of other people’s take on the game. The short of it: in spite of the story being very rushed starting at Altissia, **FFXV is a critical hit**: a fantastic entry released when the series appeared to be flailing.
 
 <div>
-	<img class="rounded-corners" style="max-width: 800px; border: 1px;" src="/assets/images/posts/2017-01-02/platinum.jpg"/>
+	<img class="rounded-corners" style="max-width: 800px; border: 1px;" src="{{ site.images2017 }}/01-02/platinum.jpg"/>
 	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>All done!</strong></p>
 </div>
 

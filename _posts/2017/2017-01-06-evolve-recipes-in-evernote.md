@@ -9,7 +9,7 @@ tags: [evernote, cooking, bread, food]
 I’ve never seen my grandma use a recipe. I’ve never seen her use a timer. I’ve never seen her ask for advice on how to improve a dish. And most importantly — given all this — I’ve never tasted one of her creations that was off.
 
 <div>
-	<img class="rounded-corners" style="max-width: 700px; border: 1px;" src="/assets/images/posts/2017-01-06/grandma.jpg"/>
+	<img class="rounded-corners" style="max-width: 700px; border: 1px;" src="{{ site.images2017 }}/01-06/grandma.jpg"/>
 	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>Cooking some rabanadas!</strong></p>
 </div>
 
