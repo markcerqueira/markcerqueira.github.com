@@ -19,13 +19,13 @@ makeNetworkCall(true, false, true);
 What do these three boolean methods do? Impossible to say from just looking at this line. The method header looks like this:
 
 ```java
-makeNetworkCall(boolean allowCacheResponse, boolean allowRetries, boolean followRedirects)
+makeNetworkCall(boolean allowCacheResponse, boolean retriesEnabled, boolean followRedirects)
 ```
 
 To make the call look more readable I used to do in-line comments for each parameter:
 
 ```java
-makeNetworkCall(true /* allowCacheResponse */, false /* allowRetries */, 
+makeNetworkCall(true /* allowCacheResponse */, false /* retriesEnabled */, 
 		true /* followRedirects */);
 ```
 
