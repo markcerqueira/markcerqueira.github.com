@@ -3,7 +3,7 @@ layout: post
 title: "My Weekend with Tales of Hearts R"
 description: ""
 category: 
-tags: [video games]
+tags: [video games, tales, jrpg]
 ---
 
 <div class="float-image-right">	
