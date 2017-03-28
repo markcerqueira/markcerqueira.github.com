@@ -6,7 +6,7 @@ category:
 tags: [chinese]
 ---
 
-For your enjoyment, a short story about a pig and his best friend (some bread) and what happens when they come to my home.
+For your enjoyment, a short story about a pig and his best friend (some bread) and what happens when they come to my home. If your browser auto-translates Chinese, turn that thing off now. 
 
 有一隻豬早上七點二十分起床。
 他的名字是寶貝。
