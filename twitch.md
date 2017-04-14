@@ -6,7 +6,7 @@ header: twitch debug
 
 * [https://clips.twitch.tv/DistinctConfidentMangoBudBlast](https://clips.twitch.tv/DistinctConfidentMangoBudBlast) *a modern clip link*
 * [https://clips.twitch.tv/izakooo/StupidWeaselSriHead](https://clips.twitch.tv/izakooo/StupidWeaselSriHead) *legacy clip link with broadcaster name in URL*
-* [https://clips.twitch.tv/AliveFaintSrirachaNotLikeThis](https://clips.twitch.tv/AliveFaintSrirachaNotLikeThis) *clip link with game property unset*
+* [https://clips.twitch.tv/AliveFaintSrirachaNotLikeThis](https://clips.twitch.tv/AliveFaintSrirachaNotLikeThis) *clip link with [game property unset][2]*
 * [https://twitch.tv/directory](https://twitch.tv/directory) *games directory via /directory*
 * [https://twitch.tv/live](https://twitch.tv/live) *games directory via /live*
 * [https://twitch.tv/search](https://twitch.tv/search) *search*
@@ -29,3 +29,4 @@ header: twitch debug
 Markdown source for this page available [here][1].
 
 [1]: https://raw.githubusercontent.com/markcerqueira/markcerqueira.github.com/master/twitch.md
+[2]: https://clips.twitch.tv/api/v1/clips/AliveFaintSrirachaNotLikeThis
