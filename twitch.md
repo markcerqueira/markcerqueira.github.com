@@ -25,3 +25,7 @@ header: twitch debug
 * [https://www.twitch.tv/directory/following/hosts](https://www.twitch.tv/directory/following/hosts) *following hosts*
 * [https://www.twitch.tv/directory/following/games](https://www.twitch.tv/directory/following/games) *following games*
 * [https://www.twitch.tv/lowkotv/p/34ccca60-960d-4c29-8353-e118358f99eb](https://www.twitch.tv/lowkotv/p/34ccca60-960d-4c29-8353-e118358f99eb) *channel feed post*
+
+Markdown source for this page available [here][1].
+
+[1]: https://raw.githubusercontent.com/markcerqueira/markcerqueira.github.com/master/twitch.md
