@@ -25,6 +25,7 @@ header: twitch debug
 * [https://www.twitch.tv/directory/following/hosts](https://www.twitch.tv/directory/following/hosts) *following hosts*
 * [https://www.twitch.tv/directory/following/games](https://www.twitch.tv/directory/following/games) *following games*
 * [https://www.twitch.tv/lowkotv/p/34ccca60-960d-4c29-8353-e118358f99eb](https://www.twitch.tv/lowkotv/p/34ccca60-960d-4c29-8353-e118358f99eb) *channel feed post*
+* [https://www.twitch.tv/user/verify_email](https://www.twitch.tv/user/verify_email?email_verification_code=99bd8d8da&login=erictest991) *email verification link*
 
 Markdown source for this page available [here][1].
 
