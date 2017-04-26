@@ -4,6 +4,7 @@ title: twitch debug
 header: twitch debug
 ---
 
+* [https://www.twitch.tv/videos/129915918](https://www.twitch.tv/videos/129915918) *VOD link*
 * [https://clips.twitch.tv/DistinctConfidentMangoBudBlast](https://clips.twitch.tv/DistinctConfidentMangoBudBlast) *a modern clip link*
 * [https://clips.twitch.tv/izakooo/StupidWeaselSriHead](https://clips.twitch.tv/izakooo/StupidWeaselSriHead) *legacy clip link with broadcaster name in URL*
 * [https://clips.twitch.tv/AliveFaintSrirachaNotLikeThis](https://clips.twitch.tv/AliveFaintSrirachaNotLikeThis) *clip link with [game property unset][2]*
