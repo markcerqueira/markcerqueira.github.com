@@ -4,7 +4,10 @@ title: twitch debug
 header: twitch debug
 ---
 
-* [https://www.twitch.tv/videos/129915918](https://www.twitch.tv/videos/129915918) *VOD link*
+* [https://www.twitch.tv/videos/135001265?t=0s](https://www.twitch.tv/videos/135001265?t=0s) *100 per second*
+* [https://www.twitch.tv/videos/89917098?t=0s](https://www.twitch.tv/videos/89917098?t=0s ) *real-world*
+* [https://www.twitch.tv/videos/129915918](https://www.twitch.tv/videos/129915918) *a VOD link*
+
 * [https://clips.twitch.tv/DistinctConfidentMangoBudBlast](https://clips.twitch.tv/DistinctConfidentMangoBudBlast) *a modern clip link*
 * [https://clips.twitch.tv/izakooo/StupidWeaselSriHead](https://clips.twitch.tv/izakooo/StupidWeaselSriHead) *legacy clip link with broadcaster name in URL*
 * [https://clips.twitch.tv/AliveFaintSrirachaNotLikeThis](https://clips.twitch.tv/AliveFaintSrirachaNotLikeThis) *clip link with [game property unset][2]*
@@ -32,3 +35,8 @@ Markdown source for this page available [here][1].
 
 [1]: https://raw.githubusercontent.com/markcerqueira/markcerqueira.github.com/master/twitch.md
 [2]: https://clips.twitch.tv/api/v1/clips/AliveFaintSrirachaNotLikeThis
+
+<!-- 
+Template for adding a new one:
+* []() ** 
+-->
