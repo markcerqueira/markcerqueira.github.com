@@ -3,7 +3,7 @@ layout: post
 title: "OMFG Persona 4"
 description: ""
 category: 
-tags: [jrpg, video games]
+tags: [jrpg, video games, persona]
 ---
 
 I'll never forget the first video game I ever played: Super Mario Bros. 3 (NES). And I'll never forget the first time I fell in love with a game: Super Mario RPG and the Legend of the Seven Stars (SNES). Times have changed and so have I, and the *magic* of video games seems to have waned. So in order not to feel disappointed most of the time, I tell myself, "You're not a kid anymore. It's not going to be as magical anymore." Yet, there are rare moments when I feel like a kid all over again. It's moments like these that I realize I'm playing a game that is going to join the Pantheon of Greats, which features amazing (mostly JRPG) games like Xenoblade, Chrono Trigger, Terranigma, Final Fantasy VI, Valkyrie Profile, and Grandia II.
