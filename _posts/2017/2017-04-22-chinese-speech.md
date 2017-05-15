@@ -22,6 +22,12 @@ blockquote {
 
 I participated in my first Chinese speech contest today! I participated in the second semester college division for people with no prior experience with Mandarin.
 
+
+<div>
+	<img class="rounded-corners" style="max-width: 600px; border: 1px;" src="{{ site.images2017 }}/04-22/tag.jpg"/>
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong></strong></p>
+</div>
+
 My speech was a made-up story about my family visiting me from Portugal and us sight-seeing in San Francisco. There we ran into a Portuguese girl who could not speak English and didn't know where her family was. We helped her find her family but first went to eat Chinese food which let me flex the strongest aspect of my Chinese vocabulary! 
 
 <blockquote>
