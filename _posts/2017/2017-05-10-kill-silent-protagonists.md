@@ -19,4 +19,4 @@ Persona 5 weaved an intricate story in a rich and interesting world. As the prot
 
 All this said, Persona 5 is an amazing game and I can't recommend it enough. Atlus knocked this one out of the park. But I do hope they'll consider adding a protagonist with a voice to their arsenal of story-telling tools in the future. 
 
-[1]: 2014/01/12/omfg-persona-4
+[1]: /2014/01/12/omfg-persona-4

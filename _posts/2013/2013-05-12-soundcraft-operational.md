@@ -3,7 +3,7 @@ layout: post
 title: "SoundCraft Operational!"
 description: ""
 category: 
-tags: [soundcraft, starcraft, korea, travel]
+tags: [soundcraft, starcraft, korea, travel, nime]
 ---
 
 I'm really excited to announce that a recent project, SoundCraft, has made its way into the New Interfaces for Musical Expression (NIME) conference! SoundCraft combines a bunch of my favorite things: hanging out with [Spencer](http://www.spencersalazar.com) and [Ge](https://ccrma.stanford.edu/~ge/) who are co-authors of the project, playing StarCraft 2, writing code, making music, and playing with new languages/systems. SoundCraft enables real-time data gathering from a StarCraft 2 game, allowing for a novel interpretation of the game. Or, as I've been telling people - we're making music while playing StarCraft! Our paper, *SoundCraft: Transducing StarCraft 2* is going to be published in the conference proceedings and our proposal for a performance using SoundCraft, titled *GG Music*, was also accepted! In a most fitting way, the conference is being held in the Mecca of eSports, South Korea!
