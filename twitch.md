@@ -4,6 +4,7 @@ title: twitch debug
 header: twitch debug
 ---
 
+* [https://www.twitch.tv/videos/134222032](https://www.twitch.tv/videos/134222032) *followers only mode*
 * [https://www.twitch.tv/videos/135001265?t=0s](https://www.twitch.tv/videos/135001265?t=0s) *100 per second*
 * [https://www.twitch.tv/videos/89917098?t=0s](https://www.twitch.tv/videos/89917098?t=0s ) *real-world*
 * [https://www.twitch.tv/videos/129915918](https://www.twitch.tv/videos/129915918) *a VOD link*
