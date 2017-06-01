@@ -8,6 +8,8 @@ header: twitch debug
 * [twitch.tv/videos/139477293?comment=X8mcoKmDuxSgvQ&t=00h00m18s](https://www.twitch.tv/videos/139477293?comment=X8mcoKmDuxSgvQ&t=00h00m18s) *link to comment at 18s*
 * [twitch.tv/videos/139477293?comment=X8mcoKmDuxSgvQ&reply=wk97RY4SwRSaeQ&t=00h00m18s](https://www.twitch.tv/videos/139477293?comment=X8mcoKmDuxSgvQ&reply=wk97RY4SwRSaeQ&t=00h00m18s) *link to reply at 18s*
 * [twitch.tv/videos/139477293?comment=0dl2nW8BvRSE0A&reply=tRMGklgPwRTagQ&t=00h00m23s](https://www.twitch.tv/videos/139477293?comment=0dl2nW8BvRSE0A&reply=tRMGklgPwRTagQ&t=00h00m23s) *link to reply beyond 2 most recent at 23s*
+* [https://www.twitch.tv/marktronic/dashboard/moderation?comment=X8mcoKmDuxSgvQ&video=139477293](https://www.twitch.tv/marktronic/dashboard/moderation?comment=X8mcoKmDuxSgvQ&video=139477293) *owner link to comment* 
+* [https://www.twitch.tv/marktronic/dashboard/moderation?comment=X8mcoKmDuxSgvQ](https://www.twitch.tv/marktronic/dashboard/moderation?comment=X8mcoKmDuxSgvQ) *same as above but without a VOD id* 
 
 * [https://www.twitch.tv/videos/134222032](https://www.twitch.tv/videos/134222032) *followers-only mode for upload*
 * [https://www.twitch.tv/videos/135001265?t=0s](https://www.twitch.tv/videos/135001265?t=0s) *100 comments per second*
