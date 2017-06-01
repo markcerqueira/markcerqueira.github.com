@@ -4,10 +4,22 @@ title: twitch debug
 header: twitch debug
 ---
 
-* [https://www.twitch.tv/videos/134222032](https://www.twitch.tv/videos/134222032) *followers only mode*
-* [https://www.twitch.tv/videos/135001265?t=0s](https://www.twitch.tv/videos/135001265?t=0s) *100 per second*
-* [https://www.twitch.tv/videos/89917098?t=0s](https://www.twitch.tv/videos/89917098?t=0s ) *real-world*
+* [https://www.twitch.tv/videos/137574138?comment=8LPEkXz5wRTlSw&t=00h00m00s](https://www.twitch.tv/videos/137574138?comment=8LPEkXz5wRTlSw&t=00h00m00s) *link to comment at 00s*
+* [https://www.twitch.tv/videos/139477293?comment=X8mcoKmDuxSgvQ&t=00h00m18s](https://www.twitch.tv/videos/139477293?comment=X8mcoKmDuxSgvQ&t=00h00m18s) *link to comment at 18s*
+* [https://www.twitch.tv/videos/139477293?comment=X8mcoKmDuxSgvQ&reply=wk97RY4SwRSaeQ&t=00h00m18s](https://www.twitch.tv/videos/139477293?comment=X8mcoKmDuxSgvQ&reply=wk97RY4SwRSaeQ&t=00h00m18s) *link to reply at 18s*
+* Need a reply to a comment that requires fetching more replies (not one of the two more recent ones)
+
+* [https://www.twitch.tv/videos/134222032](https://www.twitch.tv/videos/134222032) *followers-only mode for upload*
+* [https://www.twitch.tv/videos/135001265?t=0s](https://www.twitch.tv/videos/135001265?t=0s) *100 comments per second*
+* [https://www.twitch.tv/videos/89917098?t=0s](https://www.twitch.tv/videos/89917098?t=0s) *real-world comments*
 * [https://www.twitch.tv/videos/129915918](https://www.twitch.tv/videos/129915918) *a VOD link*
+
+* [ttv://twitch.tv/live](ttv://twitch.tv/live) *ttv live*
+* [ttv://m.twitch.tv/live](ttv://m.twitch.tv/live) *mobile ttv live*
+* [ttv://twitch.tv/search](ttv://twitch.tv/search) *ttv search*
+* [ttv://twitch.tv/dashboard](ttv://twitch.tv/dashboard) *ttv dashboard*
+* [ttv://clips.twitch.tv/izakooo/StupidWeaselSriHead](ttv://clips.twitch.tv/izakooo/StupidWeaselSriHead) *ttv legacy clip link*
+* [ttv://clips.twitch.tv/DistinctConfidentMangoBudBlast](ttv://clips.twitch.tv/DistinctConfidentMangoBudBlast) *ttv modern clip link*
 
 * [https://clips.twitch.tv/DistinctConfidentMangoBudBlast](https://clips.twitch.tv/DistinctConfidentMangoBudBlast) *a modern clip link*
 * [https://clips.twitch.tv/izakooo/StupidWeaselSriHead](https://clips.twitch.tv/izakooo/StupidWeaselSriHead) *legacy clip link with broadcaster name in URL*
@@ -39,5 +51,5 @@ Markdown source for this page available [here][1].
 
 <!-- 
 Template for adding a new one:
-* []() ** 
+* []() **
 -->
