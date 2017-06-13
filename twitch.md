@@ -14,6 +14,8 @@ header: twitch debug
 * [https://www.twitch.tv/videos/89917098?t=0s](https://www.twitch.tv/videos/89917098?t=0s) *real-world comments*
 * [https://www.twitch.tv/videos/129915918](https://www.twitch.tv/videos/129915918) *a VOD link*
 
+* [https://www.twitch.tv/videos/149149609](https://www.twitch.tv/videos/149149609) *VOD with muted segments*
+
 * [ttv://twitch.tv/live](ttv://twitch.tv/live) *ttv live*
 * [ttv://m.twitch.tv/live](ttv://m.twitch.tv/live) *mobile ttv live*
 * [ttv://twitch.tv/search](ttv://twitch.tv/search) *ttv search*
