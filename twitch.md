@@ -15,6 +15,7 @@ header: twitch debug
 * [https://www.twitch.tv/videos/129915918](https://www.twitch.tv/videos/129915918) *a VOD link*
 
 * [https://www.twitch.tv/videos/149149609](https://www.twitch.tv/videos/149149609) *VOD with muted segments*
+* [https://www.twitch.tv/videos/101294009](https://www.twitch.tv/videos/101294009) *VOD that is fully muted*
 
 * [ttv://twitch.tv/live](ttv://twitch.tv/live) *ttv live*
 * [ttv://m.twitch.tv/live](ttv://m.twitch.tv/live) *mobile ttv live*
