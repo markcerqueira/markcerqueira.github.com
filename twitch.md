@@ -4,6 +4,8 @@ title: twitch debug
 header: twitch debug
 ---
 
+* [https://www.twitch.tv/streams/25792063008/channel/24991333](https://www.twitch.tv/streams/25792063008/channel/24991333) *streams link*
+
 * [twitch.tv/videos/137574138?comment=8LPEkXz5wRTlSw&t=00h00m00s](https://www.twitch.tv/videos/137574138?comment=8LPEkXz5wRTlSw&t=00h00m00s) *link to comment at 00s*
 * [twitch.tv/videos/139477293?comment=X8mcoKmDuxSgvQ&t=00h00m18s](https://www.twitch.tv/videos/139477293?comment=X8mcoKmDuxSgvQ&t=00h00m18s) *link to comment at 18s*
 * [twitch.tv/videos/139477293?comment=X8mcoKmDuxSgvQ&reply=wk97RY4SwRSaeQ&t=00h00m18s](https://www.twitch.tv/videos/139477293?comment=X8mcoKmDuxSgvQ&reply=wk97RY4SwRSaeQ&t=00h00m18s) *link to reply at 18s*
