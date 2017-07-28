@@ -4,6 +4,8 @@ title: twitch debug
 header: twitch debug
 ---
 
+* [twitch.tv/wintergaming](twitch.tv/wintergaming) *often VODcasts during the day*
+
 * [https://www.twitch.tv/r/e/...](https://www.twitch.tv/r/e/eyJjaGFubmVsIjoiIiwibG9jYXRpb24iOiJ2aWV3X3Byb2ZpbGUiLCJlbWFpbF9pZCI6ImE4N2E2NDZjLTE1YjItNGMyMi05YTc4LTM1NjUzZGNiMDYzMSIsInNvdXJjZV9lbWFpbCI6InR3aXRjaF9mb2xsb3dlcl9jcmVhdGVkIiwibmFtZSI6InR3aXRjaF9mb2xsb3dlcl9jcmVhdGVkIiwibG9naW4iOiIifQ==/155419945/eddb2b022ae9ce12ebd6566cc5e5d26ffb5e2b9c/eeliigaa_pro?tt_content=twitch_follower_created&tt_medium=email) *long link*
 * [https://www.twitch.tv/streams/25792063008/channel/24991333](https://www.twitch.tv/streams/25792063008/channel/24991333) *streams link*
 
