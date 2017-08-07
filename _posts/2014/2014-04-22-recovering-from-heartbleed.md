@@ -3,7 +3,7 @@ layout: post
 title: "Recovering from Heartbleed"
 description: ""
 category: 
-tags: [technical]
+tags: [technical, security]
 ---
 
 <div class="float-image-right">	
