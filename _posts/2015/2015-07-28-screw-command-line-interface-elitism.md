@@ -6,19 +6,6 @@ category:
 tags: [technical, rant]
 ---
 
-<style media="screen" type="text/css">
-
-blockquote {
-font: 10px/16px normal helvetica, sans-serif;
-margin-top: 10px;
-margin-bottom: 10px;
-margin-left: 50px;
-padding-left: 15px;
-border-left: 2px solid #ccc;
-}
-
-</style>
-
 I recently read a post by Chris Beams on [How to Write a Git Commit Message][1]. Before I get into it, I want to emphasize that this post isn't about hating on Chris or his advice; they're both awesome. ♥
 
 This post is about something I noticed in Chris' post and something I hear come up way too often in the programming world: how amazing the command-line interface (CLI) is and how everyone should be using it as exclusively as possible because **it's the best thing ever**.

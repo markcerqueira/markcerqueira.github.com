@@ -6,19 +6,6 @@ category:
 tags: [video games]
 ---
 
-<style media="screen" type="text/css">
-
-blockquote {
-  font: 14px/22px normal helvetica, sans-serif;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 50px;
-  padding-left: 15px;
-  border-left: 3px solid #ccc;
-}
-
-</style>
-
 <div class="float-image-right">	
   	<img style="border: 0px;" src="/assets/images/posts/2014-02-16/ps_plus.png" alt="PS Plus Logo"/> 
   	<p>I recently read a head-to-head review of the Xbox One and PS4 in the Personal Tech section of the NY Times.<sup>1</sup> The review pegs the PS4 as the better of the two consoles, but questions if powerful home consoles are even relevant anymore. That flame-war-inspiring question aside, I find the most interesting thing about the review is something that has been repeatedly glossed over by a lot of people (even Sony): how awesome PlayStation Plus is.</p>

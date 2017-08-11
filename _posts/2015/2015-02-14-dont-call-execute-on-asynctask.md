@@ -6,19 +6,6 @@ category:
 tags: [android]
 ---
 
-<style media="screen" type="text/css">
-
-blockquote {
-  font-size: 8px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 50px;
-  padding-left: 15px;
-  border-left: 3px solid #ccc;
-}
-
-</style>
-
 AsyncTasks are pretty useful. But when you submit them for execution, you should know what you're getting yourself into. Regarding the order of execution for AsyncTasks, [documentation][1] states:
 
 <blockquote>

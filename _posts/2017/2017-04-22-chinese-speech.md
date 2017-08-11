@@ -6,22 +6,7 @@ category:
 tags: [chinese]
 ---
 
-<style media="screen" type="text/css">
-
-blockquote {
-  font-size: 1.0em;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 50px;
-  padding-left: 15px;
-  border-left: 3px solid #ccc;
-}
-
-</style>
-
-
 I participated in my first Chinese speech contest today! I participated in the second semester college division for people with no prior experience with Mandarin.
-
 
 <div>
 	<img class="rounded-corners" style="max-width: 600px; border: 1px;" src="{{ site.images2017 }}/04-22/tag.jpg"/>
