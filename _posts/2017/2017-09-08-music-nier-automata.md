@@ -21,13 +21,6 @@ This is a nice little touch, but the coolest part is how the game transitions fr
 
 **Ending theme variations**- Nier consists of three playthrough and each playthrough ends with a credits sequence that plays the Weight of the World track. Following the first playthrough the song is sung in [English][7], following the second in [Japanese][8], and following the third in a made-up language [Nouveau-FR][9]. Unlocking the true ending plays a [medley of all these versions][10] and even includes a chip-tune introduction.
 
-<!-- 
-<div>
-	<img class="rounded-corners" style="max-width: 800px; border: 1px;" src="{{ site.images2017 }}/09-08/ending-a.png"/>
-	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>Ending [A], the first playthrough ending.</strong></p>
-</div>
--->
-
 Without significantly diving into what all this means it's worth mentioning that during the first playthroughs we effectively play through the same story but through two different view points (same song, two different languages). Also the English version's lyrics are relatively hopeful while the Japanese version is incredibly depressing. 
 
 **Become As Gods** - This was the most “oh wow” moment of Nier’s musical escapades during my playthrough. In early boss battles you get to battle while the epic [Birth of a Wish][1] track plays. In the latter part of your first playthrough you travel to a factory to meet a group of machines that end up being a “drink the Kool Aid” type cult that believe killing themselves will bring them closer to God. As machines surround you and chant various cultish dietribes all ending in “become as Gods” the game queues up the Birth of a Wish track but this time with machines chanting [Become As Gods][2] alongside the track. Check out the entire sequence leading up the that moment [here][3].

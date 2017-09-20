@@ -16,6 +16,6 @@ The anti-pattern here is the series of ```if``` checks (for null) that make this
 
 {% gist markcerqueira/ba834b6c5b420d6a4894fbf019f0ec2d %}
 
-Boom! The arrow is dead! While checking nullness is not the only case arrows can emerge, null checking is a pervasive painpoint in Java so these operators make our lives much better. 
+Boom! The arrow is dead! While checking nullness is not the only case arrows can emerge, null checking is a pervasive painpoint, and common source of the arrow anti-pattern, in Java so these operators make our lives much better. 
 
 [1]: http://wiki.c2.com/?ArrowAntiPattern
