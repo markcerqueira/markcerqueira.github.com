@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hello Tabletop Gaming"
+title: "Hello, Tabletop Gaming!"
 description: ""
 category: 
 tags: [tabletop]
