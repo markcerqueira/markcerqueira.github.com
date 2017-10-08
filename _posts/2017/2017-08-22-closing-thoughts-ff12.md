@@ -3,7 +3,7 @@ layout: post
 title: "Closing Thoughts on Final Fantasy XII"
 description: ""
 category: 
-tags: [final fantasy, jrpgs, video games]
+tags: [final fantasy, jrpg, video games]
 ---
 
 NieR Automata is ordered and on its way, so now seems like a perfect time for some closing thoughts on Final Fantasy XII. FF12 was a good game with a fresh twist on battle mechanics with the Gambit system, but ultimately the story just didn't resonate with me. It was too cold as the presentation of every single character failed to move me in any big way. There were glimmers of hope with Balthier who is more than just a sky pirate playboy and Larsa who is more than the meek son of the power-hungry emperor. But even the best of the lackluster cast of characters ultimately fell flat.

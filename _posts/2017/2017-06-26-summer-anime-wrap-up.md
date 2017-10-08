@@ -19,4 +19,4 @@ I just wrapped up another "catch-up session" on anime. I picked a few shows: som
 I enjoy powering through anime instead of watching an episode a week, so next up will definitely be Boku no Hero Academia season 2 because the first season was so good!
 
 [1]: https://www.youtube.com/watch?v=3vnTP41LchI
-[2]: /2015/10/14/madhouse-anime/
+[2]: {{site.base_url}}/2015/10/14/madhouse-anime/

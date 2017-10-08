@@ -22,4 +22,4 @@ And in another example of a \"[programming language is an ecosystem not a simply
 
 In the meanwhile, I encourage iOS developers to wait and pray for Apple to announce a parternership with JetBrains. 
 
-[1]: 2017/03/10/rethinking-talk-programming-languages/
+[1]: {{site.base_url}}/2017/03/10/rethinking-talk-programming-languages/

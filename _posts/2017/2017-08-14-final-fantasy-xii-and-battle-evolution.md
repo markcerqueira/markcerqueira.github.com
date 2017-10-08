@@ -3,7 +3,7 @@ layout: post
 title: "Final Fantasy XII and Battle Evolution"
 description: ""
 category: 
-tags: [final fantasy, jrpgs, video games]
+tags: [final fantasy, jrpg, video games]
 ---
 
 Recently wrapping up Final Fantasy XII: The Zodiac Age (FF12) has got me thinking about the game's place in the history of the series. FF12 featured a great departure from tradition in a core component - **battling** - that would slowly evolve in subsequent entries. The odd children - MMORPGs - of the series aside, every entry before FF12 featured turn-based combat systems where the player controlled all characters. This meant making every small decision: Yuna cast Curaga on Cloud, Terra cast Firaga on Behemoth, Sabin use Suplex on Phantom Train. **Starting with FF12 we see large, radical changes to the Final Fantasy battle system.**

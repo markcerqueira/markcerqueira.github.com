@@ -30,4 +30,4 @@ We originally built ChuckPad to share ChucK code, but we decided to power it up 
 [5]: http://auragly.ph/
 [6]: https://github.com/markcerqueira/chuck-renderer
 [7]: https://github.com/markcerqueira/hello-chuckpad
-[8]: /2016/08/14/testing-sinatra-with-ios-unit-tests/
+[8]: {{site.base_url}}/2016/08/14/testing-sinatra-with-ios-unit-tests/

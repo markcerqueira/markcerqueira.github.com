@@ -3,7 +3,7 @@ layout: post
 title: "Finally! Final Fantasy XV"
 description: ""
 category: 
-tags: [final fantasy, jrpgs, video games]
+tags: [final fantasy, jrpg, video games]
 ---
 
 After ten long years, Final Fantasy XV has been released! Two weeks after the release, I've plowed through most of the side-quests and completed the main storyline. **And I enjoyed it!** The game does a lot of things right: the battle system is fun and fast-paced, the story pulls you along without being overly complicated, the music is excellent, and the main cast of characters are personable and make the entire trip funny and interesting. The photographs Prompto, one of your team members, takes throughout the journey was unexpectedly awesome too!

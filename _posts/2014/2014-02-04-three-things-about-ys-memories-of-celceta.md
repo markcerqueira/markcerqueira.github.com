@@ -3,7 +3,7 @@ layout: post
 title: "Three Things About Ys: Memories of Celceta"
 description: ""
 category: 
-tags: [video games, jrpg]
+tags: [video games, jrpg, ys]
 ---
 
 <div class="float-image-right">	
@@ -24,4 +24,4 @@ tags: [video games, jrpg]
 	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 20px;"><strong>Don't get the wrong idea - this game is awesome.</strong></p>
 </div>
 
-Even though two of my three observations are somewhat negative, don't let my post mislead you: **this game is really great** and I highly recommend it. If the Vita continues to get games where my only complaints are about user experience inconsistencies and quality-of-life improvements, I see a bright future ahead`` for the Vita.
+Even though two of my three observations are somewhat negative, don't let my post mislead you: **this game is really great** and I highly recommend it. If the Vita continues to get games where my only complaints are about user experience inconsistencies and quality-of-life improvements, I see a bright future ahead for the Vita.
