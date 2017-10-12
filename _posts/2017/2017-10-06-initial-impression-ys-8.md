@@ -13,7 +13,7 @@ I'm (only) 16 hours into **Ys 8: Lacrimosa of Dana** after only having it for a 
 	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>Things to level everywhere!</strong></p>
 </div>
 
-If you love progression and powering things up, you'll love this game because there are **levels everywhere**. Your characters have levels (increased by battling), their skills have levels (increased by using skills), your village technically has a level (increased by recruiting more castaways), your bonds with people in the village have levels (increased by completing quests for them), the defenses of your village have levels (increased by providing raw materials), and your weapons have levels (increased by providing raw materials).
+If you love progression and powering things up, you'll love this game because there are **levels everywhere**. Your characters have levels (increased by battling), their skills have levels (increased by using skills), your village technically has a level (increased by recruiting more castaways), your bonds with people in the village have levels (increased by completing quests for them), the defenses of your village have levels (increased by providing raw materials), your weapons have levels (increased by providing raw materials), and the forge that lets you upgrade equipment has a level (increased by providing Fuel Stones).
 
 <div>
 	<img class="rounded-corners" style="max-width: 800px; border: 1px;" src="{{ site.images2017 }}/10-06/ys8-map.jpg"/>
