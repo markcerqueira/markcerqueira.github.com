@@ -4,6 +4,8 @@ title: twitch debug
 header: twitch debug
 ---
 
+* [twitch://video/89917098?collection=8gOknX26pRTsTw&t=30s](twitch://video/89917098?collection=8gOknX26pRTsTw&t=30s) *VOD with collection link*
+
 * [ttv://open?threadId=11&target=MarkCerqueira](ttv://open?threadId=11&target=MarkCerqueira) *whisper*
 
 * [https://clips.twitch.tv/DiligentFancyButterflyVoHiYo?tt_medium=twitter&tt_content=content](https://clips.twitch.tv/DiligentFancyButterflyVoHiYo?tt_medium=twitter&tt_content=content) *clips referrer link*
