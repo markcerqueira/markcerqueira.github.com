@@ -26,7 +26,7 @@ Earlier this week, I wrote about [bastard words created by mixing English and Po
 * **nifa** - knife
 * **obertime** - overtime  
 * **offas** - office
-* **oficinia** - office
+* **oficina** - office
 * **parquear** - to park
 * **printar** - to print
 * **ringar** - to ring
