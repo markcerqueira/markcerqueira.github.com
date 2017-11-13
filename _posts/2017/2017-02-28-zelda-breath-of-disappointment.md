@@ -3,7 +3,7 @@ layout: post
 title: "The Legend of Zelda: Breath of Disappointment"
 description: ""
 category: 
-tags: [video games, zelda]
+tags: [video games, zelda, switch]
 ---
 
 The NES had the original The Legend of Zelda, the SNES had A Link to the Past, the N64 had Ocarina of Time, the Gamecube had The Wind Waker, and the Wii had Skyward Sword. On the heels of the release for Nintendo's newest home console -- the Switch -- and a new entry in the Zelda series -- Breath of the Wild -- which will be released on both the Wii U and the Switch, I can't help but feel so very disappointed in how Nintendo let the Wii U down: **we never got an original and exclusive Zelda game for the Wii U.**

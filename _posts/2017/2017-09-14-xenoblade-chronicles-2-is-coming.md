@@ -3,7 +3,7 @@ layout: post
 title: "Xenoblade Chronicles 2 Is Coming!"
 description: ""
 category: 
-tags: [video games, jrpg, xenoblade]
+tags: [video games, jrpg, xenoblade, switch]
 ---
 
 This is the level of faith I have in Monolith Soft and the power of Xenoblade: I picked up a Wii U for Xenoblade Chronicles X and am soon picking up a Switch now that the release date for Xenoblade Chronicles 2 (XC2) has been revealed. **December 1st** can't come soon enough!
