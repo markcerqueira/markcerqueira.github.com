@@ -1,7 +1,7 @@
 # Include vendor to fix: https://github.com/jekyll/jekyll/issues/2938
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "vendor"]
 
-gems:
+plugins:
   - jekyll-gist
   - jekyll-sitemap
   
