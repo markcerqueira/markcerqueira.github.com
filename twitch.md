@@ -4,6 +4,8 @@ title: twitch debug
 header: twitch debug
 ---
 
+* [https://www.twitch.tv/videos/200052692?t=33m25s](https://www.twitch.tv/videos/200052692?t=33m25s) *cheermote on VOD*
+
 * [twitch://video/89917098?collection=8gOknX26pRTsTw&t=30s](twitch://video/89917098?collection=8gOknX26pRTsTw&t=30s) *VOD with collection link*
 
 * [ttv://open?threadId=11&target=MarkCerqueira](ttv://open?threadId=11&target=MarkCerqueira) *whisper*
