@@ -32,10 +32,10 @@ Note that while this machine only officially supports Lion (10.7) with the [Piki
 
 Here are a few gotchas and tips for anyone looking to give their MacPro1,1 a new lease on life:
 
-* I first installed Lion to get the machine booting. But the only way to get the machine booting (even for the Lion installer) was to boot into Safe Mode (holding down the Shift key during boot). I was uanble to track down why this was happening or fix it but once I upgraded to El Capitan, the issue went away.
+* I first installed Lion to get the machine booting. But the only way to get the machine booting (even for the Lion installer) was to boot into Safe Mode (holding down the Shift key during boot). I was unable to track down why this was happening or fix it but once I upgraded to El Capitan, the issue went away.
 * El Capitan boots and runs with the stock GeForce 7300 GT but you'll notice graphical glitches pretty quickly. The machine never kicked the bucket and crashed but I would not consider it usable without a graphics card upgrade.
-* More powerful graphics cards usually require some external power to work. Macs naturally do not use the standard PC molex connectors so you'll need to buy a special power cable to power your graphics card. For the GTX 660 I bought these [Mini 6 Pin to 6 Pin PCI Express][2] on Amazon and they worked perfectly.
-* With an updated graphics card you won't get the Apple boot screen because the graphics card isn't recognized until the OS loads but this setup your boot times will be incredibly short. I recommend hanging onto your GeForce 7300 GT because if you have boot problems you can swap it in to help debug things.
+* Most powerful graphics cards usually require some external power to work. Macs naturally do not use the standard PC molex connectors so you'll need to buy a special power cable to power your graphics card. For the GTX 660 I bought one of these [Mini 6 Pin to 6 Pin PCI Express][2] cables on Amazon and they worked perfectly.
+* With an updated graphics card you won't get the Apple boot screen because the graphics card isn't recognized until the OS loads but with this setup your boot times will be incredibly short. I recommend hanging onto your GeForce 7300 GT because if you have boot problems you can swap it in to help debug things.
 
 And that's that! It was a fun experience to breath some new life into this vintage, beautiful, and heavy machine!
 
