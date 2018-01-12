@@ -19,5 +19,5 @@ It's a long story but I'm the cat-faced gentlemen in the top right of the bracke
 
 Wish us luck!
 
-[1]: twitch.tv/basetradetv
+[1]: https://twitch.tv/basetradetv
 [2]: http://www.teamliquid.net/forum/sc2-tournaments/529105-basetradetv-sponsor-showdown

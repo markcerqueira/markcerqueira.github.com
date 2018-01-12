@@ -41,6 +41,7 @@ header: résumé
 
 ### What makes me a unique snowflake
 
+* Undisputed champion of the [BaseTradeTV StarCraft 2 Sponsor Showdown](http://www.teamliquid.net/forum/sc2-tournaments/529105-basetradetv-sponsor-showdown).
 * Led workshops on mobile computing at [Stanford University](https://ccrma.stanford.edu/workshops/music-and-mobile-computing) and [Gray Area Foundation for the Arts](http://main.dev.gaffta.org/?author=81).
 * Guest speaker at [General Assembly SF](https://generalassemb.ly/instructors/mark-cerqueira/10476).
 * Active blogger about video games, food, and technology on [mark.gg](www.mark.gg).
