@@ -3,7 +3,7 @@ layout: post
 title: "The Inflection Point for Mobile Development Tools"
 description: ""
 category: 
-tags: [android, ios, swift, objective-c, kotlin, java]
+tags: [android, ios, swift, objective-c, kotlin, java, xcode]
 ---
 
 Having done a fair amount of development for both iOS and Android the most significnat inflection point in the development tools landscape came at Google I/O 2013 when Google announced a partnership with JetBrains to build a new Android IDE, Android Studio, on top of the IntelliJ IDEA platform. And since 2013 the landscape for Android development has been on the up-and-up while Xcode doesn't even fully support (see how long it took Xcode to support renaming a variable in Swift files) the hot new language Apple has been pushing: Swift.

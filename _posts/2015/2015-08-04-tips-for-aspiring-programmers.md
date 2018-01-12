@@ -3,7 +3,7 @@ layout: post
 title: "Tips for Aspiring Programmers"
 description: ""
 category: 
-tags: [technical]
+tags: [technical, xcode]
 ---
 
 Every so often I have friends ask me to talk to the someone who is interested in computers and programming. I'm always eager to run my mouth so I, naturally, always jump on the opportunity. But after telling the same story multiple times I figured it'd be more efficient to just write down my definitive **TIPS FOR ASPIRING PROGRAMMERS** here and just share this instead.
