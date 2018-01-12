@@ -16,6 +16,7 @@ tagline: well-rounded nerd
 baseurl: ''
 
 images2017 : "/assets/posts/2017"
+images2018 : "/assets/posts/2018"
 
 author :
   name : Mark Cerqueira
