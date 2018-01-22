@@ -3,7 +3,7 @@ layout: post
 title: "Twitch Live Dashboard Out Now on Mobile"
 description: ""
 category: 
-tags: [twitch, ios]
+tags: [twitch, xcode, ios]
 ---
 
 Twitch streamers rejoice! You can now manage your channel right on your iOS or Android device with the new live dashboard.
@@ -16,9 +16,11 @@ I was lucky enough to both manage the delivery of this feature on iOS and Androi
 
 As for iOS development, my feelings on it haven't changed to much since I last did some [serious iOS work at Evernote in November 2016][1]. I'm sad to report Xcode and the iOS ecosystem hasn't improved much in the past year. Objective-C and Swift interoperability is painful especially if you're used to the buttery smooth Java-Kotlin interoperability. I also had weird compiler errors that were fixed not by the standard "delete Derived Data and try again" but by restarting Xcode! 
 
-The iOS ecosystem pain points aside, it was nice (and very stimulating) to work on a completely different codebase with a different set of Twitch team members. Because [Swift is like Kotlin][2], I coded all of the dashboard feature in Swift. 😏 I'm blessed to have awesome coworkers who quickly powered me up many levels on the Swift front.
+The iOS ecosystem pain points aside, it was nice (and very stimulating) to work on a completely different codebase with a different set of Twitch team members. Because [Swift is like Kotlin][2], I coded all of the dashboard feature in Swift. 😏 I'm blessed to have awesome coworkers who quickly powered me up many levels on the Swift front. 
 
 I hope everyone enjoys the new live dashboard. It was a blast to build it!
+
+P.S. Interface Builder and AutoLayout are terrible compared to Android XML layout files. LinearLayouts FTW! 
 
 [1]: {{site.base_url}}/2016/11/12/omg-swift-closures/
 [2]: http://nilhcem.com/swift-is-like-kotlin/
