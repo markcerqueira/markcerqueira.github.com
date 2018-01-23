@@ -29,7 +29,14 @@ My journey into Xenoblade Chronicles 2 continues. With the [1.1.1 patch][1] out 
 	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>Time to go through all my Blades again...</strong></p>
 </div>
 
-* **Smarter Merc Mission deployment** - When deploying Blades on Merc Missions there are requirements like 2 Females, 1 Earth Mastery, 1 Bitball. Once again, it'd be nice to just let some algorithm do this and it'd be nice for it to prioritize Blades who don't have completed Affinity Charts since Merc Missions are great ways to fill these out. 
+* **Smarter Merc Mission deployment** - When deploying Blades on Merc Missions there are requirements like 2 Females, 1 Earth Mastery, 1 Bitball. Once again, it'd be nice to just let some algorithm do this and it'd be nice for it to prioritize Blades who don't have completed Affinity Charts since Merc Missions are great ways to fill these out.
+
+<div>
+	<img class="rounded-corners" style="max-width: 700px; border: 1px;" src="{{ site.images2017 }}/12-22/tiger.jpg"/>
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>Please give us another way!</strong></p>
+</div>
+
+* **An alternative to Tiger! Tiger!** - Tiger! Tiger! is a mini-game that you are required to play if you want to power up the Poppi Blades. I don't find the mini-game very fun so I haven't invested time in it. Because of that, my Poppi Blades aren't very strong so I don't use Tora much. If you can stand investing time in Tiger! Tiger! you can make Poppi super OP but I just can't play Tiger! Tiger! over and over again. I'd love for an alternate way to acquire Ether Crystals.
 
 * **Save Blade, Aux Core, accessory build-outs** - Different situations call for different Blades with different Aux Cores and different accessories equipped on your characters. For example, when bonding with Core Crystals, you'll have everything set up to max out Luck. It'd be awesome to save build-outs so it's easier to swap between them instead of having to reconstruct everything every time.
 
