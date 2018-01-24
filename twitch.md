@@ -4,6 +4,9 @@ title: twitch debug
 header: twitch debug
 ---
 
+* [https://www.twitch.tv/mcanning/videos](https://www.twitch.tv/mcanning/videos) *profile Videos link*
+* [https://www.twitch.tv/mcanning/clips](https://www.twitch.tv/mcanning/clips) *profile Clips link*
+
 * [https://www.twitch.tv/videos/200052692?t=33m25s](https://www.twitch.tv/videos/200052692?t=33m25s) *cheermote on VOD*
 
 * [twitch://video/89917098?collection=8gOknX26pRTsTw&t=30s](twitch://video/89917098?collection=8gOknX26pRTsTw&t=30s) *VOD with collection link*
