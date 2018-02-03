@@ -3,7 +3,7 @@ layout: post
 title: "Adeus Evernote, Olá Twitch!"
 description: ""
 category: 
-tags: [evernote, twitch]
+tags: [evernote, twitch, jobs]
 ---
 
 After a wonderful two and half years working at Evernote I’m typing out GG and setting off on a new adventure! I truly loved working at Evernote. I love the product and my coworkers are friends more than colleagues. I’m super grateful for being a part of a team where I was able to hone and sharpen my Android knowledge and very grateful for being given the opportunity to work on some iOS features and even pick up some Swift along the way!

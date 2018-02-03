@@ -3,7 +3,7 @@ layout: post
 title: "Hello World, Evernote"
 description: ""
 category: 
-tags: [evernote]
+tags: [evernote, jobs]
 ---
 
 I'm very excited to announce that after four fun years at Smule, I'm joining the Evernote Team! Here's a picture of (dapper) me on my first day.
