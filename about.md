@@ -21,7 +21,7 @@ I am an active member of the [San Francisco Kendo Dojo][1] and [Stanford Kendo C
 
 I received my B.S. in Computer Science at Princeton University, along with a certificate in Portuguese and Spanish Languages and Cultures. My senior thesis, advised by [Dan Trueman][3], was titled *Synchronization over Networks for Live Laptop Music Performance*, and resulted in the creation of [LOrkNeT][4].
 
-Where I've been: 🇺🇸🇵🇹🇪🇸🇮🇹🇬🇷🇨🇦🇰🇷🇯🇵🇩🇰🇬🇧🇳🇱🇩🇪
+Where I've been: 🇺🇸🇵🇹🇪🇸🇮🇹🇬🇷🇧🇲🇨🇦🇰🇷🇯🇵🇩🇰🇬🇧🇳🇱🇩🇪
 
 [1]: http://sanfranciscokendo.org/
 [2]: http://kendo.stanford.edu/
