@@ -4,6 +4,8 @@ title: twitch debug
 header: twitch debug
 ---
 
+* [https://www.twitch.tv/mcanning/videos/archive](https://www.twitch.tv/mcanning/videos/all) *profile Videos Archive link*
+* [https://www.twitch.tv/mcanning/videos/all](https://www.twitch.tv/mcanning/videos/archive) *profile Videos All link*
 * [https://www.twitch.tv/mcanning/videos](https://www.twitch.tv/mcanning/videos) *profile Videos link*
 * [https://www.twitch.tv/mcanning/clips](https://www.twitch.tv/mcanning/clips) *profile Clips link*
 
