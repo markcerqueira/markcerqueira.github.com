@@ -3,7 +3,7 @@ layout: post
 title: "Valentine's Day - First Love"
 description: ""
 category: 
-tags: [jrpg, video games, throwback]
+tags: [jrpg, video games, throwback, super mario rpg]
 ---
 
 On this Valentine's Day, love is in the air! It's a great time to love, be loved, and think about your first love. Mine is easy: **Super Mario RPG: Legend of the Seven Stars** for the Super Nintendo. 
