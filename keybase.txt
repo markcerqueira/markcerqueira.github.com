@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/markcerqueira
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.mark.gg
+  * I am markcerqueira (https://keybase.io/markcerqueira) on keybase.
+  * I have a public key ASAF0crBwWn3e6zXyDqveRWwbsmC2fxHslc1Ecg-K2Ju5go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01018e84f6f7d0b32e2334aa2bf5fe63fa205c31c4f0b0123a664e6df8641ca251c70a",
+      "host": "keybase.io",
+      "kid": "012005d1cac1c169f77bacd7c83aaf7915b06ec982d9fc47b2573511c83e2b626ee60a",
+      "uid": "4257b5aa2692194756978422d6621c00",
+      "username": "markcerqueira"
+    },
+    "merkle_root": {
+      "ctime": 1521052044,
+      "hash": "ef70ad9ee0c17f12f13b683f0b73867a0672f596774b4261a1f7346c3ebcbc44727a466690fd85ddcd949279c555c4f917113178af6863d1bb4bf2262adf7a12",
+      "hash_meta": "3abb0a2096608bbdd166ebfc4c221d1a2731c9b19f89b936751fa60b62576184",
+      "seqno": 2236382
+    },
+    "service": {
+      "hostname": "www.mark.gg",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.45"
+  },
+  "ctime": 1521052011,
+  "expire_in": 504576000,
+  "prev": "c13cbb7b5ed6eee4448880adfd91fe8ee06c3374e4ba49962256af91121b5779",
+  "seqno": 14,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgBdHKwcFp93us18g6r3kVsG7Jgtn8R7JXNRHIPitibuYKp3BheWxvYWTFA0l7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxOGU4NGY2ZjdkMGIzMmUyMzM0YWEyYmY1ZmU2M2ZhMjA1YzMxYzRmMGIwMTIzYTY2NGU2ZGY4NjQxY2EyNTFjNzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMDVkMWNhYzFjMTY5Zjc3YmFjZDdjODNhYWY3OTE1YjA2ZWM5ODJkOWZjNDdiMjU3MzUxMWM4M2UyYjYyNmVlNjBhIiwidWlkIjoiNDI1N2I1YWEyNjkyMTk0NzU2OTc4NDIyZDY2MjFjMDAiLCJ1c2VybmFtZSI6Im1hcmtjZXJxdWVpcmEifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MjEwNTIwNDQsImhhc2giOiJlZjcwYWQ5ZWUwYzE3ZjEyZjEzYjY4M2YwYjczODY3YTA2NzJmNTk2Nzc0YjQyNjFhMWY3MzQ2YzNlYmNiYzQ0NzI3YTQ2NjY5MGZkODVkZGNkOTQ5Mjc5YzU1NWM0ZjkxNzExMzE3OGFmNjg2M2QxYmI0YmYyMjYyYWRmN2ExMiIsImhhc2hfbWV0YSI6IjNhYmIwYTIwOTY2MDhiYmRkMTY2ZWJmYzRjMjIxZDFhMjczMWM5YjE5Zjg5YjkzNjc1MWZhNjBiNjI1NzYxODQiLCJzZXFubyI6MjIzNjM4Mn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJ3d3cubWFyay5nZyIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjQ1In0sImN0aW1lIjoxNTIxMDUyMDExLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6ImMxM2NiYjdiNWVkNmVlZTQ0NDg4ODBhZGZkOTFmZThlZTA2YzMzNzRlNGJhNDk5NjIyNTZhZjkxMTIxYjU3NzkiLCJzZXFubyI6MTQsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAi8nMRI6ZRN3g9ZiovlK8KBQ4PSUxQr4k3R83WPsUz6+KrIERS1v8RU73avFf0PfViyJ2MMKsAr8usZ/uRjrXDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPqOmO9+TLxdm0H+ZCWtjkhG+fgILvRtmA91ebodDPCgo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/markcerqueira
+
+==================================================================
