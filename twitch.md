@@ -4,6 +4,9 @@ title: twitch debug
 header: twitch debug
 ---
 
+* [https://www.twitch.tv/prime](https://www.twitch.tv/prime) *Prime HTTPS*
+* [http://www.twitch.tv/prime](http://www.twitch.tv/prime) *Prime HTTP*
+
 * [https://www.twitch.tv/mcanning/videos/archive](https://www.twitch.tv/mcanning/videos/all) *profile Videos Archive link*
 * [https://www.twitch.tv/mcanning/videos/all](https://www.twitch.tv/mcanning/videos/archive) *profile Videos All link*
 * [https://www.twitch.tv/mcanning/videos](https://www.twitch.tv/mcanning/videos) *profile Videos link*
