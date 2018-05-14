@@ -63,7 +63,7 @@ header: twitch debug
 * [https://twitch.tv/profile/mcanning](https://twitch.tv/profile/mcanning) *profile*
 * [https://www.twitch.tv/marktronic/dashboard](https://www.twitch.tv/marktronic/dashboard) *dashboard link (note: ignores channel name)*
 * [https://www.twitch.tv/directory/game/StarCraft%20II](https://www.twitch.tv/directory/game/StarCraft%20II) *directory for a specific game*
-* [https://www.twitch.tv/directory/game/StarCraft%20II/videos](hhttps://www.twitch.tv/directory/game/StarCraft%20II/videos) *VODs for a specific game*
+* [https://www.twitch.tv/directory/game/StarCraft%20II/videos](https://www.twitch.tv/directory/game/StarCraft%20II/videos) *VODs for a specific game*
 * [https://www.twitch.tv/directory/following/live](https://www.twitch.tv/directory/following/live) *following live*
 * [https://www.twitch.tv/directory/following/hosts](https://www.twitch.tv/directory/following/hosts) *following hosts*
 * [https://www.twitch.tv/directory/following/games](https://www.twitch.tv/directory/following/games) *following games*
