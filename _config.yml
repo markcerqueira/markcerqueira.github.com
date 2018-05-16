@@ -1,6 +1,10 @@
 # Include vendor to fix: https://github.com/jekyll/jekyll/issues/2938
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "vendor"]
 
+# For Keybase verification
+# https://github.com/keybase/keybase-issues/issues/366#issuecomment-38749201
+include: [".well-known"]
+
 plugins:
   - jekyll-gist
   - jekyll-sitemap

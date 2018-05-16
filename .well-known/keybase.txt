@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/markcerqueira
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mark.gg
+  * I am markcerqueira (https://keybase.io/markcerqueira) on keybase.
+  * I have a public key with fingerprint 33B3 AC7E F7E6 6D6B 8CC4  06AC 6475 B202 D01D 64BD
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01018e84f6f7d0b32e2334aa2bf5fe63fa205c31c4f0b0123a664e6df8641ca251c70a",
+      "fingerprint": "33b3ac7ef7e66d6b8cc406ac6475b202d01d64bd",
+      "host": "keybase.io",
+      "key_id": "6475b202d01d64bd",
+      "kid": "01018e84f6f7d0b32e2334aa2bf5fe63fa205c31c4f0b0123a664e6df8641ca251c70a",
+      "uid": "4257b5aa2692194756978422d6621c00",
+      "username": "markcerqueira"
+    },
+    "merkle_root": {
+      "ctime": 1526489475,
+      "hash_meta": "fbe84ae7445423dfc38e35a7f23433c55ed4e87e274e7d2d9bec71e95cd2162f",
+      "seqno": 2752779
+    },
+    "revoke": {
+      "sig_ids": [
+        "e77f0dc6aba56f04ffadd1ea3a8b1922250b5f1e45d8e5fcc72989317829395c0f"
+      ]
+    },
+    "service": {
+      "hostname": "mark.gg",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1526489498,
+  "expire_in": 157680000,
+  "prev": "01b59990e11666e0e9d7252cebbadeeea52471a66ee9132bce4c930160e1ab74",
+  "seqno": 22,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.77
+Comment: https://keybase.io/crypto
+
+yMKzAnicrVNbaB1FGD6pNWiq0tIX0RddUasNcWZ2LrsHiw+VJG2lDQil1caTufxz
+zpLk7Mnu5mgaosGqtS1ItfgSBMGCRktbRRs5aGmJDUUFr0g00VKo8YJ4q74U0+js
+QaGIj+7LsMN3m++fOXX1ZYW2lmPzvzyztO8sanl/uj5cuG9RTox6KjYjXnHU64fm
+AgMG0qzUHxmv6CGMcAABtdwKg5RPgPg+lZIoyyxw30qCmPaxphYphIkvOafAjQ04
+xVoShrVA0mv3bFQtQ1JLomrmZH1f+VILsAI4N1wFWlPEpeZUMEUQMQgbTpVxxEqc
+5gwXTskUOqLY7bmfUjPef+D/59zDTTlKmFDM0XlIcOhMeSgCSojhnGCNUA5MIanK
+QXDoQZn0a0iGhiFKpDfW7g1C0j8ApSSOs7xhnUU5DjPCaZCruVPKtFIahEw6ulUu
+uARBKaPEN1b7AfhMCkt86vuaMTAUAgFEUBCGmFCBFhhCpg3BnFgXJoWhauwViWBE
+iNAlSKAe90NunkZl113qFe/3QAiLjOZSScYtotZKYzBIXwYKh4QQhhSzGCgzATCr
+tSBhEPpYBCT0nR2yXu9YbpbUI90Uz4d1SQkd5bILU0viLNbxgNusZFktLeaVZCO1
+HPUgqNLf/JKKqsbdEseoQ5JGcdVV5JD/aisM2j14qBYlUIpyBBM8QO7LfaDeHL1i
+YRgiwJhzDghCIwgjGpSSBgAkI1RgN2+AEPtEaaA69BHmjiGVoJfUR1xOWXaarrSq
+zIYT8MamT+5YXmhpK7Revix/PoW2K1f+86ju2XxFYaKePdZVnJz8Mj7yAL3Q2ffk
+O1OfX7zjtsXujXs3DA0+gtZXt55rrJ19b/W2E3vKb8+OPHV4+vD+W/uOVD/bZ9dd
+a1/cObeza/n6Vb/t2ry0+o/ysuse543zK+yr8+evv2rPrrsv3PVy42xH7/Np28DM
+yr6Zb9881Lplx8/BG9t7Hj74VeXAJz29U/XxmWMtT/eM395YuOmHtl+fs9vfvTFd
+Kn3/zQ3tH390uuvE5MLpvt0FcSAcP7R2asvWdS90vxXPqzXFD7/oXLWp8OymRxe+
+23vuxztnX79lBH56bePIzDX3dr4iKqOzG6Inuku/H218uv/M7psPzs0f/+DrxYlt
+Lw2jueMXx46ePNN66k+5Ys1fpz+Kjw==
+=eI3i
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/markcerqueira
+
+==================================================================
