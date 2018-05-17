@@ -3,7 +3,7 @@ layout: post
 title: "Reading Time! Engineering Manager"
 description: ""
 category: 
-tags: [engineering management, twitch, technical]
+tags: [books, engineering management, twitch]
 ---
 
 When I first started working as an engineer I relied a lot on pattern-matching (find solved problems similar to mine and adapt the solution to fit my requirements) and leaning on peers for direction, advice, and feedback. Effectively, I winged it and grew along the way with a good support system to keep me in line and developing.
