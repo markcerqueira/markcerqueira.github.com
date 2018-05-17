@@ -3,7 +3,7 @@ layout: post
 title: "Weekend Video Game Warrior"
 description: ""
 category: 
-tags: [video games]
+tags: [video games, donkey kong country]
 ---
 
 I finished playing Bravely Default earlier this week. I'll write a longer post about it but here's the tl;dr -- it's an amazing game. Up next on my playlist includes Tales of Symphonia Chronicles, MGS 5, and Final Fantasy X HD -- all still unreleased. With a "free" weekend, I took the time to check out various titles I've been thinking about playing. Here's a whirlwind tour of the games I checked out this weekend as a valiant **Weekend Video Game Warrior**. 
