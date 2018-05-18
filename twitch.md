@@ -4,6 +4,11 @@ title: twitch debug
 header: twitch debug
 ---
 
+Markdown source for this page available [here][1]. If you'd like to add a link ping me or [open a Pull Request][3]! 😀
+
+* [https://go.twitch.tv/mcanning](https://go.twitch.tv/mcanning) *go channel link for a broadcaster*
+* [https://go.twitch.tv/live](https://go.twitch.tv/live) *go games directory via /live*
+
 * [https://www.twitch.tv/prime](https://www.twitch.tv/prime) *Prime HTTPS*
 * [http://www.twitch.tv/prime](http://www.twitch.tv/prime) *Prime HTTP*
 
@@ -70,10 +75,9 @@ header: twitch debug
 * [https://www.twitch.tv/lowkotv/p/34ccca60-960d-4c29-8353-e118358f99eb](https://www.twitch.tv/lowkotv/p/34ccca60-960d-4c29-8353-e118358f99eb) *channel feed post*
 * [https://www.twitch.tv/user/verify_email](https://www.twitch.tv/user/verify_email?email_verification_code=99bd8d8da&login=erictest991) *email verification link*
 
-Markdown source for this page available [here][1].
-
 [1]: https://raw.githubusercontent.com/markcerqueira/markcerqueira.github.com/master/twitch.md
 [2]: https://clips.twitch.tv/api/v1/clips/AliveFaintSrirachaNotLikeThis
+[3]: https://github.com/markcerqueira/markcerqueira.github.com/blob/master/twitch.md
 
 <!-- 
 Template for adding a new one:
