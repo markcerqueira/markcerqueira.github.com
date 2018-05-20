@@ -10,6 +10,11 @@ I just wrapped up my first power-up-managerial-skills book: **Decisive: How to M
 
 **Who recommended the book?** This book was recommended by someone on the Twitch Manager Book Club. A gaggle of managers come together and talk about a book: what they liked, what they found most helpful, what surprised them, etc. Then we close by getting someone to recommend another book. It's a great motivator to power through books and great for discovering new books to read.
 
+<div>
+	<img class="rounded-corners" style="max-width: 500px; border: 1px; margin-top: 24px;" src="{{ site.images2018 }}/05-12/decisive.jpg"/>
+	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong></strong></p>
+</div>
+
 **Judge the book by its cover, font, page quality?** Decisive is a sturdy hardcover book with a corrosive green book jacket that features a magic 8-ball. It's a clever play for a book about making decisions. Going jacketless gives you a simple, black matte cover with shiny corrosive green text on the spine. I went jacketless. The paper inside the book is thick, I loved it. The font choice is nice and there is a comfortable amount of leading. All in all, great first impression.
 
 **Thoughts on the book and the big take-aways?** Decisive is a well-written, entertaining, memorable, and informative read. The book revolves around the WRAP process which helps us navigate the complexities of decision making.

@@ -37,7 +37,7 @@ This deck is amazing on its own and really needs no sideboard but it's always go
 * **2 Dire Fleet Poisoner** - Dire Fleet Poisoner is my pick as the best card in [Rivals of Ixalan][1] because the card is just full of value. Easy sideboard pick every time.
 * **6 Rat Colony** - You might've thought 20 Rat Colonies is more than enough, but just in case you need more we casually slipped 6 more into our sideboard just in case.
 * **4 Dread Shade** - Dread Shade won't benefit from Bontu's Monument but can be beefed up to incredible power with Cabal Stronghold. 
-* **2 Phyrexian Scriptures** - This card would've been main-decked if it let you save all of one creature type. Alas, it's a great card to pump up one of your Rat Colonies and clear the board. 
+* **2 Phyrexian Scriptures** - This card would've been main-decked if it let you save all of one creature type. Alas, it's a great card to pump up one of your Rat Colonies and clear the board. Also it gives your deck some Saga sugar. 
 * **1 Contract Killing** - The best card in all of Magic. With an effective mana cost of 3, any serious deck needs at least one of these in it.
 
 Check out this deck on [MTG Goldfish][2]. For $55 (5 tix) you can rock the deck that will most certainly take the world by storm. Good luck!
