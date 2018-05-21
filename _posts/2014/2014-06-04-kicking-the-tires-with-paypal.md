@@ -17,6 +17,4 @@ Kicking the tires? Before you start questioning the quality of this new API or e
 
 **Are you kidding me?** I actually need to choose between having two-factor authentication or having access to PayPal on my mobile device. Why would a company, which deals with a person's finances, put their customers in this kind of position? Why would they implement a security feature, but not support it across all platforms? Why don't you "kick the tire" on your existing subpar (very generous by the way) app before you even start contemplating adding the bells and whistles of Touch ID?
 
-<span style="font-size: 0.75em; line-height: 0.00em;">
-1. <a href="http://www.businessinsider.com/paypal-wants-to-let-you-pay-with-your-fingerprint-using-the-new-iphone-touch-id-interface-2014-6">PayPal Moves Quickly To Integrate Apple's Fingerprint Reader Into Its Apps</a><br>
-</span>
+<a style="font-size: 0.8em;" href="http://www.businessinsider.com/paypal-wants-to-let-you-pay-with-your-fingerprint-using-the-new-iphone-touch-id-interface-2014-6">1. PayPal Moves Quickly To Integrate Apple's Fingerprint Reader Into Its Apps</a><br>
