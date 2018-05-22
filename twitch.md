@@ -6,6 +6,8 @@ header: twitch debug
 
 Markdown source for this page available [here][1]. If you'd like to add a link ping me or [open a Pull Request][3]! 😀
 
+* [ttv://game/StarCraft%20II](ttv://game/StarCraft%20II) *ttv game link*
+
 * [https://go.twitch.tv/mcanning](https://go.twitch.tv/mcanning) *go channel link for a broadcaster*
 * [https://go.twitch.tv/live](https://go.twitch.tv/live) *go games directory via /live*
 
