@@ -3,7 +3,7 @@ layout: post
 title: "Reading Time! Engineering Manager"
 description: ""
 category: 
-tags: [books, engineering management, twitch]
+tags: [books, engineering management, manager reads, twitch]
 ---
 
 When I first started working as an engineer I relied a lot on pattern-matching (find solved problems similar to mine and adapt the solution to fit my requirements) and leaning on peers for direction, advice, and feedback. Effectively, I winged it and grew along the way with a good support system to keep me in line and developing.
@@ -17,6 +17,8 @@ For everything I read I plan to:
 * Shout out who recommended the book!
 * Judge the book by its cover, font selection, paper quality... details matter!
 * My thoughts on the book and the big take-aways!
+* Favorite quote from the book!
+* Elevator pitch for suggesting (or not suggesting) the book!
 * My notes (in Evernote of course) on the book!
 
 First up will be the current Twitch Manager Book Club book: Decisive: How to Make Better Choices in Life and Work. See you in a few days!

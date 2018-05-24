@@ -3,7 +3,7 @@ layout: post
 title: "Manager Reads - Decisive: How to Make Better Choices in Life and Work"
 description: ""
 category: 
-tags: [books, engineering management, twitch]
+tags: [books, engineering management, manager reads, twitch]
 ---
 
 I just wrapped up my first power-up-managerial-skills book: **Decisive: How to Make Better Choices in Life and Work** by Chip and Dan Heath.
@@ -28,8 +28,16 @@ For each of these steps the book covers a few strategies that can help you. For 
 
 While this is helpful, the real magic of the book is in the many real-world anecdotes that illustrate how these strategies were (or were not) used in the past to achieve success (or failure). For example, Kodak didn't take the growing threat of digital photography seriously enough because it did not set a tripwire to help them realize they had an important decision to make. The anecdotes are interesting and ground the strategies as realistic and valuable.
 
-Ultimately the book provides pithy strategies and advice which gives me confidence I will remember them and hopefully be able to identify and leverage them when the time comes. 
+Ultimately the book provides pithy strategies and advice which gives me confidence I will remember them and hopefully be able to identify and leverage them when the time comes.
+
+**Favorite quote from the book?** Set up "guardrails that are wide enough to empower but narrow enough to guide."
+
+**Elevator pitch for suggesting (or not suggesting) the book?** A great read chock-full of cool stories that make a simple (but powerful) framework for approaching decisions truly memorable. 
 
 **Notes in Evernote?** This book has a great feature I wish more books in this genre did: one-pagers at the end of every chapter that captures the big takeways. My notes are mostly just a transcription of those with some quotes that really stuck out to me. Feel free to review [my notes][1] on 🐘.
 
+Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][10]!
+
 [1]: https://www.evernote.com/l/AOS9dg8IQEBLuaDVtJb3ZAUuPh1Tn7Nx-4A
+
+[10]: {{site.base_url}}/archive/#manager+reads
