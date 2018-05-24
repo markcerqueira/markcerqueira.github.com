@@ -3,7 +3,7 @@ layout: post
 title: "Credit in an AI World"
 description: ""
 category:
-tags: [random, machine learning]
+tags: [ai]
 ---
 
 **Machine learning** is all the rage these days. Feeding datasets to algorithms and letting them work their magic is giving us self-driving cars, better cancer diagnoses, automatic tagging for your photos, and Go players better than the current world champion!
