@@ -3,7 +3,7 @@ layout: post
 title: "JRPG Hurdles"
 description: ""
 category: 
-tags: [jrpg, video games, throwback]
+tags: [jrpg, video games, throwback, pokémon]
 ---
 
 Earlier I wrote about my [love][1] for and [getting stuck][2] in Super Mario RPG, my first JRPG. I loved the game but even after beating it I was unaware of the JRPG genre.  Taking another walk down memory lane, the next two JRPGs I'd encounter (still unaware of the concept of the genre) would present memorable hurdles.

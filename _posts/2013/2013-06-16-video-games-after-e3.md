@@ -3,7 +3,7 @@ layout: post
 title: "The Game Console I'm Most Excited About Post-E3"
 description: ""
 category: 
-tags: [video games, jrpg]
+tags: [video games, jrpg, pokémon]
 ---
 
 One of the most exciting annual events in the video game world, the Electronics Entertainment Expo (E3) was held last week. A lot of the focus this year was on the two new console juggernauts - the PS4 and Xbox One - but there were plenty of exciting game announcements for current and next generation systems as companies vied for gamers’ attention (and money). Established series revealed information on new entries including giants like Metal Gear Solid, Mario Kart, Final Fantasy, Halo, Super Smash Brothers, Call of Duty, Kingdom Hearts, and Battlefield. It's certainly a good time to be a gamer! After a week filled with exciting news, I thought about the console I am most excited to game on in the coming months.

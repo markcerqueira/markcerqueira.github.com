@@ -3,7 +3,7 @@ layout: post
 title: "Pokémon Go"
 description: ""
 category: 
-tags: [video games]
+tags: [video games, pokémon]
 ---
 
 Last week, the world was forever changed with the release of **Pokémon Go** a.k.a. Nintendo letting Niantic reskin Ingress with Pokémon to make tons of money. I've been playing the game for a few days and it's fun. Walking around outside and seeing tons of people playing this game was truly unexpected; I never imagined "Pokémon on mobile" was going to be delivered like this. It's refreshing -- both to be outdoors and to see gamers who are traditionally recluse out and mingling. 
