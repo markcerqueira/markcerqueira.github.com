@@ -18,7 +18,7 @@ header:
  | 🔴 | 8:12 at PA | 3 stops, 41 minutes | 8:53 arrival | **8:59** |
  | 🌕 | 8:17 at CA | 7 stops, 50 minutes | 9:07 arrival | **9:18** |
  | 🔴 | 8:27 at PA | 4 stops, 44 minutes | 9:11 arrival | **9:18** |
- | 🌕 | 8:36 at CA | 7 stops, 44 minutes | 9:29 arrival | **9:39** |
+ | 🌕 | 8:36 at CA | 7 stops, 53 minutes | 9:29 arrival | **9:39** |
 
 *Evening* (shuttle arrives at Caltrain ~12 min after departure)
 
