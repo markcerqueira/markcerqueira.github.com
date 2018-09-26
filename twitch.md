@@ -6,6 +6,9 @@ header: twitch debug
 
 Markdown source for this page available [here][1]. If you'd like to add a link ping me or [open a Pull Request][3]! 😀
 
+* [https://www.twitch.tv/videos/47560181##](https://www.twitch.tv/videos/47560181##) *infinite loop VOD*
+* [https://www.twitch.tv?tt_email_id=978fa7b5-7bb1-4712-9e10-1f7498062261](https://www.twitch.tv/r/e/eyJjaGFubmVsIjoidGhldmlwZXIiLCJsb2NhdGlvbiI6ImNoYW5uZWxfc3RhdHVzIiwiZW1haWxfaWQiOiI5NzhmYTdiNS03YmIxLTQ3MTItOWUxMC0xZjc0OTgwNjIyNjEiLCJzb3VyY2VfZW1haWwiOiJ0d2l0Y2hfZmF2b3JpdGVfdXAiLCJuYW1lIjoidHdpdGNoX2Zhdm9yaXRlX3VwIiwibG9naW4iOiIifQ==/151182281/54695227fcd7fc23dfe5db5097a6eaa8784f83a0/theviper?ignore_query=true&tt_content=twitch_favorite_up&tt_email_id=978fa7b5-7bb1-4712-9e10-1f7498062261&tt_medium=email) *tt_email_id link*
+
 * [ttv://game/StarCraft%20II](ttv://game/StarCraft%20II) *ttv game link*
 
 * [https://go.twitch.tv/mcanning](https://go.twitch.tv/mcanning) *go channel link for a broadcaster*
