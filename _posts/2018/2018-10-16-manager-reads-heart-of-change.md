@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Manager Reads - The Heart of Change: Real-Life Stories of How People Change Their Organizations"
+title: "Manager Reads - The Heart of Change"
 description: ""
 category: 
 tags: [books, engineering management, manager reads, twitch]
