@@ -4,15 +4,14 @@ title:
 header: 
 ---
 
-<!-- Everything below will not show up -->
-<!--
+
  | Day       | Menu         |
  | --------- | ------------ |
- | Monday    | FoodFoodFood |
- | Tuesday   | FoodFoodFood |
- | Wednesday | FoodFoodFood |
- | Thursday  | FoodFoodFood |
- | Friday    | FoodFoodFood |
- | Saturday  | FoodFoodFood |
- | Sunday    | FoodFoodFood |
--->
+ | Monday    | Pizza Chicago |
+ | Tuesday   | Rice |
+ | Wednesday | Fajitas |
+ | Thursday  | Ramen |
+ | Friday    | Twitch Holiday Party |
+ | Saturday  | Somen |
+ | Sunday    | Avocado Mac N Cheese |
+
