@@ -4,6 +4,16 @@ title:
 header: 
 ---
 
+<!-- 
+ | Day       | Appetizer | Main | Dessert |
+ | --------- | --------- | ---- | ------- |
+ | Monday    | | | |
+ | Tuesday   | | | |
+ | Wednesday | | | |
+ | Thursday  | | | |
+ | Friday    | | | |
+ | Saturday  | | | |
+ | Sunday    | | | |
 
  | Day       | Menu         |
  | --------- | ------------ |
@@ -14,4 +24,4 @@ header:
  | Friday    | Twitch Holiday Party |
  | Saturday  | Somen |
  | Sunday    | Avocado Mac N Cheese |
-
+--> 
