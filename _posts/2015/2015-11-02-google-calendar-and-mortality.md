@@ -3,7 +3,7 @@ layout: post
 title: "Google Calendar and Mortality"
 description: ""
 category: 
-tags: [random]
+tags: [random, google]
 ---
 
 Do seemingly random things ever hit unexpected places in unexpected ways?

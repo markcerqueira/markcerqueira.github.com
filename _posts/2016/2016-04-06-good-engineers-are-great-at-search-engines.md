@@ -3,7 +3,7 @@ layout: post
 title: "Good Engineers Are Great At Search Engines"
 description: ""
 category:
-tags: [technical]
+tags: [technical, google]
 ---
 
 Some technical interviews may have you believe that a good engineer is someone who can flatten binary trees efficiently, regurgitate performance of red-black trees, or solve some tricky puzzle. That could be the case in an algorithms course, but that's not the case in the real world. What separates bad from good when it comes to engineers is one's **search engine proficiency**.

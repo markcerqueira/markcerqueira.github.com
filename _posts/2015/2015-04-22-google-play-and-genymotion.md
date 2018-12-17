@@ -3,7 +3,7 @@ layout: post
 title: "Getting Google Play on Genymotion"
 description: ""
 category: 
-tags: [android, final fantasy, technical]
+tags: [android, google, final fantasy, technical]
 ---
 
 I've got a project in the works that requires running an Android app -- Final Fantasy Record Keeper (FFRK) -- on my computer. BlueStacks lets you install apps from the Play Store easily but BlueStacks also kind of sucks -- especially the Mac (beta) version.

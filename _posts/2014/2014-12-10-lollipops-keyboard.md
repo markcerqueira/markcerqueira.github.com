@@ -3,7 +3,7 @@ layout: post
 title: "An Open Letter to the Lollipop Keyboard"
 description: ""
 category: 
-tags: [rant, android]
+tags: [rant, google, android]
 ---
 
 Dearest Lollipop Keyboard,

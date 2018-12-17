@@ -3,7 +3,7 @@ layout: post
 title: "I Was Wrong. Do Not Just Google It"
 description: ""
 category: 
-tags: [technical]
+tags: [technical, google]
 ---
 
 When someone asks me how to I learned about computers I tell them "just Google it" and you'll learn too. But I need to add a caveat to that.

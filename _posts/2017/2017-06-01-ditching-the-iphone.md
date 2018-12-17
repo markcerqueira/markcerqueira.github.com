@@ -3,7 +3,7 @@ layout: post
 title: "Ditching the iPhone"
 description: ""
 category: 
-tags: [android, ios]
+tags: [android, ios, google]
 ---
 
 After riding with the iPhone from the iPhone 3G to iPhone 6, I'm taking the leap and hopping over to Android: my Pixel is on the way!
