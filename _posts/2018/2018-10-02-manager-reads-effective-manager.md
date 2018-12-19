@@ -19,10 +19,10 @@ Next up on the managerial reads train is what we all strive to be: **The Effecti
 
 **Thoughts on the book and the big take-aways?** The Effective Manager distills the work of a manager down to two things: produce results and retain people. To achieve this the manager needs to engage in four behaviors. Here are the four behaviors with accompanying activities with the interesting tidbit I took away from each section.
 
-1. Get to Know Your People via One on Ones - Use the 10/10/10 agenda: first 10 minutes for your direct to speak, then 10 minutes for you to speak, and then 10 minutes to talk about the future.
-1. Communicate about Performance via Feedback - Ask if you can give feedback, state the behavior, state the impact of the behavior, and encourage effective future behavior.
-1. Ask for More via Coaching - Collaborate to set a goal, collaborate to brainstorm resources, collaborate to create a plan, and then direct acts and reports back on the plan.
-1. Push Work Down via Delegation - Delegation is you turning over responsibility for one of your regular responsibilities - something you routinely do - to one of your directs.
+1. **Get to Know Your People via One on Ones** - Use the 10/10/10 agenda: first 10 minutes for your direct to speak, then 10 minutes for you to speak, and then 10 minutes to talk about the future.
+1. **Communicate about Performance via Feedback** - Ask if you can give feedback, state the behavior, state the impact of the behavior, and encourage effective future behavior.
+1. **Ask for More via Coaching** - Collaborate to set a goal, collaborate to brainstorm resources, collaborate to create a plan, and then direct acts and reports back on the plan.
+1. **Push Work Down via Delegation** - Delegation is you turning over responsibility for one of your regular responsibilities - something you routinely do - to one of your directs.
 
 The Effective Manager offers concrete steps for most of the stuff it covers, but it can be over prescriptive sometimes covering things like being friends with your directs, drinking with your directs, and being Facebook friends with your directs. Common sense and some caution will get you through most of these situations so it was a bit odd to read entire mini-sections in the book dedicated to them.
 

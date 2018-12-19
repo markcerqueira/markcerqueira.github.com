@@ -19,14 +19,14 @@ Since I started reading leadership and management books Tina has been recommendi
 
 **Thoughts on the book and the big take-aways?** The Heart of Change posits that the biggest challenge when pushing for change is changing people's behaviors. To succeed at change we must resist being purely analytical and understand the centrality of emotion in change. The book explores the eight steps to follow to produce change:
 
-1. Increase Urgency - Raise a feeling of urgency so that people say “let’s go,” making a change effort well positioned for launch.
-1. Build the Guiding Team - Help form a group that has the capability - in membership and method of operating - to guide a very difficult change process.
-1. Get the Vision Right - Create there might vision and strategies to guide action in all of the remaining stages of change.
-1. Communicate for Buy-In - Communicate change visions and strategies effectively so as to create both understanding and a gut-level buy-in.
-1. Empower Action - Deal effectively with obstacles that block action, especially disempowering bosses, lack of information, the wrong performance measurement and reward systems, and lack of self-confidence.
-1. Create Short-Term Wins - Produce sufficient short-term wins, sufficiently fast, to energize the change helpers, enlighten the pessimists, defuse the cynics, and build momentum for the effort.
-1. Don’t Let Up - Continue with wave after wave of change, not stopping until the vision is a reality, despite seemingly intractable problems.
-1. Make Change Stick - Be sure the changes are embedded in the very culture of the enterprise so that the new way of operating will stick.
+1. **Increase Urgency** - Raise a feeling of urgency so that people say “let’s go,” making a change effort well positioned for launch.
+1. **Build the Guiding Team** - Help form a group that has the capability - in membership and method of operating - to guide a very difficult change process.
+1. **Get the Vision Right** - Create there might vision and strategies to guide action in all of the remaining stages of change.
+1. **Communicate for Buy-In** - Communicate change visions and strategies effectively so as to create both understanding and a gut-level buy-in.
+1. **Empower Action** - Deal effectively with obstacles that block action, especially disempowering bosses, lack of information, the wrong performance measurement and reward systems, and lack of self-confidence.
+1. **Create Short-Term Wins** - Produce sufficient short-term wins, sufficiently fast, to energize the change helpers, enlighten the pessimists, defuse the cynics, and build momentum for the effort.
+1. **Don’t Let Up** - Continue with wave after wave of change, not stopping until the vision is a reality, despite seemingly intractable problems.
+1. **Make Change Stick** - Be sure the changes are embedded in the very culture of the enterprise so that the new way of operating will stick.
 
 For each of these steps the book provides real-world anecdotes of the step in action and an assortment of good things to do and things to avoid doing. Ultimately, the key is to show people something that highlights the need for change which spawn feelings that are useful for change and then watch as behaviors adjust and change begins. 
 
