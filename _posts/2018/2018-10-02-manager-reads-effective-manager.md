@@ -8,7 +8,7 @@ tags: [books, engineering management, manager reads, twitch]
 
 Next up on the managerial reads train is what we all strive to be: **The Effective Manager** by Mark Horstman. 
 
-**Who recommended the book?** I found this book listed on a Medium post about good books to read for engineering managers. I can’t find the link right now, but will update this post if I find it. Whoever wrote that post, thank you very much!
+**Who recommended the book?** I found this book on a [recommended reading list for new engineering manangers][3] by Jacob Kaplan-Moss. Thanks, Jacob!
 
 <div>
     <img class="rounded-corners" style="max-width: 500px; border: 1px; margin-top: 24px;" src="{{ site.images2018 }}/10-02/effective-manager.png"/>
@@ -36,3 +36,4 @@ Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corn
 
 [1]: https://www.evernote.com/l/AOTMSkVmgJhHc6xcWXIxv-l73t0tRCk76Cg
 [2]: {{site.base_url}}/archive/#manager+reads
+[3]: https://jacobian.org/2018/may/2/engmanager-reading-list/
