@@ -25,7 +25,7 @@ There are many more stories, many more ideas, and many more lessons but they ult
 
 **Favorite quote from the book?** "If we do not let go, we make prisoners of ourselves."
 
-**Elevator pitch for suggesting (or not suggesting) the book?** This was easily my favorite leadership book I have read so far. And on top of that, it's one of my favorite books in general. It's an amazing - and very unique - ride that will be sure to touch and mov anyone who picks it up. Read it!
+**Elevator pitch for suggesting (or not suggesting) the book?** This was easily my favorite leadership book I have read so far. And on top of that, it's one of my favorite books in general. It's an amazing - and very unique - ride that will be sure to touch and move anyone who picks it up. Read it!
 
 **Notes in Evernote?** If there was ever a book that my notes failed to do justice to capture, this one would be it: there is so much beyond text in this gem. That said, the Manager Read templates dictates that I invite you to review [my notes][1] on 🐘. 
 
