@@ -90,8 +90,8 @@ Markdown source for this page available [here][1]. If you'd like to add a link p
 * [https://twitch.tv/OgamingSC2](https://twitch.tv/OgamingSC2) *channel link for a broadcaster*
 
 * [twitch://stream/LowkoTV](twitch://stream/LowkoTV) *channel link for a broadcaster*
-* [twitch://stream/DeMusliM](twitch://stream/LowkoTV) *channel link for a broadcaster*
-* [twitch://stream/OgamingSC2](twitch://stream/LowkoTV) *channel link for a broadcaster*
+* [twitch://stream/DeMusliM](twitch://stream/DeMusliM) *channel link for a broadcaster*
+* [twitch://stream/OgamingSC2](twitch://stream/OgamingSC2) *channel link for a broadcaster*
 
 [1]: https://raw.githubusercontent.com/markcerqueira/markcerqueira.github.com/master/twitch.md
 [2]: https://clips.twitch.tv/api/v1/clips/AliveFaintSrirachaNotLikeThis
