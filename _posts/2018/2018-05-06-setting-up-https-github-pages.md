@@ -3,7 +3,7 @@ layout: post
 title: "Setting Up HTTPS for Custom Domain GitHub Pages"
 description: ""
 category: 
-tags: []
+tags: [cloudflare]
 ---
 
 Picking Jekyll running on GitHub Pages for this blog five years ago has been one of the better (lucky) technical decisions I made as both products continue to get tender love and care. This week, GitHub delivered another awesome feature: [HTTPS on GitHub Pages for sites with custom domains][1]. Setting this up gets you the coveted 🔒Secure stamp next to your URL.

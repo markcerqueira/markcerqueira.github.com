@@ -21,10 +21,11 @@ baseurl: ''
 
 images2017 : "/assets/posts/2017"
 images2018 : "/assets/posts/2018"
+images2019 : "/assets/posts/2019"
 
 author :
   name : Mark Cerqueira
-  email : mark.cerqueira@gmail.com
+  email : mark@mark.gg
   github : markcerqueira
   twitter : markmcerqueira
 
