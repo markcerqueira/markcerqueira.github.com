@@ -4,6 +4,33 @@ title:
 header: 
 ---
 
+Week of 1/14/19
+
+ | Day       | Menu| 
+ | --------- | --------- |
+ | Monday    | Omurice |
+ | Tuesday   | Rice - with grilled teriyaki chicken wings and stir fry bok choy |
+ | Wednesday | Kimchi Fried Rice |
+ | Thursday  | The Counter |
+ | Friday    | Korean Tofu Soup - with rice noodles |
+ | Saturday  | Grilled Salmon - with mashed potatoes and asparagus |
+ | Sunday    | Beef Curry |
+
+<!-- 
+
+Week of 1/7/19
+ 
+ | Day       | Menu| 
+ | --------- | --------- |
+ | Monday    | Omurice |
+ | Tuesday   | Meatloaf Sandwich|
+ | Wednesday | Avocado Mac N Cheese |
+ | Thursday  | Rice - with beef and broccoli and stir fry garlic bok choy|
+ | Friday    | Pizza - choose your own topping |
+ | Saturday  | Leftover Pizza|
+ | Sunday    | Dumplings - the freezer kind|
+ 
+
 Week of 12/31/18
 
  | Day       | Menu| 
@@ -16,7 +43,7 @@ Week of 12/31/18
  | Saturday  | Sushi - dragon roll, forty-niner roll, philly roll, california roll, futo maki roll, hamachi and green onion roll, cucumber roll, inari|
  | Sunday    | Rice - with kimchi tofu soup and pepper beef|
 
-<!-- 
+
 Week of 12/17/18
 
  | Day       | Menu | 
