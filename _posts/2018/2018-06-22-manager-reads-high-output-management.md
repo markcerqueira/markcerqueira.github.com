@@ -29,7 +29,7 @@ The parade continues with what many consider a seminal book for managers: **High
 
 **Favorite quote from the book?** "The single most important resource that we allocate from one day to the next is our own time."
 
-**Elevator pitch for suggesting (or not suggesting) the book?** Read it. Grove takes the often gut-driven world of management and delivers concrete, metholodical approaches to becoming a better manager and ultimately, building a better team.
+**Elevator pitch for suggesting (or not suggesting) the book?** Read it. Grove takes the often gut-driven world of management and delivers concrete, methodical approaches to becoming a better manager and ultimately, building a better team.
 
 **Notes in Evernote?** High Output Management is a treasure trove for anyone in a management position. Feel free to review [my notes][1] on 🐘.
 

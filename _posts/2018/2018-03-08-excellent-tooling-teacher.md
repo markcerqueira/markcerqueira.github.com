@@ -6,7 +6,7 @@ category:
 tags: [technical, kotlin, java]
 ---
 
-I'm a [big believer][2] in programming languages living in an [ecosystem][1] and not in a [vaccuum chamber][3].
+I'm a [big believer][2] in programming languages living in an [ecosystem][1] and not in a [vacuum chamber][3].
 
 Today's thought takes me back to my on-site interview at Evernote. Given I had both iOS and Android experience (but had done Android more recently) I interviewed with some Android engineers and one iOS engineer. During the interview I was asked if my Objective-C code would look Java-esque; in short, was I still capable of writing idiomatic Objective-C code.
 

@@ -22,7 +22,7 @@ Rat Colony is unassuming but as you get more and more on the board, each colony 
 	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 20px;"><strong></strong></p>
 </div>
 
-* **4 Cast Down**, **4 Vicuous Offering** - These cards offer some cheap removal to keep you alive while you mass up rats.
+* **4 Cast Down**, **4 Vicious Offering** - These cards offer some cheap removal to keep you alive while you mass up rats.
 * **4 Bontu's Monument** - You can only have one of these on the board at a time but we add 4 so you have a higher chance of getting one. With this artifact on the field your Rat Colonies become 1 drops!
 * **4 Cabal Stronghold** - Once you get into the mid-game this land will let your mana pool bloom allowing you to play additional Rat Colonies, removal spells, and any expensive bombs you have to round out your mana curve.
 * **4 Torgaar, Famine Incarnate** - With some luck (and no compassion for the Rat Colonies on your board) it's possible to get Torgaar (a beefy 7/6 creature) out on turn 4. If your rats haven't won you the game by now, Torgaar can help you wrap things up.

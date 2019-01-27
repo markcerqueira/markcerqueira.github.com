@@ -18,7 +18,7 @@ The benefits of a system like this:
 
 * Bootstrapping is written once and shared across all jobs. If you need to update your bootstrapping, it's a one-time cost.
 * Updates to the worker script are tied to the accompanying changes to the rest of the repo to support them. No need for conditionals in your execute shell block.
-* If you bootstrap your own cmputer similar to the Jenkins bootstrap, you can run the Jenkins worker scripts locally to verify their behavior.
+* If you bootstrap your own computer similar to the Jenkins bootstrap, you can run the Jenkins worker scripts locally to verify their behavior.
 * Whatever version control you're using is far better than the JobConfigHistory plugin available on Jenkins.
 * I have seen Jenkins updates clobber job configuration. This protects you somewhat against the occasional Jenkins hiccup.
 

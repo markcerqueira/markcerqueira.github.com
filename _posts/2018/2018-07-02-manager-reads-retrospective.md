@@ -19,7 +19,7 @@ The past two months have led me through four great reads on the never-ending pur
 
 Since this reading exercise has been very fruitful, I plan to keep on gathering recommendations and keep on slogging through more books.
 
-**Bonus!** To provide some contuity through this reading experience, with each retrospective I will be providing Title Length Power Rankings™ -- brevity is the soul of this rank -- and Judge a Book by Its Cover Power Ranking™ -- books shall be judged by their covers.
+**Bonus!** To provide some continuity through this reading experience, with each retrospective I will be providing Title Length Power Rankings™ -- brevity is the soul of this rank -- and Judge a Book by Its Cover Power Ranking™ -- books shall be judged by their covers.
 
 **Title Length Power Rankings™**
 

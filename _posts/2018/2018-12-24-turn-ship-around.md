@@ -21,7 +21,7 @@ Keeping with books written by authors with a military background, the 11th book 
 
 To make this transformation Marquet focused on first divesting control and then focusing on improving competence and clarity to support that divested control. For each of these three pillars, Marquet offers mechanisms to achieve them. Here are my favorite mechanisms for each pillar:
 
-* **Control** - Use "I intend to..." to turn passive followers into active leaders - Swap the use disempowered phrases like "Request permission too..." to empowered phrases like "I intend to..." A minor shift in langauge can have profound impact on someone's sense of ownership, turning people from passive followers to active leaders.<br>
+* **Control** - Use "I intend to..." to turn passive followers into active leaders - Swap the use disempowered phrases like "Request permission too..." to empowered phrases like "I intend to..." A minor shift in language can have profound impact on someone's sense of ownership, turning people from passive followers to active leaders.<br>
 
 * **Competence** - Take deliberate action - Marquet writes this mechanism was the single greatest tool for reducing mistakes aboard the Santa Fe. This mechanism reminds me of the point and calling method that is leveraged by [Japanese rail workers to reduce "workplace errors by up to 85 percent."][3]<br>
 
@@ -31,9 +31,9 @@ Marquet tells us a story that includes failures, small wins, hiccups, bigger suc
 
 **Favorite quote from the book?** "A vast untapped human potential is lost as a result of treating people as followers."
 
-**Elevator pitch for suggesting (or not suggesting) the book?** After reading ten leadership books I finally picked one that told a story over the entire length of the book and it 👏 was 👏 great. Marquet's story of turning the Santa Fe around is moving. Leadership is consistent work and neverending; even if someone is given a high-functioning team, we can always do better. Why not make leadership a team activity for everyone then? Marquet's breakdown of the things that brought him success show that the path can be practical and is applicable to work everywhere. Read it!
+**Elevator pitch for suggesting (or not suggesting) the book?** After reading ten leadership books I finally picked one that told a story over the entire length of the book and it 👏 was 👏 great. Marquet's story of turning the Santa Fe around is moving. Leadership is consistent work and never-ending; even if someone is given a high-functioning team, we can always do better. Why not make leadership a team activity for everyone then? Marquet's breakdown of the things that brought him success show that the path can be practical and is applicable to work everywhere. Read it!
 
-**Notes in Evernote?** While my notes may cover the mechanisms Marquet used to turn the Santa Fe around they certainly don't capture the enthralling narative of that journey. You can review [my notes][1] on 🐘. 
+**Notes in Evernote?** While my notes may cover the mechanisms Marquet used to turn the Santa Fe around they certainly don't capture the enthralling narrative of that journey. You can review [my notes][1] on 🐘. 
 
 Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][2]!
 

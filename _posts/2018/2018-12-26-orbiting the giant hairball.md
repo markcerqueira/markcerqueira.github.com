@@ -19,7 +19,7 @@ The holiday break has been great so far: spending time with family, eating (a to
 
 **Thoughts on the book and the big take-aways?** It's not worth spoiling the stories or all the lessons this book puts forth because the fun of reading this book is never really being sure what the next story or moral will be. But we can at least cover the titular principle: Orbiting.
 
-The Giant Hairball is the summation and tangled mess of a company's policies, procedures, business decisions, successes, and failures. In short, the Hairball is the corporate mindset and it stifles creativity. The ideal plae for people is in Orbit where they can explore and operate beyond the Hairball but still remained connected to the corporate mission.
+The Giant Hairball is the summation and tangled mess of a company's policies, procedures, business decisions, successes, and failures. In short, the Hairball is the corporate mindset and it stifles creativity. The ideal place for people is in Orbit where they can explore and operate beyond the Hairball but still remained connected to the corporate mission.
 
 There are many more stories, many more ideas, and many more lessons but they ultimately tie to the idea that we are all creative geniuses at birth but many forces conspire to smother our creativity and make us normal. It's our job to launch ourselves into Orbit where we can be who we were truly meant to be.
 

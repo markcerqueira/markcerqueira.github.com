@@ -15,7 +15,7 @@ Rivals of Ixalan has been out for a week now so Jeff and I have had plenty of ti
 
 This card oozes value. Two mana for a 2/2 is cool but add in Flash, Deathtouch, and +1/+1 and Deathtouch to another attacking pirate? Depending on how you play this pirate, in the worst case you can remove two of your opponent's creatures for two of yours or in the best case you can remove two of your opponent's creatures (if they are weak) while keeping yours on the board. 
 
-At two mana it's super cheap and once you reveal your first Dire Fleet Poisoner, your opponent's may hesistate to swing with a big body until they've got something of their own to counter this amazing card.
+At two mana it's super cheap and once you reveal your first Dire Fleet Poisoner, your opponent's may hesitate to swing with a big body until they've got something of their own to counter this amazing card.
 
 Effective mana cost: AMAZING.
 

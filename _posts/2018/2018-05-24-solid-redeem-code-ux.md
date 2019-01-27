@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Solid Reedem Code UX"
+title: "Solid Redeem Code UX"
 description: ""
 category: 
 tags: [switch, user experience, kickstarter]

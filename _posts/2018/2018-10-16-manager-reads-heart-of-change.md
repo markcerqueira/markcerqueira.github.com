@@ -8,7 +8,7 @@ tags: [books, engineering management, manager reads, twitch]
 
 Since I started reading leadership and management books Tina has been recommending I read **The Heart of Change: Real-Life Stories of How People Change Their Organizations** by John Kotter and Dan Cohen. Yes, that complete title is quite a mouthful!
 
-**Who recommended the book?** Tina recommeded this book! 
+**Who recommended the book?** Tina recommended this book! 
 
 <div>
     <img class="rounded-corners" style="max-width: 400px; border: 1px; margin-top: 24px;" src="{{ site.images2018 }}/10-16/heart-of-change.png"/>

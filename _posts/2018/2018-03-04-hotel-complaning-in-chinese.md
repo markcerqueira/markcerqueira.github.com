@@ -8,7 +8,7 @@ tags: [chinese]
 
 This week's Chinese unit has us covering everything about hotels (酒店, jiǔdiàn). The writing assignment involved writing a script between an angry customer (顧客, gùkè) and a hotel receptionist (服務員, fúwùyuán).
 
-As always, I strove to make an entertaining and humurous story. This tale has an angry American who feels like he's getting nickel and dimed but ultimately cannot wait to relieve himself especially when presented with an amazing Japanese toilet!
+As always, I strove to make an entertaining and humorous story. This tale has an angry American who feels like he's getting nickel and dimed but ultimately cannot wait to relieve himself especially when presented with an amazing Japanese toilet!
 
 <blockquote>
 顧客: 你好！我不高興！<br>

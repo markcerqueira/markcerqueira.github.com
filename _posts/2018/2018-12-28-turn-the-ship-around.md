@@ -21,7 +21,7 @@ Keeping with books written by authors with a military background, the 11th book 
 
 To make this transformation Marquet focused on first divesting control and then focusing on improving competence and clarity to support that divested control. For each of these three pillars, Marquet offers mechanisms to achieve them. Here are my favorite mechanisms for each pillar:
 
-* **Control** - Use "I intend to..." to turn passive followers into active leaders - Swap the use disempowered phrases like "Request permission too..." to empowered phrases like "I intend to..." A minor shift in langauge can have profound impact on someone's sense of ownership, turning people from passive followers to active leaders.<br>
+* **Control** - Use "I intend to..." to turn passive followers into active leaders - Swap the use disempowered phrases like "Request permission too..." to empowered phrases like "I intend to..." A minor shift in language can have profound impact on someone's sense of ownership, turning people from passive followers to active leaders.<br>
 
 * **Competence** - Take deliberate action - Marquet writes this mechanism was the single greatest tool for reducing mistakes aboard the Santa Fe. This mechanism reminds me of the point and calling method that is leveraged by [Japanese rail workers to reduce "workplace errors by up to 85 percent."][3]<br>
 

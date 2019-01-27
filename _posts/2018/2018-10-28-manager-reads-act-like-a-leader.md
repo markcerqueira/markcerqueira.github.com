@@ -23,7 +23,7 @@ A half year into the [manager reads initiative][3] we arrive at the eighth entry
 * Expand and strengthen your network to provide a more global view of yourself, your company, and the world.
 * Experiment with how you get things done to help break away from your ought self.
 
-In short, you can't contemplate and think yourself into becoming a better leader. As Ibarra succintly concludes, "insight is an outcome, not an input" so the more opportunities you give yourself the better chance you'll have of gaining meaningful insight. 
+In short, you can't contemplate and think yourself into becoming a better leader. As Ibarra succinctly concludes, "insight is an outcome, not an input" so the more opportunities you give yourself the better chance you'll have of gaining meaningful insight. 
 
 **Favorite quote from the book?** "The fastest way to change yourself is to spend time with people who are already the way you want to be."
 

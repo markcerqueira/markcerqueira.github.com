@@ -45,7 +45,7 @@ You gotta pay before you eat. If you're a バカ がいじん (baka gaijin, idio
 	<p class="caption-text" style="line-height: 1.5em;  margin-bottom: 24px;"><strong>A balanced breakfast!</strong></p>
 </div>
 
-Sit down and bask in the glory of what's in front of you. You obviously need to eat the sausage sandwich first because **YOU AWLAYS SAVE THE BEST FOR LAST!** You rush through the sausage sandwich because who has time for a sausage sandwich when Angel Soft is sitting there right in front of you, waiting to be enjoyed!? You finish the sandwich... And now it's time. You bite into Angel Soft...
+Sit down and bask in the glory of what's in front of you. You obviously need to eat the sausage sandwich first because **YOU ALWAYS SAVE THE BEST FOR LAST!** You rush through the sausage sandwich because who has time for a sausage sandwich when Angel Soft is sitting there right in front of you, waiting to be enjoyed!? You finish the sandwich... And now it's time. You bite into Angel Soft...
 
 <div>
 	<img class="rounded-corners" style="max-width: 660px; margin-top: 10px; border: 0px;" src="/assets/images/posts/2015-05-20/inside.jpg"/>

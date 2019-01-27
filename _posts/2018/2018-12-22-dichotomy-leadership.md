@@ -34,11 +34,11 @@ Both Extreme Ownership and Dichotomy clock in around 300 pages but the kerning i
 1. **Humble, Not Passive** - Leaders must be humble to grow and entertain new ideas but must also be ready to stand firm when there is a risk to the team.
 1. **Focused, Not Detached** - Leaders must be attentive to details but can’t be so in the weeds that they lose track of the larger picture.
 
-Per the Extreme Ownership format each dichotomy is covered with a real-life story of SEAL training or combat in Iraq, an overview of the principle, and an application to everyday businesses. The dichotomies covered are all reasonable scales for a leader to consider. Oscar Wilde preceeded the SEALS by over half a century but likely put it best: "Everything in moderation, including moderation."
+Per the Extreme Ownership format each dichotomy is covered with a real-life story of SEAL training or combat in Iraq, an overview of the principle, and an application to everyday businesses. The dichotomies covered are all reasonable scales for a leader to consider. Oscar Wilde preceded the SEALS by over half a century but likely put it best: "Everything in moderation, including moderation."
 
 **Favorite quote from the book?** "Humility has to be balanced by knowing when to make a stand."
 
-**Elevator pitch for suggesting (or not suggesting) the book?** The Dichotomy of Leadership presents a series of gradients that leaders should be cognizant of, but fundamentally the book didn't move me at all compared to Extreme Ownership. Chapter after chapter I found myself thinking "Yes, this all makes sense" but I longed for a gem that would shift the way I viewed leadership. While it's very helpful to have concise expressions of dichotomies I would only recommend this book if you feel there is some inbalance in your leadership style.
+**Elevator pitch for suggesting (or not suggesting) the book?** The Dichotomy of Leadership presents a series of gradients that leaders should be cognizant of, but fundamentally the book didn't move me at all compared to Extreme Ownership. Chapter after chapter I found myself thinking "Yes, this all makes sense" but I longed for a gem that would shift the way I viewed leadership. While it's very helpful to have concise expressions of dichotomies I would only recommend this book if you feel there is some imbalance in your leadership style.
 
 **Notes in Evernote?** Ready to dial your dichotomies into a harmonious and productive balance but want to use a cheat sheet? The word extreme shows up 18 times in [my notes][1] on 🐘.
 

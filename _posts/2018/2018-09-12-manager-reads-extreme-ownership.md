@@ -28,7 +28,7 @@ And that is only 4 out of 12 principles the book covers! 😲
 
 **Favorite quote from the book?** "Leaders must be free to move to where they are most needed, which changes throughout the course of an operation."
 
-**Elevator pitch for suggesting (or not suggesting) the book?** I started reading this book on Friday night and was done by Sunday night; it's a pleaure to read and will positively transform your view of leadership. 
+**Elevator pitch for suggesting (or not suggesting) the book?** I started reading this book on Friday night and was done by Sunday night; it's a pleasure to read and will positively transform your view of leadership. 
 
 **Notes in Evernote?** My notes don't capture the battle narratives and business examples that serve as real-world models of the principles covered in Extreme Ownership, but feel free to review [my notes][1] on 🐘.
 
