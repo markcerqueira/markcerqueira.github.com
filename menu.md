@@ -4,6 +4,36 @@ title:
 header: 
 ---
 
+
+Week of 1/28/19
+
+ | Day       | Menu| 
+ | --------- | --------- |
+ | Monday    | Beef Burger - with grilled onions, tomatoes, spinach, avocado, and american cheese & GTG southwestern salad |
+ | Tuesday   | Black bean pork and napa over stir fried rice cakes |
+ | Wednesday | Omurice - with vegetarian potstickers |
+ | Thursday  | Spaghetti bolognese |
+ | Friday    | Rice - with tomato beef, garlic bok choy, and boiled spinach |
+ | Saturday  | Izakaya Mai |
+ | Sunday    | Chinese New Year Eve Dinner |
+
+
+<!--
+
+Week of 1/21/19
+
+ | Day       | Menu| 
+ | --------- | --------- |
+ | Monday    | Grilled salmon - with steamed carrots and mashed potatoes |
+ | Tuesday   | Dumplings, the frozen variety |
+ | Wednesday | Kimchi tofu soup |
+ | Thursday  | Tech conference |
+ | Friday    | Wonton noodle soup |
+ | Saturday  | Wonton noodle soup - with homemade BBQ pork bun |
+ | Sunday    | Sous vide sea bass - with carmelized mushrooms and onions, steamed rice, and steamed corn |
+
+
+
 Week of 1/14/19
 
  | Day       | Menu| 
@@ -16,7 +46,7 @@ Week of 1/14/19
  | Saturday  | Grilled Salmon - with mashed potatoes and asparagus |
  | Sunday    | Beef Curry |
 
-<!-- 
+
 
 Week of 1/7/19
  
