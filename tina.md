@@ -25,7 +25,7 @@ header:
 * **3:50 PM** catches 4:12 (PA 🔴), 4:23 (CA 🌕)
 * **4:13 PM** catches 4:38 (PA 🔴), 4:58 (CA 🌕)
 * **4:55 PM** catches 5:16 (PA 🔴), 5:27 (CA 🌕)
-* **5:20 PM** catches 5:38 (PA + CA 🔴)
+* **5:20 PM** catches 5:38 (PA + CA 🔴), 5:58 (PA + CA 🌕)
 * **5:56 PM** catches 6:16 (PA 🔴), 6:23 (PA + CA 🌕)
 * **6:18 PM** catches 6:38 (PA 🔴), 6:58 (PA + CA 🌕)
 
