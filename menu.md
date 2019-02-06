@@ -4,6 +4,19 @@ title:
 header: 
 ---
 
+Week of 2/4/19
+
+ | Day       | Menu| 
+ | --------- | --------- |
+ | Monday    | Rice with CNY Eve Leftovers - braised lamb with bean curd, spicy black bean pork ribs, BBQ pork, and turnip soup  |
+ | Tuesday   | Dumplings, the frozen variety - with GTG Italian salad |
+ | Wednesday | Pan Fried Salmon - with steamed broccoli and mashed potatoes|
+ | Thursday  | Omurice - with BBQ pork  |
+ | Friday    | Kimchi Fried Rice |
+ | Saturday  | LD Residence |
+ | Sunday    | Wonton Noodle Soup |
+
+<!--
 
 Week of 1/28/19
 
@@ -17,8 +30,6 @@ Week of 1/28/19
  | Saturday  | Izakaya Mai |
  | Sunday    | Chinese New Year Eve Dinner |
 
-
-<!--
 
 Week of 1/21/19
 
