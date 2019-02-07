@@ -8,6 +8,9 @@ Markdown source for this page available [here][1]. If you'd like to add a link p
 
 * [https://twitch.tv/codenamefuelqa123](https://twitch.tv/codenamefuelqa123) - *Nioh stream*
 
+* [https://www.twitch.tv/jessedstreams/clip/AverageSparklyTortoisePeoplesChamp?filter=clips&range=7d&sort=time](https://www.twitch.tv/jessedstreams/clip/AverageSparklyTortoisePeoplesChamp?filter=clips&range=7d&sort=time) - */clip Clip*
+* [https://m.twitch.tv/jessedstreams/clip/AverageSparklyTortoisePeoplesChamp](https://m.twitch.tv/jessedstreams/clip/AverageSparklyTortoisePeoplesChamp) - *mobile web Clip*
+
 * [https://twitch.tv/user/not-me](https://twitch.tv/user/not-me) *not me link*
 * [https://twitch.tv/user/not-me?top=kek&alec=lee](https://twitch.tv/user/not-me?top=kek&alec=lee) *not me link with query params*
 * [https://twitch.tv/directory/all/tags](https://twitch.tv/directory/all/tags) *All Tags page*
