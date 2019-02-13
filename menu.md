@@ -4,6 +4,20 @@ title:
 header: 
 ---
 
+Week of 2/11/19
+
+ | Day       | Menu| 
+ | --------- | --------- |
+ | Monday    | Lox and cream cheese cucumber bagel |
+ | Tuesday   | Pork and shrimp wontons in spicy soy sauce; kimchi, corn, pork and cheese wontons; fried cream cheese wontons; boiled bok choy |
+ | Wednesday | Pork and shrimp wontons in spicy soy sauce; kimchi, corn, pork and cheese wontons; crab rangoons; boiled bok choy|
+ | Thursday  | Rice - with steamed soy sauce salmon, teriyaki chicken wings, and broccoli |
+ | Friday    | The Counter |
+ | Saturday  | Rice - with steamed whole fish, pepper steak, and corn |
+ | Sunday    | Pasta alfredo |
+
+<!--
+
 Week of 2/4/19
 
  | Day       | Menu| 
@@ -16,7 +30,6 @@ Week of 2/4/19
  | Saturday  | LD Residence |
  | Sunday    | Wonton Noodle Soup |
 
-<!--
 
 Week of 1/28/19
 
