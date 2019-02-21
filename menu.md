@@ -4,6 +4,19 @@ title:
 header: 
 ---
 
+Week of 2/18/19
+
+ | Day       | Menu| 
+ | --------- | --------- |
+ | Monday    | Avocado Mac N Cheese - with grilled chicken and steamed broccoli |
+ | Tuesday   | Omurice - with steamed broccoli |
+ | Wednesday | Bibimbap - with kimchi, baby bok choy, bulgogi, and fried egg|
+ | Thursday  | Kimchi Fried Rice - with steamed baby bok choy |
+ | Friday    | Wonton Noodle Soup |
+ | Saturday  | Shrimp Pasta Alfredo |
+ | Sunday    | Rice - with Chinese stir fry |
+
+<!--
 Week of 2/11/19
 
  | Day       | Menu| 
@@ -16,7 +29,6 @@ Week of 2/11/19
  | Saturday  | Rice - with steamed whole fish, pepper steak, and corn |
  | Sunday    | Pasta alfredo |
 
-<!--
 
 Week of 2/4/19
 
