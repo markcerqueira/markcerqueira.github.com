@@ -6,6 +6,7 @@ header: twitch debug
 
 Markdown source for this page available [here][1]. If you'd like to add a link ping me or [open a Pull Request][3]! 😀
 
+* [https://twitch.tv/qa_bits_partner](https://twitch.tv/qa_bits_partner) - *Partner Bits QA stream*
 * [https://twitch.tv/codenamefuelqa123](https://twitch.tv/codenamefuelqa123) - *Nioh stream*
 
 * [https://www.twitch.tv/jessedstreams/clip/AverageSparklyTortoisePeoplesChamp?filter=clips&range=7d&sort=time](https://www.twitch.tv/jessedstreams/clip/AverageSparklyTortoisePeoplesChamp?filter=clips&range=7d&sort=time) - */clip Clip*
