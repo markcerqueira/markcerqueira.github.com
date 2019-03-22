@@ -3,7 +3,7 @@ layout: post
 title: "You Goofed Google"
 description: ""
 category: 
-tags: [rant, google, android]
+tags: [rant, google, android, pixel]
 ---
 
 Google just doesn't get it sometimes. On October 9th they announced the new Pixel 3 phones. On October 18th people started receiving them.
