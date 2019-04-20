@@ -3,7 +3,7 @@ layout: post
 title: "Thoughts on Star Ocean 5"
 description: ""
 category: 
-tags: [video games, jrpg]
+tags: [video games, jrpg, star ocean]
 ---
 
 A week after its release, I beat **Star Ocean Integrity and Faithlessness** a.k.a. Star Ocean 5. Here are some of my thoughts on the game.
