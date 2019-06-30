@@ -4,6 +4,20 @@ title:
 header: 
 ---
 
+
+Week of 7/1/19
+
+ | Day       | Menu| 
+ | --------- | --------- |
+ | Monday    | BBQ Pork Vietnamese Spring Rolls with Boiled Spinach and Miso Soup |
+ | Tuesday   | Omurice with Stir-Fry Yam Leaves |
+ | Wednesday | Pizz'a Chicago |
+ | Thursday  | Sheng Jian Bao with Boiled Lettuce |
+ | Friday    | Beyond Meat and Beef Hot Dogs |
+ | Saturday  | Salmon Alfredo Pasta |
+ | Sunday    | Korean Tofu Soup with Kimchi Rice Cakes |
+
+<!--
 Week of 2/18/19
 
  | Day       | Menu| 
@@ -16,7 +30,7 @@ Week of 2/18/19
  | Saturday  | Shrimp Pasta Alfredo |
  | Sunday    | Rice - with Chinese stir fry |
 
-<!--
+
 Week of 2/11/19
 
  | Day       | Menu| 
