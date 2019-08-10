@@ -3,7 +3,7 @@ layout: post
 title: "Child of Light"
 description: ""
 category: 
-tags: [video games]
+tags: [video games, grandia]
 ---
 
 Holy crap! I totally forgot about the July 1st release of **Child of Light** on the Vita until it flew right by me. After finally playing it, I'm happy to report that it's a surprisingly unique and amazing JRPG! Here's a list of what makes Child of Light truly shine.
