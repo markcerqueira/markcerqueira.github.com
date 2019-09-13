@@ -4,8 +4,19 @@ title:
 header: 
 ---
 
+Week of 8/26/19
 
-Week of 7/1/19
+ | Day       | Menu| 
+ | --------- | --------- |
+ | Monday    | Smoked salmon, tomato, garlic, romaine lettuce, and olive oil pasta |
+ | Tuesday   | Rice with pepper chicken and grilled salmon over a bed of romaine lettuce |
+ | Wednesday | Stuffed bell peppers with ground turkey, corn, tomatoes, black beans, pepper jack cheese and rice |
+ | Thursday  | Korean tofu soup with chicken, napa cabbage, and tomatoes |
+ | Friday    | Kimchi fried rice |
+ | Saturday  | Buca di Beppo |
+ | Sunday    | Dinner at LD's |
+
+<!-- Week of 7/1/19
 
  | Day       | Menu| 
  | --------- | --------- |
@@ -17,7 +28,7 @@ Week of 7/1/19
  | Saturday  | Salmon Alfredo Pasta |
  | Sunday    | Korean Tofu Soup with Kimchi Rice Cakes |
 
-<!--
+
 Week of 2/18/19
 
  | Day       | Menu| 
