@@ -5,7 +5,7 @@ header: résumé
 ---
 
 <br>
-**Need it fresh?** An up-to-date, more detailed version of my resume (including PDF) is available on [GitHub](https://github.com/markcerqueira/resume).
+**Need it fresh?** An up-to-date, more detailed version of my résumé (including PDF) is available on [GitHub](https://github.com/markcerqueira/resume).
 
 ### Professional
 
