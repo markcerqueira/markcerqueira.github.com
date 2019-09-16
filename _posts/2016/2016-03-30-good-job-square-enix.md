@@ -3,7 +3,7 @@ layout: post
 title: "Good Job, Square Enix"
 description: ""
 category: 
-tags: [video games, jrpg, final fantasy]
+tags: [video games, jrpg, final fantasy, dragon quest]
 ---
 
 Say what you will about Square Enix, but lately I think they're dishing outs lots of love.
