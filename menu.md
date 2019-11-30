@@ -4,7 +4,78 @@ title:
 header: 
 ---
 
-Week of 8/26/19
+Tuesday, 12/3:
+Pho Vi Hoa ((650) 947-1290) - https://www.yelp.com/biz/pho-vi-hoa-los-altos?osq=pho+vi+hoa
+* P-05 Large
+* P-06 Large
+* B-01
+* B-04
+* Fresh Vietnamese Spring Rolls with Shrimp and Pork - 4 rolls
+
+Wednesday, 12/4:
+Chipotle
+* Steak Burrito with: brown rice, black beans, fajitas, steak, medium salsa, corn, cheese, sour cream, lettuce + guacamole on the side
+* Steak Burrito with: white rice, fajitas, steak, medium salsa, corn, cheese, sour cream + guacamole on the side
+* Burrito bowl with: white rice, black beans, fajitas, steak, medium salsa, corn, cheese
+* Tony's order
+
+Thursday, 12/5:
+Sushi Tomo ((650) 856-1100) - https://www.yelp.com/biz/sushi-tomo-palo-alto
+* Bento Box: Chicken Teriyaki, Salmon Teriyaki, Pork Cutlet
+* Bento Box: Chicken Teriyaki, Beef Teriyaki, Fish Katsu
+* Bento Box: Chicken Teriyaki, Salmon Teriyaki, California Roll
+* Philadelphia Roll
+* Hawaiian Roll
+* Salmon Lover Roll
+* Dragon Roll
+
+Friday, 12/6:
+In-N-Out
+* Double double cheeseburger animal style with everything
+* Cheeseburger animal style with everything
+* Cheeseburger (regular) with everything
+* Animal style fries
+* Tony's order
+
+Saturday, 12/7:
+Lunch - Avocado mac n cheese
+Dinner - Tonybaby's or 6 goo goo cooking
+
+Sunday, 12/8:
+Lunch - Potstickers
+Dinner - Tonybaby's or 6 goo goo cooking
+
+Monday, 12/9:
+So Gong Dong Tofu House ((650) 424-8805) https://www.yelp.com/biz/so-gong-dong-tofu-house-palo-alto
+* Q1 BBQ Beef Short Rib
+* Q3 Bulgogi Pork
+* B2 Beef Stone Pot Bibimbab
+* T1 Original Soft Tofu Soup with Chicken (spicy level - mild)
+* A6 Pan-fried Seafood Pancake
+
+Tuesday, 12/10:
+Burma Ruby ((650) 285-2770) https://www.yelp.com/biz/burma-ruby-palo-alto-3?osq=burmese
+* Palata
+* Burmese Pad Thai - 2 orders, do not add chicken or shrimp
+* Egg and Okra Curry
+* Country Style Beef Curry
+* Rangoon Lemongrass Pork
+GA JIE NEEDS TO MAKE RICE
+
+Wednesday, 12/11:
+Hong Kong Restaurant ((650) 251-9062) https://www.yelp.com/biz/hong-kong-restaurant-palo-alto
+* Beef Chow Fun
+* Sweet and Sour Pork
+* Chicken with Sugar Peas
+* Clams with Black Bean Sauce
+GA JIE NEEDS TO MAKE RICE
+
+
+
+
+
+
+<!-- Week of 8/26/19
 
  | Day       | Menu| 
  | --------- | --------- |
@@ -16,7 +87,7 @@ Week of 8/26/19
  | Saturday  | Buca di Beppo |
  | Sunday    | Dinner at LD's |
 
-<!-- Week of 7/1/19
+Week of 7/1/19
 
  | Day       | Menu| 
  | --------- | --------- |
