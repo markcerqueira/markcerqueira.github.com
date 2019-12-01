@@ -14,7 +14,7 @@ Pho Vi Hoa ((650) 947-1290) - https://www.yelp.com/biz/pho-vi-hoa-los-altos?osq=
 
 Wednesday, 12/4:
 Chipotle
-* Steak Burrito with: brown rice, black beans, fajitas, steak, medium salsa, corn, cheese, sour cream, lettuce + guacamole on the side
+* Carne Asada Burrito with: brown rice, black beans, fajitas, carne asada, queso, medium salsa, corn, cheese, sour cream, lettuce + guacamole on the side
 * Steak Burrito with: white rice, fajitas, steak, medium salsa, corn, cheese, sour cream + guacamole on the side
 * Burrito bowl with: white rice, black beans, fajitas, steak, medium salsa, corn, cheese
 * Tony's order
@@ -38,12 +38,12 @@ In-N-Out
 * Tony's order
 
 Saturday, 12/7:
-Lunch - Avocado mac n cheese
-Dinner - Tonybaby's or 6 goo goo cooking
+* Lunch - Avocado mac n cheese
+* Dinner - Tonybaby's or 6 goo goo cooking
 
 Sunday, 12/8:
-Lunch - Potstickers
-Dinner - Tonybaby's or 6 goo goo cooking
+* Lunch - Potstickers
+* Dinner - Tonybaby's or 6 goo goo cooking
 
 Monday, 12/9:
 So Gong Dong Tofu House ((650) 424-8805) https://www.yelp.com/biz/so-gong-dong-tofu-house-palo-alto
@@ -60,7 +60,7 @@ Burma Ruby ((650) 285-2770) https://www.yelp.com/biz/burma-ruby-palo-alto-3?osq=
 * Egg and Okra Curry
 * Country Style Beef Curry
 * Rangoon Lemongrass Pork
-GA JIE NEEDS TO MAKE RICE
+**Reminder! GA JIE NEEDS TO MAKE RICE**
 
 Wednesday, 12/11:
 Hong Kong Restaurant ((650) 251-9062) https://www.yelp.com/biz/hong-kong-restaurant-palo-alto
@@ -68,12 +68,7 @@ Hong Kong Restaurant ((650) 251-9062) https://www.yelp.com/biz/hong-kong-restaur
 * Sweet and Sour Pork
 * Chicken with Sugar Peas
 * Clams with Black Bean Sauce
-GA JIE NEEDS TO MAKE RICE
-
-
-
-
-
+**Reminder! GA JIE NEEDS TO MAKE RICE**
 
 <!-- Week of 8/26/19
 
