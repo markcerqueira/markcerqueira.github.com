@@ -20,6 +20,14 @@ Chipotle
 * Tony's order
 
 Thursday, 12/5:
+The Pho Cabin (650) 917-1328 - https://www.yelp.com/biz/the-pho-cabin-los-altos
+* Grilled Pork Vermicelli
+* Vietnamese Ham Banh Mi
+* Combo Banh Mi - 2 orders
+* Spring Rolls
+* Meatball Pho
+
+For another day:
 Sushi Tomo ((650) 856-1100) - https://www.yelp.com/biz/sushi-tomo-palo-alto
 * Bento Box: Chicken Teriyaki, Salmon Teriyaki, Pork Cutlet
 * Bento Box: Chicken Teriyaki, Beef Teriyaki, Fish Katsu
