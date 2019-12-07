@@ -4,7 +4,7 @@ title:
 header: 
 ---
 
-Tuesday, 12/3:
+Tuesday, 12/3: Leftovers OR
 Pho Vi Hoa ((650) 947-1290) - https://www.yelp.com/biz/pho-vi-hoa-los-altos?osq=pho+vi+hoa
 * P-05 Large
 * P-06 Large
@@ -27,17 +27,17 @@ The Pho Cabin (650) 917-1328 - https://www.yelp.com/biz/the-pho-cabin-los-altos
 * Spring Rolls
 * Meatball Pho
 
-For another day:
+Friday, 12/6:
 Sushi Tomo ((650) 856-1100) - https://www.yelp.com/biz/sushi-tomo-palo-alto
-* Bento Box: Chicken Teriyaki, Salmon Teriyaki, Pork Cutlet
-* Bento Box: Chicken Teriyaki, Beef Teriyaki, Fish Katsu
-* Bento Box: Chicken Teriyaki, Salmon Teriyaki, California Roll
+* Bento Box: Chicken Teriyaki, California Roll, Pork Cutlet
+* New York Roll
+* Oregon Roll
 * Philadelphia Roll
 * Hawaiian Roll
 * Salmon Lover Roll
 * Dragon Roll
 
-Friday, 12/6:
+For another day:
 In-N-Out
 * Double double cheeseburger animal style with everything
 * Cheeseburger animal style with everything
