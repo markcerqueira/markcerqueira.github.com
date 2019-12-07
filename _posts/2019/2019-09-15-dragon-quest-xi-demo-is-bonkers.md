@@ -3,7 +3,7 @@ layout: post
 title: "The Dragon Quest XI Demo Is Bonkers"
 description: ""
 category: 
-tags: [jprg, video games, dragon quest]
+tags: [jrpg, video games, dragon quest]
 ---
 
 **Dragon Quest XI: Echoes of an Elusive Age** came out on the PS4 and Steam on September 18th, 2018. While I'm a big fan of the Dragon Quest series, Square Enix said the game would be coming to the Nintendo Switch in the future so I held off on picking it up. Fast forward to this weekend when I downloaded the Dragon Quest XI demo on my Switch to give it a go before committing to purchasing it on its release date: September 27th, 2019.

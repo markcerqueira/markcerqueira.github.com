@@ -3,7 +3,7 @@ layout: post
 title: "Finally Done with Dragon Quest XI"
 description: ""
 category: 
-tags: [jprg, video games, dragon quest]
+tags: [jrpg, video games, dragon quest]
 ---
 
 After getting hooked on the [ridiculously long demo][1], I dove into **Dragon Quest XI: Echoes of an Elusive Age** when it came out for the Switch at the end of September. **118 hours later**, I'm finally done with the game!

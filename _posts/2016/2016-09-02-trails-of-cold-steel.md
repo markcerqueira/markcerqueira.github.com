@@ -3,7 +3,7 @@ layout: post
 title: "Trails of Cold Steel"
 description: ""
 category: 
-tags: [video games, jrpg, grandia]
+tags: [video games, jrpg, grandia, trails]
 ---
 
 I just wrapped up **Legends of Heroes: Trails of Cold Steel** on the Vita. It's a JRPG set in the Legends of Heroes world, focuses on a class of students at a military academy, and guides us through their field studies around the empire as they learn about brewing troubles. The game is like **Grandia** with a turn-based and position-based battle system; **Persona** with lots of focus on character development and relationship building; **Final Fantasy 7** with a materia-esque system for powering up your team; and **Xenoblade Chronicles** because it has a ridiculously amazing soundtrack.

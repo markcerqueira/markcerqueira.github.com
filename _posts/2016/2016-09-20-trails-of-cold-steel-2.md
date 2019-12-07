@@ -3,7 +3,7 @@ layout: post
 title: "Trails of Cold Steel 2"
 description: ""
 category: 
-tags: [video games, jrpg]
+tags: [video games, jrpg, trails]
 ---
 
 A few weeks ago I wrapped up playing the awesome [Trails of Cold Steel][1]. Fortunately for me the sequel came out a few days later. I'm deep into Trails of Cold Steel 2 and man... what a game! The first entry spent a lot of time building out the world and characters and the sequel is capitalizing on all that groundwork. Nihon Falcom did an outstanding job creating an entire cast of extremely likable and unique characters.
@@ -20,7 +20,7 @@ Reviews of Trails of Cold Steel 2 say this entry wraps up most of the many loose
 	<p class="caption-text" style="line-height: 1.5em; margin-bottom: 12px;"><strong>ROBOTS!</strong></p>
 </div>
 
-If you're looking for a solid JRPG experience **now** is a great time to drop into the Trails of Cold Steel duology. 
+If you're looking for a solid JRPG experience **now** is a great time to drop into the Trails of Cold Steel series. 
 
 [1]: /2016/09/02/trails-of-cold-steel/
 [2]: https://www.youtube.com/watch?v=5ayLML1wckw
