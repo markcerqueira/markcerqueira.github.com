@@ -50,6 +50,9 @@ I've been using these four tools for a while and they work well for me. As you d
 
 Got an interesting tool you use? Let me know on [Twitter][3]!
 
+Enjoyed this episode of Management Systems? Check out more in the [Management Systems corner][9]!
+
 [1]: {{site.base_url}}/archive/#manager+reads
 [2]: https://support.google.com/a/users/answer/9282966?hl=en
 [3]: https://twitter.com/markmcerqueira
+[9]: {{site.base_url}}/archive/#management+systems
