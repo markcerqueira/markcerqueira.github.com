@@ -28,7 +28,7 @@ These days with hiring mostly done I spend less time recruiting. But with a much
     <p class="caption-text" style="line-height: 1.5em; margin-bottom: 30px; margin-top: 6px;"><strong>More recently - a more balanced calendar!</strong></p>
 </div>
 
-With this system I'm able to quickly scroll through weeks in my calendar and get a good feel for where my time is being spent. I currently manually set colors; for recurring events I only have to do it once and for one-offs it's really easy to set the color (e.g. right click and pick a color). That said, I am already looking into automating this process via [Google's Calendar API][2]. From there I can even produce a quarterly reviews by adding up time by event color. The sky's the limit with a color-coded calendar!
+With this system I'm able to quickly scroll through weeks in my calendar and get a good feel for where my time is being spent. I currently manually set colors; for recurring events I only have to do it once and for one-offs it's really easy to set the color (e.g. right click and pick a color). That said, I am already looking into automating this process via [Google's Calendar API][2]. From there I can even produce a quarterly reviews by adding up time by event color. **Update! [Calendar Colorist is now available!][4]** The sky's the limit with a color-coded calendar!
 
 Got an interesting system you use to manage your time? Let me know on [Twitter][3]!
 
@@ -37,5 +37,6 @@ Enjoyed this episode of Management Systems? Check out more in the [Management Sy
 [1]: https://www.amazon.com/dp/B07QYCHJ7V/
 [2]: https://developers.google.com/calendar/v3/reference/events#resource
 [3]: https://twitter.com/markmcerqueira
+[4]: {{site.base_url}}/2020/01/04/calendar-colorist/
 [9]: {{site.base_url}}/archive/#management+systems
 

@@ -28,7 +28,7 @@ P.P.S. A few thoughts on Kotlin after taking it on this most recent whirl:
 
 * Kotlin's interoperability with Java is fantastic. I used the Java version of the [Google Calendar API][4] and had zero drama getting things working. It literally just worked™️ although it would be nice if Google added nullability annotations to their code.
 * Kotlin extensions are also great for extending classes in libraries that cannot be easily edited. I added [several properties and functions][5] to the Event class via an extensions to make Events easier to work with.
-* I got tripped up using Kotlin's `let` with a trailing Elvis operator `?:`. I assumed in an expression like `a()?.let { ... } ?: b()` that so long as `a()` was not null `b()` would never get executed but turns out the `...` inside the let block can end up getting us to `b()`. Many thanks to Heath for [helping my diagnose and fix this one][6]! 🙏
+* I got tripped up using Kotlin's `let` with a trailing Elvis operator `?:`. I assumed in an expression like `a()?.let { ... } ?: b()` that so long as `a()` was not null `b()` would never get executed but turns out the `...` inside the let block can end up getting us to `b()`. Many thanks to Heath for [helping me diagnose and fix this one][6]! 🙏
 
 [1]: {{site.base_url}}/2019/12/16/management-systems-calendaring/
 [2]: https://twitter.com/markmcerqueira/status/1212797842189770752
