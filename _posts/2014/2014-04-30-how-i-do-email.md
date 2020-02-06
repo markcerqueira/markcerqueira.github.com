@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "How I Do Email"
+title: "Managing Management - How I Do Email"
 description: ""
 category: 
-tags: [technical]
+tags: [managing management, technical]
 ---
 
 
 <p style="margin-bottom: 8px;">We're drowning in email. Good people look like terrible people when they can't keep afloat when hit by wave after relentless wave of email. Everyone has a strategy for dealing with email. Some people just don't care, and getting a timely reply (or a reply at all) from them is a matter of luck. Some people, like robots, manage email with a furious efficiency. I like to believe I've come up with a halfway decent strategy to managing email. Generally, my strategy has two goals:</p>
 
-<b>1. Minimize the amount of mail that reaches my inbox.</b><br>
-<b>2. Track emails that require future attention.</b>
+&emsp; <b>1. Minimize the amount of mail that reaches my inbox.</b><br>
+&emsp; <b>2. Track emails that require future attention.</b>
 
 Read on to find out how I beat back the evil of too much freaking email.
 
@@ -37,3 +37,5 @@ And then I want to keep **track of emails that require future attention**. For t
 Then I can **easily follow up on all three groups since they're right there next to my inbox** thanks to Multiple Inboxes. I try to keep the to-do list (red) as short as possible. I can quickly figure out what I need to submit for reimbursement by looking at the list of emails tagged with a green star. And when my parents ask me what time my flight gets in, there is no need for me to search my inbox; I can just look at the messages tagged with a purple star. 
 
 For what it's worth, I'm not a celebrity or some company executive, but if I was, I believe this strategy could scale to a point where I wouldn't need to hire someone to manage my email, calendar, or visits to the bathroom.  
+
+{{ site.managing_management }}

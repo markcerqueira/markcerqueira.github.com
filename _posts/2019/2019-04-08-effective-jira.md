@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Effective JIRA"
+title: "Managing Management - Effective JIRA"
 description: ""
 category: 
-tags: [engineering management, jira]
+tags: [managing management, engineering management, jira]
 ---
 
 Whether you love (few people) or hate (more people) JIRA, effectively using it can minimize the time you spend on it and maximize the value you get out of it. Ineffective JIRA looks like:
@@ -30,3 +30,5 @@ Effective JIRA gives you everything your team needs in one place. When issues ar
 </div>
 
 These two tools have made our team much more JIRA-effective. It won't make people fall in love with JIRA but you'd be surprised how much less people dislike something if it starts being useful and easy to use.
+
+{{ site.managing_management }}

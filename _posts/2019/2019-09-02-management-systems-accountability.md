@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Management Systems - Accountability"
+title: "Managing Management - Tools for Accountability"
 description: ""
 category: 
-tags: [management systems, engineering management]
+tags: [managing management, engineering management]
 ---
 
 As a manager you'll get questions and requests from many people coming through different mediums: the very traditional in-person ask, Slack, email, text messages. Being able to take them in and deliver on them is key. Accountability is unbelievably valuable because doing what you'll say you do is the easiest way to earn trust. Even for those not in management having a system to track and follow through on things is valuable.
@@ -50,7 +50,7 @@ I've been using these four tools for a while and they work well for me. As you d
 
 Got an interesting tool you use? Let me know on [Twitter][3]!
 
-Enjoyed this episode of Management Systems? Check out more in the [Management Systems corner][9]!
+{{ site.managing_management }}
 
 [1]: {{site.base_url}}/archive/#manager+reads
 [2]: https://support.google.com/a/users/answer/9282966?hl=en

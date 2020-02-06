@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Calendar Colorist!"
+title: "Managing Management - Calendar Colorist!"
 description: ""
 category: 
-tags: [management systems, engineering management, kotlin]
+tags: [managing management, engineering management, kotlin]
 ---
 
-When I shared my [Management Systems - Time Management via Color-Coded Calendar][1] blog post on [Twitter][2] it got some nice traction because of a generous retweet from Will Larson. In the blog post I mention automating color-coding in the future via the Google Calendar API and someone asked for me to share that system once I built it.
+When I shared my [Managing Management - Time Management via Color-Coded Calendar][1] blog post on [Twitter][2] it got some nice traction because of a generous retweet from Will Larson. In the blog post I mention automating color-coding in the future via the Google Calendar API and someone asked for me to share that system once I built it.
 
 Striking while the iron is hot... **Calendar Colorist is here**!
 
@@ -29,6 +29,8 @@ P.P.S. A few thoughts on Kotlin after taking it on this most recent whirl:
 * Kotlin's interoperability with Java is fantastic. I used the Java version of the [Google Calendar API][4] and had zero drama getting things working. It literally just worked™️ although it would be nice if Google added nullability annotations to their code.
 * Kotlin extensions are also great for extending classes in libraries that cannot be easily edited. I added [several properties and functions][5] to the Event class via an extensions to make Events easier to work with.
 * I got tripped up using Kotlin's `let` with a trailing Elvis operator `?:`. I assumed in an expression like `a()?.let { ... } ?: b()` that so long as `a()` was not null `b()` would never get executed but turns out the `...` inside the let block can end up getting us to `b()`. Many thanks to Heath for [helping me diagnose and fix this one][6]! 🙏
+
+{{ site.managing_management }}
 
 [1]: {{site.base_url}}/2019/12/16/management-systems-calendaring/
 [2]: https://twitter.com/markmcerqueira/status/1212797842189770752

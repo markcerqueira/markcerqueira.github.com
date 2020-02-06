@@ -29,6 +29,8 @@ author :
   email : mark@mark.gg
   github : markcerqueira
   twitter : markmcerqueira
+  
+managing_management: <i>Managing Management is a series on systems that are shareable and serve as actionable templates for addressing the deluge of things managers encounter everyday. Enjoyed this post and want to see more? Check out more at <a href="/archive/#managing+management">Managing Management</a>!</i>
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 JB :

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Management Systems - Time Management via Color-Coded Calendar"
+title: "Managing Management - Time Management via Color-Coded Calendar"
 description: ""
 category: 
-tags: [management systems, engineering management, twitch]
+tags: [managing management, engineering management, twitch]
 ---
 
 This past summer at Twitch I went from working with our Viewer Experience team to owning all viewer-side features on mobile. This meant working with another team, Viewer Engagement. In preparation for this increase in scope and team size my manager asked me to look at where I was spending time to ensure I could continue to deliver on all my responsibilities.
@@ -32,7 +32,7 @@ With this system I'm able to quickly scroll through weeks in my calendar and get
 
 Got an interesting system you use to manage your time? Let me know on [Twitter][3]!
 
-Enjoyed this episode of Management Systems? Check out more in the [Management Systems corner][9]!
+{{ site.managing_management }}
 
 [1]: https://www.amazon.com/dp/B07QYCHJ7V/
 [2]: https://developers.google.com/calendar/v3/reference/events#resource
