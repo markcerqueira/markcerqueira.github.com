@@ -33,8 +33,7 @@ Each of these three ideas gets several chapters dedicated to them: one to introd
 
 **Notes in Evernote?** This book is packed with nuggets of wisdom that can help build better teams. Feel free to review [my notes][1] on 🐘.
 
-Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][2]!
+{{ site.manager_reads }}
 
 [1]: https://www.evernote.com/l/AOSZTUlhnI5MQZWebJOsAEcCgQC7CBKSB4c
-[2]: {{site.base_url}}/archive/#manager+reads
 [3]: https://rework.withgoogle.com/guides/understanding-team-effectiveness/steps/foster-psychological-safety/

@@ -29,8 +29,7 @@ One step I took after reading the Hiring Practices chapter was to clean up the l
 
 **Notes in Evernote?** This book is packed with practical things anyone can start doing to be a better ally. Feel free to review [my notes][1] on 🐘 to get an overview of these tips.
 
-Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][2]!
+{{ site.manager_reads }}
 
 [1]: https://www.evernote.com/l/AOT1Y7Yx2ndK2LlG867OXINlf4svimJsSKY
-[2]: {{site.base_url}}/archive/#manager+reads
 [3]: {{site.base_url}}/2018/12/24/turn-ship-around/

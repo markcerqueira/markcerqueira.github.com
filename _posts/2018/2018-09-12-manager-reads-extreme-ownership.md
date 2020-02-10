@@ -32,10 +32,8 @@ And that is only 4 out of 12 principles the book covers! 😲
 
 **Notes in Evernote?** My notes don't capture the battle narratives and business examples that serve as real-world models of the principles covered in Extreme Ownership, but feel free to review [my notes][1] on 🐘.
 
-Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][2]!
+{{ site.manager_reads }}
 
 [1]: https://www.evernote.com/l/AOSjn34YhEtAO6dUsrgS51aBacUEnXOHtlw
-[2]: {{site.base_url}}/archive/#manager+reads
-
 [3]: {{site.base_url}}/2018/06/16/e3-2018-hype-starts-now/
 [4]: {{site.base_url}}/2018/07/14/audio-octopath-traveler/

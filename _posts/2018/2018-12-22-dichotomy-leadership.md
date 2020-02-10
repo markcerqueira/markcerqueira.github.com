@@ -42,8 +42,7 @@ Per the Extreme Ownership format each dichotomy is covered with a real-life stor
 
 **Notes in Evernote?** Ready to dial your dichotomies into a harmonious and productive balance but want to use a cheat sheet? The word extreme shows up 18 times in [my notes][1] on 🐘.
 
-Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][2]!
+{{ site.manager_reads }}
 
 [1]: https://www.evernote.com/l/AOS0Ncd3_1hNi79GZrl3_ICAzZcJIkvkSfQ
-[2]: {{site.base_url}}/archive/#manager+reads
 [3]: {{site.base_url}}/2018/09/12/manager-reads-extreme-ownership/

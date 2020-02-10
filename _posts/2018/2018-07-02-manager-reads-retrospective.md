@@ -36,3 +36,5 @@ Since this reading exercise has been very fruitful, I plan to keep on gathering 
 1. Difficult Conversations: How to Discuss What Matters Most
 
 📚🙇📖
+
+{{ site.manager_reads }}

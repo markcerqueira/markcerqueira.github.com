@@ -33,8 +33,6 @@ The parade continues with what many consider a seminal book for managers: **High
 
 **Notes in Evernote?** High Output Management is a treasure trove for anyone in a management position. Feel free to review [my notes][1] on 🐘.
 
-Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][10]!
+{{ site.manager_reads }}
 
 [1]: https://www.evernote.com/l/AOTFl5Com8pLuZCq6l0KP044WmtBaraAqiA
-
-[10]: {{site.base_url}}/archive/#manager+reads

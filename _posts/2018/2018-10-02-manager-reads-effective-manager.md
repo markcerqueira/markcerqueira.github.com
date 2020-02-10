@@ -32,8 +32,7 @@ The Effective Manager offers concrete steps for most of the stuff it covers, but
 
 **Notes in Evernote?** Feel free to review [my notes][1] on 🐘.
 
-Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][2]!
+{{ site.manager_reads }}
 
 [1]: https://www.evernote.com/l/AOTMSkVmgJhHc6xcWXIxv-l73t0tRCk76Cg
-[2]: {{site.base_url}}/archive/#manager+reads
 [3]: https://jacobian.org/2018/may/2/engmanager-reading-list/

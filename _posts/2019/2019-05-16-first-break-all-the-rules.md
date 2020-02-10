@@ -31,8 +31,7 @@ Both systems are useful for managers looking to build high-performing teams. I f
 
 **Notes in Evernote?** There's a lot of great knowledge in this one that's worth checking out but if you want a sneak peek check out [my notes][1] on 🐘.
 
-Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][2]!
+{{ site.manager_reads }}
 
 [1]: https://www.evernote.com/l/AORYq0OJ5ExHEq-B2QZv_SSIwnkvepNUO00
-[2]: {{site.base_url}}/archive/#manager+reads
 [3]: {{site.base_url}}/2019/09/02/management-systems-accountability/

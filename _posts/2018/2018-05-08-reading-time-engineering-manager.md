@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Reading Time! Engineering Manager"
+title: "Reading Time! Managers Reads for an Engineering Manager"
 description: ""
 category: 
 tags: [books, engineering management, manager reads, twitch]
@@ -21,4 +21,6 @@ For everything I read I plan to:
 * Elevator pitch for suggesting (or not suggesting) the book!
 * My notes (in Evernote of course) on the book!
 
-First up will be the current Twitch Manager Book Club book: Decisive: How to Make Better Choices in Life and Work. See you in a few days!
+First up will be the current Twitch Manager Book Club book: **Decisive: How to Make Better Choices in Life and Work**. See you in a few days!
+
+{{ site.manager_reads }}

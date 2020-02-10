@@ -36,7 +36,6 @@ For each of these steps the book provides real-world anecdotes of the step in ac
 
 **Notes in Evernote?** Feel free to review [my notes][1] on 🐘.
 
-Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][2]!
+{{ site.manager_reads }}
 
 [1]: https://www.evernote.com/l/AOToaK52GjNJDbxIhD1HGkVNcElcMCGQhlo
-[2]: {{site.base_url}}/archive/#manager+reads

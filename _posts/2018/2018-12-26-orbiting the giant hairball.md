@@ -29,7 +29,6 @@ There are many more stories, many more ideas, and many more lessons but they ult
 
 **Notes in Evernote?** If there was ever a book that my notes failed to do justice to capture, this one would be it: there is so much beyond text in this gem. That said, the Manager Read templates dictates that I invite you to review [my notes][1] on 🐘. 
 
-Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][2]!
+{{ site.manager_reads }}
 
 [1]: https://www.evernote.com/l/AOTUzpkK66JIOZ7DZvq7-u6ShtvZL0keHWs
-[2]: {{site.base_url}}/archive/#manager+reads

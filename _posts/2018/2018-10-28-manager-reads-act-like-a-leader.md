@@ -31,8 +31,7 @@ In short, you can't contemplate and think yourself into becoming a better leader
 
 **Notes in Evernote?** There's a lot of great information in this book. Feel free to review all 73.2 KB of [my notes][1] on 🐘.
 
-Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][2]!
+{{ site.manager_reads }}
 
 [1]: https://www.evernote.com/l/AOSZOGWNGglNsZkCaNHI6A5Pm-xxS4IsL_Q
-[2]: {{site.base_url}}/archive/#manager+reads
 [3]: {{site.base_url}}/2018/05/08/reading-time-engineering-manager/

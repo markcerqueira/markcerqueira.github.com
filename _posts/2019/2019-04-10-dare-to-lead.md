@@ -38,8 +38,7 @@ In short, be courageous and be curious. When we can increase the collective cour
 
 **Notes in Evernote?** Not courageous enough to pick up this book yet but want to get a feel for what's inside? Feel free to review [my notes][1] on 🐘.
 
-Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][2]!
+{{ site.manager_reads }}
 
 [1]: https://www.evernote.com/l/AOQUVmwxqe1NzZAXkCcSeU7ZcUNUTwg6Dow
-[2]: {{site.base_url}}/archive/#manager+reads
 [3]: {{site.base_url}}/2018/12/10/manager-reads-culture-code/

@@ -31,9 +31,7 @@ While the idea of self-deception covered is powerful and great to have awareness
 
 **Notes in Evernote?** If you want to skip to the nuggets of wisdom from Tom's special orientation at Zagrum feel free to review [my notes][1] on 🐘.
 
-Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][2]!
+{{ site.manager_reads }}
 
 [1]: https://www.evernote.com/l/AOTLAtVcFe1GrK88BJWNHUF1rmmrUttCXhE
-[2]: {{site.base_url}}/archive/#manager+reads
-
 [3]: https://www.npr.org/2015/09/19/441459103/when-it-comes-to-book-sales-what-counts-as-success-might-surprise-you

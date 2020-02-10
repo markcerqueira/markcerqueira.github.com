@@ -40,7 +40,6 @@ All in all, a super valuable read that I am always mentally referencing these da
 
 **Notes in Evernote?** This book was packed with a lot of information for identifying, approaching, and navigating difficult conversations. The length of my notes reflects just how much this book is gem-filled mine. Feel free to review [my notes][1] on 🐘.
 
-Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][10]!
+{{ site.manager_reads }}
 
 [1]: https://www.evernote.com/l/AOTisyRTwG1OOocPrbUAVNTZmgg1XaMlUc8
-[10]: {{site.base_url}}/archive/#manager+reads

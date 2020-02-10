@@ -36,8 +36,6 @@ Ultimately the book provides pithy strategies and advice which gives me confiden
 
 **Notes in Evernote?** This book has a great feature I wish more books in this genre did: one-pagers at the end of every chapter that captures the big takeways. My notes are mostly just a transcription of those with some quotes that really stuck out to me. Feel free to review [my notes][1] on 🐘.
 
-Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][10]!
+{{ site.manager_reads }}
 
 [1]: https://www.evernote.com/l/AOS9dg8IQEBLuaDVtJb3ZAUuPh1Tn7Nx-4A
-
-[10]: {{site.base_url}}/archive/#manager+reads

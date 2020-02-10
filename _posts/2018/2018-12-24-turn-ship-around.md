@@ -35,8 +35,7 @@ Marquet tells us a story that includes failures, small wins, hiccups, bigger suc
 
 **Notes in Evernote?** While my notes may cover the mechanisms Marquet used to turn the Santa Fe around they certainly don't capture the enthralling narrative of that journey. You can review [my notes][1] on 🐘. 
 
-Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][2]!
+{{ site.manager_reads }}
 
 [1]: https://www.evernote.com/l/AOQDCrDMUxpPg7Rz0Wamt02ziRbyNZpS9Xg
-[2]: {{site.base_url}}/archive/#manager+reads
 [3]: https://www.atlasobscura.com/articles/pointing-and-calling-japan-trains

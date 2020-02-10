@@ -36,8 +36,6 @@ The book is divided into six chapters that cover a variety of topics which inclu
 
 **Notes in Evernote?** Debugging Teams has a lot of good information, which my notes hopefully capture, and lots of cool and funny illustrations, which my notes unforunately do not capture. Feel free to review [my notes][1] on 🐘.
 
-Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][10]!
+{{ site.manager_reads }}
 
 [1]: https://www.evernote.com/l/AOSEgk-4S0VB5ZXX2pZGgvR_U2JzcVjlRCc
-
-[10]: {{site.base_url}}/archive/#manager+reads

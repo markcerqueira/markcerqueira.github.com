@@ -37,11 +37,9 @@ The book is filled with many short lessons and things to look out for in a compa
 
 **Notes in Evernote?** In a book calling for calm [my notes][1] on 🐘 feature the word 36 times.
 
-Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][2]!
+{{ site.manager_reads }}
 
 [1]: https://www.evernote.com/l/AOQnNbXqlmlLVZrQo11GfaRyl3Y-o4F0i6c
-[2]: {{site.base_url}}/archive/#manager+reads
-
 [3]: {{site.base_url}}/2018/12/28/a-tale-for-the-time-being/
 [4]: https://twitter.com/dhh
 [5]: https://jobs.lever.co/twitch

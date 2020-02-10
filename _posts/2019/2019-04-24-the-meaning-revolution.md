@@ -29,8 +29,7 @@ Manager Reads Episode XVIII: **The Meaning Revolution: The Power of Transcendent
 
 **Notes in Evernote?** Looking to transcend the mortal coil but don't want to read this book just yet? Check out [my notes][1] on 🐘.
 
-Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][2]!
+{{ site.manager_reads }}
 
 [1]: https://www.evernote.com/l/AOSQgX8yNHNB968KdC3RGsdD21zOqMfvQ4U
-[2]: {{site.base_url}}/archive/#manager+reads
 [3]: https://www.youtube.com/watch?v=6OI7REyatq4

@@ -27,8 +27,7 @@ The content is diverse but ultimately gives you valuable perspective and tools t
 
 **Notes in Evernote?** You'll want a copy of this book close at all times but if you want a peek at what I found most helpful check out [my notes][1] on 🐘.
 
-Enjoyed this episode of Manager Reads? Check out more in the [Manager Reads corner][2]!
+{{ site.manager_reads }}
 
 [1]: https://www.evernote.com/l/AOROndfRQ2tFVI9sGDQnMI65cxCEvIVkLKA
-[2]: {{site.base_url}}/archive/#manager+reads
 [3]: https://twitter.com/Lethain
