@@ -3,7 +3,7 @@ layout: post
 title: "Manager Reads - Retrospective 1.0"
 description: ""
 category: 
-tags: [books, engineering management, manager reads, twitch]
+tags: [books, engineering management, manager reads meta, twitch]
 ---
 
 The past two months have led me through four great reads on the never-ending pursuit to being a better manager. In true engineering manager fashion, it's a good time to take a pause and retrospect on my experience thus far.
