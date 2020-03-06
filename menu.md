@@ -4,7 +4,38 @@ title:
 header: 
 ---
 
-Tuesday, 12/3: Leftovers OR
+Friday:
+* Breakfast - Cereal and Fruit
+* Lunch - Roast Beef Sandwich / Buns
+* Dinner - Stir fry chicken and bok choy udon
+
+Saturday:
+* Breakfast - Banana pancakes
+* Lunch - Leftover stir fry chicken and bok choy udon
+* Dinner - Sheng Jian Bao
+
+Sunday:
+* Breakfast - Bagel with American cheese, egg, and ham
+* Lunch - Leftover Sheng Jian Bao
+* Dinner - Avocado mac n cheese with ground pork
+
+Monday:
+* Lunch - Leftover avocado mac n cheese
+
+Tuesday:
+* Lunch / Dinner - Kimchi fried rice
+
+Wednesday:
+* Lunch - Pork Katsu over rice
+
+Thursday:
+* Lunch - Takeout
+
+Friday: 
+* Lunch - Cong mien
+
+<!--
+Tuesday, 12/3: 
 Pho Vi Hoa ((650) 947-1290) - https://www.yelp.com/biz/pho-vi-hoa-los-altos?osq=pho+vi+hoa
 * P-05 Large
 * P-06 Large
@@ -78,7 +109,7 @@ Hong Kong Restaurant ((650) 251-9062) https://www.yelp.com/biz/hong-kong-restaur
 * Clams with Black Bean Sauce
 **Reminder! GA JIE NEEDS TO MAKE RICE**
 
-<!-- Week of 8/26/19
+ Week of 8/26/19
 
  | Day       | Menu| 
  | --------- | --------- |
