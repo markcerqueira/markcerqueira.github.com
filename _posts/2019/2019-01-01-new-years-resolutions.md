@@ -14,7 +14,7 @@ It’s the New Year so it’s the most wonderful time of the year for goal-setti
 </div>
 
 
-* **Read 12 leadership books.** Given the Manager Book Club currently meets on a monthly cadence and I read thirteen leadership books in about a six month period last year this one should be easy. I love running the club and am excited for the twelve gatherings we’ll have in 2019.
+* **Read 12 leadership books.** Given the Leadership Book Club currently meets on a monthly cadence and I read thirteen leadership books in about a six month period last year this one should be easy. I love running the club and am excited for the twelve gatherings we’ll have in 2019.
 
 * **Read 12 “regular” books.** While reading leadership books has been great at establishing a framework and vocabulary for how I have approached my role at Twitch, I would also like to spend some time reading “regular” books. I only read one, [A Tale for the Time Being][1], in 2018 and I really enjoyed it. My plan for 2019 is to interweave leadership and non-leadership books to introduce some regular variety and keep things spicy.
 

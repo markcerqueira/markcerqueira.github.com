@@ -8,7 +8,7 @@ tags: [books, engineering management, manager reads, twitch]
 
 A half year into the [manager reads initiative][3] we arrive at the eighth entry in the Manager Reads saga: **Act Like a Leader, Think Like a Leader** by Herminia Ibarra.
 
-**Who recommended the book?** This book was recommended by a teammate, Jarret, and selected as the next book for the Twitch Manager Book Club. While the word manager is in the name of the club, we welcome anyone who wants to improve on leadership and management. The ultimate goal is to leverage learnings from these books to help level up all of Twitch.
+**Who recommended the book?** This book was recommended by a teammate, Jarret, and selected as the next book for the Twitch Leadership Book Club. While the word manager is in the name of the club, we welcome anyone who wants to improve on leadership and management. The ultimate goal is to leverage learnings from these books to help level up all of Twitch.
 
 <div>
     <img class="rounded-corners" style="max-width: 380px; border: 1px; margin-top: 24px;" src="{{ site.images2018 }}/10-28/act-think-leader.png"/>

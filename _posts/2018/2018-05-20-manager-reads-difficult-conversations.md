@@ -8,7 +8,7 @@ tags: [books, engineering management, manager reads, twitch]
 
 Next up on my path of boosting my managerial skills: **Difficult Conversations: How to Discuss What Matters Most** by Sheila Heen, Bruce Patton, and Douglas Stone.
 
-**Who recommended the book?** This book won the most recent round of popular voting by members of the Twitch Book Guild. This guild is similar to the Twitch Manager Book Club but the books we read cover a wider latitudes of topics and aren't strictly focused on management or people skills. 
+**Who recommended the book?** This book won the most recent round of popular voting by members of the Twitch Book Club. This guild is similar to the Twitch Leadership Book Club but the books covered in the Book Club cover wider latitudes of topics and aren't strictly focused on management, leadership, or people skills. 
 
 <div>
 	<img class="rounded-corners" style="max-width: 500px; border: 1px; margin-top: 24px;" src="{{ site.images2018 }}/05-20/difficult.jpg"/>

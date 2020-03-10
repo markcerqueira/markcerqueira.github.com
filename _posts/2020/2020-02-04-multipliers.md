@@ -8,7 +8,7 @@ tags: [books, engineering management, manager reads, twitch]
 
 After a short hiatus of Manager Reads posts caused by catching up on posts for previous entries and a newborn, the first entry of 2020 is here! This post covers **Multipliers, Revised and Updated: How the Best Leaders Make Everyone Smarter** by Liz Wiseman.
 
-**Who recommended the book?** This book was selected as our next book to cover at Twitch's Manager Book Club. The club focuses on books that can level up everyone's - not just managers - leadership and management skills. At the end of each meeting of the club, we vote on the next book to read.
+**Who recommended the book?** This book was selected as our next book to cover at Twitch's Leadership Book Club. The club focuses on books that can level up everyone's - not just managers - leadership and management skills. At the end of each meeting of the club, we vote on the next book to read.
 
 <div>
     <img class="rounded-corners" style="max-width: 350px; border: 1px; margin-top: 24px;" src="{{ site.images2020 }}/02-04/multipliers.jpg"/>

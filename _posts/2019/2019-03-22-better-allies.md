@@ -8,7 +8,7 @@ tags: [books, engineering management, manager reads, twitch]
 
 Next up on the Manager Reads is **Better Allies: Everyday Actions to Create Inclusive, Engaging Workplaces** by Karen Catlin.
 
-**Who recommended the book?** Katrina Jones, Twitch's Director of Diversity & Inclusion, recommended we read this book for the Twitch Manager Book Club. The club focuses on reading books aimed at leveling up everyone's - not just managers - leadership and management skills. We've gone through a lot of books but never one focused on practicing better allyship so everyone was really excited to check this one out.
+**Who recommended the book?** Katrina Jones, Twitch's Director of Diversity & Inclusion, recommended we read this book for the Twitch Leadership Book Club. The club focuses on reading books aimed at leveling up everyone's - not just managers - leadership and management skills. We've gone through a lot of books but never one focused on practicing better allyship so everyone was really excited to check this one out.
 
 <div>
     <img class="rounded-corners" style="max-width: 350px; border: 1px; margin-top: 24px;" src="{{ site.images2019 }}/03-22/better-allies.png"/>

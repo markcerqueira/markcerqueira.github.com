@@ -8,7 +8,7 @@ tags: [books, engineering management, manager reads, twitch]
 
 Keeping with books written by authors with a military background, the 11th book in the Manager Reads saga is **Turn the Ship Around!: A True Story of Turning Followers into Leaders** by retired U.S. Navy captain David Marquet. Yes, that exclamation mark followed immediately by a colon is killing me softly.
 
-**Who recommended the book?** This book was recommended by a member of the Twitch Manager Book Club. The club focuses on reading books aimed at leveling up our leadership and management skills.
+**Who recommended the book?** This book was recommended by a member of the Twitch Leadership Book Club. The club focuses on reading books aimed at leveling up our leadership and management skills.
 
 <div>
     <img class="rounded-corners" style="max-width: 380px; border: 1px; margin-top: 24px;" src="{{ site.images2018 }}/12-24/turn-around.png"/>

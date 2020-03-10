@@ -8,7 +8,7 @@ tags: [books, engineering management, manager reads, twitch]
 
 I just wrapped up my first power-up-managerial-skills book: **Decisive: How to Make Better Choices in Life and Work** by Chip and Dan Heath.
 
-**Who recommended the book?** This book was recommended by someone on the Twitch Manager Book Club. A gaggle of managers come together and talk about a book: what they liked, what they found most helpful, what surprised them, etc. Then we close by getting someone to recommend another book. It's a great motivator to power through books and great for discovering new books to read.
+**Who recommended the book?** This book was recommended by someone on the Twitch Leadership Book Club. A gaggle of managers come together and talk about a book: what they liked, what they found most helpful, what surprised them, etc. Then we close by getting someone to recommend another book. It's a great motivator to power through books and great for discovering new books to read.
 
 <div>
 	<img class="rounded-corners" style="max-width: 500px; border: 1px; margin-top: 24px;" src="{{ site.images2018 }}/05-12/decisive.jpg"/>

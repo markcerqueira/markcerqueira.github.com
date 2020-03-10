@@ -8,7 +8,7 @@ tags: [books, engineering management, manager reads, twitch]
 
 Next up in the Manager Reads adventure is **The Culture Code: The Secrets of Highly Successful Groups** by Daniel Coyle.
 
-**Who recommended the book?** This book was highly recommended by my team's VP of Engineering, Michael Comperda, and selected as the next book for the Twitch Manager Book Club. How is a book selected for the club? At the end of each meeting we carve out some time for people to recommend books and champion a particular book for the next month's meeting. Then we coalesce on one and that's it! We keep a running list of all recommendations that we don't select and revisit that list during this time as well. 
+**Who recommended the book?** This book was highly recommended by my team's VP of Engineering, Michael Comperda, and selected as the next book for the Twitch Leadership Book Club. How is a book selected for the club? At the end of each meeting we carve out some time for people to recommend books and champion a particular book for the next month's meeting. Then we coalesce on one and that's it! We keep a running list of all recommendations that we don't select and revisit that list during this time as well. 
 
 <div>
     <img class="rounded-corners" style="max-width: 360px; border: 1px; margin-top: 24px;" src="{{ site.images2018 }}/12-10/culture-code.png"/>
