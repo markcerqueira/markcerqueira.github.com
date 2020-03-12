@@ -10,12 +10,10 @@ Three years ago Susan Fowler published an [explosive blog post][2] detailing sex
 
 **Who recommended the book?** This book was selected, in partnership with the Women+ Guild at Twitch, as March's Leadership Book Club book. March is Women's History Month so we wanted to pick a book highlighting women in the workplace. I turned to Karen Catlin, author of Better Allies, and Katrina Jones, Diversity and Inclusion Leader at Amazon, for recommendations. They provided [a list of great recommendations][3]. Many thanks! We decided to go with Whistleblower as it fit in with a recent Twitch panel discussion on the ramifications of speaking out but I'm sure we'll be reading the other books Karen and Katrina recommended in the near future.
 
-<!--
 <div>
-    <img class="rounded-corners" style="max-width: 350px; border: 1px; margin-top: 24px;" src="{{ site.images2020 }}/02-24/systems.jpg"/>
+    <img class="rounded-corners" style="max-width: 350px; border: 1px; margin-top: 24px;" src="{{ site.images2020 }}/03-06/whistleblower.jpg"/>
     <p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong></strong></p>
 </div>
--->
 
 **Judge the book by its cover, font, page quality?** This cover is clean. It features a headshot of the author, Susan Fowler, in the background. I really like how the title, subtitle, author name, and the lines separating these things are all justified with each other. It looks very clean. Inside features a standard serif font, really thick pages, and generous leading. Fowler is a fantastic writer and a page-turner with great quality paper makes for an excellent page turning experience.
 
