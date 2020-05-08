@@ -26,6 +26,8 @@ Ultimately Xcode is not environmentally friendly. From the article [Does Irrespo
 	According to the American Council for an Energy-Efficient Economy it takes 5.12 kWh of electricity per gigabyte of transferred data. And according to the Department of Energy the average US power plant expends 600 grams of carbon dioxide for every kWh generated. **That means that transferring 1GB of data produces 3kg of CO<sub>2</sub>.
 </blockquote>
 
-A download of Xcode generates 22 kg of CO<sub>2</sub>. A more modularized Xcode would not only be more environmentally friendly, it would make updates for developers less dreadful. Be green and be kind, Apple!
+A download of Xcode generates 22 kg of CO<sub>2</sub>. That's the equivalent of burning [two and half gallons of gasoline][2]! A more modularized Xcode would not only be more environmentally friendly, it would make updates for developers less dreadful. Be green and be kind, Apple!
 
 [1]: https://www.emergeinteractive.com/insights/detail/does-irresponsible-web-development-contribute-to-global-warming/
+[2]: https://www.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle
+
