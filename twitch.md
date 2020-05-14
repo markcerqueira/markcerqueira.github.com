@@ -6,6 +6,8 @@ header: twitch debug
 
 Markdown source for this page available [here][1]. If you'd like to add a link ping me or [open a Pull Request][3]! 😀
 
+* [https://www.twitch.tv/directory/esports](https://www.twitch.tv/directory/esports) - *E Gaming (Esports) Directory*
+
 * [https://www.twitch.tv/category/league-of-legends/21779/](https://www.twitch.tv/category/league-of-legends/21779/) - *New Category link*
 * [https://www.twitch.tv/category/league-of-legends/21779/videos](https://www.twitch.tv/category/league-of-legends/21779/videos) - *New Category link to Videos*
 * [https://www.twitch.tv/category/league-of-legends/21779/videos/all](https://www.twitch.tv/category/league-of-legends/21779/videos/all) - *New Category link to Videos/All*
