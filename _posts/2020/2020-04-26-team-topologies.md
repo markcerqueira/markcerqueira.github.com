@@ -6,35 +6,36 @@ category:
 tags: [books, engineering management, manager reads, twitch]
 ---
 
-This Manager Reads episode is still cooking. Check back soon!
+Organizational design has always interested me and thanks to Spotify I finally got a book recommendation so without further ado... In this edition of Manager Reads we cover **Team Topologies: Organizing Business and Technology Teams for Fast Flow** by Matthew Skelton and Manuel Pais. This is also the first Manager Reads entry featuring a Portuguese author: Olá Manuel! 🇵🇹
 
-<!--
-Three years ago Susan Fowler published an [explosive blog post][2] detailing sexual harassment at Uber. Two weeks ago, she released an autobiographical book on her life including her time at and after Uber called **Whistleblower: My Journey to Silicon Valley and Fight for Justice at Uber**. In this episode of Manager Reads, we dive into this book!
-
-**Who recommended the book?** This book was selected, in partnership with the Women+ Guild at Twitch, as March's Leadership Book Club book. March is Women's History Month so we wanted to pick a book highlighting women in the workplace. I turned to Karen Catlin, author of Better Allies, and Katrina Jones, Diversity and Inclusion Leader at Amazon, for recommendations. They provided [a list of great recommendations][3]. Many thanks! We decided to go with Whistleblower as it fit in with a recent Twitch panel discussion on the ramifications of speaking out but I'm sure we'll be reading the other books Karen and Katrina recommended in the near future.
+**Who recommended the book?** Several months back I read the Spotify white paper on [Scaling Agile @ Spotify with Tribes, Squads, Chapters & Guilds][2]. A recent blog post by Jeremiah Lee, who worked at Spotify in 2017, highlighted the failure of the Spotify organizational model: [Failed #SquadGoals - Spotify doesn’t use "the Spotify model" and neither should you][3]. In this post, Lee recommends reading Team Topologies for more information on the Spotify model. Lee also has great taste in books as his post includes a quote from one of my favorite Manager Reads books: [Turn the Ship Around!][4] 
 
 <div>
-    <img class="rounded-corners" style="max-width: 350px; border: 1px; margin-top: 24px;" src="{{ site.images2020 }}/03-06/whistleblower.jpg"/>
+    <img class="rounded-corners" style="max-width: 350px; border: 1px; margin-top: 24px;" src="{{ site.images2020 }}/04-26/team-topologies.jpg"/>
     <p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong></strong></p>
 </div>
 
-**Judge the book by its cover, font, page quality?** This cover is clean. It features a headshot of the author, Susan Fowler, in the background. I really like how the title, subtitle, author name, and the lines separating these things are all justified with each other. It looks very clean. Inside features a standard serif font, really thick pages, and generous leading. Fowler is a fantastic writer and a page-turner with great quality paper makes for an excellent page turning experience.
+**Judge the book by its cover, font, page quality?** Team Topologies is a well-designed book inside and out. The cover features the shapes, lines, and colors used inside the book to describe different organizational models. The inside really shines too. The book is divided into three parts and each part has a designated color. The chapter markers along the edge of the pages, the occasional tips and notes highlighted, and chapter numbers all use this designated color. Everything is really cleanly laid out; you can tell the authors invested energy in making this book look great to get high marks in this Judge a Book by Its Cover section of Manager Reads! 😁
 
-**Thoughts on the book and the big take-aways?** I loved this book; I started it on Sunday afternoon and wrapped it up by Monday evening. Lots of people have read Fowler's blog post which highlights harrassment at Uber but it was incredibly, incredibly disheartening to read this was not the first occurence of harrassment or inequality she experienced. Her time at the University of Pennsylvia, Plaid, and PubNub had a variety of nightmarish stories. 
+**Thoughts on the book and the big take-aways?** Team Topologies is broken up into three parts that cover:
 
-Sadly, as egregious as Uber's flagrant disdain for the law and basic human decency was Uber is not a one-off. It is not the first company to treat women unjustly and it won't be the last. Reading Whistleblower I kept asking myself, "What would I do if I worked with Susan and heard about the things she was experiencing?" The status quo simply isn't good enough, and everyone must be change agents for more equitable workplaces. Where to start with this seemingly daunting mission? Karen Catlin's [Better Allies][4] is a fantastic guide filled with things you can do everyday to build more inclusive workplaces. 
+1. **Teams As the Means of Delivery** - This is the theory section of the book and covers things like Conway's law which states that the architecture of solutions built will mirror the communication structures of organizations; cognitive load and the importance of keeping this load low; and how we should view teams, not individuals, as the most effective means of software delivery.
+1. **Team Topologies that Work for Flow** - This section covers the four fundamental team types: stream-aligned, platform, complicated subsystem, and enabling. The majority of teams in an organization should be stream-aligned and the focus of other teams should be on empowering stream-aligned teams. A stream-aligned team focuses on a continous flow (the stream in stream-aligned is to emphasize the importance of flow) of work that is aligned to a business domain. When considering domains for teams this section also covers fracture planes; these are natural seams in software systems that allow splitting into logical subcomponents that can be owned by a single team.
+1. **Evolving Team Inreactions for Innovation and Rapidly Delivery** - This last section covers the three types of interactions the four fundamental team types can have with each other: collaboration, X-as-a-Service, and facilitating. Depending on the situation different interactions may work best as there are advantages and disadvantages to the three interactions.
 
-**Favorite quote from the book?** "You should be in the world, but not of the world."
+Four team types and three interaction types sounds small but thinking about Twitch's organizational design most teams and their interactions with other teams fit somewhat cleanly into this model. I can also attest to the advantages and disadvantages of the interactions having seen and experienced them myself!
 
-**Elevator pitch for suggesting (or not suggesting) the book?** Fowler's story of succeeding in the face of adversity from her childhood without compromising her values is both moving and will galvanize you to contribute to safer and more equitable workplaces. We cannot settle for the status quo; we can and must do better.
+The one thing I wish Team Topologies would provide is a longer-lived case study for an organization. There are smaller case studies sprinkled throughout the book but walking away from the book none of them really stuck with me because they left a very shallow impression. It would've been great to have a recurring case study focused on a single organization that was revisited throughout the book as we learned new concepts and principles.
 
-**Notes in Evernote?** Notes from this autobiographical book are somewhat sparse but feel free to check out [my notes][1] on 🐘.
+**Favorite quote from the book?** "'Minimize cognitive load for others' is one of the most useful heuristics for good software development."
 
--->
+**Elevator pitch for suggesting (or not suggesting) the book?** Team Topologies serves as both a primer to organizational design and presentation of what it believes is a good organizational model to optimize for getting things done. It's a nice mix for those looking for a mix of theory and praactical applications of organizational design. As far as this is the first book I've read on organizational design, I liked it and recommend it.
+
+**Notes in Evernote?** Check out [my notes][1] on 🐘.
 
 {{ site.manager_reads }}
 
-[1]: https://www.evernote.com/l/AOT-ix2rg1xBmIkFfo50rNReRpYRsmwP8kU
-[2]: https://www.susanjfowler.com/blog/2017/2/19/reflecting-on-one-very-strange-year-at-uber
-[3]: https://twitter.com/markmcerqueira/status/1227652197246128129
-[4]: {{ site.base_url }}/2019/03/22/better-allies/
+[1]: https://www.evernote.com/l/AOQyLiKaIglKspq_e6jMLTSrATyNRrLfZ2s
+[2]: https://blog.crisp.se/wp-content/uploads/2012/11/SpotifyScaling.pdf
+[3]: https://www.jeremiahlee.com/posts/failed-squad-goals/#navel-gazing
+[4]: {{ site.base_url }}/2018/12/24/turn-ship-around/
