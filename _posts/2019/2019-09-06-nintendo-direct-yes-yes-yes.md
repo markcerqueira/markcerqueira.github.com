@@ -12,7 +12,7 @@ Nintendo is on a roll and the latest Nintendo Direct doubles down on that. Among
 
 * **Tokyo Mirage Sessions #FE Encore** - Yes! I never got around to playing this Fire Emblem and Shin Megami Tensei mashup, but I'll be able to kick off 2020 on a high note with this quirky game.
 
-* **SNES - Nintendo Switch Online** - Yes! The Nintendo Switch Online service just got a massive upgrade with a collection of great SNES games. This collection includes fantastic gems that were a pillar of my childhood like Super Mario World, Super Mario World 2: Yoshi's Island, Star Fox, and The Legend of Zelda: A Link to the Past. While it doesn't have [Super Mario RPG: The Legend of the Seven Stars][3] it does include a JRPG I may dive into: Bread of Fire. Read more about all 20 games available on [Ars Technica][2].
+* **SNES - Nintendo Switch Online** - Yes! The Nintendo Switch Online service just got a massive upgrade with a collection of great SNES games. This collection includes fantastic gems that were a pillar of my childhood like Super Mario World, Super Mario World 2: Yoshi's Island, Star Fox, and The Legend of Zelda: A Link to the Past. While it doesn't have [Super Mario RPG: The Legend of the Seven Stars][3] it does include a JRPG I may dive into: Breath of Fire. Read more about all 20 games available on [Ars Technica][2].
 
 Yes, yes, yes! So much goodness... When is the next Nintendo Direct?
 

@@ -24,7 +24,7 @@ There are some pain points.
 
 * The story is told via pictures in a book. After most scenes you're kicked out of the book and have to manually start the next scene. This breaks continuity in the narrative and atmosphere.
 * While upgrading weapons and armor, after every upgrade a character pops up to tell you how amazing the upgrade is or how he wants to take a picture of it. It's not terrible the first few times but after you do a couple of upgrades it gets really annoying.
-* Battles against special characters or vehicles can be really tricky if you don't figure out the trick to beat them early on. Trial and error can result in major losses that makes victory untenable.Saving halfway through a battle and reloading if needed helps relieve this a bit. I suppose this is a part of the fog of war? 🤔
+* Battles against special characters or vehicles can be really tricky if you don't figure out the trick to beat them early on. Trial and error can result in major losses that makes victory untenable. Saving halfway through a battle and reloading if needed helps relieve this a bit. I suppose this is a part of the fog of war? 🤔
 * Over the course of the game the troops available for you to deploy increase as you recruit more people but there's never really any incentive to swap those new people in as they don't add any significant value.
 
 All this said, I overall really enjoyed Valkyria Chronicles 4.
