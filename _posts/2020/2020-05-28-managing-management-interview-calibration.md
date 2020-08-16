@@ -42,7 +42,7 @@ There's no need to do this analysis manually though! Using Google App Scripts (T
     <p class="caption-text" style="line-height: 1.5em; margin-bottom: 24px;"><strong>Candidates Revisited</strong></p>
 </div>
 
-With this function we can revisit our Candidates sheet and do some math. Astute observers will notice the sheet had the average score of onsite interviews and also a calibrated average of onsite interviews. The calibrated average adjusts each interviewer's score based on their calibration percentange. Unless you're perfectly calibrated this means your scores will be adjusted downwards. For our sample data, Day9's scores aren't adjusted (e.g. a 3 stays a 3) because he is perfectly calibrated; Tasteless's scores are calibrated downwards by 50% (e.g. a 3 becomes a 1.5) because Tasteless has a 50% calibration; and Artosis' scores are ignored (e.g. a 3 becomes a 0) because he is never calibrated. This calibrated average score provides another lens through which to view a candidate's performance.
+With this function we can revisit our Candidates sheet and do some math. Astute observers will notice the sheet had the average score of onsite interviews and also a calibrated average of onsite interviews. The calibrated average adjusts each interviewer's score based on their calibration percentage. Unless you're perfectly calibrated this means your scores will be adjusted downwards. For our sample data, Day9's scores aren't adjusted (e.g. a 3 stays a 3) because he is perfectly calibrated; Tasteless's scores are calibrated downwards by 50% (e.g. a 3 becomes a 1.5) because Tasteless has a 50% calibration; and Artosis' scores are ignored (e.g. a 3 becomes a 0) because he is never calibrated. This calibrated average score provides another lens through which to view a candidate's performance.
 
 There are a few things worth highlighting before we close out this post:
 
@@ -50,7 +50,7 @@ There are a few things worth highlighting before we close out this post:
 * Our sample data has three technical interviews but real onsites are rarely so uniform. Different interviewers will probe different technical and behavioral competencies. If a particular competency is easily handled by many candidates or catches many candidates off guard this will affect that particular interviewer's calibration.
 * Calibration percentage calculation looks at all data points for an interviewer and applies that percentage to all their scores. An alternate system would only look at past data points when calculating this percentage, but this would hurt data sample size for earlier interviews.
 
-In closing, this spreadsheet has been helpful tool to help assess the quailty of our interviewing and there's so much more that can be built off of it (e.g. percent accuracy for phone screeners). Got an interesting tip that helps you better understand how calibrated your interviewing is? Let me know on [Twitter][1]!
+In closing, this spreadsheet has been helpful tool to help assess the quality of our interviewing and there's so much more that can be built off of it (e.g. percent accuracy for phone screeners). Got an interesting tip that helps you better understand how calibrated your interviewing is? Let me know on [Twitter][1]!
 
 {{ site.managing_management }}
 

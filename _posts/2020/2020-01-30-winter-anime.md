@@ -36,6 +36,6 @@ It's that time again yet again... Time to plow through some anime! As always fea
     <img class="rounded-corners" style="max-width: 500px; border: 1px; margin-top: 30px;" src="{{ site.images2020 }}/01-30/stone.gif"/>
 </div>
 
-**Dr. Stone** - This was a very, very fun watch! The premise is simple: every living thing is turned to stone and thousands of years later some humans start turning back to normal. One of them, Senku, is a genius and wants to jumpstart civialization with the power of science! I knew science was fun but this show delivered that and then some! I was impressed with seamless transition from the opening arc with Taiku to the village arc with Chrome, but maybe it's because both look pretty similar and filled the role of bumbling sidekick. I can't wait for the next season of this show. 
+**Dr. Stone** - This was a very, very fun watch! The premise is simple: every living thing is turned to stone and thousands of years later some humans start turning back to normal. One of them, Senku, is a genius and wants to jumpstart civilization with the power of science! I knew science was fun but this show delivered that and then some! I was impressed with seamless transition from the opening arc with Taiku to the village arc with Chrome, but maybe it's because both look pretty similar and filled the role of bumbling sidekick. I can't wait for the next season of this show. 
 
 There's always more to watch (e.g. Attack on Titan Season 3, Vinland Saga) but as usual, it'll have to wait for next time! 👋

@@ -14,7 +14,7 @@ A sequel to the fantastic Children of Time, this book picks up where that one le
 
 ### **So You Want to Talk About Race** by Ijeoma Oluo
 ![So You Want to Talk About Race]({{ site.images2020 }}/01-06/soyouwant.jpg){: style="float: left; margin-right: 10px"}
-This book covers a very wide range of topics: racism (and its systemic, institutional pervasiveness), privilege, intersectionality, police brutality, affirmative action, the school-to-prison pipeline, the n-word, cultural appropriation, hair petting, microagressions, the model minority myth, and even Al Sharpton. My only qualm is it saved actions we can take to combat some of the aforementioned topics for the last chapter; it would've been great to lay out actions in each chapter as different issues were covered. That said, I cannot recommend this book enough to anyone interested in social justice and making our world equitable. Many thanks [Kaya][1] for the recommendation!
+This book covers a very wide range of topics: racism (and its systemic, institutional pervasiveness), privilege, intersectionality, police brutality, affirmative action, the school-to-prison pipeline, the n-word, cultural appropriation, hair petting, microaggressions, the model minority myth, and even Al Sharpton. My only qualm is it saved actions we can take to combat some of the aforementioned topics for the last chapter; it would've been great to lay out actions in each chapter as different issues were covered. That said, I cannot recommend this book enough to anyone interested in social justice and making our world equitable. Many thanks [Kaya][1] for the recommendation!
 
 ### **Silo (Wool, Shift, Dust)** by Hugh Howey
 ![Silo]({{ site.images2020 }}/01-06/silo.jpg){: style="float: left; margin-right: 10px"}

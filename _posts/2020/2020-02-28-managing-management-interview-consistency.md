@@ -16,7 +16,7 @@ Interviewing is hard - the interview is an artificial environment where you are 
 
 **Have a question bank** - For both technical and behavioral portions of an interview have a question bank available. It's helpful to have this written down so you can deliver the same question with the same wording to candidates. For technical questions you can even have the question ready to go in various programming languages. If a candidate says they've worked through that question already, you can have alternate questions ready to go in your bank.
 
-**Record clock time during technical exercises** - During technical exercises I log clock time when the exercise is presented, when hints are given, when milestones in the question are reached, and when the question is completed. While time to completion is not the only data point to take into consideration on a candidate's performance, having something concrete helps better calibrate your assesmentment of the candidate's performance.
+**Record clock time during technical exercises** - During technical exercises I log clock time when the exercise is presented, when hints are given, when milestones in the question are reached, and when the question is completed. While time to completion is not the only data point to take into consideration on a candidate's performance, having something concrete helps better calibrate your assessment of the candidate's performance.
 
 Got an interesting tip for making your interviews more consistent? Let me know on [Twitter][1]!
 

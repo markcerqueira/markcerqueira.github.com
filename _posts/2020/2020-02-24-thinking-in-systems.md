@@ -25,11 +25,11 @@ Worth mentioning is Thinking in Systems does not provide end-of-chapter summarie
 
 * An introduction to fundamental system concepts like stocks and flows; feedback loops (balancing and reinforcing) and dominance, delays, oscillations. With this deceptively small list of concepts, you're ready to dive into systems thinking!
 
-* An overview of why systems work so well. They do so because they are resilient (the ability to recover after a perturbation), can self-organize (the ability to make its own structure more complex), and generate hiearchies (subsystems that can take care of themselves).
+* An overview of why systems work so well. They do so because they are resilient (the ability to recover after a perturbation), can self-organize (the ability to make its own structure more complex), and generate hierarchies (subsystems that can take care of themselves).
 
 * A tour of system traps: systems that produce problematic behaviors and how to work your way out of those traps. Like the [Accidental Diminisher chapter of Multipliers][3] learning about all the ways systems don't work and how to pivot out of that was very insightful. This section covers traps like Policy Resistance, the Tragedy of the Commons, Drift to Low Performance, Escalation, Competitive Exclusion, Addiction, Rule Beating, and Seeking the Wrong Goal. Some (and hopefully not all) of these are problems you may encounter in your workplace.
 
-* The best and worst leverage points for intervening in a system and changings its behaviors? The worst leverage point? Changing constants and parameters of the system. A middling leverage point? Fix information flows so information can get to the right places. The best leverage point? Detach yourself from the shared ideas and assumptions of society and tap into the universe and its spacious possiblity; choose whatever system helps you achieve your purpose from that immense pool. 😮
+* The best and worst leverage points for intervening in a system and changing its behaviors? The worst leverage point? Changing constants and parameters of the system. A middling leverage point? Fix information flows so information can get to the right places. The best leverage point? Detach yourself from the shared ideas and assumptions of society and tap into the universe and its spacious possibility; choose whatever system helps you achieve your purpose from that immense pool. 😮
 
 * How to live (and improve) a world of systems. This includes gems of advice like observing a system and learning its beat before intervening, to encouraging putting your mental models out in the open to get feedback on them, stay humble, embrace complexity, and to expand the boundary of caring.
 
