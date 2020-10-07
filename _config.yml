@@ -33,10 +33,3 @@ author :
 # End of post blurbs
 managing_management: <i>Managing Management is a series on systems that are shareable and serve as actionable templates for addressing the deluge of things managers encounter everyday. Enjoyed this post and want to see more? Check out more at <a href="/archive/#managing+management">Managing Management</a>.</i>
 manager_reads: <i>Most of the world's wisdom is written down in its best books. Manager Reads is a series covering books on management and leadership, focusing on books that can improve your own leadership with the wisdom of others. Enjoyed this post and want to see more? Check out more at <a href="/archive/#manager+reads">Manager Reads</a>.</i>
-
-# All Jekyll-Bootstrap specific configurations are namespaced into this hash
-JB :
-  analytics :
-    provider : google
-    google : 
-        tracking_id : 'UA-40706724-1'
