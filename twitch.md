@@ -6,6 +6,8 @@ header: twitch debug
 
 Markdown source for this page available [here][1]. If you'd like to add a link ping me or [open a Pull Request][3]! 😀
 
+* [https://clips.twitch.tv/EndearingAntediluvianBaconDogFace](https://clips.twitch.tv/EndearingAntediluvianBaconDogFace) - *deleted Clip 404*
+
 * [https://www.twitch.tv/directory/esports](https://www.twitch.tv/directory/esports) - *E Gaming (Esports) Directory*
 
 * [https://www.twitch.tv/category/league-of-legends/21779/](https://www.twitch.tv/category/league-of-legends/21779/) - *New Category link*
