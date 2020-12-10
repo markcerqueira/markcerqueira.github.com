@@ -4,35 +4,35 @@ title:
 header: 
 ---
 
+Monday:
+* Lunch - Chicken salad with romain lettuce, spinach, tomatoes, pomegranate, eggs, avocado, and grapes 
+* Dinner - Avocado mac n cheese with ground pork
+
+Tuesday:
+* Lunch - Leftover avocado mac n cheese
+* Dinner - Kimchi fried rice
+
+Wednesday:
+* Lunch - Cong mien
+* Dinner - Pork Katsu over rice
+
+Thursday:
+* Lunch - Febras panadas 
+* Dinner - Beef brisket with green beans and mashed potatoes
+
 Friday:
-* Breakfast - Cereal and Fruit
-* Lunch - Roast Beef Sandwich / Buns
+* Lunch - Reef brisket sandwich
 * Dinner - Stir fry chicken and bok choy udon
 
 Saturday:
 * Breakfast - Banana pancakes
-* Lunch - Leftover stir fry chicken and bok choy udon
-* Dinner - Sheng Jian Bao
+* Lunch - Pepper beef fried rice
+* Dinner - Sheng jian bao
 
 Sunday:
 * Breakfast - Bagel with American cheese, egg, and ham
-* Lunch - Leftover Sheng Jian Bao
-* Dinner - Avocado mac n cheese with ground pork
-
-Monday:
-* Lunch - Leftover avocado mac n cheese
-
-Tuesday:
-* Lunch / Dinner - Kimchi fried rice
-
-Wednesday:
-* Lunch - Pork Katsu over rice
-
-Thursday:
-* Lunch - Takeout
-
-Friday: 
-* Lunch - Cong mien
+* Lunch - Leftover sheng jian bao
+* Dinner - Chicken omurice
 
 <!--
 Tuesday, 12/3: 
