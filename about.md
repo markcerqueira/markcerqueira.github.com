@@ -13,18 +13,19 @@ header: about
 	<a href="http://www.linkedin.com/in/markcerqueira/"><img class="icon" src="/assets/images/webicons/webicon-linkedin.png" alt="LinkedIn"/></a>
 </div>
 
-I am an Engineering Manager at [Twitch][7]. 
+I am a Director of Engineering at [Twitch][7]. 
 Twitch is where millions of people come together live every day to chat, interact, and make their own entertainment together. 
 I lead a team of talented Android and iOS developers to deliver a delightful Twitch experience on mobile. 
 
-In the land before management, I was an Android Engineer at Twitch.
+My entire professional career has been in the mobile space. 
+Before management, I was an Android Engineer at Twitch.
 Before that, I was an Android (and sometimes iOS) Engineer at [Evernote][6] -- making a productivity tool used and loved by millions even better. 
 And before Evernote I was a Mobile Engineer at [Smule][5], where I split my time between Android and iOS development. 
 <!-- I also led Smule's world-class food and culture program. -->
 
-I am an active member of the [San Francisco Kendo Dojo][1] and [Stanford Kendo Club][2]. <!-- , and currently hold the rank of Kendo 1 Kyu. -->
 I am an avid StarCraft 2 player (Protoss). 
-I enjoy playing video games and listening to video game music. 
+I enjoy reading, playing video games, and listening to video game music. 
+I was formerly an active member of the [San Francisco Kendo Dojo][1] and [Stanford Kendo Club][2] but taking a break now to focus on being a good dad. <!-- , and currently hold the rank of Kendo 1 Kyu. -->
 I am partial to JRPGs: my favorite series include the Valkyrie Profile, Nier, Grandia, Tales, Persona, Trails of Cold Steel, and Xenoblade series. 
 My favorite video game composers are Yasunori Mitsuda and Keiichi Okabe.
 
