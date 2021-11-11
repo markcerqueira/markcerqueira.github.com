@@ -13,7 +13,6 @@
  * https://github.com/poole/lanyon.
  */
 
-
 /*
  * Contents
  *
@@ -38,6 +37,11 @@
 html,
 body {
   overflow-x: hidden;
+}
+
+/* https://stackoverflow.com/a/60799683/265791 */ 
+strong {
+	-webkit-font-smoothing: antialiased;
 }
 
 html {
