@@ -6,6 +6,10 @@ header: twitch debug
 
 Markdown source for this page available [here][1]. If you'd like to add a link ping me or [open a Pull Request][3]! 😀
 
+* [https://www.twitch.tv/music](https://www.twitch.tv/music) *Twitch Music*
+* [https://www.twitch.tv/music/](https://www.twitch.tv/music/) *Twitch Music*
+* [https://www.twitch.tv/music/LeekBeats](https://www.twitch.tv/music/LeekBeats) *LeekBeats*
+
 * [https://clips.twitch.tv/EndearingAntediluvianBaconDogFace](https://clips.twitch.tv/EndearingAntediluvianBaconDogFace) - *deleted Clip 404*
 
 * [https://www.twitch.tv/directory/esports](https://www.twitch.tv/directory/esports) - *E Gaming (Esports) Directory*
