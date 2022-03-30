@@ -24,6 +24,9 @@ images2018 : "/assets/posts/2018"
 images2019 : "/assets/posts/2019"
 images2020 : "/assets/posts/2020"
 images2021 : "/assets/posts/2021"
+images2022 : "/assets/posts/2022"
+
+default_image_width : "800px"
 
 author :
   name : Mark Cerqueira
