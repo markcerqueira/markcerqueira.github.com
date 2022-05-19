@@ -6,7 +6,7 @@ category:
 tags: [books, engineering management, manager reads, twitch]
 ---
 
-Manager Reads returns after a year-long plus hiatus with **The Phoenix Project: A Novel about IT, DevOps, and Helping Your Business Win** by  Gene Kim, Kevin Behr and George Spafford.
+Manager Reads returns after a year-long plus hiatus with **The Phoenix Project: A Novel about IT, DevOps, and Helping Your Business Win** by Gene Kim, Kevin Behr and George Spafford.
 
 **Who recommended the book?** Twitch's Leadership Book Club selected this book in a recent poll to decide the next book we cover. It beat out Dare to Lead (a great book [I reviewed in 2019][2]) and Crucial Conversations.
 
