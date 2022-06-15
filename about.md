@@ -5,7 +5,7 @@ header: about
 ---
 
 <div style="float: right; padding-left: 20px;">
-	<img src="/assets/images/mark_600x728.jpg" width="231" height="280">
+	<img src="/assets/images/mark.png" width="236" height="286">
 	<a href="https://twitter.com/markmcerqueira"><img class="icon" src="/assets/images/webicons/webicon-twitter.png" alt="Twitter"/></a>
 	<a href="http://www.yelp.com/user_details?userid=V4unpKMFq8kSHDMw2UW9rQ"><img class="icon" src="/assets/images/webicons/webicon-yelp.png" alt="Yelp"/></a>
 	<a href="https://www.goodreads.com/user/show/5555727-mark-cerqueira"><img class="icon" src="/assets/images/webicons/webicon-goodreads.png" alt="GoodReads"/></a>
