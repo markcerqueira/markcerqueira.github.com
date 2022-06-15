@@ -6,6 +6,7 @@ This repository is automatically transformed by [Jekyll][1] into a static site. 
 ### Set-Up
 * See this helpful [GitHub page on setting up Jekyll][11] - specifically the Installing Jekyll section.
 * To reset your RubyGem state: `mv Gemfile.lock Gemfile.lock.backup && sudo bundle clean --force && bundle install`
+* If rbenv is having issues installing on M1 try ````LDFLAGS="-L/opt/homebrew/opt/capstone/lib" CPPFLAGS="-I/opt/homebrew/opt/capstone/include" rbenv install 3.1.2````
 
 ### Common Tasks and Commands
 * `jekyll serve --watch` to run the blog locally
