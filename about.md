@@ -13,12 +13,11 @@ header: about
 	<a href="http://www.linkedin.com/in/markcerqueira/"><img class="icon" src="/assets/images/webicons/webicon-linkedin.png" alt="LinkedIn"/></a>
 </div>
 
-I am a Director of Engineering at [Twitch][7]. 
-Twitch is where millions of people come together live every day to chat, interact, and make their own entertainment together. 
-I lead a team of talented Android and iOS developers to deliver a delightful Twitch experience on mobile. 
+I am a Senior Director of Engineering at [Pinterest][8]. 
+Pinterest is the visual inspiration platform where people come to search, save, and shop the best ideas in the world for all of life’s moments. 
+I lead a talented group that builds the foundation for all Android, iOS, Web, and API development at Pinterest. 
 
-My entire professional career has been in the mobile space. 
-Before management, I was an Android Engineer at Twitch.
+Prior to Pinterest, I led the Android and iOS product development and platform teams at [Twitch][7]. 
 Before that, I was an Android (and sometimes iOS) Engineer at [Evernote][6] -- making a productivity tool used and loved by millions even better. 
 And before Evernote I was a Mobile Engineer at [Smule][5], where I split my time between Android and iOS development. 
 <!-- I also led Smule's world-class food and culture program. -->
@@ -26,7 +25,7 @@ And before Evernote I was a Mobile Engineer at [Smule][5], where I split my time
 I am an avid StarCraft 2 player (Protoss). 
 I enjoy reading, playing video games, and listening to video game music. 
 I was formerly an active member of the [San Francisco Kendo Dojo][1] and [Stanford Kendo Club][2] but taking a break now to focus on being a good dad. <!-- , and currently hold the rank of Kendo 1 Kyu. -->
-I am partial to JRPGs: my favorite series include the Valkyrie Profile, Nier, Grandia, Tales, Persona, Trails of Cold Steel, and Xenoblade series. 
+I am partial to JRPGs: my favorite series include the Valkyrie Profile, Nier, Grandia, Tales, Trails, and the Xenoblade series. 
 My favorite video game composers are Yasunori Mitsuda and Keiichi Okabe.
 
 I received my B.S. in Computer Science at Princeton University, along with a certificate in Portuguese and Spanish Languages and Cultures. 
@@ -35,7 +34,7 @@ My senior thesis, advised by [Dan Trueman][3], was titled *Synchronization over 
 Where I've been: 
 🇺🇸 <!-- Country of birth -->
 🇵🇹 <!-- Country of parent's birth -->
-🇪🇸 <!-- Unfortunately parent's birthplace is very close to Spain -->
+🇪🇸 <!-- Parent's birthplace is very close to Spain -->
 🇮🇹 <!-- High school AP English trip in Spring 2006 -->
 🇬🇷 <!-- High school AP English trip in Spring 2006 -->
 🇧🇲 <!-- Princeton Marine Biology Summer 2008, family vacation in Summer 2018 -->
@@ -46,6 +45,7 @@ Where I've been:
 🇬🇧 <!-- Europe Trip, Summer 2018 -->
 🇳🇱 <!-- Europe Trip, Summer 2018 -->
 🇩🇪 <!-- Europe Trip, Summer 2018 -->
+🇲🇽 <!-- CDMX Engineering Onsite, December 2023 -->
 
 [1]: http://sanfranciscokendo.org/
 [2]: http://kendo.stanford.edu/
@@ -54,3 +54,4 @@ Where I've been:
 [5]: http://www.smule.com/
 [6]: http://www.evernote.com/
 [7]: https://www.twitch.tv/
+[8]: https://www.pinterest.com/
