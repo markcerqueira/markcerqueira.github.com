@@ -1,5 +1,13 @@
 # Include vendor to fix: https://github.com/jekyll/jekyll/issues/2938
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "vendor"]
+exclude:
+  [
+    ".rvmrc",
+    ".rbenv-version",
+    "README.md",
+    "Rakefile",
+    "changelog.md",
+    "vendor",
+  ]
 
 # For Keybase verification
 # https://github.com/keybase/keybase-issues/issues/366#issuecomment-38749201
@@ -8,31 +16,32 @@ include: [".well-known"]
 plugins:
   - jekyll-gist
   - jekyll-sitemap
-  
+
 permalink: pretty
 
 markdown: kramdown
-kramdown:  
+kramdown:
   input: GFM
-  
-title : mark cerqueira
+
+title: mark cerqueira
 tagline: well-rounded nerd
-baseurl: ''
+baseurl: ""
 
-images2017 : "/assets/posts/2017"
-images2018 : "/assets/posts/2018"
-images2019 : "/assets/posts/2019"
-images2020 : "/assets/posts/2020"
-images2021 : "/assets/posts/2021"
-images2022 : "/assets/posts/2022"
+images2017: "/assets/posts/2017"
+images2018: "/assets/posts/2018"
+images2019: "/assets/posts/2019"
+images2020: "/assets/posts/2020"
+images2021: "/assets/posts/2021"
+images2022: "/assets/posts/2022"
+images2025: "/assets/posts/2025"
 
-default_image_width : "800px"
+default_image_width: "800px"
 
-author :
-  name : Mark Cerqueira
-  email : mark@mark.gg
-  github : markcerqueira
-  twitter : markmcerqueira
+author:
+  name: Mark Cerqueira
+  email: mark@mark.gg
+  github: markcerqueira
+  twitter: markmcerqueira
 
 # End of post blurbs
 managing_management: <i>Managing Management is a series on systems that are shareable and serve as actionable templates for addressing the deluge of things managers encounter everyday. Enjoyed this post and want to see more? Check out more at <a href="/archive/#managing+management">Managing Management</a>.</i>
