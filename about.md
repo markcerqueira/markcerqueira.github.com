@@ -13,13 +13,14 @@ header: about
 	<a href="http://www.linkedin.com/in/markcerqueira/"><img class="icon" src="/assets/images/webicons/webicon-linkedin.png" alt="LinkedIn"/></a>
 </div>
 
-I am a Senior Director of Engineering at [Pinterest][8].
-Pinterest is the visual inspiration platform where people come to search, save, and shop the best ideas in the world for all of life’s moments.
-I lead a talented group that builds the foundation for all Android, iOS, Web, API, and Design Systems development at Pinterest.
+I am a Director of Engineering at [Roblox][9].
+Roblox is the global platform where millions of people gather daily to imagine, create, and share experiences in immersive, user-generated 3D worlds.
+I lead a talented group responsible for Roblox's high-scale virtual economy, building the technical systems and monetization tools that enables creators to build sustainable businesses.
 
+Rearward of Roblox, I led foundations for all Android, iOS, Web, API, and Design Systems development at [Pinterest][8].
 Prior to Pinterest, I led Android and iOS product development and platform teams at [Twitch][7].
-Before that, I was an Android (and sometimes iOS) Engineer at [Evernote][6] -- making a productivity tool used and loved by millions even better.
-And before Evernote I was a Mobile Engineer at [Smule][5], where I split my time between Android and iOS development.
+Trailing Twitch, I was an Android and iOS Engineer at [Evernote][6].
+And earlier than Evernote I was an Android and iOS Engineer at [Smule][5].
 <!-- I also led Smule's world-class food and culture program. -->
 
 I am an avid StarCraft 2 player (Protoss). My favorite units are Photon Cannons and Carriers.
@@ -55,3 +56,4 @@ Where I've been:
 [6]: http://www.evernote.com/
 [7]: https://www.twitch.tv/
 [8]: https://www.pinterest.com/
+[9]: https://www.roblox.com/
