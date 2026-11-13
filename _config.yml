@@ -16,6 +16,7 @@ include: [".well-known"]
 plugins:
   - jekyll-gist
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 permalink: pretty
 
